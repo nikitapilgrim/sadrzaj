@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
   display: block;
   cursor: pointer;
+  margin-left: 15px;
 `;
 
 const Plank = styled.div`
@@ -16,9 +17,9 @@ const Plank = styled.div`
   }
 `;
 
-export const Hamburger = () => {
+export const Hamburger = ({onClick}) => {
   return (
-    <Wrapper>
+    <Wrapper onClick={() => onClick()}>
       <Plank/>
       <Plank/>
       <Plank/>

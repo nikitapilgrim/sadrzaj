@@ -1,7 +1,10 @@
 import React from 'react';
 import styled, {css} from 'styled-components';
 import {Menu} from '../components/Menu/Menu';
+import {breakpoints} from '../mixins/breakpoints';
+
 import bgImage from '../assets/img/backgrounds/startsreen.jpg';
+import bgImageDesctop from '../assets/img/backgrounds/startscreen-desctop.jpg';
 
 const AllSpace = css`
   height: 100%;
@@ -36,8 +39,12 @@ const BgContainer = styled.div`
     ${AllSpace};
     z-index: 0;
 `;
+
 const Bg = styled.div`
   background: url(${bgImage});
+   @media ${breakpoints.tablet} {
+    background: url(${bgImageDesctop}) 50% 0%;
+  }
   background-size: cover;
   ${AllSpace};
   z-index: 1;
@@ -48,6 +55,7 @@ const Bg = styled.div`
     background-color: #422400;
     opacity: 0.59;
     }
+ 
 `;
 
 const Title = styled.div`
@@ -84,7 +92,7 @@ const MenuWrapper = styled.div`
   position: absolute;
   top: 2vh;
   right: 3vw;
-  z-index: 1;
+  z-index: 3;
 `;
 
 export const Start = () => {
