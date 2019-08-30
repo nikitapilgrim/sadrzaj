@@ -195,4 +195,111 @@ export default [
       },
     ]
   }
+  {
+    title: 'Narodna književnost',
+    subtitle: 'Ljubavi rastanak',
+    text: `Dva cvijeta u bostanu rasla:
+plavi zumbul i zelena kada.
+Plavi zumbul ode na Doljane,
+osta kada u bostanu sama.
+Poručuje zumbul sa Doljana:
+“Dušo moja, u bostanu kado,
+kako ti je u bostanu samoj?”
+Odgovara iz bostana kada:
+“Što je nebo, da je list
+što je gora, da su 
+što je more, da je crn
+pak da pišem tri godine dana,
+ne bi moji’ ispisala jada!”
+
+Narodna lirska pjesma (sevdalinka)`,
+    video: 'url',
+    audio: 'url',
+    questions: [
+      {
+        title: 'Odaberi tačan odgovor',
+        question: 'Kada (zelenkada, narcis) i zumbul imaju preneseno značenje i ukazuju na:',
+        answers: [
+          {
+            title: 'mladića i djevojku',
+            right: true
+          },
+          {
+            title: 'baštu sa cvijećem',
+            right: false
+          }
+        ]
+      },
+      {
+        title: 'Odaberi tačan odgovor',
+        question: 'Cvjetovi u ovoj pjesmi imaju…',
+        answers: [
+          {
+            title: 'simbolično značenje',
+            right: true
+          },
+          {
+            title: 'onomatopejsko značenje',
+            right: false
+          }
+        ]
+      },
+      {
+        title: 'Odaberi tačan odgovor',
+        question: 'Šta o mladićevim osjećanjima govori pitanje: „Dušo moja, u bostanu kado, / kako ti je u bostanu samoj?“',
+        answers: [
+          {
+            title: 'da je mladić zaboravio djevojku',
+            right: false
+          },
+          {
+            title: 'mladićevu brigu, ljubav i tugu',
+            right: true
+          }
+        ]
+      },
+      {
+        title: 'Odaberi tačan odgovor',
+        question: 'Uloga hiperbole u predstavljanju djevojčinih osjećanja je:',
+        answers: [
+          {
+            title: 'da opiše prirodu koja je okružuje',
+            right: false
+          },
+          {
+            title: 'dada stvori jasnu sliku o njenoj tuzi, bolu',
+            right: true
+          }
+        ]
+      },
+      {
+        title: 'Odaberi tačan odgovor',
+        question: 'Cvijet je simbol…:',
+        answers: [
+          {
+            title: 'ljubavi, nježnosti, pažnje, ljepote',
+            right: true
+          },
+          {
+            title: 'rastanka i zaborava',
+            right: false
+          }
+        ]
+      },
+      {
+        title: 'Odaberi tačan odgovor',
+        question: 'Pridjevi koji stoje uz imenice i bliže ih određuju su…',
+        answers: [
+          {
+            title: 'sinonimi',
+            right: false
+          },
+          {
+            title: 'epiteti',
+            right: true
+          }
+        ]
+      }
+    ]
+  }
 ]
