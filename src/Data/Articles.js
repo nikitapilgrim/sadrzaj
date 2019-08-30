@@ -23,13 +23,13 @@ export default [
         answers: [
           {
             title: 'osjećanja',
-            right: true,
+            right: true
           },
           {
             title: 'događaji',
-            right: false,
-          },
-        ],
+            right: false
+          }
+        ]
       },
       {
         title: 'This is title for 2nd question',
@@ -37,17 +37,17 @@ export default [
         answers: [
           {
             title: 'samo prema majci',
-            right: true,
+            right: true
           },
           {
             title: 'događaji',
-            right: false,
+            right: false
           },
           {
             title: 'i prema majci i prema mladiću',
-            right: false,
-          },
-        ],
+            right: false
+          }
+        ]
       },
       {
         title: 'This is title for 3rd question',
@@ -55,13 +55,13 @@ export default [
         answers: [
           {
             title: 'o „bjeljenju platna“, odnosno o poslu zbog koga je djevojka pošla',
-            right: false,
+            right: false
           },
           {
             title: 'o tome kako će izgrditi kćerku',
-            right: true,
-          },
-        ],
+            right: true
+          }
+        ]
       },
       {
         title: 'This is title for 4th question',
@@ -69,13 +69,13 @@ export default [
         answers: [
           {
             title: 'da ne može oprati rublje zbog mutne vode',
-            right: false,
+            right: false
           },
           {
             title: 'da se srela sa dragim i da posao nije ni započela',
-            right: true,
-          },
-        ],
+            right: true
+          }
+        ]
       },
       {
         title: 'This is title for 5th question',
@@ -83,17 +83,17 @@ export default [
         answers: [
           {
             title: 'samo brojevima',
-            right: true,
+            right: true
           },
           {
             title: 'samo riječima',
-            right: false,
+            right: false
           },
           {
             title: 'i brojevima i riječima',
-            right: false,
-          },
-        ],
+            right: false
+          }
+        ]
       },
       {
         title: 'This is title for 6th question',
@@ -101,13 +101,13 @@ export default [
         answers: [
           {
             title: 'izgovor što se djevojka predugo zadržala',
-            right: false,
+            right: false
           },
           {
             title: 'činjenica da je dragi konjem prešao preko vode i zamutio je pa zbog toga djevojka nije mogla „ubjeliti platno“.',
-            right: true,
-          },
-        ],
+            right: true
+          }
+        ]
       },
       {
         title: 'This is title for 7th question',
@@ -115,13 +115,13 @@ export default [
         answers: [
           {
             title: 'ljutnja',
-            right: false,
+            right: false
           },
           {
             title: 'radost zbog susreta sa dragim“.',
-            right: true,
-          },
-        ],
+            right: true
+          }
+        ]
       },
       {
         title: 'This is title for 8th question',
@@ -129,13 +129,13 @@ export default [
         answers: [
           {
             title: 'bliskom odnosu',
-            right: true,
+            right: true
           },
           {
             title: 'u sukobu',
-            right: false,
-          },
-        ],
+            right: false
+          }
+        ]
       },
       {
         title: 'This is title for 9th question',
@@ -143,13 +143,13 @@ export default [
         answers: [
           {
             title: 'djevojčina želja da ostvari sreću sa svojim momkom',
-            right: true,
+            right: true
           },
           {
             title: 'djevojčina želja da se osveti momku',
-            right: false,
-          },
-        ],
+            right: false
+          }
+        ]
       },
       {
         title: 'This is title for 10th question',
@@ -157,13 +157,13 @@ export default [
         answers: [
           {
             title: 'djevojčinu tugu',
-            right: false,
+            right: false
           },
           {
             title: 'atmosferu sreće',
-            right: true,
-          },
-        ],
+            right: true
+          }
+        ]
       },
       {
         title: 'This is title for 11th question',
@@ -171,13 +171,13 @@ export default [
         answers: [
           {
             title: 'lirskom osmercu',
-            right: false,
+            right: false
           },
           {
             title: 'lirskom desetercu',
-            right: true,
-          },
-        ],
+            right: true
+          }
+        ]
       },
       {
         title: 'This is title for 12th question',
@@ -185,16 +185,16 @@ export default [
         answers: [
           {
             title: 'praznik',
-            right: true,
+            right: true
           },
           {
             title: 'ljubav, ljubavna čežnja, ljubavni zanos',
-            right: false,
-          },
-        ],
+            right: false
+          }
+        ]
       },
-    ],
-  },
+    ]
+  }
   {
     title: 'Narodna književnost',
     subtitle: 'Ljubavi rastanak',
@@ -222,13 +222,13 @@ Narodna lirska pjesma (sevdalinka)`,
         answers: [
           {
             title: 'mladića i djevojku',
-            right: true,
+            right: true
           },
           {
             title: 'baštu sa cvijećem',
-            right: false,
-          },
-        ],
+            right: false
+          }
+        ]
       },
       {
         title: 'Odaberi tačan odgovor',
@@ -236,13 +236,13 @@ Narodna lirska pjesma (sevdalinka)`,
         answers: [
           {
             title: 'simbolično značenje',
-            right: true,
+            right: true
           },
           {
             title: 'onomatopejsko značenje',
-            right: false,
-          },
-        ],
+            right: false
+          }
+        ]
       },
       {
         title: 'Odaberi tačan odgovor',
@@ -250,13 +250,13 @@ Narodna lirska pjesma (sevdalinka)`,
         answers: [
           {
             title: 'da je mladić zaboravio djevojku',
-            right: false,
+            right: false
           },
           {
             title: 'mladićevu brigu, ljubav i tugu',
-            right: true,
-          },
-        ],
+            right: true
+          }
+        ]
       },
       {
         title: 'Odaberi tačan odgovor',
@@ -264,13 +264,13 @@ Narodna lirska pjesma (sevdalinka)`,
         answers: [
           {
             title: 'da opiše prirodu koja je okružuje',
-            right: false,
+            right: false
           },
           {
             title: 'dada stvori jasnu sliku o njenoj tuzi, bolu',
-            right: true,
-          },
-        ],
+            right: true
+          }
+        ]
       },
       {
         title: 'Odaberi tačan odgovor',
@@ -278,13 +278,13 @@ Narodna lirska pjesma (sevdalinka)`,
         answers: [
           {
             title: 'ljubavi, nježnosti, pažnje, ljepote',
-            right: true,
+            right: true
           },
           {
             title: 'rastanka i zaborava',
-            right: false,
-          },
-        ],
+            right: false
+          }
+        ]
       },
       {
         title: 'Odaberi tačan odgovor',
@@ -292,14 +292,14 @@ Narodna lirska pjesma (sevdalinka)`,
         answers: [
           {
             title: 'sinonimi',
-            right: false,
+            right: false
           },
           {
             title: 'epiteti',
-            right: true,
-          },
-        ],
-      },
-    ],
-  },
-];
+            right: true
+          }
+        ]
+      }
+    ]
+  }
+]
