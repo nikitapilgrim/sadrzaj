@@ -38,6 +38,7 @@
     "preact": "^10.0.0-rc.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "react-modal-hook": "^2.0.0",
     "react-use": "^10.5.0",
     "storeon": "^0.9.2",
     "styled-components": "^5.0.0-beta.6-ej4",
