@@ -194,7 +194,7 @@ export default [
         ]
       },
     ]
-  }
+  },
   {
     title: 'Narodna književnost',
     subtitle: 'Ljubavi rastanak',
