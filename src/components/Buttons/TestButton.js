@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import styled from 'styled-components';
 import TestIcon from '../../assets/svg/test_icon.svg';
 import {Modal} from '../Modal/Modal';
@@ -22,11 +22,33 @@ const Wrapper = styled.button`
   }
 `;
 
-export const TestButton = ({questions}) => {
-  const {title, question, answers} = questions;
+export const TestButton = ({questions, onFinishTest}) => {
+  const [stage, setStage] = useState(0);
+  const [isOpen, setIsOpen] = useState(false);
+  const [questionsCount, setQuestionsCount] = useState(null);
+  const [rightAnswersCount, setRightAnswersCount] = useState(0);
+
+  useEffect(() => {
+    setQuestionsCount(questions.length - 1);
+  }, [questions]);
+
+  const handlerRightAnswer = () => {
+    setRightAnswersCount(rightAnswersCount + 1);
+  };
+
+  const handlerNextStage = () => {
+    if (questions.length - 1 === stage) {
+      setIsOpen(false);
+      onFinishTest([rightAnswersCount, questions.length - 1]);
+      setStage(0);
+      return false;
+    }
+    setStage(stage + 1);
+  };
+
 
   return (
-    <Modal questions={questions}>
+    <Modal onFinishTest={onFinishTest} questions={questions} inner={''}>
       <Wrapper>
         <TestIcon/>
         <span>Test</span>

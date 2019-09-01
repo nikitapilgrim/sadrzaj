@@ -1,10 +1,12 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
-import {useModal} from 'react-modal-hook';
-
-import CloseIcon from '../../assets/svg/close.svg';
+import ReactModal from 'react-modal';
+import {ModalInner} from './Inner.js';
 
 const Wrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   width: 100%;
   position: fixed;
@@ -13,93 +15,46 @@ const Wrapper = styled.div`
   right: 0;
   bottom: 0;
   background-color: #6c5738;
-  opacity: 0.9;
 `;
 
-const Title = styled.div`
-  width: 616px;
-  text-shadow: 0 1px 0 #000000;
-  color: #ffffff;
-  font-size: 41px;
-  font-weight: 900;
-`;
+export const Modal = ({children, questions, onFinishTest}) => {
+  const [stage, setStage] = useState(0);
+  const [isOpen, setIsOpen] = useState(false);
+  const [questionsCount, setQuestionsCount] = useState(null);
+  const [rightAnswersCount, setRightAnswersCount] = useState(0);
 
-const AnswersContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
+  useEffect(() => {
+    setQuestionsCount(questions.length - 1);
+  }, [questions]);
 
-const AnswerButton = styled.button`
-  width: 580px;
-  height: 81px;
-  box-shadow: 0 3px 0 #000000;
-  border-radius: 5px;
-  background-color: #af8655;
-`;
+  const handlerRightAnswer = () => {
+    setRightAnswersCount(rightAnswersCount + 1);
+  };
 
-const StageContainer = styled.div`
-  
-`;
-
-const CloseModal = styled.button`
-  
-`;
-
-
-const Stage = ({data, callback}) => {
-  const {title, answers, question} = data;
-  console.log(data, 'data');
-
-  const stageHandler = (right) => () => {
-    if (right) {
-      callback();
+  const handlerNextStage = () => {
+    if (questions.length - 1 === stage) {
+      setIsOpen(false);
+      onFinishTest([rightAnswersCount, questions.length - 1]);
+      setStage(0);
+      return false;
     }
+    setStage(stage + 1);
   };
 
   return (
     <>
-      <Title>{question}</Title>
-      <AnswersContainer>
-        {answers.map(answer => {
-          return (
-            <AnswerButton onClick={stageHandler(answer.right)}>
-              {answer.title}
-            </AnswerButton>
-          );
-        })}
-      </AnswersContainer>
-    </>
-  );
-};
-
-const ModalInner = ({open, close, onRight, data}) => {
-  return (
-    <Wrapper open={open}>
-      <StageContainer>
-        <Stage callback={onRight} data={data}/>
-      </StageContainer>
-      <div>
-        <CloseModal>
-          <button onClick={close}><CloseIcon/></button>
-        </CloseModal>
+      <ReactModal isOpen={isOpen}>
+        <Wrapper>
+          <ModalInner nextStage={handlerNextStage}
+                      stage={[stage, questionsCount]}
+                      close={() => setIsOpen(false)}
+                      data={questions[stage]}
+                      onRight={handlerRightAnswer}/>
+        </Wrapper>
+      </ReactModal>
+      <div onClick={() => setIsOpen(!isOpen)}>
+        {children}
       </div>
-    </Wrapper>
-  );
-};
-
-export const Modal = ({children, questions}) => {
-  const [stage, setStage] = useState(0);
-
-  const handlerRightAnswer = () => {
-    setStage(stage + 1);
-  };
-  const [showModal, hideModal] = useModal(({in: open}) => (
-    <ModalInner close={hideModal} data={questions[stage]} onRight={handlerRightAnswer} open={open}/>
-  ));
-
-  return (
-    <div onClick={showModal}>
-      {children}
-    </div>
+    </>
   );
 };

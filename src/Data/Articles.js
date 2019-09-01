@@ -15,7 +15,7 @@ export default [
           
           Lirska narodna pjesma (sevdalinka)`,
     video: 'url',
-    audio: 'url',
+    audio: require(`../assets/sounds/pronunciation/testvoice.aac`),
     questions: [
       {
         title: 'This is title for 1st question',
