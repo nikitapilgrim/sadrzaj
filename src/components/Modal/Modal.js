@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 import ReactModal from 'react-modal';
-import {ModalInner} from './Inner.js';
+import CloseIcon from '../../assets/img/icons/close_icon.png';
 
 const Wrapper = styled.div`
   display: flex;
@@ -17,44 +17,30 @@ const Wrapper = styled.div`
   background-color: #6c5738;
 `;
 
-export const Modal = ({children, questions, onFinishTest}) => {
-  const [stage, setStage] = useState(0);
-  const [isOpen, setIsOpen] = useState(false);
-  const [questionsCount, setQuestionsCount] = useState(null);
-  const [rightAnswersCount, setRightAnswersCount] = useState(0);
 
-  useEffect(() => {
-    setQuestionsCount(questions.length - 1);
-  }, [questions]);
+const CloseModal = styled.button`
+  position: absolute;
+  top: -50px;
+  right: -75px;
+  width: 72px;
+  height: 72px;
+  background: url("${CloseIcon}") no-repeat;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+`;
 
-  const handlerRightAnswer = () => {
-    setRightAnswersCount(rightAnswersCount + 1);
-  };
-
-  const handlerNextStage = () => {
-    if (questions.length - 1 === stage) {
-      setIsOpen(false);
-      onFinishTest([rightAnswersCount, questions.length - 1]);
-      setStage(0);
-      return false;
-    }
-    setStage(stage + 1);
-  };
+export const Modal = ({children, inner, isOpen}) => {
 
   return (
     <>
       <ReactModal isOpen={isOpen}>
         <Wrapper>
-          <ModalInner nextStage={handlerNextStage}
-                      stage={[stage, questionsCount]}
-                      close={() => setIsOpen(false)}
-                      data={questions[stage]}
-                      onRight={handlerRightAnswer}/>
+          {inner}
         </Wrapper>
       </ReactModal>
-      <div onClick={() => setIsOpen(!isOpen)}>
-        {children}
-      </div>
+      {children}
+      <CloseModal onClick={close}/>
     </>
   );
 };

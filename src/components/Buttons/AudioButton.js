@@ -1,6 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
 import PlayIcon from '../../assets/svg/play-icon.svg';
+import {InnerAudio} from '../Modal/InnerAudio';
+import {Modal} from '../Modal/Modal';
 
 const Wrapper = styled.button`
   cursor: pointer;
@@ -23,11 +25,15 @@ const Wrapper = styled.button`
 
 
 export const AudioButton = () => {
+  const [modalOpen, setModalOpen] = useState(false);
 
   return (
-    <Wrapper>
-      <PlayIcon/>
-      <span>Audio</span>
-    </Wrapper>
+    <Modal isOpen={modalOpen}
+           inner={<InnerAudio close={() => setModalOpen(false)}/>}>
+      <Wrapper onClick={() => setModalOpen(true)}>
+        <PlayIcon/>
+        <span>Audio</span>
+      </Wrapper>
+    </Modal>
   );
 };

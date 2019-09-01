@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import styled from 'styled-components';
 import TestIcon from '../../assets/svg/test_icon.svg';
 import {Modal} from '../Modal/Modal';
+import {InnerTest} from '../Modal/InnerTest.js';
 
 const Wrapper = styled.button`
   cursor: pointer;
@@ -24,7 +25,7 @@ const Wrapper = styled.button`
 
 export const TestButton = ({questions, onFinishTest}) => {
   const [stage, setStage] = useState(0);
-  const [isOpen, setIsOpen] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
   const [questionsCount, setQuestionsCount] = useState(null);
   const [rightAnswersCount, setRightAnswersCount] = useState(0);
 
@@ -38,7 +39,7 @@ export const TestButton = ({questions, onFinishTest}) => {
 
   const handlerNextStage = () => {
     if (questions.length - 1 === stage) {
-      setIsOpen(false);
+      setModalOpen(false);
       onFinishTest([rightAnswersCount, questions.length - 1]);
       setStage(0);
       return false;
@@ -48,8 +49,16 @@ export const TestButton = ({questions, onFinishTest}) => {
 
 
   return (
-    <Modal onFinishTest={onFinishTest} questions={questions} inner={''}>
-      <Wrapper>
+    <Modal
+      isOpen={modalOpen}
+      inner={<InnerTest nextStage={handlerNextStage}
+                        stage={[stage, questionsCount]}
+                        close={() => setModalOpen(false)}
+                        data={questions[stage]}
+                        onRight={handlerRightAnswer}/>}>
+      <Wrapper onClick={() => {
+        setModalOpen(true);
+      }}>
         <TestIcon/>
         <span>Test</span>
       </Wrapper>
