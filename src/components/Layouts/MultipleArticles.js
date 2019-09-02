@@ -5,8 +5,8 @@ import {ArticleLayout} from './Article.js';
 export const MultipleArticles = ({data}) => {
   return (
     <DVL
-      onRender={(item, index) => {
-        return <ArticleLayout key={index} data={item}/>;
+      onRender={(item) => {
+        return <ArticleLayout key={item.id} data={item}/>;
       }}
       items={data}
       windowContainer={true}

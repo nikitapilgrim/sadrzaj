@@ -1,4 +1,6 @@
 import createStore from 'storeon';
+import persistState from '@storeon/localstorage';
+
 
 const stage = store => {
   store.on('@init', () => ({
@@ -25,7 +27,7 @@ const audio = store => {
     audio: {
       intro: false,
       win: false,
-    }
+    },
   }));
 
   store.on('intro/on', ({audio}) => {
@@ -43,4 +45,19 @@ const progress = store => {
   });
 };
 
-export const store = createStore([stage, progress, audio]);
+const articles = store => {
+  store.on('@init', () => ({articles: {}}));
+  store.on('articles/addMedal', ({articles}, data) => {
+    const [id, medal, percent] = data;
+    return {
+      articles: {
+        ...articles, [id]: {
+          medal: medal,
+          percent: percent
+        },
+      },
+    };
+  });
+};
+
+export const store = createStore([stage, progress, audio, articles, persistState(['articles'])]);

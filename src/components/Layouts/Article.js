@@ -1,5 +1,6 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
+import useStoreon from 'storeon/react';
 
 import {TestButton} from '../Buttons/TestButton.js';
 import {AudioButton} from '../Buttons/AudioButton.js';
@@ -89,23 +90,34 @@ const Medals = {
 export const ArticleLayout = ({data}) => {
   const [medal, setMedal] = useState(null);
   const [percent, setPercent] = useState(null);
+  const {dispatch, articles} = useStoreon('articles');
+
+  useEffect(() => {
+    if (articles.hasOwnProperty(data.id)) {
+      const articleStorage = articles[data.id];
+      if (articleStorage.hasOwnProperty('medal')) {
+        setMedal(Medals[articleStorage.medal]);
+        setPercent(articleStorage.percent);
+      }
+    }
+  }, [articles, data]);
 
   const getMedal = (result) => {
-    setPercent(result + '%');
+    let medal = null;
     if (result <= 50) {
-      setMedal(Medals.iron);
-      return false;
+      medal = 'iron';
     }
     if (result === 100) {
-      setMedal(Medals.gold);
-      return false;
+      medal = 'gold';
     }
-    setMedal(Medals.bronze);
+    if (!medal) {
+      medal = 'bronze';
+    }
+    dispatch('articles/addMedal', [data.id, medal, result]);
   };
 
   const handlerFinishTest = (result) => {
     const [right, count] = result;
-    console.log(right, count);
     getMedal(Math.round(right * 100 / count) || 0);
   };
 
@@ -120,7 +132,7 @@ export const ArticleLayout = ({data}) => {
             <Medal>
               <img src={medal} alt="medal"/>
               <MedalPercent>
-                {percent}
+                {percent}%
               </MedalPercent>
             </Medal>
           </MedalWrapper>

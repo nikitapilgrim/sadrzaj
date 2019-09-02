@@ -1,5 +1,6 @@
 export default [
   {
+    id: 1,
     title: 'Narodna književnost',
     subtitle: 'Majka Fatu kroz tri gore viče',
     text: `Majka Fatu kroz tri gore viče:
@@ -196,6 +197,7 @@ export default [
     ]
   },
   {
+    id: 2,
     title: 'Narodna književnost',
     subtitle: 'Ljubavi rastanak',
     text: `Dva cvijeta u bostanu rasla:
@@ -303,6 +305,7 @@ Narodna lirska pjesma (sevdalinka)`,
     ]
   },
   {
+    id: 3,
     title: 'Narodna književnost',
     subtitle: 'Smrt Omera i Mejrime',
     text: `Dvoje su se zamilili mladih:
@@ -502,6 +505,7 @@ Narodna balada`,
     ]
   },
   {
+    id: 4,
     title: 'Narodna književnost',
     subtitle: 'Tuturuza i šeh Meco (odlomak)',
     text: `Tuturuza je ispričao najnoviju hridsku dogodovštinu. Slinić koji je kad je, ozgodnio i postao čaršijski prvak, promijenio prezime, oćutio je neku večer nekakvo orgecanje u magazi pod kućom. Pomislio je na hrsuza pa je uzdigao svu kućnu čeljad na noge da ga hvataju. I komšije su opkolile kuću i poredale se pred magazna vrata. Slinić je nagovarao hrsuza da izađe, da se ne boji, neće mu ništa biti. “Izađi slobodno! Neću te prijaviti policiji!” Štropot bakrenog suda nije prestajao, ali hrsuz nije htio napolje. Da ga ohrabri, Slinić ga je nagovarao da se ne stidi. “Slobodno ti izađi! I ja sam pod mladost bio takav!” Odškrinuo je magazna vrata. Najednom se nešto u magazi skrha, a na vrata jurne pas, krupan kao tele, i pobjegne između svijeta. Sve bi dobro bilo da nije bilo tuđeg svijeta, iz komšiluka. I tako se proču priča i sađe odmah ujutro do Baščaršije, pa Slinić ne može s mirom među svijet.
@@ -612,6 +616,7 @@ Alija Nametak`,
     ]
   },
   {
+    id: 5,
     title: ' Umjetnička književnost - Roman',
     subtitle: 'Starac i more (Odlomci)',
     text: `Starac Santjago, kubanski ribar, živi u krajnjoj bijedi u jednoj kolibici na obali mora. Već osamdeset i četiri dana uzalud isplovljava da nešto ulovi, ali nema sreće. Jedini mu je prijatelj jedan dječak kome otac zabranjuje da se viđa sa njim.
@@ -732,6 +737,7 @@ Ernest Hemingvej`,
     ]
   },
   {
+    id: 6,
     title: ' Umjetnička književnost - Roman',
     subtitle: 'Zlatna ptica (Odlomci iz romana “Derviš i smrt”)',
     text: `Svoju priču “o odnosu i sukobu između ideologije i ozlojeđenog pojedinca”, kako je i sam rekao o temi romana, Meša Selimović je prenio na derviša Nurudina, intelektualca, koji je nakon kratkog ratovanja i prve promašene ljubavi našao utočište u vjeri. Te okolnosti su razlog sukoba, podijeljenosti čovjeka između vjere i slobodnog izbora da odlučuje, između mirenja i pobune, slobode i neslobode – ukratko, svega onoga što je pisac osjećao kada je saznao da je izgubio brata pod neshvatljivim okolnostima. Odlomci su uzeti iz drugog dijela romana i govore o susretu mladog derviša sa dječakom koji ima samo majku i slijepu baku.
@@ -845,5 +851,4 @@ Meša Selimović`,
       }
     ]
   }
-
 ]
