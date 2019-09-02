@@ -1,10 +1,14 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
+import {useMount} from 'react-use';
 import {breakpoints} from '../../mixins/breakpoints';
 import {Hamburger} from './Hamburger';
+import ArticleData from '../../Data/Articles';
 
 const Wrapper = styled.div`
-  position: relative;
+  position: fixed;
+  right: 2vw;
+  top: 3vh;
   z-index: 3;
   display: flex;
   flex-direction: column;
@@ -15,10 +19,9 @@ const Wrapper = styled.div`
   border: 1px solid #a3622f;
   background-color: #6e3c15;
   padding: 7px 15px 7px 14px;
-  max-width: 90%;
-  min-width: 90%;
+  width: ${props => props.hidden ? 'auto' : '95%'};
   @media ${breakpoints.tablet} {
-    min-width: auto;
+    width: auto;
   }
 `;
 
@@ -145,8 +148,11 @@ const Title = styled.span`
 const Subtitle = styled.span`
   text-shadow: 0 2px 0 #000000;
   color: #ffffff;
-  font-size: 36px;
   font-weight: 500;
+  font-size: 36px;
+  @media ${breakpoints.tablet} {
+     font-size: 16px;
+  }
 `;
 
 const Li = styled.li`
@@ -174,18 +180,53 @@ const MenuItem = ({title, submenu}) => {
   );
 };
 
+
+const convertTitles = (title) => {
+  const titleConverter = [
+    {
+      title: 'Umjetnička književnost - Roman',
+      convert: 'Roman',
+    },
+  ];
+  const result = titleConverter.find((t) => t.title === title);
+  return result && result.convert || title;
+};
+
 export const Menu = () => {
   const [menuHidden, setMenuHidden] = useState(true);
+  const [menuItems, setMenuItems] = useState(null);
+
+  useMount(() => {
+    const items = ArticleData.reduce((acc, article) => {
+      const title = article.title;
+      const convertedTitle = convertTitles(title);
+      const check = acc.findIndex(item => item.title === convertedTitle);
+      if (check > -1) {
+        if (acc[check].hasOwnProperty('submenu')) {
+          acc[check].submenu.push({title: article.subtitle});
+        } else {
+          acc[check] = {...acc[check], ...{submenu: []}};
+        }
+      }
+      if (check === -1) {
+        const submenu = [{title: article.subtitle}];
+        acc.push({convertedTitle, submenu});
+      }
+      return acc;
+    }, []);
+    setMenuItems(items);
+  });
 
   return (
-    <Wrapper>
+    <Wrapper hidden={menuHidden}>
       <HamburgerWrapper>
         <Logo>SADRŽAJ</Logo>
         <Hamburger onClick={() => setMenuHidden(!menuHidden)}/>
       </HamburgerWrapper>
       <MenuHidden hidden={menuHidden}>
-        {data.map(item => <MenuItem title={item.title} submenu={item.submenu}/>)}
+        {menuItems && menuItems.map(item => <MenuItem title={item.title} submenu={item.submenu}/>)}
       </MenuHidden>
     </Wrapper>
   );
 };
+//        {data.map(item => <MenuItem title={item.title} submenu={item.submenu}/>)}

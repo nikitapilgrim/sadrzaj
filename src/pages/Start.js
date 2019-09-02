@@ -119,7 +119,6 @@ const Button = styled.button`
 `;
 
 const MenuWrapper = styled.div`
-  width: 100%;
   position: fixed;
   z-index: 1;
   top: 2vh;
@@ -131,9 +130,7 @@ export const Start = () => {
   return (
     <Wrapper>
       <Header>
-        <MenuWrapper>
-          <Menu/>
-        </MenuWrapper>
+        <Menu/>
         <Inner>
           <Title>Citanka 8-9</Title>
           <Subtitle>Ljiljana Mitic-Roric</Subtitle>
