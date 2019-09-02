@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
-
+import {breakpoints} from '../../mixins/breakpoints';
 import {Hamburger} from './Hamburger';
 
 const Wrapper = styled.div`
@@ -15,6 +15,11 @@ const Wrapper = styled.div`
   border: 1px solid #a3622f;
   background-color: #6e3c15;
   padding: 7px 15px 7px 14px;
+  max-width: 90%;
+  min-width: 90%;
+  @media ${breakpoints.tablet} {
+    min-width: auto;
+  }
 `;
 
 const Logo = styled.div`
@@ -111,7 +116,10 @@ const Title = styled.span`
   display: block;
   text-shadow: 0 2px 0 #000000;
   color: #ffffff;
-  font-size: 48px;
+  font-size: 22px;
+  @media ${breakpoints.tablet} {
+    font-size: 48px;
+  }
   font-weight: 900;
   line-height: 60px;
   

@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import AudioSpectrum from 'react-audio-spectrum';
 import useAudio from 'react-use/lib/useAudio';
 
-
 const Wrapper = styled.div`
   position: relative;
   max-width: 620px;

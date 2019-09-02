@@ -5,6 +5,7 @@ import CloseIcon from '../../assets/img/icons/close_icon.png';
 
 const Wrapper = styled.div`
   display: flex;
+  z-index: 999;
   justify-content: center;
   align-items: center;
   height: 100%;

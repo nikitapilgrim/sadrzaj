@@ -1,10 +1,14 @@
 import React from 'react';
 import styled, {css} from 'styled-components';
+import {useWindowSize} from 'react-use';
+
 import {Menu} from '../components/Menu/Menu';
 import {breakpoints} from '../mixins/breakpoints';
 
 import bgImage from '../assets/img/backgrounds/startsreen.jpg';
 import bgImageDesctop from '../assets/img/backgrounds/startscreen-desctop.jpg';
+import ArticlesData from '../Data/Articles';
+import {MultipleArticles} from '../components/Layouts/MultipleArticles';
 
 const AllSpace = css`
   height: 100%;
@@ -17,13 +21,17 @@ const AllSpace = css`
 `;
 
 const Wrapper = styled.div`
-  height: 100%;
+  font-family: Raleway,serif;
+`;
+
+const Header = styled.div`
+  position: relative;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: Raleway,serif;
 `;
 
 const Inner = styled.div`
@@ -61,15 +69,21 @@ const Bg = styled.div`
 const Title = styled.div`
   text-shadow: 0 4px 0 #000000;
   color: #ffffff;
-  font-size: 108px;
+  font-size: 56px;
   font-weight: 900;
+  @media ${breakpoints.tablet} {
+    font-size: 108px;
+  }
 `;
 
 const Subtitle = styled.div`
   text-shadow: 0 4px 0 #000000;
   color: #ffffff;
-  font-size: 44px;
-  font-weight: 700;
+  font-size: 26px;
+  font-weight: 700
+  @media ${breakpoints.tablet} {
+    font-size: 44px;
+  }
 `;
 
 const Button = styled.button`
@@ -82,35 +96,57 @@ const Button = styled.button`
   border: none;
   outline: none;
   color: black;
-  font-size: 60px;
+  font-size: 60px; 
+  font-weight: 900;
+  @media ${breakpoints.mobileL} {
+    width: 200px;
+    height: 100px;
+    font-size: 36px; 
+  }
   span {
-    display:block;
+    color: black;
+    background: url(${bgImage}) no-repeat;
+    background-position: 50% 50%;
+    @media ${breakpoints.tablet} {
+      background: url(${bgImageDesctop}) no-repeat;
+      background-position: 50% 25%;
+      -webkit-background-clip: text;
+    }
+    background-size: ${props => `${props.size[0]}px ${props.size[1]}px`};
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 `;
 
 const MenuWrapper = styled.div`
-  position: absolute;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
   top: 2vh;
   right: 3vw;
-  z-index: 3;
 `;
 
 export const Start = () => {
-
+  const {width, height} = useWindowSize();
   return (
     <Wrapper>
-      <MenuWrapper>
-        <Menu/>
-      </MenuWrapper>
-      <Inner>
-        <Title>Citanka 8-9</Title>
-        <Subtitle>Ljiljana Mitic-Roric</Subtitle>
-        <Subtitle>Alija H. Dubocanin</Subtitle>
-        <Button><span>Start</span></Button>
-      </Inner>
-      <BgContainer>
-        <Bg/>
-      </BgContainer>
+      <Header>
+        <MenuWrapper>
+          <Menu/>
+        </MenuWrapper>
+        <Inner>
+          <Title>Citanka 8-9</Title>
+          <Subtitle>Ljiljana Mitic-Roric</Subtitle>
+          <Subtitle>Alija H. Dubocanin</Subtitle>
+          <Button size={[width, height]}><span>Start</span></Button>
+        </Inner>
+        <BgContainer>
+          <Bg/>
+        </BgContainer>
+      </Header>
+      <main>
+        <MultipleArticles data={ArticlesData}/>
+      </main>
     </Wrapper>
   );
 };

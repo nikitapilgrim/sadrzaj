@@ -1,8 +1,11 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 import PlayIcon from '../../assets/svg/play-icon.svg';
 import {InnerAudio} from '../Modal/InnerAudio';
 import {Modal} from '../Modal/Modal';
+import {useModal} from 'react-modal-hook';
+import MicroModal from 'react-micro-modal';
+
 
 const Wrapper = styled.button`
   cursor: pointer;

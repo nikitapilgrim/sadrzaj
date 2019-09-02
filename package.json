@@ -37,6 +37,7 @@
     "react-audio-spectrum": "^0.1.0",
     "react-dom": "^16.9.0",
     "react-dynamic-virtual-list": "^1.7.0",
+    "react-micro-modal": "^1.6.0",
     "react-modal": "^3.10.1",
     "react-modal-hook": "^2.0.0",
     "react-use": "^11.3.2",

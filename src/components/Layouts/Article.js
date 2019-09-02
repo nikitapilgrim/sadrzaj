@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 import useStoreon from 'storeon/react';
+import {useMount} from 'react-use';
+
 
 import {TestButton} from '../Buttons/TestButton.js';
 import {AudioButton} from '../Buttons/AudioButton.js';
@@ -74,7 +76,6 @@ const MedalPercent = styled.div`
   position: absolute;
   bottom: 18%;
   left: 20%;
-  z-index: 1;
   text-shadow: 1px 1px 0 #000000;
   color: #ffffff;
   font-size: 37px;
@@ -120,6 +121,12 @@ export const ArticleLayout = ({data}) => {
     const [right, count] = result;
     getMedal(Math.round(right * 100 / count) || 0);
   };
+
+
+  useMount(() => {
+    console.log('MOUNTED', data.id)
+    return null;
+  });
 
   return (
     <Wrapper>
