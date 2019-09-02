@@ -24,12 +24,14 @@ const Wrapper = styled.button`
 `;
 
 
-export const AudioButton = () => {
+export const AudioButton = ({data}) => {
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
-    <Modal isOpen={modalOpen}
-           inner={<InnerAudio close={() => setModalOpen(false)}/>}>
+    <Modal
+      close={() => setModalOpen(false)}
+      isOpen={modalOpen}
+           inner={<InnerAudio data={data} close={() => setModalOpen(false)}/>}>
       <Wrapper onClick={() => setModalOpen(true)}>
         <PlayIcon/>
         <span>Audio</span>

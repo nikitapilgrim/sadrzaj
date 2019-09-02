@@ -20,8 +20,9 @@ const Wrapper = styled.div`
 
 const CloseModal = styled.button`
   position: absolute;
-  top: -50px;
-  right: -75px;
+  z-index: 2;
+  top: 0px;
+  right: 0px;
   width: 72px;
   height: 72px;
   background: url("${CloseIcon}") no-repeat;
@@ -30,17 +31,17 @@ const CloseModal = styled.button`
   cursor: pointer;
 `;
 
-export const Modal = ({children, inner, isOpen}) => {
+export const Modal = ({children, inner, isOpen, close}) => {
 
   return (
     <>
       <ReactModal isOpen={isOpen}>
         <Wrapper>
           {inner}
+          <CloseModal onClick={() => close()}/>
         </Wrapper>
       </ReactModal>
       {children}
-      <CloseModal onClick={close}/>
     </>
   );
 };

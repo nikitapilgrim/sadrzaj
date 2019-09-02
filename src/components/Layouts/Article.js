@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
-import useAudio from 'react-use/lib/useAudio';
 
 import {TestButton} from '../Buttons/TestButton.js';
 import {AudioButton} from '../Buttons/AudioButton.js';
@@ -131,7 +130,7 @@ export const ArticleLayout = ({data}) => {
       <MainContainer>
         <Buttons>
           <TestButton onFinishTest={handlerFinishTest} questions={data.questions}/>
-          <AudioButton/>
+          <AudioButton data={data.audio}/>
         </Buttons>
         <TextContainer>
           {data.text}

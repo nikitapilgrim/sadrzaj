@@ -50,6 +50,7 @@ export const TestButton = ({questions, onFinishTest}) => {
 
   return (
     <Modal
+      close={() => setModalOpen(false)}
       isOpen={modalOpen}
       inner={<InnerTest nextStage={handlerNextStage}
                         stage={[stage, questionsCount]}
