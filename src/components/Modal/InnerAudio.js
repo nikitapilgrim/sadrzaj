@@ -23,7 +23,7 @@ export const InnerAudio = ({data, close}) => {
   });
 
   const options = {
-    id: 'audio-canvas',
+    id: 'audio-canv',
     height: 200,
     width: 300,
     audioId: 'audio-modal',

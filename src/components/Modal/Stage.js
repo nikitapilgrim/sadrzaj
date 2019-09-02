@@ -49,9 +49,9 @@ export const Stage = ({stage, data, onRight, nextStage}) => {
     <>
       <Title>{question}</Title>
       <AnswersContainer>
-        {answers.map(answer => {
+        {answers.map((answer, index) => {
           return (
-            <AnswerButton right={answer.right} onClick={stageHandler(answer.right)}>
+            <AnswerButton key={index} right={answer.right} onClick={stageHandler(answer.right)}>
               {answer.title}
             </AnswerButton>
           );

@@ -32,6 +32,9 @@ const CloseModal = styled.button`
 `;
 
 export const Modal = ({children, inner, isOpen, close}) => {
+  useEffect(() => {
+    ReactModal.setAppElement('#root');
+    }, []);
 
   return (
     <>
