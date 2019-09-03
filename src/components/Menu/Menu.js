@@ -167,14 +167,18 @@ const SubmenuWrapper = styled.ol`
   display: ${props => props.hidden ? 'none' : 'block'}
 `;
 
-const MenuItem = ({title, submenu}) => {
+const MenuItem = ({title, submenu, scrollToArticle}) => {
   const [submenuState, setSubmenuState] = useState(true);
 
   return (
     <Li>
       <Title onClick={() => setSubmenuState(!submenuState)}>{title}</Title>
       <SubmenuWrapper hidden={submenuState}>{submenu.map((item) => {
-          return (<Li key={item.id}><Subtitle>{item.title}</Subtitle></Li>);
+          return (
+            <Li key={item.id}>
+              <Subtitle onClick={() => scrollToArticle(item.id)}>{item.title}</Subtitle>
+            </Li>
+          );
         },
       )}
       </SubmenuWrapper>
@@ -194,7 +198,7 @@ const convertTitles = (title) => {
   return result && result.convert || title;
 };
 
-export const Menu = () => {
+export const Menu = ({scrollToArticle}) => {
   const [menuHidden, setMenuHidden] = useState(true);
   const [menuItems, setMenuItems] = useState(null);
 
@@ -232,7 +236,7 @@ export const Menu = () => {
         <Hamburger onClick={() => setMenuHidden(!menuHidden)}/>
       </HamburgerWrapper>
       <MenuHidden hidden={menuHidden}>
-        {menuItems && menuItems.map((item, index) => <MenuItem key={index} title={item.title} submenu={item.submenu}/>)}
+        {menuItems && menuItems.map((item, index) => <MenuItem scrollToArticle={scrollToArticle} key={index} title={item.title} submenu={item.submenu}/>)}
       </MenuHidden>
     </Wrapper>
   );

@@ -142,9 +142,7 @@ export const ArticleLayout = ({data, id, getOffset}) => {
   useMount(() => {
     console.log('MOUNTED', data.id, ref.current.offsetTop);
     const top = ref.current.offsetTop;
-    setTimeout(() => {
-      getOffset(data.id, top);
-    }, 100);
+    getOffset(data.id, top);
     return null;
   });
 

@@ -126,19 +126,18 @@ const MenuWrapper = styled.div`
 `;
 
 export const Start = () => {
-  let a = []
   const {width, height} = useWindowSize();
-  const [offsetArticles, setOffsetArticles] = useState([]);
+  const [offsetArticles, setOffsetArticles] = useState({});
   const getOffset = (id, offset) => {
-    a.push({id, offset})
-    console.log(a)
+    setOffsetArticles(prev => ({...prev, [id]: offset}));
   };
-  const scrollTo = (id) => {
-    //window.scrollBy(0, window.innerHeight);
+  const scrollToArticle = (id) => {
+    window.scrollTo({
+      top: offsetArticles[id],
+      behavior: "smooth"
+    });
   };
-  useMount(() => {
-    console.log('mount start')
-  });
+
   useEffect(() => {
     console.log(offsetArticles);
   }, [offsetArticles]);
@@ -146,7 +145,7 @@ export const Start = () => {
   return (
     <Wrapper>
       <Header>
-        <Menu scrollTo={scrollTo}/>
+        <Menu scrollToArticle={scrollToArticle}/>
         <Inner>
           <Title>Citanka 8-9</Title>
           <Subtitle>Ljiljana Mitic-Roric</Subtitle>
