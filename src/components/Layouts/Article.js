@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import styled from 'styled-components';
 import useStoreon from 'storeon/react';
 import {useMount} from 'react-use';
@@ -11,9 +11,16 @@ import bg from '../../assets/img/backgrounds/halka07.jpg';
 
 
 const Wrapper = styled.div`
+  padding: 250px 0;
   font-family: Raleway, sans-serif; 
   background: url(${bg});
   background-size: cover;
+  background-color: #6c5738;
+`;
+
+const Inner = styled.div`
+  max-width: 960px;
+  margin: 0 auto;
 `;
 
 const Title = styled.h1`
@@ -25,6 +32,7 @@ const Title = styled.h1`
 `;
 
 const Subtitle = styled.h2`
+  max-width: 425px;
   text-shadow: 0 3px 0 #000000;
   color: #ffffff;
   font-size: 66px;
@@ -34,21 +42,25 @@ const Subtitle = styled.h2`
 
 const MainContainer = styled.div`
   display: flex;
+  position: relative;
 `;
 
 const TextContainer = styled.p`
   margin: 0;
-  margin-left: 40px;
   text-shadow: 0 3px 0 #000000;
   color: #ffffff;
   font-size: 38px;
   font-weight: 500;
+  columns: 2;
 `;
 
 const Buttons = styled.div`
+  position: absolute;
+  left: -250px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
+  justify-content: flex-start;
   button:last-child {
     margin-top: 10px;
   }
@@ -57,6 +69,7 @@ const Buttons = styled.div`
 const Row = styled.div`
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
 `;
 
 const MedalContainer = styled.div`
@@ -65,6 +78,8 @@ const MedalContainer = styled.div`
 
 const MedalWrapper = styled.div`
   position: relative;
+  margin-right: auto;
+  margin-left: 60px;
 `;
 
 const Medal = styled.div`
@@ -88,10 +103,11 @@ const Medals = {
   gold: require('../../assets/img/medals/medal-gold.png'),
 };
 
-export const ArticleLayout = ({data}) => {
+export const ArticleLayout = ({data, id, getOffset}) => {
   const [medal, setMedal] = useState(null);
   const [percent, setPercent] = useState(null);
   const {dispatch, articles} = useStoreon('articles');
+  const ref = useRef(null);
 
   useEffect(() => {
     if (articles.hasOwnProperty(data.id)) {
@@ -124,37 +140,43 @@ export const ArticleLayout = ({data}) => {
 
 
   useMount(() => {
-    console.log('MOUNTED', data.id)
+    console.log('MOUNTED', data.id, ref.current.offsetTop);
+    const top = ref.current.offsetTop;
+    setTimeout(() => {
+      getOffset(data.id, top);
+    }, 100);
     return null;
   });
 
   return (
-    <Wrapper>
-      <Title>{data.title}</Title>
-      <Row>
-        <Subtitle>{data.subtitle}</Subtitle>
-        <MedalContainer>
-          {medal &&
-          <MedalWrapper>
-            <Medal>
-              <img src={medal} alt="medal"/>
-              <MedalPercent>
-                {percent}%
-              </MedalPercent>
-            </Medal>
-          </MedalWrapper>
-          }
-        </MedalContainer>
-      </Row>
-      <MainContainer>
-        <Buttons>
-          <TestButton onFinishTest={handlerFinishTest} questions={data.questions}/>
-          <AudioButton data={data.audio}/>
-        </Buttons>
-        <TextContainer>
-          {data.text}
-        </TextContainer>
-      </MainContainer>
+    <Wrapper ref={ref} id={id}>
+      <Inner>
+        <Title>{data.title}</Title>
+        <Row>
+          <Subtitle>{data.subtitle}</Subtitle>
+          <MedalContainer>
+            {medal &&
+            <MedalWrapper>
+              <Medal>
+                <img src={medal} alt="medal"/>
+                <MedalPercent>
+                  {percent}%
+                </MedalPercent>
+              </Medal>
+            </MedalWrapper>
+            }
+          </MedalContainer>
+        </Row>
+        <MainContainer>
+          <Buttons>
+            <TestButton onFinishTest={handlerFinishTest} questions={data.questions}/>
+            <AudioButton data={data.audio}/>
+          </Buttons>
+          <TextContainer>
+            {data.text}
+          </TextContainer>
+        </MainContainer>
+      </Inner>
     </Wrapper>
   );
 };

@@ -43,7 +43,7 @@ const MenuHidden = styled.ul`
   display: ${props => props.hidden ? 'none' : 'block'};
 `;
 
-const data = [
+/*const data = [
   {
     title: 'Narodna književnost',
     submenu: [
@@ -112,7 +112,7 @@ const data = [
     title: 'Medijska kultura',
     submenu: [],
   },
-];
+];*/
 
 const Title = styled.span`
   position: relative;
@@ -173,8 +173,10 @@ const MenuItem = ({title, submenu}) => {
   return (
     <Li>
       <Title onClick={() => setSubmenuState(!submenuState)}>{title}</Title>
-      <SubmenuWrapper hidden={submenuState}>{submenu.map(item =>
-        <Li><Subtitle>{item.title}</Subtitle></Li>)}
+      <SubmenuWrapper hidden={submenuState}>{submenu.map((item) => {
+          return (<Li key={item.id}><Subtitle>{item.title}</Subtitle></Li>);
+        },
+      )}
       </SubmenuWrapper>
     </Li>
   );
@@ -200,17 +202,23 @@ export const Menu = () => {
     const items = ArticleData.reduce((acc, article) => {
       const title = article.title;
       const convertedTitle = convertTitles(title);
-      const check = acc.findIndex(item => item.title === convertedTitle);
+      const check = acc.findIndex(item => item.title === title);
       if (check > -1) {
         if (acc[check].hasOwnProperty('submenu')) {
-          acc[check].submenu.push({title: article.subtitle});
+          acc[check].submenu.push({
+            title: article.subtitle,
+            id: article.id,
+          });
         } else {
           acc[check] = {...acc[check], ...{submenu: []}};
         }
       }
       if (check === -1) {
-        const submenu = [{title: article.subtitle}];
-        acc.push({convertedTitle, submenu});
+        const submenu = [{
+          title: article.subtitle,
+          id: article.id,
+        }];
+        acc.push({title, submenu});
       }
       return acc;
     }, []);
@@ -224,9 +232,8 @@ export const Menu = () => {
         <Hamburger onClick={() => setMenuHidden(!menuHidden)}/>
       </HamburgerWrapper>
       <MenuHidden hidden={menuHidden}>
-        {menuItems && menuItems.map(item => <MenuItem title={item.title} submenu={item.submenu}/>)}
+        {menuItems && menuItems.map((item, index) => <MenuItem key={index} title={item.title} submenu={item.submenu}/>)}
       </MenuHidden>
     </Wrapper>
   );
 };
-//        {data.map(item => <MenuItem title={item.title} submenu={item.submenu}/>)}

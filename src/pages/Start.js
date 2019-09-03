@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import styled, {css} from 'styled-components';
-import {useWindowSize} from 'react-use';
+import {useMount, useWindowSize} from 'react-use';
 
 import {Menu} from '../components/Menu/Menu';
 import {breakpoints} from '../mixins/breakpoints';
@@ -126,11 +126,27 @@ const MenuWrapper = styled.div`
 `;
 
 export const Start = () => {
+  let a = []
   const {width, height} = useWindowSize();
+  const [offsetArticles, setOffsetArticles] = useState([]);
+  const getOffset = (id, offset) => {
+    a.push({id, offset})
+    console.log(a)
+  };
+  const scrollTo = (id) => {
+    //window.scrollBy(0, window.innerHeight);
+  };
+  useMount(() => {
+    console.log('mount start')
+  });
+  useEffect(() => {
+    console.log(offsetArticles);
+  }, [offsetArticles]);
+
   return (
     <Wrapper>
       <Header>
-        <Menu/>
+        <Menu scrollTo={scrollTo}/>
         <Inner>
           <Title>Citanka 8-9</Title>
           <Subtitle>Ljiljana Mitic-Roric</Subtitle>
@@ -142,7 +158,7 @@ export const Start = () => {
         </BgContainer>
       </Header>
       <main>
-        <MultipleArticles data={ArticlesData}/>
+        <MultipleArticles getOffset={getOffset} data={ArticlesData}/>
       </main>
     </Wrapper>
   );
