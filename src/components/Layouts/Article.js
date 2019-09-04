@@ -1,11 +1,13 @@
 import React, {useState, useEffect, useRef} from 'react';
 import styled from 'styled-components';
 import useStoreon from 'storeon/react';
-import {useMount} from 'react-use';
+import useComponentSize from '@rehooks/component-size';
+import {useMount, useWindowSize} from 'react-use';
 
 
 import {TestButton} from '../Buttons/TestButton.js';
 import {AudioButton} from '../Buttons/AudioButton.js';
+import {Divider} from '../Divider';
 
 import bg from '../../assets/img/backgrounds/halka07.jpg';
 
@@ -51,7 +53,6 @@ const TextContainer = styled.p`
   color: #ffffff;
   font-size: 38px;
   font-weight: 500;
-  columns: 2;
 `;
 
 const Buttons = styled.div`
@@ -102,12 +103,102 @@ const Medals = {
   iron: require('../../assets/img/medals/medal-iron.png'),
   gold: require('../../assets/img/medals/medal-gold.png'),
 };
+/*
+const TextWithDividers = ({text}) => {
+  const {width, height} = useWindowSize();
+  const ref = useRef();
+  const size = useComponentSize(ref);
+  const [countTextForScreen, setCountTextForScreen] = useState(0);
+  const [countScreen, setCountScreen] = useState(0);
+  const [heightElement, setHeightElement] = useState(0);
+
+  useEffect(() => {
+    const heightElem = size.height;
+    const numberScreens = heightElem / height;
+    setHeightElement(heightElem);
+    setCountScreen(Math.round(numberScreens));
+    setCountTextForScreen(Math.round(text.length / numberScreens));
+    //console.log('sreen', height, 'element', heightElem, 'text', text.length);
+    //console.log(text.length / numberScreens);
+  }, [text]);
+
+  useEffect(() => {
+    const heightElem = size.height;
+    setHeightElement(heightElem);
+  }, []);
+
+  return (
+    <div style={{minHeight: `${heightElement}px`}} ref={ref}>
+      {[...Array(countScreen || 1)].map((_, i) => {
+        //console.log(i, 'i', countScreen, text);
+        console.log(countScreen, countTextForScreen, text.length)
+        const next = i + 1;
+        const sliceText = text.slice(i * countTextForScreen || 0, next * countTextForScreen);
+        return (
+          <p>
+            {sliceText}
+          </p>
+        );
+      })}
+    </div>
+  );
+};*/
+
+const Paragraph = ({text, divider, getOffset, scrollToNext}) => {
+  const [active, count] = divider;
+  const ref = useRef(null);
+
+  useMount(() => {
+    const top = ref.current.offsetTop;
+    getOffset(top, count);
+    return null;
+  });
+
+  return (
+    <p ref={ref}>
+      {text}
+      {active && <Divider onClick={() => scrollToNext(count)} number={count}/>}
+    </p>
+  );
+};
+
+const TextWithDividers = ({text, offsetParent}) => {
+  const prepare = text.match(/[\s\S]{1,600}/g);
+  const [offsets, setOffsets] = useState([]);
+
+  const getOffsets = (offset, id) => {
+    setOffsets(prev => ({...prev, [id]: offset}));
+  };
+
+  const scroll = (id) => () => {
+    window.scrollTo({
+      top: offsetParent + offsets[id],
+      behavior: 'smooth',
+    });
+  };
+
+  return (
+    <div>
+      {prepare.map((part, i) => {
+        const count = i + 1;
+        return (
+          <Paragraph scrollToNext={scroll(count)}
+                     getOffset={getOffsets}
+                     text={part}
+                     divider={[prepare.length > 1, count]}/>
+        );
+      })}
+    </div>
+  );
+};
 
 export const ArticleLayout = ({data, id, getOffset}) => {
   const [medal, setMedal] = useState(null);
   const [percent, setPercent] = useState(null);
   const {dispatch, articles} = useStoreon('articles');
   const ref = useRef(null);
+  const [offset, setOffset] = useState();
+
 
   useEffect(() => {
     if (articles.hasOwnProperty(data.id)) {
@@ -117,7 +208,7 @@ export const ArticleLayout = ({data, id, getOffset}) => {
         setPercent(articleStorage.percent);
       }
     }
-  }, [articles, data]);
+  }, [data]);
 
   const getMedal = (result) => {
     let medal = null;
@@ -138,10 +229,9 @@ export const ArticleLayout = ({data, id, getOffset}) => {
     getMedal(Math.round(right * 100 / count) || 0);
   };
 
-
   useMount(() => {
-    console.log('MOUNTED', data.id, ref.current.offsetTop);
     const top = ref.current.offsetTop;
+    setOffset(top);
     getOffset(data.id, top);
     return null;
   });
@@ -171,7 +261,7 @@ export const ArticleLayout = ({data, id, getOffset}) => {
             <AudioButton data={data.audio}/>
           </Buttons>
           <TextContainer>
-            {data.text}
+            <TextWithDividers offsetParent={offset} text={data.text}/>
           </TextContainer>
         </MainContainer>
       </Inner>

@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "@dwqs/react-virtual-list": "^1.0.0",
+    "@rehooks/component-size": "^1.0.3",
     "@storeon/localstorage": "^0.6.2",
     "classnames": "^2.2.6",
     "modern-normalize": "^0.5.0",

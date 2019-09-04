@@ -13,7 +13,7 @@ export const MultipleArticles = ({data, getOffset}) => {
       onRender={renderArticle}
       items={data}
       windowContainer={true}
-      buffer={0}
+      buffer={2}
     />
   );
 };

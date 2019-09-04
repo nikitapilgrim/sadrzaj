@@ -138,10 +138,6 @@ export const Start = () => {
     });
   };
 
-  useEffect(() => {
-    console.log(offsetArticles);
-  }, [offsetArticles]);
-
   return (
     <Wrapper>
       <Header>
