@@ -1,5 +1,22 @@
 export default [
-  'sindžir-halke',
+  {
+    id: 1,
+    title: 'sindžir-halke',
+    text: `some text
+      here
+    `,
+    audio: 'url',
+    video: 'url'
+  },
+  {
+    id: 2,
+    title: `bukagije`,
+    text: `some text
+      here
+    `,
+    audio: 'url',
+    video: 'url'
+  },
   'bukagije',
   'belenzuke',
   'bostanu',
