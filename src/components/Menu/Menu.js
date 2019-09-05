@@ -41,78 +41,8 @@ const HamburgerWrapper = styled.div`
 
 const MenuHidden = styled.ul`
   display: ${props => props.hidden ? 'none' : 'block'};
+  padding: 0;
 `;
-
-/*const data = [
-  {
-    title: 'Narodna književnost',
-    submenu: [
-      {
-        title: 'Majka Fatu kroz tri gore viče',
-      },
-      {
-        title: 'Ljubavni rastanak',
-      },
-      {
-        title: 'Smrt Omera i Majrime',
-      },
-    ],
-  },
-  {
-    title: 'Roman',
-    submenu: [
-      {title: 'Turtuza i Šeh Meco'},
-      {title: 'Legenda o Ali-Paši'},
-      {title: 'Zlatna ptica'},
-      {title: 'Starac i more'},
-      {title: 'Lovac u žitu'},
-      {title: '2001: Odiseja u svemiru'},
-      {title: 'Otok plavih dupina'},
-    ],
-  },
-  {
-    title: 'Putopis',
-    submenu: [
-      {title: 'Pisma iz Norveške'},
-      {title: 'Nekrolog jednoj čaršiji'},
-      {title: 'Održa se kao na Drini ćuprija'},
-    ],
-  },
-  {
-    title: 'Lirske pjesme',
-    submenu: [
-      {title: 'Zavidim jedino pužu'},
-      {title: 'Kiša u Sarajevu'},
-      {title: 'Tarih o gradnji mosta u Mostaru'},
-      {title: 'Gazel o Mostaru'},
-    ],
-  },
-  {
-    title: 'Pripovijetka',
-    submenu: [
-      {title: 'Knjiga'},
-      {title: 'Bašta sljezove boje'},
-      {title: 'Moj djed'},
-      {title: 'Špijun'},
-      {title: 'Ujka Filip'},
-      {title: 'Breza'},
-      {title: 'Suze kojih se stidim'},
-      {title: 'Sećanje na šarenu pticu'},
-      {title: 'Šala'},
-    ],
-  },
-  {
-    title: 'Drama',
-    submenu: [
-      {title: 'Hasanagica'},
-      {title: 'Jazavac pred sudom'},
-    ],
-  },
-  {
-    title: 'Medijska kultura',
-    submenu: [],
-  },
-];*/
 
 const Title = styled.span`
   position: relative;
@@ -120,7 +50,7 @@ const Title = styled.span`
   text-shadow: 0 2px 0 #000000;
   color: #ffffff;
   font-size: 22px;
-  @media ${breakpoints.tablet} {
+  @media ${breakpoints.desktop} {
     font-size: 48px;
   }
   font-weight: 900;
@@ -157,14 +87,26 @@ const Subtitle = styled.span`
 
 const Li = styled.li`
   list-style: none; 
-  li {
+  padding-bottom: 5px;
+  padding-top: 0px;
+  padding-left: 20px;
+  cursor: pointer;
+  @media ${breakpoints.desktop} {
+    padding-bottom: 10px;
     padding-top: 40px;
     padding-left: 40px;
   }
 `;
 
 const SubmenuWrapper = styled.ol`
-  display: ${props => props.hidden ? 'none' : 'block'}
+  display: ${props => props.hidden ? 'none' : 'block'};
+  margin: 0;
+  padding: 0;
+  list-style: none; 
+  padding-top: 20px;
+  @media ${breakpoints.desktop} {
+    padding-top: 40px;
+  }
 `;
 
 const MenuItem = ({title, submenu, scrollToArticle}) => {
@@ -236,7 +178,8 @@ export const Menu = ({scrollToArticle}) => {
         <Hamburger onClick={() => setMenuHidden(!menuHidden)}/>
       </HamburgerWrapper>
       <MenuHidden hidden={menuHidden}>
-        {menuItems && menuItems.map((item, index) => <MenuItem scrollToArticle={scrollToArticle} key={index} title={item.title} submenu={item.submenu}/>)}
+        {menuItems && menuItems.map((item, index) => <MenuItem scrollToArticle={scrollToArticle} key={index}
+                                                               title={item.title} submenu={item.submenu}/>)}
       </MenuHidden>
     </Wrapper>
   );

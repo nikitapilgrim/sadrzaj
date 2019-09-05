@@ -4,7 +4,7 @@ import useStoreon from 'storeon/react';
 import useComponentSize from '@rehooks/component-size';
 import {useMount, useWindowSize} from 'react-use';
 
-
+import {breakpoints} from '../../mixins/breakpoints';
 import {TestButton} from '../Buttons/TestButton.js';
 import {AudioButton} from '../Buttons/AudioButton.js';
 import {Divider} from '../Divider';
@@ -13,7 +13,10 @@ import bg from '../../assets/img/backgrounds/halka07.jpg';
 
 
 const Wrapper = styled.div`
-  padding: 250px 0;
+  padding: 100px 50px;
+  @media ${breakpoints.desktop} {
+    padding: 250px 0;
+  }
   font-family: Raleway, sans-serif; 
   background: url(${bg});
   background-size: cover;
@@ -44,7 +47,11 @@ const Subtitle = styled.h2`
 
 const MainContainer = styled.div`
   display: flex;
+  flex-direction: column;
   position: relative;
+  @media ${breakpoints.desktop} {
+    flex-direction: row;
+  }
 `;
 
 const TextContainer = styled.p`
@@ -56,12 +63,15 @@ const TextContainer = styled.p`
 `;
 
 const Buttons = styled.div`
-  position: absolute;
-  left: -250px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: flex-start;
+  @media ${breakpoints.desktop} {
+    position: absolute;
+    left: -250px;
+    align-items: flex-end;
+  }
   button:last-child {
     margin-top: 10px;
   }
@@ -74,7 +84,11 @@ const Row = styled.div`
 `;
 
 const MedalContainer = styled.div`
-
+    position: relative;
+  display: ${props => props.desctop ? 'none' : 'block'};
+  @media ${breakpoints.desktop} {
+    display: ${props => props.desctop ? 'block' : 'none'};
+  }
 `;
 
 const MedalWrapper = styled.div`
@@ -155,10 +169,10 @@ const Paragraph = ({text, divider, getOffset, scrollToNext}) => {
   });
 
   return (
-    <p ref={ref}>
-      {text}
-      {active && <Divider onClick={() => scrollToNext(count)} number={count}/>}
-    </p>
+    <div ref={ref}>
+      <span>{text}</span>
+      {active && <Divider onClick={() => scrollToNext()} number={count}/>}
+    </div>
   );
 };
 
@@ -171,10 +185,12 @@ const TextWithDividers = ({text, offsetParent}) => {
   };
 
   const scroll = (id) => () => {
-    window.scrollTo({
-      top: offsetParent + offsets[id],
-      behavior: 'smooth',
-    });
+    if (offsets[id]) {
+      window.scrollTo({
+        top: offsetParent + offsets[id],
+        behavior: 'smooth',
+      });
+    }
   };
 
   return (
@@ -182,7 +198,7 @@ const TextWithDividers = ({text, offsetParent}) => {
       {prepare.map((part, i) => {
         const count = i + 1;
         return (
-          <Paragraph scrollToNext={scroll(count)}
+          <Paragraph scrollToNext={scroll(count + 2)}
                      getOffset={getOffsets}
                      text={part}
                      divider={[prepare.length > 1, count]}/>
@@ -242,7 +258,7 @@ export const ArticleLayout = ({data, id, getOffset}) => {
         <Title>{data.title}</Title>
         <Row>
           <Subtitle>{data.subtitle}</Subtitle>
-          <MedalContainer>
+          <MedalContainer desctop={true}>
             {medal &&
             <MedalWrapper>
               <Medal>
@@ -260,6 +276,20 @@ export const ArticleLayout = ({data, id, getOffset}) => {
             <TestButton onFinishTest={handlerFinishTest} questions={data.questions}/>
             <AudioButton data={data.audio}/>
           </Buttons>
+
+          <MedalContainer>
+            {medal &&
+            <MedalWrapper>
+              <Medal>
+                <img src={medal} alt="medal"/>
+                <MedalPercent>
+                  {percent}%
+                </MedalPercent>
+              </Medal>
+            </MedalWrapper>
+            }
+          </MedalContainer>
+
           <TextContainer>
             <TextWithDividers offsetParent={offset} text={data.text}/>
           </TextContainer>
