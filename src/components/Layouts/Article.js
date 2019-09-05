@@ -64,17 +64,22 @@ const TextContainer = styled.p`
 
 const Buttons = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: row;
   justify-content: flex-start;
+  button:last-child {
+    margin-left: 10px;
+  }
   @media ${breakpoints.desktop} {
+    flex-direction: column;
+    align-items: flex-start;
     position: absolute;
     left: -250px;
     align-items: flex-end;
+    button:last-child {
+       margin-top: 10px;
+    }
   }
-  button:last-child {
-    margin-top: 10px;
-  }
+  
 `;
 
 const Row = styled.div`
@@ -271,25 +276,26 @@ export const ArticleLayout = ({data, id, getOffset}) => {
             }
           </MedalContainer>
         </Row>
-        <MainContainer>
-          <Buttons>
-            <TestButton onFinishTest={handlerFinishTest} questions={data.questions}/>
-            <AudioButton data={data.audio}/>
-          </Buttons>
+        <MainContainer className='main'>
+          <Row>
+            <Buttons>
+              <TestButton onFinishTest={handlerFinishTest} questions={data.questions}/>
+              <AudioButton data={data.audio}/>
+            </Buttons>
 
-          <MedalContainer>
-            {medal &&
-            <MedalWrapper>
-              <Medal>
-                <img src={medal} alt="medal"/>
-                <MedalPercent>
-                  {percent}%
-                </MedalPercent>
-              </Medal>
-            </MedalWrapper>
-            }
-          </MedalContainer>
-
+            <MedalContainer desctop={false}>
+              {medal &&
+              <MedalWrapper>
+                <Medal>
+                  <img src={medal} alt="medal"/>
+                  <MedalPercent>
+                    {percent}%
+                  </MedalPercent>
+                </Medal>
+              </MedalWrapper>
+              }
+            </MedalContainer>
+          </Row>
           <TextContainer>
             <TextWithDividers offsetParent={offset} text={data.text}/>
           </TextContainer>
