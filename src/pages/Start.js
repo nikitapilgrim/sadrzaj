@@ -51,7 +51,8 @@ const BgContainer = styled.div`
 const Bg = styled.div`
   background: url(${bgImage});
    @media ${breakpoints.tablet} {
-    background: url(${bgImageDesctop}) 50% 0%;
+    background: url(${bgImageDesctop});
+    background-size: cover;
   }
   background-size: cover;
   ${AllSpace};
