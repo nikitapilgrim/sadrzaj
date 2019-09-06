@@ -91,18 +91,18 @@ const Button = styled.button`
   position: relative;
   margin-top: 60px;
   background: #FFF;
-  width: 334px;
-  height: 153px;
+  width: 200px;
+  height: 100px;
+  font-size: 36px; 
   border-radius: 6px;
   border: none;
   outline: none;
   color: black;
-  font-size: 60px; 
   font-weight: 900;
-  @media ${breakpoints.mobileL} {
-    width: 200px;
-    height: 100px;
-    font-size: 36px; 
+  @media ${breakpoints.laptop} {
+    width: 334px;
+    height: 153px;
+    font-size: 60px; 
   }
   span {
     color: black;
