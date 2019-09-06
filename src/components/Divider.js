@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import downicon from '../assets/img/icons/down_icon.png';
 
 const Wrapper = styled.div`
+  margin: 80px 0;
   font-family: Raleway;
   position: relative;
   display: flex;
@@ -39,8 +40,8 @@ const Circle = styled.div`
 
 const DownWrapper = styled.button`
   position: absolute;
-  right: -50px;
-  top: -50px;
+  right: -140px;
+  top: -160px;
   border: none;
   cursor: pointer;
   width: 81px;
