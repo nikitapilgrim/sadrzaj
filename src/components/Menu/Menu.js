@@ -172,10 +172,10 @@ export const Menu = ({scrollToArticle}) => {
   });
 
   return (
-    <Wrapper hidden={menuHidden}>
+    <Wrapper hidden={menuHidden} onClick={() => setMenuHidden(!menuHidden)}>
       <HamburgerWrapper>
         <Logo>SADRŽAJ</Logo>
-        <Hamburger onClick={() => setMenuHidden(!menuHidden)}/>
+        <Hamburger/>
       </HamburgerWrapper>
       <MenuHidden hidden={menuHidden}>
         {menuItems && menuItems.map((item, index) => <MenuItem scrollToArticle={scrollToArticle} key={index}
