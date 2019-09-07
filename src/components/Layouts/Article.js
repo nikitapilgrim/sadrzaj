@@ -200,7 +200,7 @@ const TextWithDividers = ({text, offsetParent}) => {
       if (!acc.length) {
         acc.push([[item]])
       }
-      const string = acc[textCacheIndex].reduce((acc, elem) => acc.concat(elem),'');
+      const string = acc[textCacheIndex].reduce((acc, elem) => acc.concat(elem));
       if (string.length >= 600) {
         textCacheIndex = ++textCacheIndex;
         acc[textCacheIndex] = [];

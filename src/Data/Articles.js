@@ -1886,4 +1886,1090 @@ Meša Selimović`,
       },
     ],
   },
-];
+  {
+    id: 23,
+    title: 'Umjetnička književnost - Pripovijetka',
+    subtitle: 'Breza',
+    text: `Lijepa i mlada djevojka Janica udaje se za Marka Labudana, dopadljivog momka, seoskog lugara na koga djevojke i mlade žene često pogledaju. Zapravo, Marko ne bi nikada ni zapazio Janicu jer po seoskom ukusu ona nije bila nimalo lijepa. Ali njegov šef je obratio pažnju na njenu izuzetnost, a kako je Marko nastojao da ponešto usvoji od gospodske finoće, tako se odlučio da, na čuđenje sela, zaprosi Janicu. U poređenju sa drugim djevojkama “Tanka je ona i slabašna. Ali visoka i strojna. Pa dok druge cure i snaše teško koračaju kao medvjedi, u njenom hodu ima nešto ritma, možda čak elegancije. Oči su joj plave, plavlje od jasnoga neba, a za kosu rekoše neki da je crvenkasta, a neki da je zlatna ili pozlaćena. Svakako, izvrsno je pristajala onom okruglom, bijelom lišcu i onim nasmijanim, malim usnicama.”
+           Četiri-pet nedjelja Janica leži teško bolesna.
+           *
+           Čitava stvar se razvijala prilično brzo. Dva mjeseca prije toga rodila je Janica dijete. Nije na žalost bio dečko, već curica. Curica malešna kao zemička, a glasna kao jare.
+           Odležala Janica par dana u krevetu, desetak dana muvala se po kući, a onda je potjeraše na pašu. – Kaj bi se tu po hiži potezala kakti kakva frajla! – rekla je stara Labudanka.
+           Nije Janici bilo baš najslađe, ali tko da vječno ratuje s babom! Što se mora – kažu ljudi – nije ni teško. Uostalom, sve bi dobro bilo da se dragi bog umilostivio pa da je dao lijepo i toplo vrijeme, ali eto udariše jesenske kiše, hladne i beskrajne, pa badava i ona stara golema ambrela, badava novi opanci, Janica se vraćala sva mokra, prozebla, pokisla do kosti, a plava kao šljiva.
+           .......
+           Umrlo joj u to vrijeme i dijete. Vidjelo siroče da za nj nema života i da je samo na nepriliku. Mati ga nije mogla više dojiti, kravsko mlijeko nije mu nikako prijalo. Došli užasni grčevi i mala se curica preselila na drugi svijet prije negoli je pravo ovaj i zagledala. Uostalom, pravo je učinila! Svi su joj to odobrili, jer šta će tu bez matere!?
+           Marko se nije pačao u domaće poslove, pa se tako nije izjavio niti da dovezu daske za lijes niti protiv toga. Njemu je bilo sve svejedno.
+           Druge su njega brige trle. Svatovsko je bilo vrijeme i za nekih desetak dana trebala je biti svadba kod Žugečića, u bogatoj kući na Žugečić-brdu. Njega, Marka Labudana, lugara zemljišne zajednice, pozvali su za zastavnika. Poznata je stvar bila da u tri župe nije bilo takvog barjaktara kakav je bio Marko Labudan. Bio je on čovjek od oka, a kad je progutao koju litru, ni vrag ga ne bi nadvikao ni nadskakao. Pun šala i vragolija koje je pokupio širom svijeta, on je izazivao udivljenje u ženskoga i muškog. Pa kad se još uzme u obzir njegov lugarski rang, njegov šešir s perjanicom, pa puška, onda je jasno što je to značilo za svatove, za mladu i za mladenca, imati Marka Labudana za barjaktara. Da ih on predvodi, da on pred svatovima poigrava, da on juška i vrišti, kako to samo on zna!
+           I sad baš u takvo vrijeme razboli mu se žena! Koliko neprilika! Šta će, umre li mu u nezgodan čas? Recimo, uoči samih svatova.
+           Udešava Marko svoju patentnu klopku, pa se sve češe iza uha. Jedan zaponac ne radi onako kako bi trebalo, ali još mu je veći jad ta njegova žena i njena bolest.
+           Najbolje bi mu išlo u račun kad bi pričekala bar dvije-tri nedjelje pa onda umrla ako već umrijeti mora. Ili da umre odmah! Samo da mu ne bi pokvarila svatove, jer zbogom onda barjaktarija, zbogom ono veselje, pa gospodsko društvo (jer bit će tamo sigurno g. bilježnik, blagajnik, učitelj, a možda i sam velečasni), zbogom onda dobra večerica i ono fino Žugečićevo vino!...
+           Ne može se reći da Marko nije volio svoju ženu i da mu nije žao bilo što će umrijeti, ali opet: može li joj on pomoći? Pa da plače dan i noć, njojzi od toga nikakva korist!
+           .......
+           Ima li, na priliku, smisla zvati doktora? Pomoći joj neće, to je sigurna stvar, samo će biti više troška. Ako je vozi k doktoru, umrijet će putem, ako li pak doktora zove, tu mu konja nahrani i napoji, pa još slušaj njegove prigovore: zašto pijete svi iz jedne čaše, zašto jedete iz jedne zdjele, zašto toliki spavate u jednoj sobi, zašto obojke sušite na peći. Zašto? Zašto? Lako je gospodi prigovarati, ali je teško siromahu čovjeku živjeti! Muči se on na sve fele i načine čitavu godinu i onda na koncu ništa nema!
+           Jedna od devet “dužnosti kršćanskih” nalaže: bolesnoga pohoditi.
+           Dobar je i pobožan ženski svijet. Može li ikako, on se drži zapovijedi božjih i crkvenih. Treba doista bolesniku olakšati muke, prikratiti mu vrijeme, pružiti mu čašu vode, dati mu dobar savjet i lijepom ga riječju utješiti.
+           Pravo reći, Janici zadnjih dana nije bilo ni do razgovora ni do utjehe...
+           Ležala je nemoćno, sa zaklopljenim očima, disala kratko i teško, dok su kroz onu malu njenu glavicu sporo prolazile neke mutne misli, čudne i neobične slike, neodređene i nejasne želje.
+           Nije njoj do posjeta. Jedino da joj Marko dođe, ali inače bi najvoljela mir. Samo mir i tišinu.
+           Međutim žene ipak dolaze. Kako koja dospije od posla. Dolazi obično svaka za se, a neka ponese i dijete na ruci. Lica su im tužna i zabrinuta. Zaleti se, doduše, i neka cura ili mlada snaša, još sasvim neozbiljna, pa ne shvaćajući tragiku situacije, uniđe bučno i nasmijano. No strogi pogledi starijih odmah je upokore i ona se postidi i odrveni kao kip.
+           I toga su dana dolazile žene. Kako koja dođe, uzdahne tužno i još tužnije nazove:
+           – Faljen Isus!...
+           – Na sve veke budi faljen! – odgovara stara Kata Labudanka, kao da pamuk kroz nos provlači.
+           Ona je sitna, gurava i vječno nekud čađava kao da u dimnjaku spava. Od posla, razumije se, i nema kad da se uredi, a nije joj više do cifranja. Muva se ona po svoj kući. Sve prigleda. Skokne na dvorište, svađa se s kokošima, doziva piliće, zagleda i u štalu, pa vikne koju susjedu preko plota, pa se opet zaleti u sobu.
+           U sobi je sumorno i nekako kiselo. Možda od onog napoja uz peć ili od krumpira i drača, što se na peći kuha za svinje.
+           Dva okanca, mutna i malena (toliko da glava nešto jačeg kalibra ne može kroz njih), propuštaju malo svjetla. U kutu do peći sjedi stara majka, mati Mike Labudana. Ona je slijepa, gluha i bez zuba. Nitko joj godina ne zna i ona u kući ništa ne znači. Vječno prede u svom kutu ili čija perje, i one prazne, upale čeljusti neprestano nešto melju. Nitko se na nju ne osvrće, a ona vječno nešto mrmlja. Da li psuje ili se bogu moli – tko bi to znao i razumio! Do nje se uz peć protegnuo stari pepeljasti mačak (on se jedini oko nje mazi!), pa s njom prede u istom taktu.
+           Po zemljanom neravnom podu koprca se dvoje musave djece Janičine jetrve Jage. Oni se natežu, dreče i natjeravaju po sobi. S njima zajedno provodi dane i jedna pura, jadni invalid, kojoj je neki ljubazni susjed prebio nogu a Marko joj napravio nekakvi majstorski patentni zavoj, neku protezu pa ta ćurka svečano šepa i tužno pijuče.
+           Žene se na sve to ne obaziru. One posjedaju po krevetima, jedna do druge, kao kokoši na grani. U posljednje ih vrijeme naročito interesira da li ih i koju od njih još Janica pozna. Zato je svaka pridošlica pita milo i slatko:
+           – Janek!... Oj Janice! Je li me još poznaš?... Oj Janek, daj me pogledaj, daj!...
+           Ali Janica toga popodneva nije nikom odgovarala. Ona bi neku od njih pogledala tužno, pa odmah zaklopila oči.
+           Žene bi se samo značajno pogledale i kritički zaklimale glavama.
+           – Ej, mila moja, kaj me zbilja ne poznaš? – uzviknula je gotovo uvrijeđena Janičina tetica Jela. – Em sem to ja, tvoja tetica!
+           – Morti vas pozna – rekla je Bara Pavunčecova – ali joj siroti nî do govora, nî do razgovora!...
+           – Kak samo zlo izgleda! – uzdahnula druga. – Bleda je i žuta kakti list v jeseni!...
+           – Ej, Janica, Janica, na kaj si došla. Da ti sebe vidiš, ne bi se poznala! Bi li se, bogica boga, sama sebe prepala!...
+           Marena Brezovka, jedra udovica kojoj je predlani grom ubio muža (a koja je rado na Marka pogledavala), uzdahnu i reče:
+           – Žene drage, ako ćemo pravo, ona nigdar nî ni bila prejaka. Neću ja nju ogovarjati, ali vi i same znaste da je navek bila tenka i slabašna. Pak je i nadšumar rekel, da zgledi kakti breza...
+           – Istina, istina! – potvrdila je tetica Jela koja još nije mogla prežaliti što Marko nije uzeo njenu kćer. – Ja se ni denes nemrem dosti načuditi da je Marko baš nju štel zeti!...
+           – Bogme, takov čovek!... Mogel je dobiti curu debelu kak mesaricu, pak još i bogatu...
+           – E, kaj ćete, takva vam je muška pamet!...
+           Prisjela je i stara Kata, pa nadošla i Jaga, druga snaha, koja se baš vratila s paše.
+           – Oj Janek, je li ti kaj treba?...
+           Ali Janica nije davala odgovora.
+           – Je li ti, Janica, čuješ kaj se mi razgovarjamo? – pita je opet Marena Brezovka, ljubezno i preljubezno.
+           – Ej, bogica boga, ona svoje misli ima! Morti se ona već i s ajngeli spominja... Samo da bi joj bog i majka božja dali zdravljica!
+           – Teško da bu toga! – primjećuje kroz nos stara Kata.
+           – Sè je vu bože ruke. Dragi Bog sè može, fala mu budi i dika!...
+           – To se zna!...
+           Onda opet stara Kata nadovezuje kakva je Janica bila kao snaha. Otvoreno govoreći, nije bila baš “prenajbolja”. Raditi je htjela, tek je previše bila gizdava, svoje glave, a koji put i oštra jezika. Puno nije pripovijedala, niti se puno svađala, ali je znala dobro odbrusiti. Ipak, šteta ju je, jer je mlada pak bi se popravila.
+           Malo-pomalo prijeđoše žene na drugi razgovor: o kokošima, o predivu, o muževima i susjedama. Dok su one tako pričajući zaboravile na bolesnicu da je bodre i tješe, Janica najednom uzdahnu i mučno prošaputa:
+           – Marko... ja-bu-ko... moja! Zovète mi Marka!...
+           Potrčala jedna od njih na vrata.
+           – Oj Marko! Janica te zove!... Žuri se!...
+           – Bum došel već! – otresao se on. Nije on to volio, pa gotovo. Osim toga nije imao ni kad, jer je baš svršavao tu svoju patentnu klopku za tvorce.
+           Zagleda se Janica u vrata neće li Marko doći.
+           O, koliko je tuge, koliko beskrajne žalosti i najnježnije čežnje bilo u onim divno plavim, djetinjskim, a tako umornim očima!
+           Ali Marko nije dolazio.
+           I najednom se te prekrasne i prežalosne oči koje su se već stale zaklapati od napora, naglo i silno otvoriše. Zjenice se raširile u užasu jednom, divlje, preneraženo, kao da su ugledale nešto neviđeno strašno.
+           Žene su osjetile da je u sobu došla Smrt.
+           
+			Slavko Kolar`,
+    video: 'url',
+    audio: 'url',
+    questions: [
+      {
+        title: 'This is title for 1st question',
+        question: 'Breza u priči simbolizira…',
+        answers: [
+          {
+            title: 'vitku djevojku nježnog izgleda',
+            right: true
+          },
+          {
+            title: 'usamljenu osobu',
+            right: false
+          }
+        ]
+      },
+      {
+        title: 'This is title for 2nd question',
+        question: 'Simbol je stilska figura kojom se…',
+        answers: [
+          {
+            title: 'preuveličavaju osobine nekog pojma',
+            right: false
+          },
+          {
+            title: 'jednim pojmom ukazuje na neki drugi',
+            right: true
+          }
+        ]
+      },
+      {
+        title: 'This is title for 3rd question',
+        question: 'Janica u svojoj bolesti…',
+        answers: [
+          {
+            title: 'nije imala razumijevanje svojih bližnjih',
+            right: true
+          },
+          {
+            title: 'imala je razumijevanje svoga muža',
+            right: false
+          }
+        ]
+      },
+      {
+        title: 'This is title for 4th question',
+        question: 'Marko Labudan je opisan sa…',
+        answers: [
+          {
+            title: 'iskrenim divljenjem',
+            right: false
+          },
+          {
+            title: 'prikrivenim podsmjehom',
+            right: true
+          }
+        ]
+      },
+      {
+        title: 'This is title for 5h question',
+        question: 'Kojom se stilskom figurom pisac poslužio slikajući Marka Labudana, ali i šire – čitavu porodicu i susjede?',
+        answers: [
+          {
+            title: 'ironijom',
+            right: true
+          },
+          {
+            title: 'hiperbolom',
+            right: false
+          }
+        ]
+      },
+      {
+        title: 'This is title for 6th question',
+        question: 'Ironija je stilska figura kojom se riječima daje…',
+        answers: [
+          {
+            title: 'suprotan smisao od onog koje imaju u osnovnom značenju',
+            right: true
+          },
+          {
+            title: 'simbolično značenje',
+            right: false
+          }
+        ]
+      },
+    ]
+  },
+  {
+    id: 24,
+    title: 'Umjetnička književnost - Pripovijetka',
+    subtitle: 'Сузе којих се стидим',
+    text: `У прољеће кад се природа обнавља, те голе гране заодјене младим свијетлозеленим лишћем, а блатне ливаде дарежљиво покрије свјежим зеленим сагом, буди се и у људима жеља да одјену нову одјећу. Зажеле они да одбаце поношене зимске капуте, који у магловитим зимским данима и нису изгледали тако сиви, излизани и нагризени прашином; као сада у пуном сунчаном сјају. Па и они који нису ташти, а нису више ни млади, радују се кад се могу извући из старе зимске чахуре.
+           Али кад је нетко у деветој години живота, а готово свих девет година носио је прекројену одјећу старије сестре као ја, онда је та жеља још јача него код других сретника који често добивају нове хаљине. И кад такво деветогодишње створење напокон дочека капут, који није још ни једном преокретан, те још мирише по дућану, онда је радост с пуним правом голема.
+           Такву сам радост осјећала и ја, кад сам једне лијепе прољетне недјеље први пут навукла нове жуте ципеле, плави капутић и плаву морнарску капицу. Све зајамчено ново новцато.
+           На капутићу жута дугмад љескала се као да је од суха злата. Права дивота! Била сам увјерена да ће очи свијета бити уперене само у ме кад се појавим у тој дивоти. Та помисао удвостручила је моју радост, али и моју нестрпљивост: кад ће ми бити допуштено да се покажем јавно у пуној паради.
+           Дуго сам морала чекати на тај сретни час. Прољеће бијаше кишно; мама с правом није допуштала да одјенем на кишу свој парадни капутић. – Стрпи се! Кад се вријеме устали, онда ћеш се поновити. За кишу је добар и стари капут – гласила је мамина одредба.
+           Али сваке недјеље лијевала је киша као да пркоси мени, а мој дивни капут морао је чамити у мрачном ормару и нитко му се није могао дивити.
+           Прекопала сам све календаре да пронађем временска прорицања прештампана из стољетног календара; проучила сам све мијене мјесеца, измолила сто Оченаша за лијепо вријеме, но киша је свеудиљ лијевала само да напакости мени и свима мени сличнима.
+           Но све има свој крај. Тако сам и ја напокон дочекала своју сунчану недјељу.
+           Била је то заиста права прољетна недјеља. Кроз отворени прозор навирали су сунчани траци, напунили кућу свјетлошћу и ведрином. Из кухиње ширио се мирис свјеже печених колача, прокађен мирисом клинчића и цимета. Собе окићене баршунастим мацицама, јаглацом и висибабама употпуњавале су моје сретно расположење.
+           У тој свечаној атмосфери шетала сам у своме новом капуту и плавој морнарској капици, с које су весело лепршале двије свилене врпце. Је ли итко могао бити сретнији него што сам била ја тога прољетног доподнева? Прије изласка погледала сам се још једном у зрцало и пресретна кренула из куће да и други виде мој лијепи капут. Мама ме испратила брижним погледом.
+           Поносно сам прошла кроз вежу и радознало заокружила оком по сусједним прозорима да се увјерим види ли још нетко моју “параду”. Штета, нигдје никог!
+           А сунце сја, једнако као и у мојој души, гдје је све ведро и сунчано. Само на влажној земљи познали су се трагови обилних прољетних киша. Јарак пред нашом кућом набујао од калне воде. Над јарком мостић преко којег морадох пријећи.
+           Баш када ступих на мостић, спопадне ме поновно жеља да се огледам по сусједним прозорима. Али у зао час! Не гледајући преда се, умјесто да станем на мостић ступила сам мимо – и пљус – прије него сам била свјесна што се збива, нађох се заједно с мојим новим капутом у јарку пуном воде.
+           Мирном улицом проломио се мој врисак и привукао прозорима људе жељне сензација. Ускоро су сви прозори били начичкани главама, док сам ја запомагала: – Мама!... Мама! – и својом виком привукла све више непожељних свједока своје невоље.
+           Још час прије пожељела сам да ме сви виде и сад ми је жеља била испуњена. Сви су ме видјели, али какву? Мокру као покисло штене, како се дижем из кална јарка; с мојега новог капутића тече млаз воде, а низ образе поточић суза. Моја морнарска капица пливала је по муљу, за њом се вијугаху свилене врпце као двије дебеле глисте.
+           Све бијаше уништено! Свршена парада, радост и срећа. Остао је само мокри и упрљани капут и ја, тако јавно осрамоћена. Тулећи иза гласа враћала сам се__ утучена кући. Био је то призор који је и доброћудне сусједе нагнао у смијех, па и моја властита мајка, која је иза мене била највише погођена овом незгодом, није могла сакрити смијешак.
+           Размишљала сам колико ми је јада задао мој нови капут. Три кишне недјеље проплакала сам што га нисам смјела обући због кише, а четврте, сунчане недјеље, окупала сам се у њему! А прије тога чували смо га да не падне на њ ни кап кише!
+           Присјео ми капут. Да ли је завриједио мојих суза?
+           Одговор на то питање дао ми је догађај којем сам присуствовала након много година.
+           Било је то једне блиставе недјеље. У граду се славила нека свечаност. Уз звукове глазбе наилазила је поворка свечано одјевене дјеце. Поглед ми запе на дјевојчици која је ступала у поворци окружена напирлитаним “луткицама”. Сама, без свога пара. Пожалих је! Сиротица, мора да јој је тешко што нема своје дружице! Те мале умишљене паунице вјеројатно јој нису хтјеле пружити руке што није била тако лијепо одјевена као оне. Али, кад јој позорно погледах у лице, изненадих се: на њеном лицу није се одражавала ни туга ни разочарање због старе хаљинице.
+           Сјетила сам се тада оне дјевојчице која је прије много година горко плакала што није смјела одјенути нови капутић једне кишне недјеље.
+           Порумењела сам у том тренутку... и постидјела се својих суза.
+            
+			Злата Коларић-Кишур`,
+    video: 'url',
+    audio: 'url',
+    questions: [
+      {
+        title: 'This is title for 1st question',
+        question: 'Tema priče „Suze kojih se stidim“ je…',
+        answers: [
+          {
+            title: 'sjećanje na jedan događaj iz djetinjstva',
+            right: true
+          },
+          {
+            title: ' želja jedne djevojčice da dobije novu odjeću',
+            right: false
+          },
+          {
+            title: 'This is title for 2nd question',
+            question: 'Ko priča o događaju?',
+            answers: [
+              {
+                title: 'Zlata Kolarić – Kišur',
+                right: false
+              },
+              {
+                title: 'djevojčica, glavna junakinja priče',
+                right: true
+              }
+            ]
+          },
+          {
+            title: 'This is title for 3rd question',
+            question: 'Djevojčica se radovala jer je',
+            answers: [
+              {
+                title: 'prvi put dobila novu odjeću',
+                right: false
+              },
+              {
+                title: 'procvjetalo proljećno cvijeće',
+                right: true
+              }
+            ]
+          },
+          {
+            title: 'This is title for 4th question',
+            question: 'Koji događaj u priči predstavlja preokret?',
+            answers: [
+              {
+                title: 'Kada je djevojčica dobila novu odjeću.',
+                right: false
+              },
+              {
+                title: 'Kada je isprljala novu odjeću.',
+                right: true
+              }
+            ]
+          },
+          {
+            title: 'This is title for 5th question',
+            question: 'Poslije pada djevojčica se osjećala…',
+            answers: [
+              {
+                title: 'kao glavni lik u komediji',
+                right: false
+              },
+              {
+                title: 'osramoćeno',
+                right: true
+              }
+            ]
+          },
+          {
+            title: 'This is title for 6th question',
+            question: 'Koji je događaj pokazao djevojčici da isprljana odjeća nije bila vrijedna suza?',
+            answers: [
+              {
+                title: 'Kada je kao odrasla mogla kupovati što god poželi.',
+                right: false
+              },
+              {
+                title: 'Kada je u povorci, među lijepo obučenom djecom, vidjela skromno obučenu, ali ponosnu djevojčicu.',
+                right: true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: 25,
+    title: 'Umjetnička književnost - Pripovijetka',
+    subtitle: 'Sećanje na šarenu pticu',
+    text: `Posle mnogo godina našao sam se u gradu mog dečaštva kao gost na Tribini mladih. Bio sam dočekan s kuđenjem, prigovarali su mi na crnoj slici sveta i osuđivali moje knjige. Pokajao sam se što sam pristao da gostujem u gradu koji me i ranije obasipao grdnjama, pa ako hoćete i prognao, jer sam idiličnu sliku zavičaja ukaljao ružnim opisima. Sala Tribine bila je malena i zagušljiva; prosto sam vapio za zrakom, a bio sam toliko utučen pogrdama da se nisam usudio tražiti čašu vode, iako su mi se usta sušila. I taman sam se ponadao da će lepa voditeljica objaviti kraj ovom neslavnom gostovanju, kad se na ulazu sale pojaviše invalidska kolica; njih je gurao crnoput mladić s kovrdžavom kosom, u majici koja je isticala njegovu mišićavost. U kolicima je sedeo momak izduženog lica, pomalo izobličenog i bledog, s maljama što su se hvatale samo uz rub lica i podbradak. Glavu je držao malo nagnutu u stranu, ali ne na onaj način nemoćnog.
+            – Sad moraš još malo ostati – rekla je voditeljica. – To je naš Fahro, redovni posetilac Tribine.
+            Crnoputi momak probio se s kolicima do prozora i spretno ga otvorio tako da nas je osvežio zrak, a prijao je i njegovom bolesnom prijatelju. Vani su se čule ptice; miris lipe zapljusnuo nas je kao neki poetski dah. Sala je bila puna dnevnog svetla. Bolesni dečak iz mog detinjstva gledao me kao neznanca, istim onim lepim, plavim očima. Sada nije imalo svrhe potezati uspomene iz Mahale; mogao sam misliti samo o tome kako se na životnoj mapi naše sudbine dodiruju i udaljuju i najzad slivaju u isti tok vremena. Njegov otac je umro od opake bolesti; kažu da je dugo ležao pod tim teretom kao neki kažnjenik. Umro je u neorealističkom dekoru Mahale, a poslednji njegov razgovor sa sinom bio je o filmu.
+            – Šta se daje u bioskopu? – upitao je slabim, promuklim glasom.
+            – <i>Pustinja straha</i>.
+            – Žao mi je što film neću s tobom gledati, ali pustinja straha je preda mnom i ja sam već zakoračio tamo. Imam i ulaznicu.
+            U njegovoj ostavštini, među dokumentima, pronađena je beležnica. U njoj su bili podaci o sedamsto filmova koje je gledao u toku svog nesrećnog i protivurečenog života. Dečak je nastavio kao i otac, počeo je da vodi svoju <i>istoriju filma</i>, da unosi podatke u svoju beležnicu, predano, brižljivo i s akribijom, i da, na koncu, daje svoje ocene. Voleo je američke filmove o divljem zapadu, avanturističke filmove i spektakle. <i>Kabinet doktora Kaligarija</i> gledao je šest puta. Bergmana nije podnosio. Taj mladić mi je postavio pitanje: utiče li film na literaturu? i s ogorčenjem naveo nekog književnika koji je izjavio da prezire film. Takođe je zamolio da za njegovu beležnicu navedem filmove i režisere koje volim. To pitanje me spaslo od onih što su već bili počeli s uvredama i sramoćenjem, nazivajući me literarnom nakazom.
+            Tada sam izrazio sumnju u književnika koji prezire film i naveo nekog hispanoameričkog pisca, ne sećam se tačno njegovog imena, mogao bi biti Fuentes ili Oktavio Paz, zašto ne, a on je rekao da je film <i>umetnost uskrsnuća, a literatura umetnost raspeća</i>. Možda je to preterano, ali je rečeno s ozbiljnošću, pogotovu što je uskrsnuće nagrada pojedincu da se obuče u sliku nebesku. Ako se čovek ukazuje kao slika božja, onda je bog izumio film. I Borhes ističe u prologu prvog izdanja <i>Sveopšte istorije beščašća</i> da su na njegove prozne sastave uticali prvi filmovi Jozefa von Sternberga. Takođe izjavljuje da je uprkos slabom vidu gledao hiljade filmova. Ispričao sam o beogradskoj kinoteci kao novom hramu; tamo su se podjednako nalazili i pisci i slikari i arhitekte i režiseri i manijaci, ne samo kao zaljubljenici u film, već kao ljudi koji su pohađali časove jedinstvene prakse. <i>Film je umetnost zadovoljstva, a literatura umetnost melankolije</i>, to sam naveo ne sećajući se otkuda i kako je to ostalo u mom pamćenju.
+            Tek što sam bio započeo svoju listu filmova, i za mladićevu beležnicu naveo najpoetičniji film <i>Los Olvidados</i>, a na prvo mesto stavio svog omiljenog reditelja Luisa Bunjuela, dogodilo se nešto neobično: u salu je uletela jedna lepa šarena ptica, lepršala je u uglovima dvorane pribijajući se uz zid, grebući kandžicama i ljušteći kreč. U nekoliko mahova bezglavo je udarila u staklo gornjeg zatvorenog dela prozora. Jedna peruška, kao pahulja, pala je ozgo na moje rame. Pojava ptice izazvala je radost i ushićenje u dvorani, samo je bolesni mladić Fahro uzdrhtao uplašen da će se ptica ozlediti. Kad je pronašla prozor i otprhnula, u sali je zavladala tišina kakvu posle nikad nisam doživeo. Sen krila te ptice je tajanstveni znak pod kojim smo se razišli.
+            Još se i danas pitam nije li to bio privid, moja duševna ptica, spasonosni anđeo, pojava na poziv mašte da se oslobodi zarobljenica mog detinjstva. San o ptici često me i danas pohodi. Stekel ga tumači kao biseksualni simbol, za mene pak ima duhovno značenje, zaručničku vrednost Hristove poruke: <i>budi bezazlen kao grlica</i>!
+            U vreme dok sam radio na ovoj priči brinuo sam o mnogim nedostacima, a ponajviše o nepouzdanom svršetku, ali tada mi je u pomoć priskočio slučaj, zaštitnik pripovedača. Jednog dana sam susreo nekadašnju voditeljicu Tribine, sada ženu srednjih godina, ostarelu pre vremena. Nećete mi verovati, ali tamo više nije bilo nijedne crte nekadašnje lepotice. Kratko i bezvoljno razgovarali smo o prošlosti, pominjala je mnoga imena koja mi ništa nisu značila. Jedva sam čekao da se pozdravimo. Na rastanku je rekla:
+            – Nikad neću zaboraviti onu pticu! Sećaš li se? Što ne napišeš nešto o tome?
+            <i>Mirko Kovač</i>`,
+    video: 'url',
+    audio: 'url',
+    questions: [
+      {
+        title: 'This is title for 1st question',
+        question: 'Pisac se sjećao Tribine mladih na kojoj se neprijatno osjećao, jer su ga…',
+        answers: [
+          {
+            title: 'obasipali grdnjama i proglasili lošim piscem',
+            right: true
+          },
+          {
+            title: 'podsjećali na teško djetinjstvo',
+            right: false
+
+          },
+          {
+            title: 'This is title for 2nd question',
+            question: 'Atmosferu u sali je promijenio ulazak…',
+            answers: [
+              {
+                title: 'mladića u invalidskim kolicima',
+                right: true
+              },
+              {
+                title: 'otvaranje prozora u sali',
+                right: false
+              }
+            ]
+          },
+          {
+            title: 'This is title for 3rd question',
+            question: 'Mladić u kolicima je bio zaljubljenik u…',
+            answers: [
+              {
+                title: 'književnost',
+                right: false
+              },
+              {
+                title: 'film',
+                right: true
+              }
+            ]
+          },
+          {
+            title: 'This is title for 4th question',
+            question: 'Pisac je doživio dolazak ptice kao tajanstveni znak poslije koga je uslijedilo njegovo…',
+            answers: [
+              {
+                title: 'oslobađanje od neprijatnosti i pritiska koji je trpio',
+                right: true
+              },
+              {
+                title: 'saznanje da je sve prolazno',
+                right: false
+              }
+            ]
+          },
+          {
+            title: 'This is title for 5th question',
+            question: 'Ptica u književnosti je simbol…',
+            answers: [
+              {
+                title: 'ljubavi',
+                right: false
+              },
+              {
+                title: 'slobode',
+                right: true
+              }
+            ]
+          },
+        ]
+      }
+    ]
+  },
+  {
+    id: 26,
+    title: 'Umjetnička književnost - Pripovijetka',
+    subtitle: 'Sećanje na šarenu pticu',
+    text: `Posle mnogo godina našao sam se u gradu mog dečaštva kao gost na Tribini mladih. Bio sam dočekan s kuđenjem, prigovarali su mi na crnoj slici sveta i osuđivali moje knjige. Pokajao sam se što sam pristao da gostujem u gradu koji me i ranije obasipao grdnjama, pa ako hoćete i prognao, jer sam idiličnu sliku zavičaja ukaljao ružnim opisima. Sala Tribine bila je malena i zagušljiva; prosto sam vapio za zrakom, a bio sam toliko utučen pogrdama da se nisam usudio tražiti čašu vode, iako su mi se usta sušila. I taman sam se ponadao da će lepa voditeljica objaviti kraj ovom neslavnom gostovanju, kad se na ulazu sale pojaviše invalidska kolica; njih je gurao crnoput mladić s kovrdžavom kosom, u majici koja je isticala njegovu mišićavost. U kolicima je sedeo momak izduženog lica, pomalo izobličenog i bledog, s maljama što su se hvatale samo uz rub lica i podbradak. Glavu je držao malo nagnutu u stranu, ali ne na onaj način nemoćnog.
+            – Sad moraš još malo ostati – rekla je voditeljica. – To je naš Fahro, redovni posetilac Tribine.
+            Crnoputi momak probio se s kolicima do prozora i spretno ga otvorio tako da nas je osvežio zrak, a prijao je i njegovom bolesnom prijatelju. Vani su se čule ptice; miris lipe zapljusnuo nas je kao neki poetski dah. Sala je bila puna dnevnog svetla. Bolesni dečak iz mog detinjstva gledao me kao neznanca, istim onim lepim, plavim očima. Sada nije imalo svrhe potezati uspomene iz Mahale; mogao sam misliti samo o tome kako se na životnoj mapi naše sudbine dodiruju i udaljuju i najzad slivaju u isti tok vremena. Njegov otac je umro od opake bolesti; kažu da je dugo ležao pod tim teretom kao neki kažnjenik. Umro je u neorealističkom dekoru Mahale, a poslednji njegov razgovor sa sinom bio je o filmu.
+            – Šta se daje u bioskopu? – upitao je slabim, promuklim glasom.
+            – <i>Pustinja straha</i>.
+            – Žao mi je što film neću s tobom gledati, ali pustinja straha je preda mnom i ja sam već zakoračio tamo. Imam i ulaznicu.
+            U njegovoj ostavštini, među dokumentima, pronađena je beležnica. U njoj su bili podaci o sedamsto filmova koje je gledao u toku svog nesrećnog i protivurečenog života. Dečak je nastavio kao i otac, počeo je da vodi svoju <i>istoriju filma</i>, da unosi podatke u svoju beležnicu, predano, brižljivo i s akribijom, i da, na koncu, daje svoje ocene. Voleo je američke filmove o divljem zapadu, avanturističke filmove i spektakle. <i>Kabinet doktora Kaligarija</i> gledao je šest puta. Bergmana nije podnosio. Taj mladić mi je postavio pitanje: utiče li film na literaturu? i s ogorčenjem naveo nekog književnika koji je izjavio da prezire film. Takođe je zamolio da za njegovu beležnicu navedem filmove i režisere koje volim. To pitanje me spaslo od onih što su već bili počeli s uvredama i sramoćenjem, nazivajući me literarnom nakazom.
+            Tada sam izrazio sumnju u književnika koji prezire film i naveo nekog hispanoameričkog pisca, ne sećam se tačno njegovog imena, mogao bi biti Fuentes ili Oktavio Paz, zašto ne, a on je rekao da je film <i>umetnost uskrsnuća, a literatura umetnost raspeća</i>. Možda je to preterano, ali je rečeno s ozbiljnošću, pogotovu što je uskrsnuće nagrada pojedincu da se obuče u sliku nebesku. Ako se čovek ukazuje kao slika božja, onda je bog izumio film. I Borhes ističe u prologu prvog izdanja <i>Sveopšte istorije beščašća</i> da su na njegove prozne sastave uticali prvi filmovi Jozefa von Sternberga. Takođe izjavljuje da je uprkos slabom vidu gledao hiljade filmova. Ispričao sam o beogradskoj kinoteci kao novom hramu; tamo su se podjednako nalazili i pisci i slikari i arhitekte i režiseri i manijaci, ne samo kao zaljubljenici u film, već kao ljudi koji su pohađali časove jedinstvene prakse. <i>Film je umetnost zadovoljstva, a literatura umetnost melankolije</i>, to sam naveo ne sećajući se otkuda i kako je to ostalo u mom pamćenju.
+            Tek što sam bio započeo svoju listu filmova, i za mladićevu beležnicu naveo najpoetičniji film <i>Los Olvidados</i>, a na prvo mesto stavio svog omiljenog reditelja Luisa Bunjuela, dogodilo se nešto neobično: u salu je uletela jedna lepa šarena ptica, lepršala je u uglovima dvorane pribijajući se uz zid, grebući kandžicama i ljušteći kreč. U nekoliko mahova bezglavo je udarila u staklo gornjeg zatvorenog dela prozora. Jedna peruška, kao pahulja, pala je ozgo na moje rame. Pojava ptice izazvala je radost i ushićenje u dvorani, samo je bolesni mladić Fahro uzdrhtao uplašen da će se ptica ozlediti. Kad je pronašla prozor i otprhnula, u sali je zavladala tišina kakvu posle nikad nisam doživeo. Sen krila te ptice je tajanstveni znak pod kojim smo se razišli.
+            Još se i danas pitam nije li to bio privid, moja duševna ptica, spasonosni anđeo, pojava na poziv mašte da se oslobodi zarobljenica mog detinjstva. San o ptici često me i danas pohodi. Stekel ga tumači kao biseksualni simbol, za mene pak ima duhovno značenje, zaručničku vrednost Hristove poruke: <i>budi bezazlen kao grlica</i>!
+            U vreme dok sam radio na ovoj priči brinuo sam o mnogim nedostacima, a ponajviše o nepouzdanom svršetku, ali tada mi je u pomoć priskočio slučaj, zaštitnik pripovedača. Jednog dana sam susreo nekadašnju voditeljicu Tribine, sada ženu srednjih godina, ostarelu pre vremena. Nećete mi verovati, ali tamo više nije bilo nijedne crte nekadašnje lepotice. Kratko i bezvoljno razgovarali smo o prošlosti, pominjala je mnoga imena koja mi ništa nisu značila. Jedva sam čekao da se pozdravimo. Na rastanku je rekla:
+            – Nikad neću zaboraviti onu pticu! Sećaš li se? Što ne napišeš nešto o tome?
+            <i>Mirko Kovač</i>`,
+    video: 'url',
+    audio: 'url',
+    questions: [
+      {
+        title: 'This is title for 1st question',
+        question: 'Pisac se sjećao Tribine mladih na kojoj se neprijatno osjećao, jer su ga…',
+        answers: [
+          {
+            title: 'obasipali grdnjama i proglasili lošim piscem',
+            right: true
+          },
+          {
+            title: 'podsjećali na teško djetinjstvo',
+            right: false
+
+          },
+          {
+            title: 'This is title for 2nd question',
+            question: 'Atmosferu u sali je promijenio ulazak…',
+            answers: [
+              {
+                title: 'mladića u invalidskim kolicima',
+                right: true
+              },
+              {
+                title: 'otvaranje prozora u sali',
+                right: false
+              }
+            ]
+          },
+          {
+            title: 'This is title for 3rd question',
+            question: 'Mladić u kolicima je bio zaljubljenik u…',
+            answers: [
+              {
+                title: 'književnost',
+                right: false
+              },
+              {
+                title: 'film',
+                right: true
+              }
+            ]
+          },
+          {
+            title: 'This is title for 4th question',
+            question: 'Pisac je doživio dolazak ptice kao tajanstveni znak poslije koga je uslijedilo njegovo…',
+            answers: [
+              {
+                title: 'oslobađanje od neprijatnosti i pritiska koji je trpio',
+                right: true
+              },
+              {
+                title: 'saznanje da je sve prolazno',
+                right: false
+              }
+            ]
+          },
+          {
+            title: 'This is title for 5th question',
+            question: 'Ptica u književnosti je simbol…',
+            answers: [
+              {
+                title: 'ljubavi',
+                right: false
+              },
+              {
+                title: 'slobode',
+                right: true
+              }
+            ]
+          },
+        ]
+      }
+    ]
+  },
+  {
+    id: 27,
+    title: 'Umjetnička književnost - Pripovijetka',
+    subtitle: 'Šala (odlomak)',
+    text: `Vedro zimsko podne... Mraz je jak, puca, i Nađenjki, koja me drži ispod ruke, srebrnastim injem prekriva kovrdže na sljepoočnicama i malje iznad gornje usne. Stojimo na visokom klizalištu. Od naših nogu do same zemlje prostire se strma površina, u kojoj se sunce ogleda kao u ogledalu. Pored nas su male sanke, tapacirane svijetlocrvenom čojom.
+           – Da se spustimo, Nadežda Petrovna! – nagovaram je. – Samo jednom! Siguran sam, ostaćemo živi i zdravi.
+           Ali, Nađenjka se plaši. Čitav prostor od njenih malih kaljača do kraja zaleđenog klizališta izgleda joj kao strašna, neizmjerno duboka provalija. Obamire i gubi dah čim pogleda dolje, čim joj samo predložim da sjedne u sanke, a šta će tek biti ako rizikuje da poleti u provaliju! Umrijeće, poludjeće.
+           – Preklinjem vas! – kažem. – Nemojte se plašiti! Shvatite, to je malodušnost, kukavičluk!
+           Nađenjka najzad popušta, a po licu joj vidim da se prepušta opasnosti po život. Smještam je u sanke, blijedu, drhtavu, obuhvatam je rukom dok se zajedno strmoglavljujemo u bezdan.
+           Sanke lete, kao metak. Presječeni vazduh udara nam u lice, fijuče, zviždi u ušima, kida nas, bolno štipa od zlobe, hoće da nam otkine glavu sa ramena. Od pritiska vjetra nemamo snage da dišemo. Izgleda da nas je sam đavo uzeo u svoje šake, i uz fijuk vuče u pakao. Predmeti oko nas ulivaju se u jednu dugu traku, koja silovito juri... Evo, još samo tren i, izgleda – poginućemo!
+           – Volim vas, Nađa! – kažem poluglasno.
+           Sanke počinju da klize sve sporije i sporije, fijuk vjetra i škripa saonika više nisu tako strašni, više ne gubimo dah i najzad smo dolje. Nađenjka je ni živa ni mrtva. Blijeda je, jedva diše... Pomažem joj da ustane.
+           – Nipošto se neću sankati drugi put – kaže gledajući me razrogačenim očima, punim užasa. – Ni za šta na svijetu! Samo što nisam umrla!
+           Malo kasnije, dolazi sebi i već upitno mi se zagleda u oči: da li sam joj ja rekao one tri riječi ili ih je ona samo pričula u huci kovitlaca? A ja stojim pored nje, pušim i pažljivo posmatram svoju rukavicu.
+           Ona me hvata ispod ruke i dugo šetamo oko klizališta. Zagonetka joj, po svoj prilici, ne da mira. Da li su one riječi izgovorene ili nisu? Da ili ne? Da ili ne? To je pitanje samoljubivosti, časti, života, sreće, veoma važno pitanje, najvažnije na svijetu. Nađenjka nestrpljivo, tužno, pronicljivim pogledom pilji u moje lice, odgovara mi neumjesno, čeka ne bih li ja progovorio o tome. O, kakva igra na tom milom licu, kakva igra! Vidim ja, ona se bori protiv sebe, trebalo bi da mi nešto kaže, da me nešto pita, ali ne nalazi riječi, nezgodno joj je, smeta joj radost...
+           – Znate šta? – kaže ne gledajući u mene.
+           – Šta? – pitam.
+           – Hajdemo još jednom... da se sankamo.
+           Stepeništem se penjemo na klizalište. Opet blijedu, drhtavu Nađenjku smještam u sanke, opet letimo u strašnu provaliju, opet fijuče vjetar i škripe saonici, i opet ja, prilikom najjačeg i najbučnijeg letenja sanki, poluglasno kažem:
+           – Volim vas, Nađenjka!
+           Čim se zaustave sanke, Nađenjka pogledom obuhvata klizalište, niz koje smo se upravo spustili, zatim mi dugo zuri u lice, osluškuje moj glas, ravnodušan i bezosjećajan, a sva, sva ona, pa čak i njen muf, i kapuljača, i čitava njena figura izražavaju krajnju nedoumicu. Na licu joj piše:
+           “U čemu je stvar? Ko je izgovorio one riječi? On, ili sam ih samo pričula?“
+           Ta neizvjesnost je uznemiruje, izvodi iz takta. Jadna djevojčica mi ne odgovara na pitanja, mršti se, samo što ne zaplače.
+           – Hoćemo li kući? – pitam.
+           – Ali meni... meni se sviđa ovo sankanje – kaže crveneći se. – Zar nećemo da se spustimo još jednom?
+           Njoj se “sviđa” ovo sankanje, međutim, dok sjeda u sanke ona je, kao i ranije, blijeda, jedva diše od straha, drhti.
+           Spuštamo se treći put, i vidim kako mi posmatra lice, prati moje usne. A ja stavljam maramicu na usta, kašljem i kada stignemo do sredine klizališta, uspijevam da izgovorim:
+           – Volim vas, Nađa!
+           I zagonetka ostaje zagonetka! Nađenjka ćuti, razmišlja o nečem...
+           Sa sankanja je pratim kući, ona nastoji da hoda što laganije, usporava korake i sve čeka ne bih li joj kazao one riječi. I vidim kako joj pati duša, kako se suzdržava da ne kaže:
+           “Ma, neće biti da ih je govorio vjetar! Neću da mi to govori vjetar!” Sutradan ujutro dobio sam ceduljicu: “A ko danas pođete na sankanje, svratite po mene. N.” I od tada svakodnevno odlazim na sankanje sa Nađenjkom, a dok letimo sankama, ja svaki put poluglasno izgovaram iste riječi:
+           – Volim vas, Nađa!
+           Ubrzo se Nađenjka navikava na tu rečenicu, kao na vino ili na morfijum. Ne može da živi bez nje. Istina, letenje niz klizalište i dalje joj je strašno, ali strah i opasnost sada već pridaju naročitu draž izjavi ljubavi, riječima koje i dalje predstavljaju zagonetku i muče joj dušu. Osumnjičeni smo nas dvojica: ja i vjetar... Ko joj od nad dvojice izjavljuje ljubav, ona ne zna, ali, po svemu sudeći, već joj je svejedno; nije bitno iz koje posude ćeš piti – bitno je samo biti pijan.
+           Jednog podneva odem na sankanje sam; pošto sam upao u gužvu, vidim kako Nađenjka prilazi klizalištu, kako me traži pogledom... Zatim se bojažljivo penje stepeništem... Strašno joj je da se sanka sama, o, kako joj je strašno! Blijeda je kao snijeg, drhti, ide kao na gubilište, ali ide, ide bez osvrtanja, odlučno. Po svoj prilici, najzad se usudila da proba: hoće li čuti one čudesne slatke riječi i kad nije sa mnom? Gledam je kako blijeda, usta otvorenih od užasa, sjeda u sanke, zatvara oči pa, pošto se zanavijek oprostila sa zemljom, kreće... “Šššš”, škripe saonici. Čuje li Nađenjka one riječi, ne znam... Samo vidim kako iz sanki ustaje iznemogla, slaba. A na licu joj se vidi kako i sama ne zna da li je nešto čula ili nije. Strah, koji ju je spopao dok se vozila dolje, oduzeo joj je sposobnost da čuje, da razlikuje zvuke, da razumijeva...
+           Ali, evo, nastupa proljećni mjesec mart... Sunce postaje umilnije. Naše ledeno klizalište tamni, gubi svoj sjaj i najzad kopni. Prestajemo da se sankamo. Jadna Nađenjka više nema gdje da čuje one riječi, a nema ko ni da ih izgovara, jer se vjetar ne čuje, a ja se spremam u Peterburg – na dugo, vjerovatno zauvijek.
+           Nekako pred odlazak, dva dana ranije, u sumrak, sjedim ja u baštici, a tu bašticu i Nađenjkino dvorište razdvaja visoka ograda sa gvozdenim šiljcima... Još je prilično hladno, ispod stajskog đubreta je još snijeg, drveće je mrtvo, ali već miriše proljeće i vrane bučno gaču dok se spremaju za počinak. Prilazim ogradi i dugo gledam kroz šupljinu. Vidim kako Nađenjka izlazi na doksat i tužan, čežnjiv pogled upire u nebo... Proljećni vjetar joj duva pravo u blijedo, snuždeno lice... Podsjeća je na onaj vjetar koji nam je fijukao na klizalištu, kad je slušala one tri riječi, i lice joj postaje žalosno, žalosno, niz obraz joj klizi suza... I jadna djevojčica pruža obje ruke, kao da moli vjetar da joj još jednom donese one riječi. A ja sam sačekao vjetar da poluglasno kažem:
+           – Volim vas, Nađa!
+           Bože moj, šta bi sa Nađenjkom! Ona usklikuje, osmjehuje se čitavim licem i pruža ruke u susret vjetru, radosna, srećna, lijepa.
+           A ja odoh da se pakujem...
+           To je bilo još davno. Sada je Nađenjka već udata; dali su je ili je sama pošla – svejedno – za sekretara plemićkog tutorstva, i sad već ima troje djece. To, kako smo nekad zajedno odlazili na sankanje i kako joj je vjetar donosio riječi “volim vas, Nađenjka” nije zaboravljeno; za nju je to sada najsrećnija, najdirljivija i najljepša uspomena u životu...
+           A meni sada, kada sam zašao u godine, više nije jasno zašto sam joj govorio te riječi, zašto sam se šalio...
+           (1886)
+            
+			Anton Pavlovič Čehov`,
+    video: 'url',
+    audio: 'url',
+    questions: [
+      {
+        title: 'This is title for 1st question',
+        question: 'U pripovijeci „Šala“ ulogu pripovjedača ima…',
+        answers: [
+          {
+            title: 'pisac',
+            right: false
+          },
+          {
+            title: 'mladić – lik iz priče',
+            right: true
+          },
+          {
+            title: 'This is title for 2nd question',
+            question: 'Mladićeve riječi: „Volim vas, Nađa“, bile su…',
+            answers: [
+              {
+                title: 'iskrene',
+                right: false
+              },
+              {
+                title: 'samo šala',
+                right: true
+              }
+            ]
+          },
+          {
+            title: 'This is title for 3rd question',
+            question: 'Djevojka je mladićeve riječi primila kao…',
+            answers: [
+              {
+                title: 'istinu',
+                right: false
+              },
+              {
+                title: 'nedoumicu',
+                right: true
+              }
+            ]
+          },
+          {
+            title: 'This is title for 4th question',
+            question: 'Da li je, na kraju priče, za tu šalu nađeno opravdanje?',
+            answers: [
+              {
+                title: 'da.',
+                right: true
+              },
+              {
+                title: 'ne',
+                right: false
+              }
+            ]
+          },
+          {
+            title: 'This is title for 5th question',
+            question: 'Opis prirode u književnom djelu je…',
+            answers: [
+              {
+                title: 'pejzaž',
+                right: true
+              },
+              {
+                title: 'panorama',
+                right: false
+              }
+            ]
+          },
+          {
+            title: 'This is title for 6th question',
+            question: 'Opis fizičkog izgleda, ali i osobina nekog lika je…',
+            answers: [
+              {
+                title: 'psihološka analiza',
+                right: false
+              },
+              {
+                title: 'portret',
+                right: true
+              }
+            ]
+          }
+        ]
+      },
+    ]
+  },
+  {
+    id: 28,
+    title: 'Umjetnička književnost – Drama',
+    subtitle: 'Hasanaginica (odlomak)',
+    text: `AGA HASANAGA
+            <br> HASANAGINICA
+            <br> SULTANIJA
+            <br> FATA
+            <br> MEHO
+            <br> AHMED
+            <br> njihova djeca
+            <br> BEG PINTOROVIĆ, brat Hasanaginičin
+            <br> ZARIFHANUMA, mati Hasanaginičina
+            <br> UMMIHANA, mati Hasanagina
+            <br> IMOTSKI KADIJA
+            <br> TETKA HATA
+            <br> TETKA AIŠA
+			<br> IBRAHIM
+            <br> HUSREF
+            <br> rodbina kadijina
+            <br> ROBINJICA VLAHINJA
+            <br> LATIFA, sluškinja u Zarifhanume
+            <br> HUSEJIN, stari sluga Hasanagin
+            <br> SVATÂ STAREŠINA
+            <br> Mali “begović” u bešici. Sluškinje. Sluge. Askeri (vojnici). Kmetovi. Robinjice. Robovi. Igračice. Igrači. Muslimi. Muslimke. Jengjijice (svatovice). Svatovi. Djeca. Itd.
+            
+			Prvi se i treći čin događa na Hasanaginoj kuli, drugi kod kuće begovice Zarifhanume.
+            PRIZOR TREĆI
+            <br> PRIJAŠNJI. HASANAGINICA. SULTANIJA.
+            Na vrata slijeva naglo je sunula u avliju HASANAGINICA, blijeda i uznemirena. Vitka je to, lijepa i mlada žena; ima joj jedva trideset i dvije godine, a još je vidjeti i mlađa; bijelo joj je dugoljasto miloliko lice i ruke bijele. Odjevena u svijetlu anteriju (zobuncem), na kojoj su pod vratom dukati; dimije su izvezene srebrom, a na glavi joj je jemenija (rubac). Došavši do bostana naglo je zastala Hasanaginica i stisnula se uz sjenicu, kao da će se srušiti; mrtvo je upiljila oči u zemlju, kao da je nešto izgubila. Za njom se neopazice kao sjena pojavila na vratima najstarija joj kći SULTANIJA, djevojče u prvom cvijetu mladosti, jedva u šesnaestoj godini. Blagost i neka mirna razumnost vidjeti joj je na licu. Odjevena je kao i majka joj, tek nema na glavi jemenije, da joj prekrije bujnu svjetložutu kosu.
+            
+			SULTANIJA
+            <br> <i>(još s vratiju)</i>
+            <br> Oh, majko!
+            HASANAGINICA
+            <i>(nijemo se okrene)</i>
+            SULTANIJA
+            <br> <i>(doleti k njoj i obuhvati je rukom oko pasa)</i>
+            <br> Majko!
+            <br> <i>(Uzme je za tim za obje ruke.)</i>
+            <br> Gledni ovamo!
+            <br> U moje oči – ko što ti to znaš!
+            <br> Ti danas gledaš nekud u stranu,
+            <br> ko izgubljena bježiš. Tražim te
+            <br> po cieloj kuli, stanu, avliji.
+            <br> A sve mi danas nekud izmičeš.
+            <br> O, nešto se je zbilo! Tajiš mi.
+            <br> Zar ne će babo doći?
+            HASANAGINICA
+            <br> <i>(mirno i gorko)</i>
+            <br> Doć’ će.
+            SULTANIJA
+            <br> Ti vesela si, mati, svaki dan
+            <br> do danas bila. Uviek medj’ nama!
+            <br> Prizivala nas djecu naokrug,
+            <br> za doček babi sve si spremala.
+            <br> Sva drhtala si, kad će doći čas,
+            <br> da babajko nas sviju zagrli,
+            <br> A eto danas, kad bi trebalo,
+            <br> da svi smo tu na dvoru veseli,
+            <br> ti – smrknuta si, tužna, skršena!
+            <br> I dosad bábo s vojske dolazio,
+            <br> al’ taka nikad – nikad nisi bila!
+            HASANAGINICA
+            <br> <i>(svedj jednaka)</i>
+            <br> Oj, ni on nije nikad taki bio!
+            SULTANIJA
+            <br> Ta kakav, majko! Meni barem reci,
+            <br> kad pred drugima kriješ. Reci mi!
+            HASANAGINICA
+            <br> O, nije više, što je negda bilo!
+            <br> Ja nemam više age Hasanage,
+            <br> ni djece nemam.
+            SULTANIJA
+            <br> <i>(uprepaštena)</i>
+            <br> Bábe, djece nemaš?!
+            <br> Što govoriš to, majko!
+            HASANAGINICA
+            <br> Ja ne govorim.
+            <br> To aga – bábo – on to govori!
+            SULTANIJA
+            <br> A gdje i kad je to ti rekao?
+            HASANAGINICA
+            <br> Ni sama te još ne vjerujem rieči,
+            <br> već cieli dan i cielu noćas noć
+            <br> ja govorim ih sama sa sobom
+            <br> po dva put i tri puta...
+            SULTANIJA
+            <br> Što, zar sinoć?!
+            HASANAGINICA
+            <br> <i>(kao prečula njezino pitanje)</i>
+            <br> Da l’ mog’o ih je on izustiti?
+            <br> Il’ da je kakva slabost staračka
+            <br> Husejinu ih prišaptala valjda,
+            <br> ра buncao ih sinoć...
+            SULTANIJA
+            <br> Šta, Husejin?
+            <br> I kakove su samo rieči to
+            <br> Husejinove? Znadem tek toliko,
+            <br> da veseli smo pošli spavati,
+            <br> kad Huso nam je svima kazao,
+            <br> dа ko večeras babo doći će.
+            <br> I ti si, majko, bila vesela.
+            <br> Ti svakoga si nas poljubila:
+            <br> i Fatimu i Mehu, Ahmeda
+            <br> i malog “bega” još u bešici.
+            <br> Još liepe si nam kazivala pjesme:
+            <br> o šatoru u gori zelenoj,
+            <br> o kauru i bábi Hasanagi,
+            <br> od ljutijeh što rana boluje
+            <br> i što ih junak već prebolio!
+            HASANAGINICA
+            <br> Da, tako bilo sve, Sultanijo!
+            <br> Al’ kad sam sve vas u san spremila,
+            <br> prošetala sam kuli po bedemu
+            <br> ko svako veče. U to Huso je
+            <br> već dočeko me – o da nije tako! –
+            <br> I reko mi je mučno... polagano...
+            <br> Rieč po rieč kano živu žeravicu!
+            <br> U meni samo srce zamrlo –
+            <br> oko mene se sve okrenulo.
+            <br> I dvor i kula i to nebo gore...
+            <br> Ko ranjena sam zvierka skočila,
+            <br> Poletjela i htjela lomit vrat
+            <br> niz bielu kulu...
+            SULTANIJA
+            <br> Majko jedina!
+            <br> Ta, kakove su rieči bile to,
+            <br> da sa njih bi životu kidisala?!
+            HASANAGINICA
+            <br> Ja ne znam, da li pravo sam ih čula!
+            <br> I dugo u njih vjerovala nisam,
+            <br> tek pekle su me.
+            <br> <i>(Pokazuje na grudi.)</i>
+            <br> Tu su bile mi,
+            <br> dо glave tek su sporo dopirale,
+            <br> razumjeti ih nisam mogla, ne!
+            <br> I nisam mogla pravo smirit se
+            <br> u kuli nigdje. Tužna legla sam
+            <br> sve misleć, da to ružni neki san
+            <br> рre spavanja mi došo, pa sam htjela
+            <br> mjesto njeg ljepši sanak usniti.
+            <br> Аl’ nije bilo sna! Kroz pendžer je
+            <br> u moju sobu mjesec svietlio.
+            <br> Poludjet mišljah...
+            SULTANIJA
+            <br> Šta je, reci mi.
+            HASANAGINICA
+            <br> <i>(kao da je ne čuje)</i>
+            <br> Zar kriva sam? Zar drugoga zavoljeh?
+            <br> Zar svraćah koga u dvor, da ga ljubim?
+            <br> Ne rodih li mu djece petero:
+            <br> pet cvjetova? Ta, šta mu skrivih ја?!
+            SULTANIJA
+            <br> Zar to bi on o tebi mislio!
+            <br> Ne, ne, ja u to ne vjerujem, majko.
+            <br> Ta, šta je reko? Što l’ poručio?
+            <br> (S kule dopire tiha pjesmica MEHE i FATE:
+            <br> “Kroz bašču mi Drina voda teče,
+            <br> krajem Drine badem drvo raste,
+            <br> il’ se vješaj il’ u Drinu skači!“
+            <br> Iza pjesme smijeh.)
+            HASANAGINICA
+            <br> Do jutra nisam mogla usnuti.
+            <br> Dva <a href="#null" class="prevod" data-modal="modal-197">bulbula</a> su svu noć pjevala
+            <br> i s moje glave sanak tjerala.
+            <br> Tišinom noćnom tad sam slušala:
+            <br> pod kulu našu netko došao,
+            <br> <a href="#null" class="prevod" data-modal="modal-198">sedefli</a> on je igro tamburu.
+            <br> Do pendžera mi dopro muški glas.
+            <br> Da nije ašik tvoj, Sultanijo?
+            SULTANIJA
+            <br> Ja nemam jošte svoga <a href="#null" class="prevod" data-modal="modal-199">dilbera</a>
+            <br> Da pjeva mi. Ti, majko, dobro znaš,
+            <br> Da ja još nikog <a href="#null" class="prevod" data-modal="modal-200">sevdisala</a> nisam.
+            HASANAGINICA
+            <br> Ah, tako liepa bila pjesma noćna
+            <br> I tako mila! Pjesma ljubavna,
+            <br> Što aga mi je znao pjevati
+            <br> U dane mlade. Eno, slušaj ju!
+            <br> To sada djeca gore pjevaju
+            <br> Na kuli našoj. – S tim sam usnula.
+            SULTANIJA
+            <br> I spavala si dugo, dugo – majko!
+            <br> Odskočilo je bilo jutros sunce
+            <br> Visoko već – a ti si spavala,
+            <br> I ja te nisam htjela buditi.
+            <br> A tada mrka, mrka ustala si,
+            <br> Pa k sluškinjama onda pošla si
+            <br> Sva slomljena i poništena, tužna.
+            <br> Među nas djecu nisi ni izišla,
+            <br> Već skrila se u svoje odaje.
+            <br> Za ručkom sve si tako ćutala,
+            <br> Da svi smo bili žalosni. A tada
+            <br> Ja nigdje naći nisam mogla te.
+            <br> Sve bježiš od nas.
+            HASANAGINICA
+            <br> Bježala sam samo
+            <br> Pred onim njeg’vim strašnim riečima.
+            SULTANIJA
+            <br> Ta, kakvim, majko, kakvim riečima?
+            <br> Daj, reci svojoj kćerci jedinoj,
+            <br> jer “jedinom” me svojom zoveš ti,
+            <br> ko sestra da sam tvoja. Reci mi!
+            <br> I lakše će ti biti, kad mi rečeš...
+            HASANAGINICA
+            <br> Nek reče ti Husejin! Ja ne mogu?
+            <br> Jer to je tako strašno. – Tamo je!
+            <br> Oj Huso, starče, amo dođi sada!
+            HUSEJIN
+            <br> <i>(digao se s tratine)</i>
+            <br> Zove li to hanuma baš mene?
+            HASANAGINICA
+            <br> Da, tebe, tebe! Samo tebe čujem
+            <br> Svu noćas noć i cieli danas dan.
+            <br> Ded kaži sada tu pred djevojkom,
+            <br> što reko si mi sinoć. Sve nam reci,
+            <br> jer i ja hoću čuti drugi put.
+            HUSEJIN
+            <br> <i>(došao naprijed)</i>
+            <br> Što li ću vam kazivati jade!
+            <br> Dosta ih je jednom čuti bilo.
+            SULTANIJA
+            <br> Kaži, Huso, lakše će nam biti!
+            <br> Kaži, pa da utješimo majku!
+            HUSEJIN
+            <br> Kad zajaših konja lastavicu
+            <br> i kad dođoh aginu šatoru,
+            <br> sjedi aga mrko pred šatorom.
+            <br> Uza nj majka, uza nj je sestrica,
+            <br> uzа nj svieta i askera vojska.
+            <br> “<a href="#null" class="prevod" data-modal="modal-201">Selam alejć</a>! Aga Hasanaga!
+            <br> Evo tebi Huso <a href="#null" class="prevod" data-modal="modal-202">selam</a> nosi
+            <br> a od tvoje ljube i dječice,
+            <br> da te pitam, jesi li prizdravio
+            <br> I hoćeš li skoro bielom dvoru,
+            <br> da mi tebe, ago, dočekamo!”
+            <br> Ćuti aga, ništa ne govori,
+            <br> već pogleda majku i sestricu,
+            <br> pа na mene oči naoblači:
+            <br> ”Vrat se natrag, otkuda si došo!
+            <br> Isporuči Hasanaginici:
+            <br> Kada sutra na noćište panem,
+            <br> nek me mlada ne čeka u dvoru –
+            HASANAGINICA
+            <br> Oh, “ni u dvoru, ni u rodu mome!”
+            <br> On taki meni <a href="#null" class="prevod" data-modal="modal-203">haber</a> naslao!
+            HUSEJIN
+            <br> “Ni u dvoru, ni u rodu mome”,
+            <br> tako reče – ja se <a href="#null" class="prevod" data-modal="modal-204">obeznani’</a>.
+            <br> Samo gledam, vjerovat ne mogu.
+            <br> “Idi, idi, u što si sad stao?
+            <br> Treba li ti jedno dvaput reći?
+            <br> Valja da si već podjetinjio,
+            <br> igrajuć se s dječicom po dvoru!”
+            <br> “Ago!” šanem, “nemoj, dobri ago,
+            <br> nemoj griešit duše na hanumi!
+            <br> Nije ovo da se šališ vrieme...”
+            <br> A on trže brza <a href="#null" class="prevod" data-modal="modal-205">samokresa</a>,
+            <br> dа ne strugnuh, ubi me ko zeca!
+            <br> Takog agu još ne vidjeh nigda.
+            <br> Jeste ljutit aga Hasanaga.
+            SULTANIJA
+            <br> Zar majku nam je potjerao babo?
+            <br> Аl’ zašto, zašto?
+            
+			<i>Milan Ogrizović</i>`,
+    video: 'url',
+    audio: 'url',
+    questions: [
+      {
+        title: 'This is title for 1st question',
+        question: 'Drama „Hasanaginica“ nastala je na osnovu čuvene epsko-lirske pjesme (balade) o kojoj ste već učili. Drama i pjesma se razlikuju…',
+        answers: [
+          {
+            title: 'u korišćenju osnovnih izražajnih sredstava',
+            right: true
+          },
+          {
+            title: 'This is title for 2nd question',
+            question: 'U dramama se odvija radnja, izražavaju karakteri i razvijaju dramske situacije preko',
+            answers: [
+              {
+                title: 'isključivo dijaloga',
+                right: false
+              },
+              {
+                title: 'dijaloga i monologa',
+                right: true
+              }
+            ]
+          },
+          {
+            title: 'This is title for 3rd question',
+            question: 'U datom odlomku dijalog se vodi između…',
+            answers: [
+              {
+                title: 'Hasanaginice i njene kćerke Sultanije',
+                right: true
+              },
+              {
+                title: 'Hasanaginice i Hasanage',
+                right: false
+              }
+            ]
+          },
+          {
+            title: 'This is title for 4th question',
+            question: 'Pjesma je spjevana u epskom desetercu. U drami…',
+            answers: [
+              {
+                title: 'je takođe dosljedno proveden deseterac',
+                right: false
+              },
+              {
+                title: 'deseterac nije dosljedno proveden',
+                right: true
+              }
+            ]
+          },
+          {
+            title: 'This is title for 5th question',
+            question: 'O portretu likova se može govoriti na osnovu onoga…',
+            answers: [
+              {
+                title: 'što govore, kako govore i šta čine',
+                right: true
+              },
+              {
+                title: 'što izlaže narator',
+                right: false
+              }
+            ]
+          },
+          {
+            title: 'This is title for 6th question',
+            question: 'I drama i balada odvijaju se u tragičnoj atmosferi:',
+            answers: [
+              {
+                title: 'da',
+                right: true
+              },
+              {
+                title: 'ne',
+                right: false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: 29,
+    title: 'Umjetnička književnost - Drama',
+    subtitle: 'Јазавац пред судом (Одломак)',
+    text: `СУДАЦ: Па ти, Давиде, ниси, како видим, будала?
+            ДАВИД: Ко каже да сам будала?
+            СУДАЦ: Не каже нико, него... Како ти можеш, божји човјече, тужити јазавца?
+            ДАВИД: А како ти мене јопе’ мореш тако питати? Зар ти мислиш, болан, да ја не знам да овај ваш цар има за свашто закон? Знам ја то, знам: добро ја то знам. Немој мислити да не знам!
+            СУДАЦ: Ама, ето, Давиде, да речемо да има закон и за јазавце, опет је то некако незгодно. Бистар си и паметан човјек, промисли се... Ти знаш, кад суд неког осуђује треба да зна колико је стар, је ли ожењен, има ли дјеце, како говори, које је вјере. Све је то потребно суду. Ето, које је вјере тај твој несретник?
+            ДАВИД: Никакве! Да је икакве вјере, не би дир’о у моју сиротињу.
+            СУДАЦ <i>(смијуљи се)</i>: Је ли ожењен?
+            ДАВИД: Јес’, ожењен је.
+            СУДАЦ: По чему знаш?
+            ДАВИД: Знам, ’вамо, по нечем. То не треба славни суд да зна. Срамота је то вође и помислити, а камоли изрећи. Ожењен је, ожењен!
+            СУДАЦ: Има ли дјеце, враг га однио, кад је ожењен?
+            ДАВИД: Има. О, да му видиш дјеце и вамилије! Пуна и’ долина више оне моје јадне и једине њивице што се зове Ни Давидова ни царска ни спа’иска.
+            СУДАЦ: Како говори, Давиде, тај лопов, којим језиком?
+            ДАВИД: То ти, главати господине, ’нако посигурно не умијем казати. Бркљачи ко и ти и ово дијете кад сте се нешто малоприје договарали. Забркљачи де, господине, мало на њег’ да видим ’оће ли...
+            СУДАЦ <i>(смије се, говори нешто и удара јазавца по њушци)</i>
+            ДАВИД: Види, господине, види како диже њушку, како те разумије! Види курвина сина како се ко ђоја ражалостио. Не претварај се, лопове један! Иако говориш господиновим језиком, то ти неће помоћи. Слободно, немој се претварати.
+            СУДАЦ: Кад је рођен, колико је стар овај твој лопов, Давиде?
+            ДАВИД: Није он ни стар. Млад је он још.
+            СУДАЦ: Не питам те то, већ би рад знати колико му је година. И то ми је потребно.
+            ДАВИД: А колико има година откад сте ви дошли у Босну?
+            СУДАЦ: Па има тако двадесет и три, и четири године.
+            ДАВИД: О, млого, по богу брате! кад ћете ви већ... Е, толико је година, отприлике, и овом лопову, сјеме му се затрло!
+            СУДАЦ: Како ти то знаш?
+            ДАВИД: Знам, ’вамо, по нечем. Пиши ти слободно, толико му је.
+            СУДАЦ: “Пиши ти слободно, толико му је!” Ти то мени као да заповиједаш, а? Ухватили смо те, Давиде! Не знаш!
+            ДАВИД: Ама пиши, господине, кад ти кажем, толико му је.
+            СУДАЦ: Ама није то тако! Мораш казати по чему то знаш.
+            ДАВИД: Е, кад ’оћеш да кажем, казаћу ти: дира у туђу сиротињу, па ја мислим да је баш за вашег земана рођен. Ето по чему знам!
+            СУДАЦ: Како, како?
+            ДАВИД: Све полако... Опрости, господине, помео сам се. Опрости, господине, молим те, збунио сам се, па не знам ни шта говорим. Кад год уђем у славни суд, чини ми се да ме из свију ћошкова боду у очи оне несретне, палиграпске куке. Жена ме је, бог је убио, устрашила, она моја крезуба бабетина!
+            ПИСАРЧИЋ: Ја бих река’, господине судац, да се овај човјек претвара.
+            ДАВИД <i>(у себи)</i>: Е, мој синко, зар си ти то сад видио?... Не гријеши, дијете, душе. Не биједи ме код славног суда!... Ето, господине, казао сам све што си ме пит’о. Сад морате тог лопова по закону осудити.
+            СУДАЦ: А име?
+            ДАВИД: Име му је Јолпаз Давидов. Тако га свијет зове, а тако ће му и славни суд позивке писати, ако га данас не осудите на вјешала. Село му се зове Мелина, котар Бања Лука, окружје Бања Лука, а земља, мислим, главати господине, да ће и њему бити Босна. Кућна му је лумера, каже кнез, оне двије кантарске куке.
+            <i>Петар Кочић</i>`,
+    video: 'url',
+    audio: 'url',
+    questions: [
+      {
+        title: 'This is title for 1st question',
+        question: 'Vrijeme vršenja radnje drame „Jazavac pred sudom“ je doba…',
+        answers: [
+          {
+            title: 'osmanske vladavine',
+            right: false
+          },
+          {
+            title: 'austrougarske vladavine',
+            right: true
+          }
+        ]
+      },
+      {
+        title: 'This is title for 2nd question',
+        question: 'Petar Kočić u svojoj drami osuđuje tuđinsku vlast…',
+        answers: [
+          {
+            title: 'kroz humor i oštru kritiku',
+            right: true
+          },
+          {
+            title: 'tako što austrougarske činovnike čini smiješnima',
+            right: false
+          }
+        ]
+      },
+      {
+        title: 'This is title for 3rd question',
+        question: 'Ova drama je satirična. Satirom se izražava…',
+        answers: [
+          {
+            title: 'opomena ljudima koji su skloni lošem ponašanju',
+            right: false
+          },
+          {
+            title: 'oštra osuda društva ili ljudskih mana',
+            right: true
+          }
+        ]
+      },
+      {
+        title: 'This is title for 4th question',
+        question: 'Davidova tužba protiv jazavca je…',
+        answers: [
+          {
+            title: 'gest jednog šaljivdžije',
+            right: false
+          },
+          {
+            title: 'optužba austrougarske vlasti',
+            right: true
+          }
+        ]
+      },
+      {
+        title: 'This is title for 5h question',
+        question: 'Ko su suprotstavljeni likovi u drami?',
+        answers: [
+          {
+            title: 'David i carski činovnici',
+            right: true
+          },
+          {
+            title: 'David i jazavac',
+            right: false
+          }
+        ]
+      },
+      {
+        title: 'This is title for 6th question',
+        question: 'U svojoj borbi protiv ugnjetavanja siromašnih bosanskih seljaka, David se služio…',
+        answers: [
+          {
+            title: 'ironijom',
+            right: true
+          },
+          {
+            title: 'augmentativima',
+            right: false
+          }
+        ]
+      },
+      {
+        title: 'This is title for 7h question',
+        question: 'Kočić je odabrao ime svog junaka (David) da bi...',
+        answers: [
+          {
+            title: 'zvučalo neobično i lako se pamtilo',
+            right: false
+          },
+          {
+            title: 'da bi predstavio borbu između slabog i diva kao u priči „David i Golijat“',
+            right: true
+          }
+        ]
+      },
+    ]
+  }
+]
