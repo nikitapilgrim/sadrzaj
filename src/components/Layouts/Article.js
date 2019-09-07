@@ -18,7 +18,9 @@ const Wrapper = styled.div`
     padding: 250px 0;
   }
   font-family: Raleway, sans-serif; 
+/*
   background: url(${bg});
+*/
   background-size: cover;
   background-color: #6c5738;
 `;

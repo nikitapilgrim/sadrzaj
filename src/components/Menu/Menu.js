@@ -1,8 +1,10 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import styled from 'styled-components';
 import {useMount} from 'react-use';
 import {breakpoints} from '../../mixins/breakpoints';
 import {Hamburger} from './Hamburger';
+import {useClickAway} from 'react-use';
+
 import ArticleData from '../../Data/Articles';
 
 const Wrapper = styled.div`
@@ -114,7 +116,7 @@ const MenuItem = ({title, submenu, scrollToArticle}) => {
 
   return (
     <Li>
-      <Title onClick={() => setSubmenuState(!submenuState)}>{title}</Title>
+      <Title className={'menu__main'} onClick={() => setSubmenuState(!submenuState)}>{title}</Title>
       <SubmenuWrapper hidden={submenuState}>{submenu.map((item) => {
           return (
             <Li key={item.id}>
@@ -141,8 +143,20 @@ const convertTitles = (title) => {
 };
 
 export const Menu = ({scrollToArticle}) => {
+  const ref = useRef(null);
+  const refTitle = useRef(null);
   const [menuHidden, setMenuHidden] = useState(true);
   const [menuItems, setMenuItems] = useState(null);
+
+  useClickAway(ref, (e) => {
+    setMenuHidden(true)
+  });
+
+  const handlerClickMenu = (e) => {
+    if (!e.target.classList.contains('menu__main')) {
+      setMenuHidden(!menuHidden);
+    }
+  };
 
   useMount(() => {
     const items = ArticleData.reduce((acc, article) => {
@@ -172,13 +186,13 @@ export const Menu = ({scrollToArticle}) => {
   });
 
   return (
-    <Wrapper hidden={menuHidden} onClick={() => setMenuHidden(!menuHidden)}>
+    <Wrapper ref={ref} hidden={menuHidden} onClick={handlerClickMenu}>
       <HamburgerWrapper>
         <Logo>SADRŽAJ</Logo>
         <Hamburger/>
       </HamburgerWrapper>
       <MenuHidden hidden={menuHidden}>
-        {menuItems && menuItems.map((item, index) => <MenuItem scrollToArticle={scrollToArticle} key={index}
+        {menuItems && menuItems.map((item, index) => <MenuItem ref={refTitle} scrollToArticle={scrollToArticle} key={index}
                                                                title={item.title} submenu={item.submenu}/>)}
       </MenuHidden>
     </Wrapper>
