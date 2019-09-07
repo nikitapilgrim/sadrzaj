@@ -167,6 +167,7 @@ const Paragraph = ({text, divider, getOffset, scrollToNext}) => {
   const [active, count] = divider;
   const ref = useRef(null);
 
+
   useMount(() => {
     const top = ref.current.offsetTop;
     getOffset(top, count);
@@ -175,15 +176,42 @@ const Paragraph = ({text, divider, getOffset, scrollToNext}) => {
 
   return (
     <div ref={ref}>
-      <span>{text}</span>
+      <span>{text.map(item => {
+        return (
+          <>
+            {item}
+            <br/>
+          </>
+        )
+      })}</span>
       {active && <Divider onClick={() => scrollToNext()} number={count}/>}
     </div>
   );
 };
 
 const TextWithDividers = ({text, offsetParent}) => {
-  const prepare = text.match(/[\s\S]{1,600}/g);
+  //const prepare = text.match(/[\s\S]{1,600}/g); old way
   const [offsets, setOffsets] = useState([]);
+  const [prepareText, setPrepareText] = useState([]);
+  useMount(() => {
+    const splitedText = text.split(/\n/);
+    let textCacheIndex = 0;
+    const prepare = splitedText.reduce((acc, item,) => {
+      if (!acc.length) {
+        acc.push([[item]])
+      }
+      const string = acc[textCacheIndex].reduce((acc, elem) => acc.concat(elem),'');
+      if (string.length >= 600) {
+        textCacheIndex = ++textCacheIndex;
+        acc[textCacheIndex] = [];
+        acc[textCacheIndex].push(item);
+      } else {
+        acc[textCacheIndex].push(item);
+      }
+      return acc;
+    }, []);
+    setPrepareText(prepare);
+  });
 
   const getOffsets = (offset, id) => {
     setOffsets(prev => ({...prev, [id]: offset}));
@@ -200,13 +228,13 @@ const TextWithDividers = ({text, offsetParent}) => {
 
   return (
     <div>
-      {prepare.map((part, i) => {
+      {prepareText.map((part, i) => {
         const count = i + 1;
         return (
           <Paragraph scrollToNext={scroll(count + 2)}
                      getOffset={getOffsets}
                      text={part}
-                     divider={[prepare.length > 1, count]}/>
+                     divider={[prepareText.length > 1, count]}/>
         );
       })}
     </div>
