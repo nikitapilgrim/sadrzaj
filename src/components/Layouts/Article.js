@@ -153,7 +153,6 @@ const Paragraph = ({text, count, getOffset, scrollToNext, typeText}) => {
     }
   }, [width]);
 
-  console.log(active, count)
 
 
   useMount(() => {
