@@ -1,7 +1,6 @@
 import React, {useState, useEffect, useRef} from 'react';
 import styled from 'styled-components';
 import useStoreon from 'storeon/react';
-import useComponentSize from '@rehooks/component-size';
 import {useMount, useWindowSize} from 'react-use';
 
 import {breakpoints} from '../../mixins/breakpoints';
@@ -14,8 +13,8 @@ import bg from '../../assets/img/backgrounds/halka07.jpg';
 
 const Wrapper = styled.div`
   padding: 100px 50px;
-  @media ${breakpoints.desktop} {
-    padding: 250px 0;
+  @media ${breakpoints.laptop} {
+    padding: 250px 50px;
   }
   font-family: Raleway, sans-serif; 
 /*
@@ -39,11 +38,14 @@ const Title = styled.h1`
 `;
 
 const Subtitle = styled.h2`
-  max-width: 425px;
+  max-width: 620px;
   text-shadow: 0 3px 0 #000000;
   color: #ffffff;
-  font-size: 66px;
-  font-weight: 400;
+  font-size: 42px;
+  @media ${breakpoints.laptop} {
+      font-size: 66px;
+  }
+  font-weight: 900;
   line-height: 60px;
 `;
 
@@ -51,17 +53,21 @@ const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
-  @media ${breakpoints.desktop} {
+  @media ${breakpoints.laptopL} {
     flex-direction: row;
   }
 `;
 
 const TextContainer = styled.p`
   margin: 0;
+  margin-top: 30px;
   text-shadow: 0 3px 0 #000000;
   color: #ffffff;
   font-size: 38px;
   font-weight: 500;
+  @media ${breakpoints.laptopL} { 
+    margin: 0;
+  }
 `;
 
 const Buttons = styled.div`
@@ -71,11 +77,10 @@ const Buttons = styled.div`
   button:last-child {
     margin-left: 10px;
   }
-  @media ${breakpoints.desktop} {
-    flex-direction: column;
-    align-items: flex-start;
+  @media ${breakpoints.laptopL} {
     position: absolute;
     left: -250px;
+    flex-direction: column;
     align-items: flex-end;
     button:last-child {
        margin-top: 10px;
@@ -87,21 +92,19 @@ const Buttons = styled.div`
 const Row = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: ${props => props.between ? 'space-between' : 'flex-start'};
+  width: 100%;
 `;
 
 const MedalContainer = styled.div`
     position: relative;
-  display: ${props => props.desctop ? 'none' : 'block'};
-  @media ${breakpoints.desktop} {
-    display: ${props => props.desctop ? 'block' : 'none'};
-  }
 `;
 
 const MedalWrapper = styled.div`
-  position: relative;
+  position: absolute;
+  right: 0;
+  bottom: 0;
   margin-right: auto;
-  margin-left: 60px;
 `;
 
 const Medal = styled.div`
@@ -165,27 +168,59 @@ const TextWithDividers = ({text}) => {
   );
 };*/
 
+const Columns = styled.div`
+  display: flex;
+`;
+
+const Column = styled.div`
+
+`;
+
 const Paragraph = ({text, divider, getOffset, scrollToNext}) => {
   const [active, count] = divider;
   const ref = useRef(null);
+  const {width, height} = useWindowSize();
+  const [columnText, setColumnText] = useState();
+  const [columns, setColumns] = useState(null);
+
+  useEffect(() => {
+    if (width >= 1440) {
+      setColumns(true);
+      const first = text.slice(0, text.length / 2);
+      const second = text.slice(text.length / 2, text.length);
+      setColumnText([first, second]);
+    } else {
+      setColumns(false);
+    }
+  }, [width]);
 
 
   useMount(() => {
     const top = ref.current.offsetTop;
-    getOffset(top, count);
+    getOffset(top);
     return null;
   });
 
   return (
     <div ref={ref}>
-      <span>{text.map(item => {
-        return (
-          <>
-            {item}
-            <br/>
-          </>
-        )
-      })}</span>
+      {columns ?
+        <Columns>
+          <Column>
+            {columnText[0]}
+          </Column>
+          <Column>
+            {columnText[1]}
+          </Column>
+        </Columns> :
+        <span>{text.map(item => {
+          return (
+            <>
+              {item}
+              <br/>
+            </>
+          );
+        })}</span>
+      }
       {active && <Divider onClick={() => scrollToNext()} number={count}/>}
     </div>
   );
@@ -198,9 +233,9 @@ const TextWithDividers = ({text, offsetParent}) => {
   useMount(() => {
     const splitedText = text.split(/\n/);
     let textCacheIndex = 0;
-    const prepare = splitedText.reduce((acc, item,) => {
+    const prepare = splitedText.reduce((acc, item) => {
       if (!acc.length) {
-        acc.push([[item]])
+        acc.push([[item]]);
       }
       const string = acc[textCacheIndex].reduce((acc, elem) => acc.concat(elem));
       if (string.length >= 600) {
@@ -215,14 +250,14 @@ const TextWithDividers = ({text, offsetParent}) => {
     setPrepareText(prepare);
   });
 
-  const getOffsets = (offset, id) => {
+  const getOffsets = (id) => (offset) => {
     setOffsets(prev => ({...prev, [id]: offset}));
   };
 
   const scroll = (id) => () => {
     if (offsets[id]) {
       window.scrollTo({
-        top: offsetParent + offsets[id],
+        top: offsetParent + offsets[id] + 400,
         behavior: 'smooth',
       });
     }
@@ -233,8 +268,8 @@ const TextWithDividers = ({text, offsetParent}) => {
       {prepareText.map((part, i) => {
         const count = i + 1;
         return (
-          <Paragraph scrollToNext={scroll(count + 2)}
-                     getOffset={getOffsets}
+          <Paragraph scrollToNext={scroll(count + 1)}
+                     getOffset={getOffsets(count)}
                      text={part}
                      divider={[prepareText.length > 1, count]}/>
         );
@@ -307,25 +342,10 @@ export const ArticleLayout = ({data, id, getOffset}) => {
           </MedalContainer>
         </Row>
         <MainContainer className='main'>
-          <Row>
-            <Buttons>
-              <TestButton onFinishTest={handlerFinishTest} questions={data.questions}/>
-              <AudioButton data={data.audio}/>
-            </Buttons>
-
-            <MedalContainer desctop={false}>
-              {medal &&
-              <MedalWrapper>
-                <Medal>
-                  <img src={medal} alt="medal"/>
-                  <MedalPercent>
-                    {percent}%
-                  </MedalPercent>
-                </Medal>
-              </MedalWrapper>
-              }
-            </MedalContainer>
-          </Row>
+          <Buttons>
+            <TestButton onFinishTest={handlerFinishTest} questions={data.questions}/>
+            <AudioButton data={data.audio}/>
+          </Buttons>
           <TextContainer>
             <TextWithDividers offsetParent={offset} text={data.text}/>
           </TextContainer>

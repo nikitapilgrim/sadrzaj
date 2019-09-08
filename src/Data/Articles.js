@@ -1962,13 +1962,13 @@ Meša Selimović`,
         answers: [
           {
             title: 'vitku djevojku nježnog izgleda',
-            right: true
+            right: true,
           },
           {
             title: 'usamljenu osobu',
-            right: false
-          }
-        ]
+            right: false,
+          },
+        ],
       },
       {
         title: 'This is title for 2nd question',
@@ -1976,13 +1976,13 @@ Meša Selimović`,
         answers: [
           {
             title: 'preuveličavaju osobine nekog pojma',
-            right: false
+            right: false,
           },
           {
             title: 'jednim pojmom ukazuje na neki drugi',
-            right: true
-          }
-        ]
+            right: true,
+          },
+        ],
       },
       {
         title: 'This is title for 3rd question',
@@ -1990,13 +1990,13 @@ Meša Selimović`,
         answers: [
           {
             title: 'nije imala razumijevanje svojih bližnjih',
-            right: true
+            right: true,
           },
           {
             title: 'imala je razumijevanje svoga muža',
-            right: false
-          }
-        ]
+            right: false,
+          },
+        ],
       },
       {
         title: 'This is title for 4th question',
@@ -2004,13 +2004,13 @@ Meša Selimović`,
         answers: [
           {
             title: 'iskrenim divljenjem',
-            right: false
+            right: false,
           },
           {
             title: 'prikrivenim podsmjehom',
-            right: true
-          }
-        ]
+            right: true,
+          },
+        ],
       },
       {
         title: 'This is title for 5h question',
@@ -2018,13 +2018,13 @@ Meša Selimović`,
         answers: [
           {
             title: 'ironijom',
-            right: true
+            right: true,
           },
           {
             title: 'hiperbolom',
-            right: false
-          }
-        ]
+            right: false,
+          },
+        ],
       },
       {
         title: 'This is title for 6th question',
@@ -2032,15 +2032,15 @@ Meša Selimović`,
         answers: [
           {
             title: 'suprotan smisao od onog koje imaju u osnovnom značenju',
-            right: true
+            right: true,
           },
           {
             title: 'simbolično značenje',
-            right: false
-          }
-        ]
+            right: false,
+          },
+        ],
       },
-    ]
+    ],
   },
   {
     id: 24,
@@ -2079,11 +2079,11 @@ Meša Selimović`,
         answers: [
           {
             title: 'sjećanje na jedan događaj iz djetinjstva',
-            right: true
+            right: true,
           },
           {
             title: ' želja jedne djevojčice da dobije novu odjeću',
-            right: false
+            right: false,
           },
           {
             title: 'This is title for 2nd question',
@@ -2091,13 +2091,13 @@ Meša Selimović`,
             answers: [
               {
                 title: 'Zlata Kolarić – Kišur',
-                right: false
+                right: false,
               },
               {
                 title: 'djevojčica, glavna junakinja priče',
-                right: true
-              }
-            ]
+                right: true,
+              },
+            ],
           },
           {
             title: 'This is title for 3rd question',
@@ -2105,13 +2105,13 @@ Meša Selimović`,
             answers: [
               {
                 title: 'prvi put dobila novu odjeću',
-                right: false
+                right: false,
               },
               {
                 title: 'procvjetalo proljećno cvijeće',
-                right: true
-              }
-            ]
+                right: true,
+              },
+            ],
           },
           {
             title: 'This is title for 4th question',
@@ -2119,13 +2119,13 @@ Meša Selimović`,
             answers: [
               {
                 title: 'Kada je djevojčica dobila novu odjeću.',
-                right: false
+                right: false,
               },
               {
                 title: 'Kada je isprljala novu odjeću.',
-                right: true
-              }
-            ]
+                right: true,
+              },
+            ],
           },
           {
             title: 'This is title for 5th question',
@@ -2133,13 +2133,13 @@ Meša Selimović`,
             answers: [
               {
                 title: 'kao glavni lik u komediji',
-                right: false
+                right: false,
               },
               {
                 title: 'osramoćeno',
-                right: true
-              }
-            ]
+                right: true,
+              },
+            ],
           },
           {
             title: 'This is title for 6th question',
@@ -2147,17 +2147,17 @@ Meša Selimović`,
             answers: [
               {
                 title: 'Kada je kao odrasla mogla kupovati što god poželi.',
-                right: false
+                right: false,
               },
               {
                 title: 'Kada je u povorci, među lijepo obučenom djecom, vidjela skromno obučenu, ali ponosnu djevojčicu.',
-                right: true
-              }
-            ]
-          }
-        ]
-      }
-    ]
+                right: true,
+              },
+            ],
+          },
+        ],
+      },
+    ],
   },
   {
     id: 25,
@@ -2185,11 +2185,11 @@ Meša Selimović`,
         answers: [
           {
             title: 'obasipali grdnjama i proglasili lošim piscem',
-            right: true
+            right: true,
           },
           {
             title: 'podsjećali na teško djetinjstvo',
-            right: false
+            right: false,
 
           },
           {
@@ -2198,13 +2198,13 @@ Meša Selimović`,
             answers: [
               {
                 title: 'mladića u invalidskim kolicima',
-                right: true
+                right: true,
               },
               {
                 title: 'otvaranje prozora u sali',
-                right: false
-              }
-            ]
+                right: false,
+              },
+            ],
           },
           {
             title: 'This is title for 3rd question',
@@ -2212,13 +2212,13 @@ Meša Selimović`,
             answers: [
               {
                 title: 'književnost',
-                right: false
+                right: false,
               },
               {
                 title: 'film',
-                right: true
-              }
-            ]
+                right: true,
+              },
+            ],
           },
           {
             title: 'This is title for 4th question',
@@ -2226,13 +2226,13 @@ Meša Selimović`,
             answers: [
               {
                 title: 'oslobađanje od neprijatnosti i pritiska koji je trpio',
-                right: true
+                right: true,
               },
               {
                 title: 'saznanje da je sve prolazno',
-                right: false
-              }
-            ]
+                right: false,
+              },
+            ],
           },
           {
             title: 'This is title for 5th question',
@@ -2240,17 +2240,17 @@ Meša Selimović`,
             answers: [
               {
                 title: 'ljubavi',
-                right: false
+                right: false,
               },
               {
                 title: 'slobode',
-                right: true
-              }
-            ]
+                right: true,
+              },
+            ],
           },
-        ]
-      }
-    ]
+        ],
+      },
+    ],
   },
   {
     id: 26,
@@ -2278,11 +2278,11 @@ Meša Selimović`,
         answers: [
           {
             title: 'obasipali grdnjama i proglasili lošim piscem',
-            right: true
+            right: true,
           },
           {
             title: 'podsjećali na teško djetinjstvo',
-            right: false
+            right: false,
 
           },
           {
@@ -2291,13 +2291,13 @@ Meša Selimović`,
             answers: [
               {
                 title: 'mladića u invalidskim kolicima',
-                right: true
+                right: true,
               },
               {
                 title: 'otvaranje prozora u sali',
-                right: false
-              }
-            ]
+                right: false,
+              },
+            ],
           },
           {
             title: 'This is title for 3rd question',
@@ -2305,13 +2305,13 @@ Meša Selimović`,
             answers: [
               {
                 title: 'književnost',
-                right: false
+                right: false,
               },
               {
                 title: 'film',
-                right: true
-              }
-            ]
+                right: true,
+              },
+            ],
           },
           {
             title: 'This is title for 4th question',
@@ -2319,13 +2319,13 @@ Meša Selimović`,
             answers: [
               {
                 title: 'oslobađanje od neprijatnosti i pritiska koji je trpio',
-                right: true
+                right: true,
               },
               {
                 title: 'saznanje da je sve prolazno',
-                right: false
-              }
-            ]
+                right: false,
+              },
+            ],
           },
           {
             title: 'This is title for 5th question',
@@ -2333,17 +2333,17 @@ Meša Selimović`,
             answers: [
               {
                 title: 'ljubavi',
-                right: false
+                right: false,
               },
               {
                 title: 'slobode',
-                right: true
-              }
-            ]
+                right: true,
+              },
+            ],
           },
-        ]
-      }
-    ]
+        ],
+      },
+    ],
   },
   {
     id: 27,
@@ -2398,11 +2398,11 @@ Meša Selimović`,
         answers: [
           {
             title: 'pisac',
-            right: false
+            right: false,
           },
           {
             title: 'mladić – lik iz priče',
-            right: true
+            right: true,
           },
           {
             title: 'This is title for 2nd question',
@@ -2410,13 +2410,13 @@ Meša Selimović`,
             answers: [
               {
                 title: 'iskrene',
-                right: false
+                right: false,
               },
               {
                 title: 'samo šala',
-                right: true
-              }
-            ]
+                right: true,
+              },
+            ],
           },
           {
             title: 'This is title for 3rd question',
@@ -2424,13 +2424,13 @@ Meša Selimović`,
             answers: [
               {
                 title: 'istinu',
-                right: false
+                right: false,
               },
               {
                 title: 'nedoumicu',
-                right: true
-              }
-            ]
+                right: true,
+              },
+            ],
           },
           {
             title: 'This is title for 4th question',
@@ -2438,13 +2438,13 @@ Meša Selimović`,
             answers: [
               {
                 title: 'da.',
-                right: true
+                right: true,
               },
               {
                 title: 'ne',
-                right: false
-              }
-            ]
+                right: false,
+              },
+            ],
           },
           {
             title: 'This is title for 5th question',
@@ -2452,13 +2452,13 @@ Meša Selimović`,
             answers: [
               {
                 title: 'pejzaž',
-                right: true
+                right: true,
               },
               {
                 title: 'panorama',
-                right: false
-              }
-            ]
+                right: false,
+              },
+            ],
           },
           {
             title: 'This is title for 6th question',
@@ -2466,17 +2466,17 @@ Meša Selimović`,
             answers: [
               {
                 title: 'psihološka analiza',
-                right: false
+                right: false,
               },
               {
                 title: 'portret',
-                right: true
-              }
-            ]
-          }
-        ]
+                right: true,
+              },
+            ],
+          },
+        ],
       },
-    ]
+    ],
   },
   {
     id: 28,
@@ -2754,7 +2754,7 @@ Meša Selimović`,
         answers: [
           {
             title: 'u korišćenju osnovnih izražajnih sredstava',
-            right: true
+            right: true,
           },
           {
             title: 'This is title for 2nd question',
@@ -2762,13 +2762,13 @@ Meša Selimović`,
             answers: [
               {
                 title: 'isključivo dijaloga',
-                right: false
+                right: false,
               },
               {
                 title: 'dijaloga i monologa',
-                right: true
-              }
-            ]
+                right: true,
+              },
+            ],
           },
           {
             title: 'This is title for 3rd question',
@@ -2776,13 +2776,13 @@ Meša Selimović`,
             answers: [
               {
                 title: 'Hasanaginice i njene kćerke Sultanije',
-                right: true
+                right: true,
               },
               {
                 title: 'Hasanaginice i Hasanage',
-                right: false
-              }
-            ]
+                right: false,
+              },
+            ],
           },
           {
             title: 'This is title for 4th question',
@@ -2790,13 +2790,13 @@ Meša Selimović`,
             answers: [
               {
                 title: 'je takođe dosljedno proveden deseterac',
-                right: false
+                right: false,
               },
               {
                 title: 'deseterac nije dosljedno proveden',
-                right: true
-              }
-            ]
+                right: true,
+              },
+            ],
           },
           {
             title: 'This is title for 5th question',
@@ -2804,13 +2804,13 @@ Meša Selimović`,
             answers: [
               {
                 title: 'što govore, kako govore i šta čine',
-                right: true
+                right: true,
               },
               {
                 title: 'što izlaže narator',
-                right: false
-              }
-            ]
+                right: false,
+              },
+            ],
           },
           {
             title: 'This is title for 6th question',
@@ -2818,17 +2818,17 @@ Meša Selimović`,
             answers: [
               {
                 title: 'da',
-                right: true
+                right: true,
               },
               {
                 title: 'ne',
-                right: false
-              }
-            ]
-          }
-        ]
-      }
-    ]
+                right: false,
+              },
+            ],
+          },
+        ],
+      },
+    ],
   },
   {
     id: 29,
@@ -2878,13 +2878,13 @@ Meša Selimović`,
         answers: [
           {
             title: 'osmanske vladavine',
-            right: false
+            right: false,
           },
           {
             title: 'austrougarske vladavine',
-            right: true
-          }
-        ]
+            right: true,
+          },
+        ],
       },
       {
         title: 'This is title for 2nd question',
@@ -2892,13 +2892,13 @@ Meša Selimović`,
         answers: [
           {
             title: 'kroz humor i oštru kritiku',
-            right: true
+            right: true,
           },
           {
             title: 'tako što austrougarske činovnike čini smiješnima',
-            right: false
-          }
-        ]
+            right: false,
+          },
+        ],
       },
       {
         title: 'This is title for 3rd question',
@@ -2906,13 +2906,13 @@ Meša Selimović`,
         answers: [
           {
             title: 'opomena ljudima koji su skloni lošem ponašanju',
-            right: false
+            right: false,
           },
           {
             title: 'oštra osuda društva ili ljudskih mana',
-            right: true
-          }
-        ]
+            right: true,
+          },
+        ],
       },
       {
         title: 'This is title for 4th question',
@@ -2920,13 +2920,13 @@ Meša Selimović`,
         answers: [
           {
             title: 'gest jednog šaljivdžije',
-            right: false
+            right: false,
           },
           {
             title: 'optužba austrougarske vlasti',
-            right: true
-          }
-        ]
+            right: true,
+          },
+        ],
       },
       {
         title: 'This is title for 5h question',
@@ -2934,13 +2934,13 @@ Meša Selimović`,
         answers: [
           {
             title: 'David i carski činovnici',
-            right: true
+            right: true,
           },
           {
             title: 'David i jazavac',
-            right: false
-          }
-        ]
+            right: false,
+          },
+        ],
       },
       {
         title: 'This is title for 6th question',
@@ -2948,13 +2948,13 @@ Meša Selimović`,
         answers: [
           {
             title: 'ironijom',
-            right: true
+            right: true,
           },
           {
             title: 'augmentativima',
-            right: false
-          }
-        ]
+            right: false,
+          },
+        ],
       },
       {
         title: 'This is title for 7h question',
@@ -2962,14 +2962,14 @@ Meša Selimović`,
         answers: [
           {
             title: 'zvučalo neobično i lako se pamtilo',
-            right: false
+            right: false,
           },
           {
             title: 'da bi predstavio borbu između slabog i diva kao u priči „David i Golijat“',
-            right: true
-          }
-        ]
+            right: true,
+          },
+        ],
       },
-    ]
-  }
-]
+    ],
+  },
+];
