@@ -1,8 +1,12 @@
+const essay = 'essay';
+const lyrics = 'lyrics';
+
 export default [
   {
     id: 1,
     title: 'Narodna književnost',
     subtitle: 'Majka Fatu kroz tri gore viče',
+    type: lyrics,
     text: `Majka Fatu kroz tri gore viče:
           “Jesi l’, kćeri, ub’jelila platno?”
           Fata joj se kroz sedam odziva:
@@ -200,6 +204,7 @@ export default [
     id: 2,
     title: 'Narodna književnost',
     subtitle: 'Ljubavi rastanak',
+    type: lyrics,
     text: `Dva cvijeta u bostanu rasla:
 plavi zumbul i zelena kada.
 Plavi zumbul ode na Doljane,
@@ -508,6 +513,7 @@ Narodna balada`,
     id: 4,
     title: 'Narodna književnost',
     subtitle: 'Tuturuza i šeh Meco (odlomak)',
+    type: essay,
     text: `Tuturuza je ispričao najnoviju hridsku dogodovštinu. Slinić koji je kad je, ozgodnio i postao čaršijski prvak, promijenio prezime, oćutio je neku večer nekakvo orgecanje u magazi pod kućom. Pomislio je na hrsuza pa je uzdigao svu kućnu čeljad na noge da ga hvataju. I komšije su opkolile kuću i poredale se pred magazna vrata. Slinić je nagovarao hrsuza da izađe, da se ne boji, neće mu ništa biti. “Izađi slobodno! Neću te prijaviti policiji!” Štropot bakrenog suda nije prestajao, ali hrsuz nije htio napolje. Da ga ohrabri, Slinić ga je nagovarao da se ne stidi. “Slobodno ti izađi! I ja sam pod mladost bio takav!” Odškrinuo je magazna vrata. Najednom se nešto u magazi skrha, a na vrata jurne pas, krupan kao tele, i pobjegne između svijeta. Sve bi dobro bilo da nije bilo tuđeg svijeta, iz komšiluka. I tako se proču priča i sađe odmah ujutro do Baščaršije, pa Slinić ne može s mirom među svijet.
 Mahmutaga, dobričak i mehak čovjek, zacenuo se od smijeha. Sve ga suze oblile. Jedva je progovorio:
 – Bolji ti je dram smijeha, nego tovar suza.
@@ -619,6 +625,7 @@ Alija Nametak`,
     id: 5,
     title: 'Umjetnička književnost - Roman',
     subtitle: 'Starac i more (Odlomci)',
+    type: essay,
     text: `Starac Santjago, kubanski ribar, živi u krajnjoj bijedi u jednoj kolibici na obali mora. Već osamdeset i četiri dana uzalud isplovljava da nešto ulovi, ali nema sreće. Jedini mu je prijatelj jedan dječak kome otac zabranjuje da se viđa sa njim.
 Osamdeset i petog dana izgledalo je kao da se sreća starom ribaru osmjehnula. Ulovio je veliku sabljarku. Dva dana ga riba vuče za sobom, a starac posljednjim snagama uspijeva da se održi u svojoj lađici...
 *
@@ -740,6 +747,7 @@ Ernest Hemingvej`,
     id: 6,
     title: 'Umjetnička književnost - Roman',
     subtitle: 'Zlatna ptica (Odlomci iz romana “Derviš i smrt”)',
+    type: essay,
     text: `Svoju priču “o odnosu i sukobu između ideologije i ozlojeđenog pojedinca”, kako je i sam rekao o temi romana, Meša Selimović je prenio na derviša Nurudina, intelektualca, koji je nakon kratkog ratovanja i prve promašene ljubavi našao utočište u vjeri. Te okolnosti su razlog sukoba, podijeljenosti čovjeka između vjere i slobodnog izbora da odlučuje, između mirenja i pobune, slobode i neslobode – ukratko, svega onoga što je pisac osjećao kada je saznao da je izgubio brata pod neshvatljivim okolnostima. Odlomci su uzeti iz drugog dijela romana i govore o susretu mladog derviša sa dječakom koji ima samo majku i slijepu baku.
 *
 Biće nesrećan koji svoju dušu okalja.
@@ -855,6 +863,7 @@ Meša Selimović`,
     id: 7,
     title: 'Umjetnička književnost - Roman',
     subtitle: 'Starac i more',
+    type: essay,
     text: `Starac Santjago, kubanski ribar, živi u krajnjoj bijedi u jednoj kolibici na obali mora. Već osamdeset i četiri dana uzalud isplovljava da nešto ulovi, ali nema sreće. Jedini mu je prijatelj jedan dječak kome otac zabranjuje da se viđa sa njim.
             Osamdeset i petog dana izgledalo je kao da se sreća starom ribaru osmjehnula. Ulovio je veliku sabljarku. Dva dana ga riba vuče za sobom, a starac posljednjim snagama uspijeva da se održi u svojoj lađici...
             *
@@ -962,6 +971,7 @@ Meša Selimović`,
     id: 8,
     title: 'Umjetnička književnost - Roman',
     subtitle: 'Lovac u žitu',
+    type: essay,
     text: `Roman “Lovac u žitu” po mnogo čemu je neobičan i zato već dugo, kod mnogih generacija, izaziva “ljubav na prvi pogled”. Roman počinje bez uvoda, direktno se ulazi u radnju i pričanje ima retrospektivni tok.
             Pričalac, glavni lik romana, Holden Kolfild, o događajima govori kada je već sve preživio i razbolio se. Dok leži u bolesničkoj postelji, svojom pričom obuhvata sve ono što se dogodilo u nekoliko dana oko Božića. Holden se odlikovao oštrinom zapažanja i stalno isticao da mrzi sve što zvuči lažno, istrošeno i licemjerno, a svijet u kome je živio davao je mnogo primjera za to. Shvatao je da se većina ponaša po šablonu, da većina govori ono što sredina u kojoj se nalazi voli da čuje ili ono što je navikla da čuje.
             *
@@ -1093,6 +1103,7 @@ Meša Selimović`,
     id: 9,
     title: 'Umjetnička književnost - Roman',
     subtitle: '2001: Odiseja u svemiru',
+    type: essay,
     text: `Brod je krenuo od Zemlje prije samo trideset dana, ali je Dejvidu Boumenu ponekad bilo teško da povjeruje da je ikada znao i za neki drugi oblik postojanja osim ovoga u zatvorenom, malom svijetu “Otkrića”. Sve godine obuke, sve pređašnje misije na Mjesec i Mars, kao da su pripadale nekom drugom čovjeku, u nekom drugom životu.
             Frenk Pul imao je isti utisak i ponekad bi u šali požalio što se najbliži psihijatar nalazi udaljen od njih gotovo stotinu miliona milja. Ali ovo osjećanje izdvojenosti i otuđenosti lako se moglo shvatiti i ono jamačno nije ukazivalo ni na kakvu abnormalnost. Za pedeset godina od kako su se ljudi vinuli u svemir, još nije bilo ovakve misije.
             Ona je započela prije pet godina kao projekt “Jupiter” – prvo povratno putovanje broda sa ljudskom posadom do najveće među planetama. Letjelica je već gotovo bila spremna za dvogodišnji pohod, kada je, krajnje neočekivano, došlo do promjene profila misije.
@@ -1236,6 +1247,7 @@ Meša Selimović`,
     id: 10,
     title: 'Umjetnička književnost - Roman',
     subtitle: 'Otok plavih dupina',
+    type: essay,
     text: ` “Otok plavih dupina” je roman o stvarnom događaju iz života jedne Indijanke koja je na pustom ostrvu sama provela 18 godina, od 1835. do 1853. godine. Ovaj odlomak govori o njenom povratku u civilizaciju.
             *
             O njegovu glasu što me zove razmišljala sam već odavno, još od one olujne noći kad je brod bio otplovio. Za ta dva proljeća i dva ljeta nije bilo dana da nisam otišla na rt i gledala more, uvijek u zoru, pa opet u sumrak.
@@ -1339,6 +1351,7 @@ Meša Selimović`,
     id: 11,
     title: 'Umjetnička književnost – Putopis',
     subtitle: 'Писма из Норвешке',
+    type: essay,
     text: ` ...Овде је ипак друкчије. Сунце је интензивно светло као око грозничавог болесника, али топлих сунчевих зрака добијамо само толико колико кроз прстен с моје мршаве руке може да прође. А суво лишће не пролеће и не пада него цури и залива, веје и затрпава. Куд год се макнеш газиш по њему и пада на тебе. Кад год заћутиш зашушти ти у ушима, кад год уздахнеш замирише ти у ваздуху, што год додирнеш посуто је њиме. Где год кап кише може да падне пада и суво лишће. На таласе фјура и у дну чамца, на шешире људи и у косе жена, на школске торбице дечака и у колица малих беба. И преко свега тога опет пада, журно и густо пада и дању и ноћу, пада само од себе, пада ако га додирнеш, пада ако га погледаш...
             *
             Даљине! Ту реч не треба пред Норвежанима споменути. У њиховој је земљи све далеко јер нема људи. Норвешка је земља где се чезне за обликом и гласом човека, где читаве покрајине стотинама година стоје пусте јер не могу да даду толико топлоте да постану нечија колевка, ни толико хране и одбране да постану неком домовина.
@@ -1440,6 +1453,7 @@ Meša Selimović`,
     id: 12,
     title: 'Umjetnička književnost – Putopis',
     subtitle: 'Некролог једној чаршији',
+    type: essay,
     text: `Годину, мјесец и дан више и не памтим.
            Била је зима...
            Било је то давно...
@@ -1558,6 +1572,7 @@ Meša Selimović`,
     id: 13,
     title: 'Umjetnička književnost – Putopis',
     subtitle: 'Održa se kao na Drini ćuprija',
+    type: essay,
     text: `U jednoj narodnoj pjesmi ima stih:
             “Kad prebrodi Drinu valovitu,
   stade gazit’ Bosnu kalovitu.”
@@ -1684,6 +1699,7 @@ Meša Selimović`,
     video: 'url',
     audio: 'url',
     questions: [],
+    type: lyrics,
     text: `Iščekuje me draga, sin me čeka,
     Izviruje i plamen svijeća.
       Nije više daleka
@@ -1709,6 +1725,7 @@ Meša Selimović`,
     video: 'url',
     audio: 'url',
     questions: [],
+    type: lyrics,
     text: `(U gradu Wuppertalu
 \t\t\t– svaka mu čast i hvala! –
 \t\t\tdeset godina provedoh,
@@ -1762,6 +1779,7 @@ Meša Selimović`,
     id: 16,
     title: 'Umjetnička književnost – Lirske pjesme',
     subtitle: 'Tarih o gradnji mosta u Mostaru',
+    type: essay,
     text: `Ćupriju podiže koja podsjeća na lûk dûge
            Allahu moj! Ima l’ na svijetu po ljepoti drûge?
            Jedan je Derviš zadivljen stao i rekao riječi:
@@ -1890,6 +1908,7 @@ Meša Selimović`,
     id: 23,
     title: 'Umjetnička književnost - Pripovijetka',
     subtitle: 'Breza',
+    type: essay,
     text: `Lijepa i mlada djevojka Janica udaje se za Marka Labudana, dopadljivog momka, seoskog lugara na koga djevojke i mlade žene često pogledaju. Zapravo, Marko ne bi nikada ni zapazio Janicu jer po seoskom ukusu ona nije bila nimalo lijepa. Ali njegov šef je obratio pažnju na njenu izuzetnost, a kako je Marko nastojao da ponešto usvoji od gospodske finoće, tako se odlučio da, na čuđenje sela, zaprosi Janicu. U poređenju sa drugim djevojkama “Tanka je ona i slabašna. Ali visoka i strojna. Pa dok druge cure i snaše teško koračaju kao medvjedi, u njenom hodu ima nešto ritma, možda čak elegancije. Oči su joj plave, plavlje od jasnoga neba, a za kosu rekoše neki da je crvenkasta, a neki da je zlatna ili pozlaćena. Svakako, izvrsno je pristajala onom okruglom, bijelom lišcu i onim nasmijanim, malim usnicama.”
            Četiri-pet nedjelja Janica leži teško bolesna.
            *
@@ -2046,6 +2065,7 @@ Meša Selimović`,
     id: 24,
     title: 'Umjetnička književnost - Pripovijetka',
     subtitle: 'Сузе којих се стидим',
+    type: essay,
     text: `У прољеће кад се природа обнавља, те голе гране заодјене младим свијетлозеленим лишћем, а блатне ливаде дарежљиво покрије свјежим зеленим сагом, буди се и у људима жеља да одјену нову одјећу. Зажеле они да одбаце поношене зимске капуте, који у магловитим зимским данима и нису изгледали тако сиви, излизани и нагризени прашином; као сада у пуном сунчаном сјају. Па и они који нису ташти, а нису више ни млади, радују се кад се могу извући из старе зимске чахуре.
            Али кад је нетко у деветој години живота, а готово свих девет година носио је прекројену одјећу старије сестре као ја, онда је та жеља још јача него код других сретника који често добивају нове хаљине. И кад такво деветогодишње створење напокон дочека капут, који није још ни једном преокретан, те још мирише по дућану, онда је радост с пуним правом голема.
            Такву сам радост осјећала и ја, кад сам једне лијепе прољетне недјеље први пут навукла нове жуте ципеле, плави капутић и плаву морнарску капицу. Све зајамчено ново новцато.
@@ -2163,6 +2183,7 @@ Meša Selimović`,
     id: 25,
     title: 'Umjetnička književnost - Pripovijetka',
     subtitle: 'Sećanje na šarenu pticu',
+    type: essay,
     text: `Posle mnogo godina našao sam se u gradu mog dečaštva kao gost na Tribini mladih. Bio sam dočekan s kuđenjem, prigovarali su mi na crnoj slici sveta i osuđivali moje knjige. Pokajao sam se što sam pristao da gostujem u gradu koji me i ranije obasipao grdnjama, pa ako hoćete i prognao, jer sam idiličnu sliku zavičaja ukaljao ružnim opisima. Sala Tribine bila je malena i zagušljiva; prosto sam vapio za zrakom, a bio sam toliko utučen pogrdama da se nisam usudio tražiti čašu vode, iako su mi se usta sušila. I taman sam se ponadao da će lepa voditeljica objaviti kraj ovom neslavnom gostovanju, kad se na ulazu sale pojaviše invalidska kolica; njih je gurao crnoput mladić s kovrdžavom kosom, u majici koja je isticala njegovu mišićavost. U kolicima je sedeo momak izduženog lica, pomalo izobličenog i bledog, s maljama što su se hvatale samo uz rub lica i podbradak. Glavu je držao malo nagnutu u stranu, ali ne na onaj način nemoćnog.
             – Sad moraš još malo ostati – rekla je voditeljica. – To je naš Fahro, redovni posetilac Tribine.
             Crnoputi momak probio se s kolicima do prozora i spretno ga otvorio tako da nas je osvežio zrak, a prijao je i njegovom bolesnom prijatelju. Vani su se čule ptice; miris lipe zapljusnuo nas je kao neki poetski dah. Sala je bila puna dnevnog svetla. Bolesni dečak iz mog detinjstva gledao me kao neznanca, istim onim lepim, plavim očima. Sada nije imalo svrhe potezati uspomene iz Mahale; mogao sam misliti samo o tome kako se na životnoj mapi naše sudbine dodiruju i udaljuju i najzad slivaju u isti tok vremena. Njegov otac je umro od opake bolesti; kažu da je dugo ležao pod tim teretom kao neki kažnjenik. Umro je u neorealističkom dekoru Mahale, a poslednji njegov razgovor sa sinom bio je o filmu.
@@ -2256,6 +2277,7 @@ Meša Selimović`,
     id: 26,
     title: 'Umjetnička književnost - Pripovijetka',
     subtitle: 'Sećanje na šarenu pticu',
+    type: essay,
     text: `Posle mnogo godina našao sam se u gradu mog dečaštva kao gost na Tribini mladih. Bio sam dočekan s kuđenjem, prigovarali su mi na crnoj slici sveta i osuđivali moje knjige. Pokajao sam se što sam pristao da gostujem u gradu koji me i ranije obasipao grdnjama, pa ako hoćete i prognao, jer sam idiličnu sliku zavičaja ukaljao ružnim opisima. Sala Tribine bila je malena i zagušljiva; prosto sam vapio za zrakom, a bio sam toliko utučen pogrdama da se nisam usudio tražiti čašu vode, iako su mi se usta sušila. I taman sam se ponadao da će lepa voditeljica objaviti kraj ovom neslavnom gostovanju, kad se na ulazu sale pojaviše invalidska kolica; njih je gurao crnoput mladić s kovrdžavom kosom, u majici koja je isticala njegovu mišićavost. U kolicima je sedeo momak izduženog lica, pomalo izobličenog i bledog, s maljama što su se hvatale samo uz rub lica i podbradak. Glavu je držao malo nagnutu u stranu, ali ne na onaj način nemoćnog.
             – Sad moraš još malo ostati – rekla je voditeljica. – To je naš Fahro, redovni posetilac Tribine.
             Crnoputi momak probio se s kolicima do prozora i spretno ga otvorio tako da nas je osvežio zrak, a prijao je i njegovom bolesnom prijatelju. Vani su se čule ptice; miris lipe zapljusnuo nas je kao neki poetski dah. Sala je bila puna dnevnog svetla. Bolesni dečak iz mog detinjstva gledao me kao neznanca, istim onim lepim, plavim očima. Sada nije imalo svrhe potezati uspomene iz Mahale; mogao sam misliti samo o tome kako se na životnoj mapi naše sudbine dodiruju i udaljuju i najzad slivaju u isti tok vremena. Njegov otac je umro od opake bolesti; kažu da je dugo ležao pod tim teretom kao neki kažnjenik. Umro je u neorealističkom dekoru Mahale, a poslednji njegov razgovor sa sinom bio je o filmu.
@@ -2349,6 +2371,7 @@ Meša Selimović`,
     id: 27,
     title: 'Umjetnička književnost - Pripovijetka',
     subtitle: 'Šala (odlomak)',
+    type: essay,
     text: `Vedro zimsko podne... Mraz je jak, puca, i Nađenjki, koja me drži ispod ruke, srebrnastim injem prekriva kovrdže na sljepoočnicama i malje iznad gornje usne. Stojimo na visokom klizalištu. Od naših nogu do same zemlje prostire se strma površina, u kojoj se sunce ogleda kao u ogledalu. Pored nas su male sanke, tapacirane svijetlocrvenom čojom.
            – Da se spustimo, Nadežda Petrovna! – nagovaram je. – Samo jednom! Siguran sam, ostaćemo živi i zdravi.
            Ali, Nađenjka se plaši. Čitav prostor od njenih malih kaljača do kraja zaleđenog klizališta izgleda joj kao strašna, neizmjerno duboka provalija. Obamire i gubi dah čim pogleda dolje, čim joj samo predložim da sjedne u sanke, a šta će tek biti ako rizikuje da poleti u provaliju! Umrijeće, poludjeće.
@@ -2482,6 +2505,7 @@ Meša Selimović`,
     id: 28,
     title: 'Umjetnička književnost – Drama',
     subtitle: 'Hasanaginica (odlomak)',
+    type: lyrics,
     text: `AGA HASANAGA
             <br> HASANAGINICA
             <br> SULTANIJA
@@ -2834,6 +2858,7 @@ Meša Selimović`,
     id: 29,
     title: 'Umjetnička književnost - Drama',
     subtitle: 'Јазавац пред судом (Одломак)',
+    type: essay,
     text: `СУДАЦ: Па ти, Давиде, ниси, како видим, будала?
             ДАВИД: Ко каже да сам будала?
             СУДАЦ: Не каже нико, него... Како ти можеш, божји човјече, тужити јазавца?
