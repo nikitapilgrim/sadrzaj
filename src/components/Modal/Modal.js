@@ -25,7 +25,7 @@ const CloseModal = styled.button`
   top: -72px;
   right: 0;
   width: 72px;
-  height: 72px;
+  height: 75px;
   background: url("${CloseIcon}") no-repeat;
   background-size: cover;
   border: none;
