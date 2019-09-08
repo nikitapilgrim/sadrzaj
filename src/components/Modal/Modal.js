@@ -25,7 +25,7 @@ const CloseModal = styled.button`
   top: -72px;
   right: 0;
   width: 72px;
-  height: 72px;
+  height: 75px;
   background: url("${CloseIcon}") no-repeat;
   background-size: cover;
   border: none;
@@ -43,7 +43,17 @@ const Inner = styled.div`
 export const Modal = ({children, inner, isOpen, close}) => {
   useEffect(() => {
     ReactModal.setAppElement('#root');
-    }, []);
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener('keydown', function(e) {
+      if ((e.key === 'Escape' || e.key === 'Esc' || e.code === 'Escape')) {
+        e.preventDefault();
+        close();
+        return false;
+      }
+    }, true);
+  });
 
   return (
     <>
