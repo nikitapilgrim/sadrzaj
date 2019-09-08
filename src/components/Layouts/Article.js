@@ -14,7 +14,7 @@ import bg from '../../assets/img/backgrounds/halka07.jpg';
 const Wrapper = styled.div`
   padding: 100px 50px;
   @media ${breakpoints.laptop} {
-    padding: 250px 50px;
+    padding: 100px 50px;
   }
   font-family: Raleway, sans-serif; 
 /*
@@ -31,7 +31,7 @@ const Inner = styled.div`
 
 const Title = styled.h1`
   margin: 0;
-  text-shadow: 0 3px 0 #000000;
+  text-shadow: 2px 2px 0 #000000;
   color: #ffffff;
   font-size: 39px;
   font-weight: 700;
@@ -40,7 +40,7 @@ const Title = styled.h1`
 const Subtitle = styled.h2`
   margin: 29px 0;
   max-width: 620px;
-  text-shadow: 0 3px 0 #000000;
+  text-shadow: 2px 2px 0 #000000;
   color: #ffffff;
   font-size: 42px;
   @media ${breakpoints.laptop} {
@@ -62,9 +62,9 @@ const MainContainer = styled.div`
 const TextContainer = styled.p`
   margin: 0;
   margin-top: 30px;
-  text-shadow: 0 3px 0 #000000;
+  text-shadow: 1px 1px 0 #000000;
   color: #ffffff;
-  font-size: 38px;
+  font-size: 24px;
   font-weight: 500;
   @media ${breakpoints.laptopL} { 
     margin: 0;
