@@ -22,14 +22,22 @@ const Wrapper = styled.div`
 const CloseModal = styled.button`
   position: absolute;
   z-index: 2;
-  top: 0px;
-  right: 0px;
+  top: -72px;
+  right: 0;
   width: 72px;
   height: 72px;
   background: url("${CloseIcon}") no-repeat;
   background-size: cover;
   border: none;
   cursor: pointer;
+`;
+
+const Inner = styled.div`
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
 `;
 
 export const Modal = ({children, inner, isOpen, close}) => {
@@ -41,8 +49,10 @@ export const Modal = ({children, inner, isOpen, close}) => {
     <>
       <ReactModal isOpen={isOpen}>
         <Wrapper>
-          {inner}
-          <CloseModal onClick={() => close()}/>
+          <Inner>
+            {inner}
+            <CloseModal onClick={() => close()}/>
+          </Inner>
         </Wrapper>
       </ReactModal>
       {children}
