@@ -43,7 +43,17 @@ const Inner = styled.div`
 export const Modal = ({children, inner, isOpen, close}) => {
   useEffect(() => {
     ReactModal.setAppElement('#root');
-    }, []);
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener('keydown', function(e) {
+      if ((e.key === 'Escape' || e.key === 'Esc' || e.code === 'Escape')) {
+        e.preventDefault();
+        close();
+        return false;
+      }
+    }, true);
+  });
 
   return (
     <>
