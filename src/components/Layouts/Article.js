@@ -38,6 +38,7 @@ const Title = styled.h1`
 `;
 
 const Subtitle = styled.h2`
+  margin: 29px 0;
   max-width: 620px;
   text-shadow: 0 3px 0 #000000;
   color: #ffffff;
