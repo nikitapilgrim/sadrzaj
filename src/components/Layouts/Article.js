@@ -314,6 +314,7 @@ export const ArticleLayout = ({data, id, getOffset}) => {
   });
 
   return (
+    <>
     <Wrapper ref={ref} id={id}>
       <Inner>
         <Title>{data.title}</Title>
@@ -343,5 +344,7 @@ export const ArticleLayout = ({data, id, getOffset}) => {
         </MainContainer>
       </Inner>
     </Wrapper>
+      <hr className='separator'/>
+      </>
   );
 };
