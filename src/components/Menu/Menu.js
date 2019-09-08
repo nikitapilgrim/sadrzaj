@@ -101,7 +101,9 @@ const Li = styled.li`
 `;
 
 const SubmenuWrapper = styled.ol`
-  display: ${props => props.hidden ? 'none' : 'block'};
+  max-height: ${props => props.hiddenSubmenu ? '0' : '500px'};
+  transition: max-height 0.2s ease-out;
+  overflow: hidden;
   margin: 0;
   padding: 0;
   list-style: none; 
@@ -117,11 +119,11 @@ const MenuItem = ({title, submenu, scrollToArticle}) => {
   return (
     <Li>
       <Title className={'menu__main'} onClick={() => setSubmenuState(!submenuState)}>{title}</Title>
-      <SubmenuWrapper hidden={submenuState}>{submenu.map((item) => {
+      <SubmenuWrapper hiddenSubmenu={submenuState}>{submenu.map((item) => {
           return (
-            <Li key={item.id}>
-              <Subtitle onClick={() => scrollToArticle(item.id)}>{item.title}</Subtitle>
-            </Li>
+              <Li key={item.id}>
+                <Subtitle onClick={() => scrollToArticle(item.id)}>{item.title}</Subtitle>
+              </Li>
           );
         },
       )}

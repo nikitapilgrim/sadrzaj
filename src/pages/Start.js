@@ -5,10 +5,10 @@ import {useMount, useWindowSize} from 'react-use';
 import {Menu} from '../components/Menu/Menu';
 import {breakpoints} from '../mixins/breakpoints';
 
-import bgImage from '../assets/img/backgrounds/startsreen.jpg';
-import bgImageDesctop from '../assets/img/backgrounds/startscreen-desctop.jpg';
 import ArticlesData from '../Data/Articles';
 import {MultipleArticles} from '../components/Layouts/MultipleArticles';
+
+import bgHeader from '../assets/img/backgrounds/header.jpg';
 
 const AllSpace = css`
   height: 100%;
@@ -32,6 +32,8 @@ const Header = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: url(${bgHeader});
+  background-size: cover;
 `;
 
 const Inner = styled.div`
@@ -49,9 +51,9 @@ const BgContainer = styled.div`
 `;
 
 const Bg = styled.div`
-  background: url(${bgImage});
+  background: url(${bgHeader});
    @media ${breakpoints.tablet} {
-    background: url(${bgImageDesctop}) 50% 0%;
+    background: url(${bgHeader}) 50% 0%;
   }
   background-size: cover;
   ${AllSpace};
@@ -80,7 +82,7 @@ const Subtitle = styled.div`
   text-shadow: 0 4px 0 #000000;
   color: #ffffff;
   font-size: 26px;
-  font-weight: 700
+  font-weight: 700;
   @media ${breakpoints.tablet} {
     font-size: 44px;
   }
@@ -105,10 +107,10 @@ const Button = styled.button`
   }
   span {
     color: black;
-    background: url(${bgImage}) no-repeat;
+    background: url(${bgHeader}) no-repeat;
     background-position: 50% 50%;
     @media ${breakpoints.tablet} {
-      background: url(${bgImageDesctop}) no-repeat;
+      background: url(${bgHeader}) no-repeat;
       background-position: 50% 25%;
       -webkit-background-clip: text;
     }
