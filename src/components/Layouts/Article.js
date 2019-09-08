@@ -127,46 +127,6 @@ const Medals = {
   iron: require('../../assets/img/medals/medal-iron.png'),
   gold: require('../../assets/img/medals/medal-gold.png'),
 };
-/*
-const TextWithDividers = ({text}) => {
-  const {width, height} = useWindowSize();
-  const ref = useRef();
-  const size = useComponentSize(ref);
-  const [countTextForScreen, setCountTextForScreen] = useState(0);
-  const [countScreen, setCountScreen] = useState(0);
-  const [heightElement, setHeightElement] = useState(0);
-
-  useEffect(() => {
-    const heightElem = size.height;
-    const numberScreens = heightElem / height;
-    setHeightElement(heightElem);
-    setCountScreen(Math.round(numberScreens));
-    setCountTextForScreen(Math.round(text.length / numberScreens));
-    //console.log('sreen', height, 'element', heightElem, 'text', text.length);
-    //console.log(text.length / numberScreens);
-  }, [text]);
-
-  useEffect(() => {
-    const heightElem = size.height;
-    setHeightElement(heightElem);
-  }, []);
-
-  return (
-    <div style={{minHeight: `${heightElement}px`}} ref={ref}>
-      {[...Array(countScreen || 1)].map((_, i) => {
-        //console.log(i, 'i', countScreen, text);
-        console.log(countScreen, countTextForScreen, text.length)
-        const next = i + 1;
-        const sliceText = text.slice(i * countTextForScreen || 0, next * countTextForScreen);
-        return (
-          <p>
-            {sliceText}
-          </p>
-        );
-      })}
-    </div>
-  );
-};*/
 
 const Columns = styled.div`
   display: flex;
@@ -176,8 +136,7 @@ const Column = styled.div`
 
 `;
 
-const Paragraph = ({text, divider, getOffset, scrollToNext}) => {
-  const [active, count] = divider;
+const Paragraph = ({text, count, getOffset, scrollToNext, typeText}) => {
   const ref = useRef(null);
   const {width, height} = useWindowSize();
   const [columnText, setColumnText] = useState();
@@ -194,6 +153,8 @@ const Paragraph = ({text, divider, getOffset, scrollToNext}) => {
     }
   }, [width]);
 
+  console.log(active, count)
+
 
   useMount(() => {
     const top = ref.current.offsetTop;
@@ -203,13 +164,27 @@ const Paragraph = ({text, divider, getOffset, scrollToNext}) => {
 
   return (
     <div ref={ref}>
-      {columns ?
+      {columns && typeText === 'essay' ?
         <Columns>
           <Column>
-            {columnText[0]}
+            {columnText[0].map((item, index) => {
+              return (
+                <>
+                  {item}
+                  <br/>
+                </>
+              );
+            })}
           </Column>
           <Column>
-            {columnText[1]}
+            {columnText[1].map(item => {
+              return (
+                <>
+                  {item}
+                  <br/>
+                </>
+              );
+            })}
           </Column>
         </Columns> :
         <span>{text.map(item => {
@@ -221,12 +196,12 @@ const Paragraph = ({text, divider, getOffset, scrollToNext}) => {
           );
         })}</span>
       }
-      {active && <Divider onClick={() => scrollToNext()} number={count}/>}
+      {<Divider onClick={() => scrollToNext()} number={count}/>}
     </div>
   );
 };
 
-const TextWithDividers = ({text, offsetParent}) => {
+const TextWithDividers = ({text, typeText, offsetParent}) => {
   //const prepare = text.match(/[\s\S]{1,600}/g); old way
   const [offsets, setOffsets] = useState([]);
   const [prepareText, setPrepareText] = useState([]);
@@ -268,10 +243,13 @@ const TextWithDividers = ({text, offsetParent}) => {
       {prepareText.map((part, i) => {
         const count = i + 1;
         return (
-          <Paragraph scrollToNext={scroll(count + 1)}
-                     getOffset={getOffsets(count)}
-                     text={part}
-                     divider={[prepareText.length > 1, count]}/>
+          <Paragraph
+            key={count}
+            scrollToNext={scroll(count + 1)}
+            getOffset={getOffsets(count)}
+            text={part}
+            typeText={typeText}
+            count={count}/>
         );
       })}
     </div>
@@ -347,7 +325,7 @@ export const ArticleLayout = ({data, id, getOffset}) => {
             <AudioButton data={data.audio}/>
           </Buttons>
           <TextContainer>
-            <TextWithDividers offsetParent={offset} text={data.text}/>
+            <TextWithDividers offsetParent={offset} typeText={data.type} text={data.text}/>
           </TextContainer>
         </MainContainer>
       </Inner>

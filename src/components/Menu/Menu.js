@@ -146,7 +146,6 @@ const convertTitles = (title) => {
 
 export const Menu = ({scrollToArticle}) => {
   const ref = useRef(null);
-  const refTitle = useRef(null);
   const [menuHidden, setMenuHidden] = useState(true);
   const [menuItems, setMenuItems] = useState(null);
 
@@ -194,7 +193,7 @@ export const Menu = ({scrollToArticle}) => {
         <Hamburger/>
       </HamburgerWrapper>
       <MenuHidden hidden={menuHidden}>
-        {menuItems && menuItems.map((item, index) => <MenuItem ref={refTitle} scrollToArticle={scrollToArticle} key={index}
+        {menuItems && menuItems.map((item, index) => <MenuItem scrollToArticle={scrollToArticle} key={index}
                                                                title={item.title} submenu={item.submenu}/>)}
       </MenuHidden>
     </Wrapper>

@@ -9,11 +9,15 @@ export const MultipleArticles = ({data, getOffset}) => {
   };
 
   return (
-    <DVL
+    <>
+      {data.map(renderArticle)}
+
+    </>
+    /*<DVL
       onRender={renderArticle}
       items={data}
       windowContainer={true}
       buffer={1}
-    />
+    />*/
   );
 };
