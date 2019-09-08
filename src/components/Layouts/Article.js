@@ -163,7 +163,21 @@ const Paragraph = ({text, count, getOffset, scrollToNext, typeText}) => {
 
   return (
     <div ref={ref}>
-      {columns && typeText === 'essay' ?
+       <span>{text.map(item => {
+         return (
+           <>
+             {item}
+             <br/>
+           </>
+         );
+       })}</span>
+
+
+    </div>
+  );
+};
+
+/*{columns && typeText === 'essay' ?
         <Columns>
           <Column>
             {columnText[0].map((item, index) => {
@@ -194,11 +208,8 @@ const Paragraph = ({text, count, getOffset, scrollToNext, typeText}) => {
             </>
           );
         })}</span>
-      }
-      {<Divider onClick={() => scrollToNext()} number={count}/>}
-    </div>
-  );
-};
+      }*/
+/*{<Divider onClick={() => scrollToNext()} number={count}/>}*/
 
 const TextWithDividers = ({text, typeText, offsetParent}) => {
   //const prepare = text.match(/[\s\S]{1,600}/g); old way
@@ -226,7 +237,6 @@ const TextWithDividers = ({text, typeText, offsetParent}) => {
     setPrepareText(prepare);
   });
 
-  console.log(prepareText)
 
   const getOffsets = (id) => (offset) => {
     setOffsets(prev => ({...prev, [id]: offset}));
