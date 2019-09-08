@@ -210,8 +210,10 @@ const TextWithDividers = ({text, typeText, offsetParent}) => {
     const prepare = splitedText.reduce((acc, item) => {
       if (!acc.length) {
         acc.push([[item]]);
+        return acc;
       }
-      const string = acc[textCacheIndex].reduce((acc, elem) => acc.concat(elem));
+      //const string = acc[textCacheIndex].reduce((acc, elem) => acc.join(elem));
+      const string = acc[textCacheIndex].join(/\n/);
       if (string.length >= 600) {
         textCacheIndex = ++textCacheIndex;
         acc[textCacheIndex] = [];
@@ -223,6 +225,8 @@ const TextWithDividers = ({text, typeText, offsetParent}) => {
     }, []);
     setPrepareText(prepare);
   });
+
+  console.log(prepareText)
 
   const getOffsets = (id) => (offset) => {
     setOffsets(prev => ({...prev, [id]: offset}));
