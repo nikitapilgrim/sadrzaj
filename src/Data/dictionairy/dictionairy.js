@@ -17,6 +17,9 @@ export default [
     audio: require('./assets/sounds/braća Limijer.mp3'),
     video: require('./assets/videos/16.mp4')
   },
+];
+
+const a =[
   'bukagije',
   'belenzuke',
   'bostanu',
@@ -221,5 +224,4 @@ export default [
   'haber',
   'obeznani',
   'ко ђоја',
-  'земана',
-];
+  'земана'];

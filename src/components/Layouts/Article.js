@@ -7,6 +7,7 @@ import {breakpoints} from '../../mixins/breakpoints';
 import {TestButton} from '../Buttons/TestButton.js';
 import {AudioButton} from '../Buttons/AudioButton.js';
 import {Divider} from '../Divider';
+import Dictionary from '../../Data/dictionairy/dictionairy';
 
 import bg from '../../assets/img/backgrounds/halka07.jpg';
 
@@ -154,7 +155,6 @@ const Paragraph = ({text, count, getOffset, scrollToNext, typeText}) => {
       setColumns(false);
     }
   }, [width]);
-
 
 
   useMount(() => {
@@ -317,36 +317,36 @@ export const ArticleLayout = ({data, id, getOffset}) => {
 
   return (
     <>
-    <Wrapper ref={ref} id={id}>
-      <Inner>
-        <Title>{data.title}</Title>
-        <Row>
-          <Subtitle>{data.subtitle}</Subtitle>
-          <MedalContainer desctop={true}>
-            {medal &&
-            <MedalWrapper>
-              <Medal>
-                <img src={medal} alt="medal"/>
-                <MedalPercent>
-                  {percent}%
-                </MedalPercent>
-              </Medal>
-            </MedalWrapper>
-            }
-          </MedalContainer>
-        </Row>
-        <MainContainer className='main'>
-          <Buttons>
-            <TestButton onFinishTest={handlerFinishTest} questions={data.questions}/>
-            <AudioButton data={data.audio}/>
-          </Buttons>
-          <TextContainer>
-            <TextWithDividers offsetParent={offset} typeText={data.type} text={data.text}/>
-          </TextContainer>
-        </MainContainer>
-      </Inner>
-    </Wrapper>
+      <Wrapper ref={ref} id={id}>
+        <Inner>
+          <Title>{data.title}</Title>
+          <Row>
+            <Subtitle>{data.subtitle}</Subtitle>
+            <MedalContainer desctop={true}>
+              {medal &&
+              <MedalWrapper>
+                <Medal>
+                  <img src={medal} alt="medal"/>
+                  <MedalPercent>
+                    {percent}%
+                  </MedalPercent>
+                </Medal>
+              </MedalWrapper>
+              }
+            </MedalContainer>
+          </Row>
+          <MainContainer className='main'>
+            <Buttons>
+              <TestButton onFinishTest={handlerFinishTest} questions={data.questions}/>
+              <AudioButton data={data.audio}/>
+            </Buttons>
+            <TextContainer>
+              <TextWithDividers offsetParent={offset} typeText={data.type} text={data.text}/>
+            </TextContainer>
+          </MainContainer>
+        </Inner>
+      </Wrapper>
       <hr className='separator'/>
-      </>
+    </>
   );
 };
