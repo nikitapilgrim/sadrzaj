@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import useStoreon from 'storeon/react';
 import {useMount, useWindowSize} from 'react-use';
 import reactStringReplace from 'react-string-replace';
+import UIfx from 'uifx';
 
 import {Modal} from '../Modal/Modal'
 import {breakpoints} from '../../mixins/breakpoints';
@@ -14,6 +15,7 @@ import dictionary from '../../Data/dictionairy/dictionairy';
 import bg from '../../assets/img/backgrounds/halka07.jpg';
 import {DictionaryInner} from '../Modal/DictionairyInner';
 
+const MouseClick = new UIfx(require('../../assets/sounds/fx/mouseclick.mp3'));
 
 const Wrapper = styled.div`
   padding: 100px 50px;
@@ -191,7 +193,7 @@ const Paragraph = ({text, count, getOffset, scrollToNext, typeText}) => {
           {modalInfo && reactStringReplace(text, modalInfo.title, (match, i) => (
             <Modal style={{display: 'inline-block'}} inner={<DictionaryInner data={modalInfo} />
             }>
-              <Highlight>{match}</Highlight>
+              <Highlight onClick={() => MouseClick.play()}>{match}</Highlight>
             </Modal>
           )) || text}
         </>

@@ -4,6 +4,9 @@ import {useMount} from 'react-use';
 import {breakpoints} from '../../mixins/breakpoints';
 import {Hamburger} from './Hamburger';
 import {useClickAway} from 'react-use';
+import UIfx from 'uifx'
+
+const MouseClick = new UIfx(require('../../assets/sounds/fx/mouseclick.mp3'));
 
 import ArticleData from '../../Data/Articles';
 
@@ -116,13 +119,23 @@ const SubmenuWrapper = styled.ol`
 const MenuItem = ({title, submenu, scrollToArticle}) => {
   const [submenuState, setSubmenuState] = useState(true);
 
+  const handlerScroll = (id) => () => {
+    scrollToArticle(id);
+    MouseClick.play();
+  };
+
+  const handlerClick = () => {
+    setSubmenuState(!submenuState);
+    MouseClick.play();
+  };
+
   return (
     <Li>
-      <Title className={'menu__main'} onClick={() => setSubmenuState(!submenuState)}>{title}</Title>
+      <Title className={'menu__main'} onClick={handlerClick}>{title}</Title>
       <SubmenuWrapper hiddenSubmenu={submenuState}>{submenu.map((item) => {
           return (
               <Li key={item.id}>
-                <Subtitle onClick={() => scrollToArticle(item.id)}>{item.title}</Subtitle>
+                <Subtitle onClick={handlerScroll(item.id)}>{item.title}</Subtitle>
               </Li>
           );
         },
@@ -157,6 +170,7 @@ export const Menu = ({scrollToArticle}) => {
     if (!e.target.classList.contains('menu__main')) {
       setMenuHidden(!menuHidden);
     }
+    MouseClick.play();
   };
 
   useMount(() => {
