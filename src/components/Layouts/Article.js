@@ -30,8 +30,8 @@ const Wrapper = styled.div`
 
 const Inner = styled.div`
   max-width: 960px;
-  transform: scale(0.8);
   margin: 0 auto;
+  transform: scale(0.8);
 `;
 
 const Title = styled.h1`
