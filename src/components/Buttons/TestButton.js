@@ -76,7 +76,7 @@ export const TestButton = ({questions, onFinishTest}) => {
         setModalOpen(true);
       }}>
         <TestIcon/>
-        <span>Test</span>
+        <span>Provjera</span>
       </Wrapper>
     </Modal>
   );
