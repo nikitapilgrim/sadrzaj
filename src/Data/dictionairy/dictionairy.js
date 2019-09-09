@@ -7,7 +7,7 @@ export default [
     `,
     img: require('./assets/images/01-halka.jpg'),
     audio: require('./assets/sounds/braća Limijer.mp3'),
-    video: require('./assets/videos/16.mp4')
+    video: 'url'
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export default [
     `,
     img: require('./assets/images/01-halka.jpg'),
     audio: require('./assets/sounds/braća Limijer.mp3'),
-    video: require('./assets/videos/16.mp4')
+    video:'url'
   },
 ];
 
