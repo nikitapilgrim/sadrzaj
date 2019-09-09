@@ -2,12 +2,13 @@ import React, {useState, useEffect, useRef} from 'react';
 import styled from 'styled-components';
 import useStoreon from 'storeon/react';
 import {useMount, useWindowSize} from 'react-use';
+import reactStringReplace from 'react-string-replace';
 
 import {breakpoints} from '../../mixins/breakpoints';
 import {TestButton} from '../Buttons/TestButton.js';
 import {AudioButton} from '../Buttons/AudioButton.js';
 import {Divider} from '../Divider';
-import Dictionary from '../../Data/dictionairy/dictionairy';
+import dictionary from '../../Data/dictionairy/dictionairy';
 
 import bg from '../../assets/img/backgrounds/halka07.jpg';
 
@@ -139,6 +140,7 @@ const Column = styled.div`
 
 `;
 
+
 const Paragraph = ({text, count, getOffset, scrollToNext, typeText}) => {
   const ref = useRef(null);
   const {width, height} = useWindowSize();
@@ -163,12 +165,24 @@ const Paragraph = ({text, count, getOffset, scrollToNext, typeText}) => {
     return null;
   });
 
+  const findDictionary = (text) => {
+    const modalInfo = dictionary.find((word => text.includes(word.title)));
+    return (
+      <span>
+        {modalInfo && reactStringReplace(text, modalInfo.title, (match, i) => (
+          <span style={{color: 'red'}}>{match}</span>
+        )) || text}
+      </span>
+    )
+  };
+
   return (
     <div ref={ref}>
        <span>{text.map(item => {
+         console.log(item, 'f')
          return (
            <>
-             {item}
+             {findDictionary(item)}
              <br/>
            </>
          );

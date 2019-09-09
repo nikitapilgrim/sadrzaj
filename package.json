@@ -42,6 +42,7 @@
     "react-micro-modal": "^1.6.0",
     "react-modal": "^3.10.1",
     "react-modal-hook": "^2.0.0",
+    "react-string-replace": "^0.4.4",
     "react-use": "^11.3.2",
     "storeon": "^0.9.5",
     "styled-components": "^5.0.0-beta.8-groupsizefix",
