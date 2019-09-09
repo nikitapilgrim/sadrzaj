@@ -11,7 +11,6 @@ export const MultipleArticles = ({data, getOffset}) => {
   return (
     <>
       {data.map(renderArticle)}
-
     </>
     /*<DVL
       onRender={renderArticle}

@@ -5,6 +5,7 @@ export default [
     text: `some text
       here
     `,
+    img: require('./assets/images/01-halka.jpg'),
     audio: require('./assets/sounds/braća Limijer.mp3'),
     video: require('./assets/videos/16.mp4')
   },
@@ -14,6 +15,7 @@ export default [
     text: `some text
       here
     `,
+    img: require('./assets/images/01-halka.jpg'),
     audio: require('./assets/sounds/braća Limijer.mp3'),
     video: require('./assets/videos/16.mp4')
   },

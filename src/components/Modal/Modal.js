@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import ReactModal from 'react-modal';
 import CloseIcon from '../../assets/img/icons/close_icon.png';
 
-const Wrapper = styled.div`
+const Wrapper = styled.span`
   display: flex;
   z-index: 999;
   justify-content: center;
@@ -32,7 +32,7 @@ const CloseModal = styled.button`
   cursor: pointer;
 `;
 
-const Inner = styled.div`
+const Inner = styled.span`
   position: relative;
   display: flex;
   justify-content: center;
@@ -41,6 +41,15 @@ const Inner = styled.div`
 `;
 
 export const Modal = ({children, inner, isOpen, close}) => {
+  const [open, setOpen] = useState(false);
+
+  const handlerClose = () => {
+    setOpen(false);
+    if (close) {
+      close();
+    }
+  };
+
   useEffect(() => {
     ReactModal.setAppElement('#root');
   }, []);
@@ -49,7 +58,7 @@ export const Modal = ({children, inner, isOpen, close}) => {
     window.addEventListener('keydown', function(e) {
       if ((e.key === 'Escape' || e.key === 'Esc' || e.code === 'Escape')) {
         e.preventDefault();
-        close();
+        handlerClose();
         return false;
       }
     }, true);
@@ -57,15 +66,17 @@ export const Modal = ({children, inner, isOpen, close}) => {
 
   return (
     <>
-      <ReactModal isOpen={isOpen}>
+      <ReactModal isOpen={open}>
         <Wrapper>
           <Inner>
             {inner}
-            <CloseModal onClick={() => close()}/>
+            <CloseModal onClick={() => setOpen(false)}/>
           </Inner>
         </Wrapper>
       </ReactModal>
-      {children}
+      <div onClick={() => setOpen(true)}>
+        {children}
+      </div>
     </>
   );
 };

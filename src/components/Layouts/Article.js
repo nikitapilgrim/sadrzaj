@@ -4,6 +4,7 @@ import useStoreon from 'storeon/react';
 import {useMount, useWindowSize} from 'react-use';
 import reactStringReplace from 'react-string-replace';
 
+import {Modal} from '../Modal/Modal'
 import {breakpoints} from '../../mixins/breakpoints';
 import {TestButton} from '../Buttons/TestButton.js';
 import {AudioButton} from '../Buttons/AudioButton.js';
@@ -11,6 +12,7 @@ import {Divider} from '../Divider';
 import dictionary from '../../Data/dictionairy/dictionairy';
 
 import bg from '../../assets/img/backgrounds/halka07.jpg';
+import {DictionaryInner} from '../Modal/DictionairyInner';
 
 
 const Wrapper = styled.div`
@@ -139,6 +141,17 @@ const Columns = styled.div`
 const Column = styled.div`
 
 `;
+const Span = styled.span`
+  display: flex;
+  flex-wrap: wrap;
+`;
+
+const Highlight =  styled.span`
+  color: #fff600;
+  font-weight: 900;
+  text-decoration: underline;
+  cursor: pointer;
+`;
 
 
 const Paragraph = ({text, count, getOffset, scrollToNext, typeText}) => {
@@ -168,18 +181,20 @@ const Paragraph = ({text, count, getOffset, scrollToNext, typeText}) => {
   const findDictionary = (text) => {
     const modalInfo = dictionary.find((word => text.includes(word.title)));
     return (
-      <span>
-        {modalInfo && reactStringReplace(text, modalInfo.title, (match, i) => (
-          <span style={{color: 'red'}}>{match}</span>
-        )) || text}
-      </span>
+        <Span>
+          {modalInfo && reactStringReplace(text, modalInfo.title, (match, i) => (
+            <Modal inner={<DictionaryInner data={modalInfo} />
+            }>
+              <Highlight>{match}</Highlight>
+            </Modal>
+          )) || text}
+        </Span>
     )
   };
 
   return (
     <div ref={ref}>
        <span>{text.map(item => {
-         console.log(item, 'f')
          return (
            <>
              {findDictionary(item)}
