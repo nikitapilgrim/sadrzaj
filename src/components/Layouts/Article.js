@@ -142,7 +142,7 @@ const Column = styled.div`
 
 `;
 const Span = styled.span`
-  display: flex;
+  display: inline-block;
   flex-wrap: wrap;
 `;
 
@@ -151,6 +151,12 @@ const Highlight =  styled.span`
   font-weight: 900;
   text-decoration: underline;
   cursor: pointer;
+`;
+
+const ParagraphInner = styled.span`
+  div {
+    display: inline-block;
+  }
 `;
 
 
@@ -181,29 +187,27 @@ const Paragraph = ({text, count, getOffset, scrollToNext, typeText}) => {
   const findDictionary = (text) => {
     const modalInfo = dictionary.find((word => text.includes(word.title)));
     return (
-        <Span>
+        <>
           {modalInfo && reactStringReplace(text, modalInfo.title, (match, i) => (
-            <Modal inner={<DictionaryInner data={modalInfo} />
+            <Modal style={{display: 'inline-block'}} inner={<DictionaryInner data={modalInfo} />
             }>
               <Highlight>{match}</Highlight>
             </Modal>
           )) || text}
-        </Span>
+        </>
     )
   };
 
   return (
     <div ref={ref}>
-       <span>{text.map(item => {
+       <ParagraphInner>{text.map(item => {
          return (
            <>
              {findDictionary(item)}
              <br/>
            </>
          );
-       })}</span>
-
-
+       })}</ParagraphInner>
     </div>
   );
 };
