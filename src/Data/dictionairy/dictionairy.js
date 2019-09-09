@@ -5,8 +5,8 @@ export default [
     text: `some text
       here
     `,
-    audio: 'url',
-    video: 'url'
+    audio: require('./assets/some.mp3'),
+    video: require('./assets/some.mp4')
   },
   {
     id: 2,
@@ -14,8 +14,8 @@ export default [
     text: `some text
       here
     `,
-    audio: 'url',
-    video: 'url'
+    audio: require('./assets/some.mp3'),
+    video: require('./assets/some.mp4')
   },
   'bukagije',
   'belenzuke',
