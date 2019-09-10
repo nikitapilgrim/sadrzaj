@@ -89,6 +89,7 @@ const Subtitle = styled.div`
 `;
 
 const Button = styled.button`
+  cursor: pointer;
   position: relative;
   margin-top: 60px;
   background: #FFF;
@@ -148,7 +149,7 @@ export const Start = () => {
           <Title>Citanka 8-9</Title>
           <Subtitle>Ljiljana Mitic-Roric</Subtitle>
           <Subtitle>Alija H. Dubocanin</Subtitle>
-          <Button size={[width, height]}><span>Start</span></Button>
+          <Button onClick={() => scrollToArticle(1)} size={[width, height]}><span>Start</span></Button>
         </Inner>
         <BgContainer>
           <Bg/>

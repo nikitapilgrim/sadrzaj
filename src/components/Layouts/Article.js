@@ -82,6 +82,7 @@ const Buttons = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  transform: scale(0.7);
   button:last-child {
     margin-left: 10px;
   }

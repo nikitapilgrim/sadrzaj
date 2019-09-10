@@ -11,6 +11,7 @@ const MouseClick = new UIfx(require('../../assets/sounds/fx/mouseclick.mp3'));
 import ArticleData from '../../Data/Articles';
 
 const Wrapper = styled.div`
+  cursor: pointer;
   position: fixed;
   right: 2vw;
   top: 3vh;
