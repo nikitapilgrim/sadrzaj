@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import UIfx from 'uifx'
+import {breakpoints} from '../../mixins/breakpoints';
 
 const correct = new UIfx(require('../../assets/sounds/fx/correct-answer.aac'));
 const worng = new UIfx(require('../../assets/sounds/fx/wrong-answer.aac'));
@@ -24,15 +25,17 @@ const AnswersContainer = styled.div`
 `;
 
 const AnswerButton = styled.button`
-  padding: 25px;
+  color: ${props => props.right ? '#ffffff' : 'black'};
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 25px;
   box-shadow: 0 3px 0 #000000;
   border-radius: 5px;
-  background-color: #af8655;
-  color: ${props => props.right ? '#ffffff' : 'black'};
-  font-size: 41px;
-  font-weight: 900;
-  cursor: pointer;
-  
+  border: 1px solid #fcfbc4;
+  background-color: #c79e1f;
+
 `;
 
 

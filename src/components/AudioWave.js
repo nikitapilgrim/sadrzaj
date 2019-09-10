@@ -127,7 +127,7 @@ export const AudioWave = (props) => {
       console.log('target audio not found!');
       return;
     } else if (audioId) {
-      setAudioEle(document.getElementById(audioId);)
+      setAudioEle(document.getElementById(audioId))
     } else {
       setAudioEle(audioEle);
     }

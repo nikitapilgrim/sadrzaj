@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import styled from 'styled-components';
 import useAudio from 'react-use/lib/useAudio';
-import {Wave} from '../Wave';
+import {AudioWave} from '../AudioWave';
 
 const Wrapper = styled.div`
   position: relative;
@@ -22,7 +22,7 @@ export const InnerAudio = ({data, close}) => {
   });
 
   const options = {
-    id: 'audio-canv',
+    id: 'audio-canvas',
     height: 200,
     width: 300,
     audioId: 'audio-modal',
@@ -41,8 +41,9 @@ export const InnerAudio = ({data, close}) => {
   return (
     <Wrapper>
       <AudioContainer>
+        {audio}
       </AudioContainer>
-      <Wave/>
+      <AudioWave {...options}/>
     </Wrapper>
   );
 };
