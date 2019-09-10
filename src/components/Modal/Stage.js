@@ -1,5 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import UIfx from 'uifx'
+
+const correct = new UIfx(require('../../assets/sounds/fx/correct-answer.aac'));
+const worng = new UIfx(require('../../assets/sounds/fx/wrong-answer.aac'));
 
 
 const Title = styled.div`
@@ -38,9 +42,11 @@ export const Stage = ({stage, data, onRight, nextStage}) => {
   const stageHandler = (right) => () => {
     if (right) {
       onRight();
+      correct.play();
       nextStage();
     }
     if (!right) {
+      worng.play();
       nextStage();
     }
   };
