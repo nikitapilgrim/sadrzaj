@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import styled from 'styled-components';
-import AudioSpectrum from 'react-audio-spectrum';
 import useAudio from 'react-use/lib/useAudio';
+import {Wave} from '../Wave';
 
 const Wrapper = styled.div`
   position: relative;
@@ -41,10 +41,8 @@ export const InnerAudio = ({data, close}) => {
   return (
     <Wrapper>
       <AudioContainer>
-        {audio}
       </AudioContainer>
-      <AudioSpectrum {...options}/>
-      <AudioSpectrum {...options}/>
+      <Wave/>
     </Wrapper>
   );
 };
