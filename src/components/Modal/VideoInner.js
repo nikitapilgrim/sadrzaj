@@ -52,18 +52,20 @@ export const VideoInner = ({src = 'http://clips.vorwaerts-gmbh.de/big_buck_bunny
   const [video, state, controls, ref] = useVideo(
     <video controls src={'http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4'}/>
   );
-  const  [play, setPlay] = useState(false);
+  const  [play, setPlay] = useState(true);
 
   const handlerPlayVideo = () => {
     mouseClick.play();
-    setPlay(state => {
-      const action = {
-        true: controls.play,
-        false: controls.pause
-      };
-      action[!state]();
-    });
-    setPlay(!play)
+    if (play) {
+      controls.play();
+      setPlay(!play);
+      return false
+    }
+    if (!play) {
+      controls.pause();
+      setPlay(!play);
+      return false
+    }
   };
 
   return (
@@ -78,7 +80,7 @@ export const VideoInner = ({src = 'http://clips.vorwaerts-gmbh.de/big_buck_bunny
         }}>
           <FastBack/>
         </RewindBack>
-        <PlayButton state={play} onClick={handlerPlayVideo}>
+        <PlayButton onClick={handlerPlayVideo}>
           {play ? <PlaySVG/> : <PauseSVG/>}
         </PlayButton>
         <Rewind onClick={() => {
