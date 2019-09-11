@@ -5,12 +5,8 @@ import PauseSVG from '../../assets/svg/pause.svg'
 import PlaySVG from '../../assets/svg/play.svg'
 import FastBack from '../../assets/svg/fast_back.svg';
 import FastForward from '../../assets/svg/fast_forward.svg';
-
-const icons = {
-  play: require('../../assets/img/icons/play.png'),
-  rewind: require('../../assets/img/icons/rewind.png'),
-  rewindBack: require('../../assets/img/icons/rewind_back.png'),
-};
+import UIfx from 'uifx'
+const mouseClick = new UIfx(require('../../assets/sounds/fx/mouseclick.mp3'));
 
 const Wrapper = styled.div`
   
@@ -59,6 +55,7 @@ export const VideoInner = ({src = 'http://clips.vorwaerts-gmbh.de/big_buck_bunny
   const  [play, setPlay] = useState(false);
 
   const handlerPlayVideo = () => {
+    mouseClick.play();
     setPlay(state => {
       const action = {
         true: controls.play,
@@ -75,13 +72,19 @@ export const VideoInner = ({src = 'http://clips.vorwaerts-gmbh.de/big_buck_bunny
         {video}
       </VideoWrapper>
       <ControlPanel>
-        <RewindBack onClick={() => controls.seek(state.time - 5)}>
+        <RewindBack onClick={() => {
+          mouseClick.play();
+          controls.seek(state.time - 5)
+        }}>
           <FastBack/>
         </RewindBack>
         <PlayButton state={play} onClick={handlerPlayVideo}>
           {play ? <PlaySVG/> : <PauseSVG/>}
         </PlayButton>
-        <Rewind onClick={() => controls.seek(state.time + 5)}>
+        <Rewind onClick={() => {
+          mouseClick.play();
+          controls.seek(state.time + 5);
+        }}>
           <FastForward/>
         </Rewind>
       </ControlPanel>
