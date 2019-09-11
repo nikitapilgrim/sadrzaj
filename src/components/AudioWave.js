@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import useMount from 'react-use/lib/useMount';
 
 const getRandomId = (len) => {
@@ -23,26 +23,46 @@ export const AudioWave = (props) => {
   const [analyser, setAnalyser] = useState(null);
 
 
-  useMount(() => {
-      prepareElements();
-      initAudioEvents();
-  });
+  useEffect(() => {
+    prepareElements();
+  }, []);
 
-  const initAudioEvents = () => {
+
+  const prepareElements = () => {
+    let {audioId, audioEle} = props;
+    if (!audioId && !audioEle) {
+      console.log('target audio not found!');
+      return;
+    } else if (audioId) {
+      setAudioEle(document.getElementById(audioId))
+    } else {
+      setAudioEle(audioEle);
+    }
+    setAudioCanvas(document.getElementById(canvasId));
+  };
+
+  useEffect(() => {
     if (audioEle) {
       audioEle.onpause = (e) => {
         setPlayStatus('PAUSED')
+        console.log('paus')
       };
       audioEle.onplay = (e) => {
-        setPlayStatus('PLAYING')
+        setPlayStatus('PLAYING');
         prepareAPIs();
-        let analyser = setupAudioNode(audioEle);
-        drawSpectrum(analyser);
       };
     }
-  };
+  }, );
 
-  const drawSpectrum = (analyser) => {
+  useEffect(() => {
+    if (audioContext && analyser) {
+      drawSpectrum();
+    }
+  }, [audioContext, analyser]);
+
+
+
+  const drawSpectrum = () => {
     let cwidth = audioCanvas.width;
     let cheight = audioCanvas.height - props.capHeight;
     let capYPositionArray = [];
@@ -59,6 +79,7 @@ export const AudioWave = (props) => {
       gradient = props.meterColor;
     }
 
+    console.log(analyser, 'anl')
     let drawMeter = () => {
       let array = new Uint8Array(analyser.frequencyBinCount);
       analyser.getByteFrequencyData(array);
@@ -106,34 +127,26 @@ export const AudioWave = (props) => {
     setAnimationId(requestAnimationFrame(drawMeter))
   };
 
-  const setupAudioNode = (audioEle) => {
+  useEffect(() => {
     if (!analyser) {
-      setAnalyser(audioContext.createAnalyser());
-      analyser.smoothingTimeConstant = 0.8;
-      analyser.fftSize = 2048;
+      console.log(analyser, audioContext)
+      if (audioContext) {
+        console.log(analyser, audioContext)
+        let audioContext = audioContext.createAnalyser();
+        audioContext.smoothingTimeConstant = 0.8;
+        audioContext.fftSize = 2048;
+        setAnalyser(audioContext);
+      }
     }
+  });
 
-    if (!mediaEleSource) {
+  useEffect(() => {
+    if (!mediaEleSource && audioContext) {
       setMediaEleSource(audioContext.createMediaElementSource(audioEle));
       mediaEleSource.connect(analyser);
       mediaEleSource.connect(audioContext.destination);
     }
-
-    return analyser;
-  };
-  const prepareElements = () => {
-    let {audioId, audioEle} = props;
-    if (!audioId && !audioEle) {
-      console.log('target audio not found!');
-      return;
-    } else if (audioId) {
-      setAudioEle(document.getElementById(audioId))
-    } else {
-      setAudioEle(audioEle);
-    }
-
-    setAudioCanvas(document.getElementById(canvasId));
-  };
+  }, [analyser, audioContext]);
 
   const prepareAPIs = () => {
     // fix browser vender for AudioContext and requestAnimationFrame

@@ -19,7 +19,7 @@ export default [
           bukagije – moje belenzuke!”
           
           Lirska narodna pjesma (sevdalinka)`,
-    video: 'url',
+    video: false,
     audio: require(`../assets/sounds/pronunciation/testvoice.aac`),
     questions: [
       {
@@ -220,7 +220,7 @@ pak da pišem tri godine dana,
 ne bi moji’ ispisala jada!”
 
 Narodna lirska pjesma (sevdalinka)`,
-    video: 'url',
+    video: false,
     audio: 'url',
     questions: [
       {
@@ -416,7 +416,7 @@ i proklinju i staro i mlado
 ko rastavi i milo i drago.
 
 Narodna balada`,
-    video: 'url',
+    video: false,
     audio: 'url',
     questions: [
       {
@@ -542,7 +542,7 @@ Mrak se počeo spuštati nad zemlju kad eto ti onog njegova prijatelja što mu j
 – Kakav kupac, kakva kuća? Došao ti kući trgovac koji ti se zadužio kod oca, pa eno sad na tri deve donio blago, sav dug i hedije. Nije ni znao da ti je otac umro, pa hajde sad ti primi to imáće.
 
 Alija Nametak`,
-    video: 'url',
+    video: false,
     audio: 'url',
     questions: [
       {
@@ -668,7 +668,7 @@ Starac osjeti nesvjesticu i mučninu te mu se smrači pred očima. Ali on otpust
             
             
 Ernest Hemingvej`,
-    video: 'url',
+    video: false,
     audio: 'url',
     questions: [
       {
@@ -784,7 +784,7 @@ Zaboravio sam na nju docnije, život je raspršio snatrenja mladosti, moguća u 
 Bio jednom jedan dječak, u očevoj kući, nad rijekom, koji je sanjao zlatne snove, jer ništa nije znao o životu.
 
 Meša Selimović`,
-    video: 'url',
+    video: false,
     audio: 'url',
     questions: [
       {
@@ -906,7 +906,7 @@ Meša Selimović`,
             
           
           Ernest Hemingvej`,
-    video: 'url',
+    video: false,
     audio: 'url',
     questions: [
       {
@@ -1024,7 +1024,7 @@ Meša Selimović`,
                       
           
           Džerom D. Selindžer`,
-    video: 'url',
+    video: false,
     audio: 'url',
     questions: [
       {
@@ -1140,7 +1140,7 @@ Meša Selimović`,
             Blaga svjetlost ispuni komoru; spram ulaza koji se sve više širio, on razabra obrise pokretnih obličja. I upravo tog časa sjećanje mu se potpuno povrati i on shvati gdje se, u stvari, nalazi. Iako se bezbjedno vratio sa najdaljih međa smrti, bio je odsutan samo nedjelju dana. Kada bude izašao iz hibernakuluma, neće ugledati hladno Saturnovo nebo; ono se i dalje nalazilo više od godinu dana u budućnost i milijardu milja daleko. Još je bio u odjeljenju za obuku u Središtu za svemirski let u Hjustonu, pod vrelim Suncem Teksasa.
 			
             Artur Klark`,
-    video: 'url',
+    video: false,
     audio: 'url',
     questions: [
       {
@@ -1272,7 +1272,7 @@ Meša Selimović`,
             Dugo sam stajala i gledala Otok plavih dupina. S vida mi je posljednji iščeznuo Visoki rt. Mislila sam na Tontua koji ondje leži pod kamenjem svakakvih boja, a i na Won-a-nee koja je tko zna gdje, i na malu crvenu lisicu koja bi mi uzaludno grebla po ogradi, i na svoj kanu skriven u špilji, i na sve one sretne dane.
             Iz mora su izranjali dupini i plivali ispred broda. Ligama su tako ujutro plivali, vezući mnoge pjenušave preplete. Moje su ptičice cvrkutale u krleci, a kraj mene jе sjedio Rontu-Aru.
             Skot O’ Del`,
-    video: 'url',
+    video: false,
     audio: 'url',
     questions: [
       {
@@ -1370,7 +1370,7 @@ Meša Selimović`,
             ...Равнодушно гледају ти горостаси кад златни облаци, прамен по прамен, просипају своје злато, кад се умиљавају свеже горске маглице плаве као једро грожђе, кад се сунце помеша са зимом и као златне пчеле лепршају пахуљице снега.
             Чудна драж је заронити у тишину и покрета и звука. Негде на дно човека падају мисли, и глава плива у несвестици визија. Та шума, то су закопани џинови који хоће да пођу, и гле, ако одједаред ишчупају ноге из земље, заљуљају своја огромна телеса, и почне путовати црна шума са белом шубаром на глави... Тишина. Бескрајна шумска путовања, и на белоћи стоји само траг мојих дугих дрвених ципела. Чудно ми је и не могу да схватим. Смешно ми је и смејем се Сфингиним смехом без веселости. У тишини је све, и воља за животом и воља за пропашћу. Дух одриче, а живот хоће живот...
             Исидора Секулић`,
-    video: 'url',
+    video: false,
     audio: 'url',
     questions: [
       {
@@ -1493,7 +1493,7 @@ Meša Selimović`,
            У неким новинама одштампана је читуља једној ријеткости. Изгорјела је једне ноћи иза добро осигураних замандаљених капија...
            Из бедекера је истргнута страница о мравињаку, гдје се годинама и данима зацјењивало, уцјењивало, процјењивало и цјенкало, док густ кисео дим није однио све у бесцијење...
            Зуко Џумхур`,
-    video: 'url',
+    video: false,
     audio: 'url',
     questions: [
       {
@@ -1589,7 +1589,7 @@ Meša Selimović`,
   Onaj što ju je zidao, nije nam svoje ime ostavio, pa pred sobom gledamo djelo – a ne znamo ime njegovog tvorca. Mora da je aršinom mjerio svaki kamen, svaki luk, svaki stub, svako okno – svaki prst na mostu, jer tu je sve skladno, sve izmjereno, sve po aršinu. Pa je i kod popravaka tako mjereno – sve na metar i na santimetar, kako bi sve bilo kao što je i nekad bilo – prije gotovo četiri stoljeća. Popravljan je više puta – jer nijedan od ratova nije prošao a da ovu starinu nije rušio; i zanimljivo je da su uz obadva velika rata bili porušeni isti lukovi, isti stubovi. To jest: ono što nisu mogli toliki povodnji i toliko vrijeme, mogla je ruka rušioca. Porušeni lukovi ličili su tada na kakve pećine – i bila je to tužna slika; stajao sam tada na obali i gledao je. Ni Drina više nije bila lijepa, jer to dvoje – na ovom mjestu, kad se nađu jedno bez drugog, nije više lijepo; i sve je ličilo na srušen hram, na pustoš.
   Danas su te rane zacijeljene, i jedva se poznaje gdje su i bile, ili se nikako i ne poznaje, nego je onako kao i nekad – kad je ovu ćupriju, ispustivši aršin iz ruku, ostavio za sobom njen graditelj. Bilo je to godine 1577. Davno i davno! Mnogo je od tada niz Drinu prošlo vode, mnogo ljudi sjelo na “sofu” – i odatle, sa sredine mosta, sa visine od oko petnaest metara iznad vode, gledalo dolje niz Drinu, i gore uz Drinu, i pred sobom grad Višegrad. A ako je neko umio, mogao je tu odmah prema “sofi ”, a na ploči mramornoj, čitati ovakav natpis na mostu: “Gospodin Mehmed-paša, mudrac svog vremena, potrošio je svoj imetak na zadužbine. Niko neće reći za imetak koji se troši na zadužbine, da je rasipanje. Bio je svjestan da su svakom njegova djela najbolje potomstvo. Podigao je most, kojem na svijetu nema ravna. Nemoj reći da je propao imetak, koji se troši na ovakva djela.“
             Ćamil Sijarić`,
-    video: 'url',
+    video: false,
     audio: 'url',
     questions: [
       {
@@ -1696,7 +1696,7 @@ Meša Selimović`,
     id: 14,
     title: 'Umjetnička književnost – Lirske pjesme',
     subtitle: 'Zavidim jedino pužu',
-    video: 'url',
+    video: false,
     audio: 'url',
     questions: [],
     type: lyrics,
@@ -1722,7 +1722,7 @@ Meša Selimović`,
     id: 15,
     title: 'Umjetnička književnost – Lirske pjesme',
     subtitle: 'Kiša u Sarajevu',
-    video: 'url',
+    video: false,
     audio: 'url',
     questions: [],
     type: lyrics,
@@ -1787,7 +1787,7 @@ Meša Selimović`,
            
 		   Godine 974. (1576–77)
            Derviš-paša Bajezidagić`,
-    video: 'url',
+    video: false,
     audio: 'url',
     questions: [
       {
@@ -1972,7 +1972,7 @@ Meša Selimović`,
            Žene su osjetile da je u sobu došla Smrt.
            
 			Slavko Kolar`,
-    video: 'url',
+    video: false,
     audio: 'url',
     questions: [
       {
@@ -2090,7 +2090,7 @@ Meša Selimović`,
            Порумењела сам у том тренутку... и постидјела се својих суза.
             
 			Злата Коларић-Кишур`,
-    video: 'url',
+    video: false,
     audio: 'url',
     questions: [
       {
@@ -2197,7 +2197,7 @@ Meša Selimović`,
             U vreme dok sam radio na ovoj priči brinuo sam o mnogim nedostacima, a ponajviše o nepouzdanom svršetku, ali tada mi je u pomoć priskočio slučaj, zaštitnik pripovedača. Jednog dana sam susreo nekadašnju voditeljicu Tribine, sada ženu srednjih godina, ostarelu pre vremena. Nećete mi verovati, ali tamo više nije bilo nijedne crte nekadašnje lepotice. Kratko i bezvoljno razgovarali smo o prošlosti, pominjala je mnoga imena koja mi ništa nisu značila. Jedva sam čekao da se pozdravimo. Na rastanku je rekla:
             – Nikad neću zaboraviti onu pticu! Sećaš li se? Što ne napišeš nešto o tome?
             <i>Mirko Kovač</i>`,
-    video: 'url',
+    video: false,
     audio: 'url',
     questions: [
       {
@@ -2291,7 +2291,7 @@ Meša Selimović`,
             U vreme dok sam radio na ovoj priči brinuo sam o mnogim nedostacima, a ponajviše o nepouzdanom svršetku, ali tada mi je u pomoć priskočio slučaj, zaštitnik pripovedača. Jednog dana sam susreo nekadašnju voditeljicu Tribine, sada ženu srednjih godina, ostarelu pre vremena. Nećete mi verovati, ali tamo više nije bilo nijedne crte nekadašnje lepotice. Kratko i bezvoljno razgovarali smo o prošlosti, pominjala je mnoga imena koja mi ništa nisu značila. Jedva sam čekao da se pozdravimo. Na rastanku je rekla:
             – Nikad neću zaboraviti onu pticu! Sećaš li se? Što ne napišeš nešto o tome?
             <i>Mirko Kovač</i>`,
-    video: 'url',
+    video: false,
     audio: 'url',
     questions: [
       {
@@ -2412,7 +2412,7 @@ Meša Selimović`,
            (1886)
             
 			Anton Pavlovič Čehov`,
-    video: 'url',
+    video: false,
     audio: 'url',
     questions: [
       {
@@ -2769,7 +2769,7 @@ Meša Selimović`,
             <br> Аl’ zašto, zašto?
             
 			<i>Milan Ogrizović</i>`,
-    video: 'url',
+    video: false,
     audio: 'url',
     questions: [
       {
@@ -2894,7 +2894,7 @@ Meša Selimović`,
             СУДАЦ: А име?
             ДАВИД: Име му је Јолпаз Давидов. Тако га свијет зове, а тако ће му и славни суд позивке писати, ако га данас не осудите на вјешала. Село му се зове Мелина, котар Бања Лука, окружје Бања Лука, а земља, мислим, главати господине, да ће и њему бити Босна. Кућна му је лумера, каже кнез, оне двије кантарске куке.
             <i>Петар Кочић</i>`,
-    video: 'url',
+    video: false,
     audio: 'url',
     questions: [
       {

@@ -9,6 +9,7 @@ import {Modal} from '../Modal/Modal'
 import {breakpoints} from '../../mixins/breakpoints';
 import {TestButton} from '../Buttons/TestButton.js';
 import {AudioButton} from '../Buttons/AudioButton.js';
+import {VideoButton} from '../Buttons/VideoButton';
 import {Divider} from '../Divider';
 import dictionary from '../../Data/dictionairy/dictionairy';
 
@@ -375,6 +376,7 @@ export const ArticleLayout = ({data, id, getOffset}) => {
             <Buttons>
               <TestButton onFinishTest={handlerFinishTest} questions={data.questions}/>
               <AudioButton data={data.audio}/>
+              <VideoButton src={data.video}/>
             </Buttons>
             <TextContainer>
               <TextWithDividers offsetParent={offset} typeText={data.type} text={data.text}/>

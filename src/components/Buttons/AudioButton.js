@@ -48,9 +48,9 @@ export const AudioButton = ({data}) => {
 
   return (
     <Modal
-      close={() => setModalOpen(false)}
-      isOpen={modalOpen}
-           inner={<InnerAudio data={data} close={() => setModalOpen(false)}/>}>
+        close={() => setModalOpen(false)}
+        isOpen={modalOpen}
+        inner={<InnerAudio data={data} close={() => setModalOpen(false)}/>}>
       <Wrapper onClick={() => setModalOpen(true)}>
         <PlayIcon/>
         <span>Audio</span>

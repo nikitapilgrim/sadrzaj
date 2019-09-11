@@ -38,6 +38,7 @@
     "preact": "^10.0.0-rc.1",
     "react": "^16.9.0",
     "react-audio-spectrum": "^0.1.0",
+    "react-audio-waveform": "0.0.5",
     "react-dom": "^16.9.0",
     "react-dynamic-virtual-list": "^1.7.0",
     "react-micro-modal": "^1.6.0",

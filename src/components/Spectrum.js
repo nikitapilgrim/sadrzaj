@@ -82,7 +82,7 @@ export class AudioSpectrum extends Component {
         if (capYPositionArray.length < Math.round(this.props.meterCount)) {
           capYPositionArray.push(value);
         }
-        ;
+
         ctx.fillStyle = this.props.capColor;
         // draw the cap, with transition effect
         if (value < capYPositionArray[i]) {
