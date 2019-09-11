@@ -73,9 +73,11 @@ export const Modal = ({children, inner, isOpen, close}) => {
   useEffect(() => {
     const root = document.querySelector('#root');
     if (open) {
-      root.style.filter = 'blur(5px)'
+      root.style.filter = 'blur(5px)';
+      root.style.transform = 'scale(1.05)'
     } else {
-      root.style.filter = 'none'
+      root.style.filter = 'none';
+      root.style.transform = 'none'
     }
   }, [open]);
 
