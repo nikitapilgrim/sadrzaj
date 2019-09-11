@@ -1,10 +1,13 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
-import {useVideo, useFullscreen, useToggle} from 'react-use';
+import {useVideo} from 'react-use';
+import PauseSVG from '../../assets/svg/pause.svg'
+import PlaySVG from '../../assets/svg/play.svg'
+import FastBack from '../../assets/svg/fast_back.svg';
+import FastForward from '../../assets/svg/fast_forward.svg';
 
 const icons = {
   play: require('../../assets/img/icons/play.png'),
-  fullscreen: require('../../assets/img/icons/fullscreen.png'),
   rewind: require('../../assets/img/icons/rewind.png'),
   rewindBack: require('../../assets/img/icons/rewind_back.png'),
 };
@@ -20,29 +23,21 @@ const VideoWrapper = styled.div`
 const ControlPanel = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-top: 30px;
 `;
 
 const PlayButton = styled.button`
-  background: url(${icons.play});
   cursor: pointer;
   border: none;
   width: 91px;
   height: 91px;
   margin: 0 30px;
-`;
-
-const FullScreen = styled.button`
-  background: url(${icons.fullscreen});
-  cursor: pointer;
-  border: none;
-  width: 85px;
-  height: 69px;
-  margin-left: auto;
+  background: none;
 `;
 
 const Rewind = styled.button`
-  background: url(${icons.rewind});
+  background: none;
   cursor: pointer;
   border: none;
   width: 59px;
@@ -50,7 +45,7 @@ const Rewind = styled.button`
 `;
 
 const RewindBack = styled.button`
-  background: url(${icons.rewindBack});
+  background: none;
   cursor: pointer;
   border: none;
   width: 59px;
@@ -61,9 +56,7 @@ export const VideoInner = ({src = 'http://clips.vorwaerts-gmbh.de/big_buck_bunny
   const [video, state, controls, ref] = useVideo(
     <video controls src={'http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4'}/>
   );
-  const [show, toggle] = useToggle(false);
   const  [play, setPlay] = useState(false);
-  const isFullscreen = useFullscreen(ref, show, {onClose: () => toggle(false)});
 
   const handlerPlayVideo = () => {
     setPlay(state => {
@@ -82,12 +75,17 @@ export const VideoInner = ({src = 'http://clips.vorwaerts-gmbh.de/big_buck_bunny
         {video}
       </VideoWrapper>
       <ControlPanel>
-        <RewindBack onClick={() => controls.seek(state.time - 5)}/>
-        <PlayButton state={play} onClick={handlerPlayVideo}/>
-        <Rewind onClick={() => controls.seek(state.time + 5)}/>
-        <FullScreen onClick={() => toggle()}/>
+        <RewindBack onClick={() => controls.seek(state.time - 5)}>
+          <FastBack/>
+        </RewindBack>
+        <PlayButton state={play} onClick={handlerPlayVideo}>
+          {play ? <PlaySVG/> : <PauseSVG/>}
+        </PlayButton>
+        <Rewind onClick={() => controls.seek(state.time + 5)}>
+          <FastForward/>
+        </Rewind>
       </ControlPanel>
     </Wrapper>
-  )
+  );
 };
 
