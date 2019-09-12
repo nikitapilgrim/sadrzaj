@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import styled, {css} from 'styled-components';
 import {useMount, useWindowSize} from 'react-use';
+import * as Scroll from 'react-scroll';
 
 import {Menu} from '../components/Menu/Menu';
 import {breakpoints} from '../mixins/breakpoints';
@@ -9,6 +10,8 @@ import ArticlesData from '../Data/Articles';
 import {MultipleArticles} from '../components/Layouts/MultipleArticles';
 
 import bgHeader from '../assets/img/backgrounds/header.jpg';
+
+let scroll = Scroll.animateScroll;
 
 const AllSpace = css`
   height: 100%;
@@ -22,7 +25,12 @@ const AllSpace = css`
 
 const Wrapper = styled.div`
   font-family: Raleway,serif;
+  width: 100%;
 `;
+
+const Main = styled.main`
+  //transform: scale(0.8);
+`
 
 const Header = styled.div`
   position: relative;
@@ -135,11 +143,35 @@ export const Start = () => {
     setOffsetArticles(prev => ({...prev, [id]: offset}));
   };
   const scrollToArticle = (id) => {
-    window.scrollTo({
+    console.log(id, scroll, offsetArticles[id])
+    scroll.scrollTo(offsetArticles[id]);
+    /*window.scrollTo({
       top: offsetArticles[id],
       behavior: 'smooth',
-    });
+    });*/
   };
+
+  useMount(() => {
+    const preload = document.querySelector('#preload');
+    const five = document.querySelector('#five');
+    const twentyfive = document.querySelector('#twentyfive');
+    const fifty = document.querySelector('#fifty');
+    const seventyfive = document.querySelector('#seventyfive');
+    const onehundred = document.querySelector('#onehundred');
+
+    const setChecked = (elem) => () => {
+      elem.checked = true;
+    };
+
+    setTimeout(setChecked(five), 100);
+    setTimeout(setChecked(twentyfive), 500);
+    setTimeout(setChecked(fifty), 900);
+    setTimeout(setChecked(seventyfive), 1300);
+    setTimeout(setChecked(onehundred), 1500);
+    setTimeout(() => {
+      preload.style.display = 'none';
+    }, 2000)
+  });
 
   return (
     <Wrapper>
@@ -155,9 +187,9 @@ export const Start = () => {
           <Bg/>
         </BgContainer>
       </Header>
-      <main>
+      <Main>
         <MultipleArticles getOffset={getOffset} data={ArticlesData}/>
-      </main>
+      </Main>
     </Wrapper>
   );
 };

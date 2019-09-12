@@ -27,7 +27,7 @@ export const InnerTest = ({onRight, stage, data, close, nextStage}) => {
         <Stage stage={stage} onRight={onRight} data={data} nextStage={nextStage}/>
       </StageContainer>
       <OrderStage>
-        Pitanje {stage[0]} /{stage[1]}
+        Pitanje {stage[0]} / {stage[1]}
       </OrderStage>
     </Wrapper>
   );

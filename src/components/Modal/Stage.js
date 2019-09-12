@@ -6,7 +6,6 @@ import {breakpoints} from '../../mixins/breakpoints';
 const correct = new UIfx(require('../../assets/sounds/fx/correct-answer.aac'));
 const worng = new UIfx(require('../../assets/sounds/fx/wrong-answer.aac'));
 
-
 const Title = styled.div`
   width: 616px;
   text-shadow: 0 1px 0 #000000;
@@ -35,7 +34,6 @@ const AnswerButton = styled.button`
   border-radius: 5px;
   border: 1px solid #fcfbc4;
   background-color: #c79e1f;
-
 `;
 
 

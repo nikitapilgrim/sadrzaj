@@ -53,7 +53,8 @@ const Bg = styled.div`
   height: 100%;
   width: 100%;
   background-color: #6c5738;
-  opacity: 50%;
+  opacity: 0.5;
+  filter: alpha(opacity = 50); /* required for opacity to work in IE */
 `;
 
 export const Modal = ({children, inner, isOpen, close}) => {

@@ -5,7 +5,7 @@ import {useMount, useWindowSize} from 'react-use';
 import reactStringReplace from 'react-string-replace';
 import UIfx from 'uifx';
 
-import {Modal} from '../Modal/Modal'
+import {Modal} from '../Modal/Modal';
 import {breakpoints} from '../../mixins/breakpoints';
 import {TestButton} from '../Buttons/TestButton.js';
 import {AudioButton} from '../Buttons/AudioButton.js';
@@ -15,6 +15,10 @@ import dictionary from '../../Data/dictionairy/dictionairy';
 
 import bg from '../../assets/img/backgrounds/halka07.jpg';
 import {DictionaryInner} from '../Modal/DictionairyInner';
+
+import MedalOne from '../../assets/svg/medal_1.svg';
+import MedalTwo from '../../assets/svg/medal_2.svg';
+import MedalThree from '../../assets/svg/medal_3.svg';
 
 const MouseClick = new UIfx(require('../../assets/sounds/fx/mouseclick.mp3'));
 
@@ -32,68 +36,83 @@ const Wrapper = styled.div`
 `;
 
 const Inner = styled.div`
-  max-width: 960px;
+  max-width: 768px;
   margin: 0 auto;
-  transform: scale(0.8);
+  background-color: rgba(255,255,255, 0.2);
+  padding: 40px;
+  position: relative;
+`;
+
+const Content = styled.div`
+  position: relative;
 `;
 
 const Title = styled.h1`
   margin: 0;
   text-shadow: 2px 2px 0 #000000;
   color: #ffffff;
-  font-size: 39px;
+  font-size: 31px;
   font-weight: 700;
 `;
 
 const Subtitle = styled.h2`
-  margin: 29px 0;
+  margin: 23px 0;
   max-width: 620px;
   text-shadow: 2px 2px 0 #000000;
   color: #ffffff;
-  font-size: 42px;
+  font-size: 33px;
   @media ${breakpoints.laptop} {
-      font-size: 66px;
+      font-size: 52px;
   }
   font-weight: 900;
-  line-height: 60px;
+  line-height: 48px;
 `;
 
 const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
-  position: relative;
-  @media ${breakpoints.laptopL} {
+  align-items: flex-start;
+  padding-bottom: 16px;
+  @media ${breakpoints.laptop} {
     flex-direction: row;
   }
+  border-bottom: 1px solid red;
 `;
 
 const TextContainer = styled.p`
   margin: 0;
-  margin-top: 30px;
+  margin-top: 24px;
   text-shadow: 1px 1px 0 #000000;
   color: #ffffff;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
-  @media ${breakpoints.laptopL} { 
+  @media ${breakpoints.laptop} { 
     margin: 0;
   }
 `;
 
 const Buttons = styled.div`
+  opacity: 0.8;
   display: flex;
-  flex-direction: row;
+  align-items: center;
   justify-content: flex-start;
-  transform: scale(0.7);
-  button:last-child {
-    margin-left: 10px;
-  }
-  @media ${breakpoints.laptopL} {
-    position: absolute;
-    left: -250px;
+  position: relative;
+  left: -60px;
+  transform: scale(0.5);
+  
+  & > div:not(:first-child) {
+      margin-left: 10px;
+    }
+  
+  @media ${breakpoints.laptop} {
     flex-direction: column;
+    justify-content: flex-start;
     align-items: flex-end;
-    button:last-child {
-       margin-top: 10px;
+    position: absolute;
+    top: -46px;
+    left: -221px;
+    & > div:not(:first-child) {
+      margin-top: 10px;
     }
   }
   
@@ -107,36 +126,38 @@ const Row = styled.div`
 `;
 
 const MedalContainer = styled.div`
-    position: relative;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    @media ${breakpoints.laptop} {
+      
+    }
 `;
 
 const MedalWrapper = styled.div`
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  margin-right: auto;
+  position: relative;
 `;
 
 const Medal = styled.div`
   position: relative;
-  
 `;
 
 const MedalPercent = styled.div`
   position: absolute;
-  bottom: 18%;
-  left: 20%;
-  text-shadow: 1px 1px 0 #000000;
+  bottom: 58%;
+  left: 28%;
+  text-shadow: 1px 1px 1px #000;
   color: #ffffff;
-  font-size: 37px;
+  font-size: 30px;
   font-weight: 900;
 `;
 
-const Medals = {
-  bronze: require('../../assets/img/medals/medal-bronze.png'),
-  iron: require('../../assets/img/medals/medal-iron.png'),
-  gold: require('../../assets/img/medals/medal-gold.png'),
-};
+const PageNumber = styled.div`
+  color: #bf9e3d;
+  position: absolute;
+  bottom: -25px;
+  right: 0;
+`;
 
 const Columns = styled.div`
   display: flex;
@@ -150,7 +171,7 @@ const Span = styled.span`
   flex-wrap: wrap;
 `;
 
-const Highlight =  styled.span`
+const Highlight = styled.span`
   color: #fff600;
   font-weight: 900;
   text-decoration: underline;
@@ -191,27 +212,27 @@ const Paragraph = ({text, count, getOffset, scrollToNext, typeText}) => {
   const findDictionary = (text) => {
     const modalInfo = dictionary.find((word => text.includes(word.title)));
     return (
-        <>
-          {modalInfo && reactStringReplace(text, modalInfo.title, (match, i) => (
-            <Modal style={{display: 'inline-block'}} inner={<DictionaryInner data={modalInfo} />
-            }>
-              <Highlight onClick={() => MouseClick.play()}>{match}</Highlight>
-            </Modal>
-          )) || text}
-        </>
-    )
+      <>
+        {modalInfo && reactStringReplace(text, modalInfo.title, (match, i) => (
+          <Modal style={{display: 'inline-block'}} inner={<DictionaryInner data={modalInfo}/>
+          }>
+            <Highlight onClick={() => MouseClick.play()}>{match}</Highlight>
+          </Modal>
+        )) || text}
+      </>
+    );
   };
 
   return (
     <div ref={ref}>
-       <ParagraphInner>{text.map(item => {
-         return (
-           <>
-             {findDictionary(item)}
-             <br/>
-           </>
-         );
-       })}</ParagraphInner>
+      <ParagraphInner>{text.map(item => {
+        return (
+          <>
+            {findDictionary(item)}
+            <br/>
+          </>
+        );
+      })}</ParagraphInner>
     </div>
   );
 };
@@ -315,17 +336,16 @@ export const ArticleLayout = ({data, id, getOffset}) => {
   const ref = useRef(null);
   const [offset, setOffset] = useState();
 
-
-  useEffect(() => {
-    if (articles.hasOwnProperty(data.id)) {
-      const articleStorage = articles[data.id];
-      if (articleStorage.hasOwnProperty('medal')) {
-        setMedal(Medals[articleStorage.medal]);
-        setPercent(articleStorage.percent);
-      }
-    }
-  }, [data]);
-
+  /* useEffect(() => {
+     if (articles.hasOwnProperty(data.id)) {
+       const articleStorage = articles[data.id];
+       if (articleStorage.hasOwnProperty('medal')) {
+         setMedal(Medals[articleStorage.medal]);
+         setPercent(articleStorage.percent);
+       }
+     }
+   }, [data]);
+ */
   const getMedal = (result) => {
     let medal = null;
     if (result <= 50) {
@@ -356,35 +376,39 @@ export const ArticleLayout = ({data, id, getOffset}) => {
     <>
       <Wrapper ref={ref} id={id}>
         <Inner>
-          <Title>{data.title}</Title>
-          <Row>
-            <Subtitle>{data.subtitle}</Subtitle>
-            <MedalContainer desctop={true}>
-              {medal &&
-              <MedalWrapper>
-                <Medal>
-                  <img src={medal} alt="medal"/>
-                  <MedalPercent>
-                    {percent}%
-                  </MedalPercent>
-                </Medal>
-              </MedalWrapper>
-              }
-            </MedalContainer>
-          </Row>
-          <MainContainer className='main'>
-            <Buttons>
-              <TestButton onFinishTest={handlerFinishTest} questions={data.questions}/>
-              <AudioButton data={data.audio}/>
-              <VideoButton src={data.video}/>
-            </Buttons>
-            <TextContainer>
-              <TextWithDividers offsetParent={offset} typeText={data.type} text={data.text}/>
-            </TextContainer>
-          </MainContainer>
+          <Content>
+            <Title>{data.title}</Title>
+            <Row>
+              <Subtitle>{data.subtitle}</Subtitle>
+              <MedalContainer desctop={true}>
+                {articles[data.id] &&
+                <MedalWrapper>
+                  <Medal>
+                    {articles[data.id].medal === 'bronze' && <MedalOne/>}
+                    {articles[data.id].medal === 'iron' && <MedalTwo/>}
+                    {articles[data.id].medal === 'gold' && <MedalThree/>}
+                    <MedalPercent>
+                      {articles[data.id].percent}%
+                    </MedalPercent>
+                  </Medal>
+                </MedalWrapper>
+                }
+              </MedalContainer>
+            </Row>
+            <MainContainer className='main'>
+              <Buttons>
+                <TestButton onFinishTest={handlerFinishTest} questions={data.questions}/>
+                <AudioButton data={data.audio}/>
+                <VideoButton src={data.video}/>
+              </Buttons>
+              <TextContainer>
+                <TextWithDividers offsetParent={offset} typeText={data.type} text={data.text}/>
+              </TextContainer>
+            </MainContainer>
+            <PageNumber>{data.id}</PageNumber>
+          </Content>
         </Inner>
       </Wrapper>
-      <hr className='separator'/>
     </>
   );
 };
