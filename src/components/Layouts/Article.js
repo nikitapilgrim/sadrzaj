@@ -92,7 +92,7 @@ const TextContainer = styled.p`
 `;
 
 const Buttons = styled.div`
-  opacity: 0.8;
+  opacity: 1;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -127,7 +127,7 @@ const Row = styled.div`
 
 const MedalContainer = styled.div`
     position: absolute;
-    right: 0px;
+    right: -109px;
     top: 0;
     @media ${breakpoints.laptop} {
       
