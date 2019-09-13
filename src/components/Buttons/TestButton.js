@@ -43,10 +43,16 @@ export const TestButton = ({questions, onFinishTest}) => {
   const [modalOpen, setModalOpen] = useState(false);
   const [questionsCount, setQuestionsCount] = useState(null);
   const [rightAnswersCount, setRightAnswersCount] = useState(0);
+  const [finish, setFinish] = useState(false);
 
   useEffect(() => {
     setQuestionsCount(questions.length - 1);
   }, [questions]);
+
+
+  const close = () => {
+
+  };
 
   const handlerRightAnswer = () => {
     setRightAnswersCount(rightAnswersCount + 1);
@@ -56,6 +62,8 @@ export const TestButton = ({questions, onFinishTest}) => {
     if (questions.length - 1 === stage) {
       setModalOpen(false);
       onFinishTest([rightAnswersCount, questions.length - 1]);
+      setRightAnswersCount(0);
+      setFinish(true);
       setStage(0);
       return false;
     }
@@ -67,12 +75,16 @@ export const TestButton = ({questions, onFinishTest}) => {
     <Modal
       close={() => setModalOpen(false)}
       isOpen={modalOpen}
+      finish={finish}
       inner={<InnerTest nextStage={handlerNextStage}
                         stage={[stage, questionsCount]}
                         close={() => setModalOpen(false)}
                         data={questions[stage]}
-                        onRight={handlerRightAnswer}/>}>
+                        onRight={() => {
+                          handlerRightAnswer();
+                        }}/>}>
       <Wrapper onClick={() => {
+        setFinish(false);
         setModalOpen(true);
       }}>
         <TestIcon/>

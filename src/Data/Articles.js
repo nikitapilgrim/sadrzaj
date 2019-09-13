@@ -2188,15 +2188,15 @@ Meša Selimović`,
             – Sad moraš još malo ostati – rekla je voditeljica. – To je naš Fahro, redovni posetilac Tribine.
             Crnoputi momak probio se s kolicima do prozora i spretno ga otvorio tako da nas je osvežio zrak, a prijao je i njegovom bolesnom prijatelju. Vani su se čule ptice; miris lipe zapljusnuo nas je kao neki poetski dah. Sala je bila puna dnevnog svetla. Bolesni dečak iz mog detinjstva gledao me kao neznanca, istim onim lepim, plavim očima. Sada nije imalo svrhe potezati uspomene iz Mahale; mogao sam misliti samo o tome kako se na životnoj mapi naše sudbine dodiruju i udaljuju i najzad slivaju u isti tok vremena. Njegov otac je umro od opake bolesti; kažu da je dugo ležao pod tim teretom kao neki kažnjenik. Umro je u neorealističkom dekoru Mahale, a poslednji njegov razgovor sa sinom bio je o filmu.
             – Šta se daje u bioskopu? – upitao je slabim, promuklim glasom.
-            – <i>Pustinja straha</i>.
+            – Pustinja straha.
             – Žao mi je što film neću s tobom gledati, ali pustinja straha je preda mnom i ja sam već zakoračio tamo. Imam i ulaznicu.
-            U njegovoj ostavštini, među dokumentima, pronađena je beležnica. U njoj su bili podaci o sedamsto filmova koje je gledao u toku svog nesrećnog i protivurečenog života. Dečak je nastavio kao i otac, počeo je da vodi svoju <i>istoriju filma</i>, da unosi podatke u svoju beležnicu, predano, brižljivo i s akribijom, i da, na koncu, daje svoje ocene. Voleo je američke filmove o divljem zapadu, avanturističke filmove i spektakle. <i>Kabinet doktora Kaligarija</i> gledao je šest puta. Bergmana nije podnosio. Taj mladić mi je postavio pitanje: utiče li film na literaturu? i s ogorčenjem naveo nekog književnika koji je izjavio da prezire film. Takođe je zamolio da za njegovu beležnicu navedem filmove i režisere koje volim. To pitanje me spaslo od onih što su već bili počeli s uvredama i sramoćenjem, nazivajući me literarnom nakazom.
-            Tada sam izrazio sumnju u književnika koji prezire film i naveo nekog hispanoameričkog pisca, ne sećam se tačno njegovog imena, mogao bi biti Fuentes ili Oktavio Paz, zašto ne, a on je rekao da je film <i>umetnost uskrsnuća, a literatura umetnost raspeća</i>. Možda je to preterano, ali je rečeno s ozbiljnošću, pogotovu što je uskrsnuće nagrada pojedincu da se obuče u sliku nebesku. Ako se čovek ukazuje kao slika božja, onda je bog izumio film. I Borhes ističe u prologu prvog izdanja <i>Sveopšte istorije beščašća</i> da su na njegove prozne sastave uticali prvi filmovi Jozefa von Sternberga. Takođe izjavljuje da je uprkos slabom vidu gledao hiljade filmova. Ispričao sam o beogradskoj kinoteci kao novom hramu; tamo su se podjednako nalazili i pisci i slikari i arhitekte i režiseri i manijaci, ne samo kao zaljubljenici u film, već kao ljudi koji su pohađali časove jedinstvene prakse. <i>Film je umetnost zadovoljstva, a literatura umetnost melankolije</i>, to sam naveo ne sećajući se otkuda i kako je to ostalo u mom pamćenju.
-            Tek što sam bio započeo svoju listu filmova, i za mladićevu beležnicu naveo najpoetičniji film <i>Los Olvidados</i>, a na prvo mesto stavio svog omiljenog reditelja Luisa Bunjuela, dogodilo se nešto neobično: u salu je uletela jedna lepa šarena ptica, lepršala je u uglovima dvorane pribijajući se uz zid, grebući kandžicama i ljušteći kreč. U nekoliko mahova bezglavo je udarila u staklo gornjeg zatvorenog dela prozora. Jedna peruška, kao pahulja, pala je ozgo na moje rame. Pojava ptice izazvala je radost i ushićenje u dvorani, samo je bolesni mladić Fahro uzdrhtao uplašen da će se ptica ozlediti. Kad je pronašla prozor i otprhnula, u sali je zavladala tišina kakvu posle nikad nisam doživeo. Sen krila te ptice je tajanstveni znak pod kojim smo se razišli.
-            Još se i danas pitam nije li to bio privid, moja duševna ptica, spasonosni anđeo, pojava na poziv mašte da se oslobodi zarobljenica mog detinjstva. San o ptici često me i danas pohodi. Stekel ga tumači kao biseksualni simbol, za mene pak ima duhovno značenje, zaručničku vrednost Hristove poruke: <i>budi bezazlen kao grlica</i>!
+            U njegovoj ostavštini, među dokumentima, pronađena je beležnica. U njoj su bili podaci o sedamsto filmova koje je gledao u toku svog nesrećnog i protivurečenog života. Dečak je nastavio kao i otac, počeo je da vodi svoju istoriju filma, da unosi podatke u svoju beležnicu, predano, brižljivo i s akribijom, i da, na koncu, daje svoje ocene. Voleo je američke filmove o divljem zapadu, avanturističke filmove i spektakle. Kabinet doktora Kaligarija gledao je šest puta. Bergmana nije podnosio. Taj mladić mi je postavio pitanje: utiče li film na literaturu? i s ogorčenjem naveo nekog književnika koji je izjavio da prezire film. Takođe je zamolio da za njegovu beležnicu navedem filmove i režisere koje volim. To pitanje me spaslo od onih što su već bili počeli s uvredama i sramoćenjem, nazivajući me literarnom nakazom.
+            Tada sam izrazio sumnju u književnika koji prezire film i naveo nekog hispanoameričkog pisca, ne sećam se tačno njegovog imena, mogao bi biti Fuentes ili Oktavio Paz, zašto ne, a on je rekao da je film umetnost uskrsnuća, a literatura umetnost raspeća. Možda je to preterano, ali je rečeno s ozbiljnošću, pogotovu što je uskrsnuće nagrada pojedincu da se obuče u sliku nebesku. Ako se čovek ukazuje kao slika božja, onda je bog izumio film. I Borhes ističe u prologu prvog izdanja Sveopšte istorije beščašća da su na njegove prozne sastave uticali prvi filmovi Jozefa von Sternberga. Takođe izjavljuje da je uprkos slabom vidu gledao hiljade filmova. Ispričao sam o beogradskoj kinoteci kao novom hramu; tamo su se podjednako nalazili i pisci i slikari i arhitekte i režiseri i manijaci, ne samo kao zaljubljenici u film, već kao ljudi koji su pohađali časove jedinstvene prakse. Film je umetnost zadovoljstva, a literatura umetnost melankolije, to sam naveo ne sećajući se otkuda i kako je to ostalo u mom pamćenju.
+            Tek što sam bio započeo svoju listu filmova, i za mladićevu beležnicu naveo najpoetičniji film Los Olvidados, a na prvo mesto stavio svog omiljenog reditelja Luisa Bunjuela, dogodilo se nešto neobično: u salu je uletela jedna lepa šarena ptica, lepršala je u uglovima dvorane pribijajući se uz zid, grebući kandžicama i ljušteći kreč. U nekoliko mahova bezglavo je udarila u staklo gornjeg zatvorenog dela prozora. Jedna peruška, kao pahulja, pala je ozgo na moje rame. Pojava ptice izazvala je radost i ushićenje u dvorani, samo je bolesni mladić Fahro uzdrhtao uplašen da će se ptica ozlediti. Kad je pronašla prozor i otprhnula, u sali je zavladala tišina kakvu posle nikad nisam doživeo. Sen krila te ptice je tajanstveni znak pod kojim smo se razišli.
+            Još se i danas pitam nije li to bio privid, moja duševna ptica, spasonosni anđeo, pojava na poziv mašte da se oslobodi zarobljenica mog detinjstva. San o ptici često me i danas pohodi. Stekel ga tumači kao biseksualni simbol, za mene pak ima duhovno značenje, zaručničku vrednost Hristove poruke: budi bezazlen kao grlica!
             U vreme dok sam radio na ovoj priči brinuo sam o mnogim nedostacima, a ponajviše o nepouzdanom svršetku, ali tada mi je u pomoć priskočio slučaj, zaštitnik pripovedača. Jednog dana sam susreo nekadašnju voditeljicu Tribine, sada ženu srednjih godina, ostarelu pre vremena. Nećete mi verovati, ali tamo više nije bilo nijedne crte nekadašnje lepotice. Kratko i bezvoljno razgovarali smo o prošlosti, pominjala je mnoga imena koja mi ništa nisu značila. Jedva sam čekao da se pozdravimo. Na rastanku je rekla:
             – Nikad neću zaboraviti onu pticu! Sećaš li se? Što ne napišeš nešto o tome?
-            <i>Mirko Kovač</i>`,
+            Mirko Kovač`,
     video: false,
     audio: 'url',
     questions: [
@@ -2282,15 +2282,15 @@ Meša Selimović`,
             – Sad moraš još malo ostati – rekla je voditeljica. – To je naš Fahro, redovni posetilac Tribine.
             Crnoputi momak probio se s kolicima do prozora i spretno ga otvorio tako da nas je osvežio zrak, a prijao je i njegovom bolesnom prijatelju. Vani su se čule ptice; miris lipe zapljusnuo nas je kao neki poetski dah. Sala je bila puna dnevnog svetla. Bolesni dečak iz mog detinjstva gledao me kao neznanca, istim onim lepim, plavim očima. Sada nije imalo svrhe potezati uspomene iz Mahale; mogao sam misliti samo o tome kako se na životnoj mapi naše sudbine dodiruju i udaljuju i najzad slivaju u isti tok vremena. Njegov otac je umro od opake bolesti; kažu da je dugo ležao pod tim teretom kao neki kažnjenik. Umro je u neorealističkom dekoru Mahale, a poslednji njegov razgovor sa sinom bio je o filmu.
             – Šta se daje u bioskopu? – upitao je slabim, promuklim glasom.
-            – <i>Pustinja straha</i>.
+            – Pustinja straha.
             – Žao mi je što film neću s tobom gledati, ali pustinja straha je preda mnom i ja sam već zakoračio tamo. Imam i ulaznicu.
-            U njegovoj ostavštini, među dokumentima, pronađena je beležnica. U njoj su bili podaci o sedamsto filmova koje je gledao u toku svog nesrećnog i protivurečenog života. Dečak je nastavio kao i otac, počeo je da vodi svoju <i>istoriju filma</i>, da unosi podatke u svoju beležnicu, predano, brižljivo i s akribijom, i da, na koncu, daje svoje ocene. Voleo je američke filmove o divljem zapadu, avanturističke filmove i spektakle. <i>Kabinet doktora Kaligarija</i> gledao je šest puta. Bergmana nije podnosio. Taj mladić mi je postavio pitanje: utiče li film na literaturu? i s ogorčenjem naveo nekog književnika koji je izjavio da prezire film. Takođe je zamolio da za njegovu beležnicu navedem filmove i režisere koje volim. To pitanje me spaslo od onih što su već bili počeli s uvredama i sramoćenjem, nazivajući me literarnom nakazom.
-            Tada sam izrazio sumnju u književnika koji prezire film i naveo nekog hispanoameričkog pisca, ne sećam se tačno njegovog imena, mogao bi biti Fuentes ili Oktavio Paz, zašto ne, a on je rekao da je film <i>umetnost uskrsnuća, a literatura umetnost raspeća</i>. Možda je to preterano, ali je rečeno s ozbiljnošću, pogotovu što je uskrsnuće nagrada pojedincu da se obuče u sliku nebesku. Ako se čovek ukazuje kao slika božja, onda je bog izumio film. I Borhes ističe u prologu prvog izdanja <i>Sveopšte istorije beščašća</i> da su na njegove prozne sastave uticali prvi filmovi Jozefa von Sternberga. Takođe izjavljuje da je uprkos slabom vidu gledao hiljade filmova. Ispričao sam o beogradskoj kinoteci kao novom hramu; tamo su se podjednako nalazili i pisci i slikari i arhitekte i režiseri i manijaci, ne samo kao zaljubljenici u film, već kao ljudi koji su pohađali časove jedinstvene prakse. <i>Film je umetnost zadovoljstva, a literatura umetnost melankolije</i>, to sam naveo ne sećajući se otkuda i kako je to ostalo u mom pamćenju.
-            Tek što sam bio započeo svoju listu filmova, i za mladićevu beležnicu naveo najpoetičniji film <i>Los Olvidados</i>, a na prvo mesto stavio svog omiljenog reditelja Luisa Bunjuela, dogodilo se nešto neobično: u salu je uletela jedna lepa šarena ptica, lepršala je u uglovima dvorane pribijajući se uz zid, grebući kandžicama i ljušteći kreč. U nekoliko mahova bezglavo je udarila u staklo gornjeg zatvorenog dela prozora. Jedna peruška, kao pahulja, pala je ozgo na moje rame. Pojava ptice izazvala je radost i ushićenje u dvorani, samo je bolesni mladić Fahro uzdrhtao uplašen da će se ptica ozlediti. Kad je pronašla prozor i otprhnula, u sali je zavladala tišina kakvu posle nikad nisam doživeo. Sen krila te ptice je tajanstveni znak pod kojim smo se razišli.
-            Još se i danas pitam nije li to bio privid, moja duševna ptica, spasonosni anđeo, pojava na poziv mašte da se oslobodi zarobljenica mog detinjstva. San o ptici često me i danas pohodi. Stekel ga tumači kao biseksualni simbol, za mene pak ima duhovno značenje, zaručničku vrednost Hristove poruke: <i>budi bezazlen kao grlica</i>!
+            U njegovoj ostavštini, među dokumentima, pronađena je beležnica. U njoj su bili podaci o sedamsto filmova koje je gledao u toku svog nesrećnog i protivurečenog života. Dečak je nastavio kao i otac, počeo je da vodi svoju istoriju filma, da unosi podatke u svoju beležnicu, predano, brižljivo i s akribijom, i da, na koncu, daje svoje ocene. Voleo je američke filmove o divljem zapadu, avanturističke filmove i spektakle. Kabinet doktora Kaligarija gledao je šest puta. Bergmana nije podnosio. Taj mladić mi je postavio pitanje: utiče li film na literaturu? i s ogorčenjem naveo nekog književnika koji je izjavio da prezire film. Takođe je zamolio da za njegovu beležnicu navedem filmove i režisere koje volim. To pitanje me spaslo od onih što su već bili počeli s uvredama i sramoćenjem, nazivajući me literarnom nakazom.
+            Tada sam izrazio sumnju u književnika koji prezire film i naveo nekog hispanoameričkog pisca, ne sećam se tačno njegovog imena, mogao bi biti Fuentes ili Oktavio Paz, zašto ne, a on je rekao da je film umetnost uskrsnuća, a literatura umetnost raspeća. Možda je to preterano, ali je rečeno s ozbiljnošću, pogotovu što je uskrsnuće nagrada pojedincu da se obuče u sliku nebesku. Ako se čovek ukazuje kao slika božja, onda je bog izumio film. I Borhes ističe u prologu prvog izdanja Sveopšte istorije beščašća da su na njegove prozne sastave uticali prvi filmovi Jozefa von Sternberga. Takođe izjavljuje da je uprkos slabom vidu gledao hiljade filmova. Ispričao sam o beogradskoj kinoteci kao novom hramu; tamo su se podjednako nalazili i pisci i slikari i arhitekte i režiseri i manijaci, ne samo kao zaljubljenici u film, već kao ljudi koji su pohađali časove jedinstvene prakse. Film je umetnost zadovoljstva, a literatura umetnost melankolije, to sam naveo ne sećajući se otkuda i kako je to ostalo u mom pamćenju.
+            Tek što sam bio započeo svoju listu filmova, i za mladićevu beležnicu naveo najpoetičniji film Los Olvidados, a na prvo mesto stavio svog omiljenog reditelja Luisa Bunjuela, dogodilo se nešto neobično: u salu je uletela jedna lepa šarena ptica, lepršala je u uglovima dvorane pribijajući se uz zid, grebući kandžicama i ljušteći kreč. U nekoliko mahova bezglavo je udarila u staklo gornjeg zatvorenog dela prozora. Jedna peruška, kao pahulja, pala je ozgo na moje rame. Pojava ptice izazvala je radost i ushićenje u dvorani, samo je bolesni mladić Fahro uzdrhtao uplašen da će se ptica ozlediti. Kad je pronašla prozor i otprhnula, u sali je zavladala tišina kakvu posle nikad nisam doživeo. Sen krila te ptice je tajanstveni znak pod kojim smo se razišli.
+            Još se i danas pitam nije li to bio privid, moja duševna ptica, spasonosni anđeo, pojava na poziv mašte da se oslobodi zarobljenica mog detinjstva. San o ptici često me i danas pohodi. Stekel ga tumači kao biseksualni simbol, za mene pak ima duhovno značenje, zaručničku vrednost Hristove poruke: budi bezazlen kao grlica!
             U vreme dok sam radio na ovoj priči brinuo sam o mnogim nedostacima, a ponajviše o nepouzdanom svršetku, ali tada mi je u pomoć priskočio slučaj, zaštitnik pripovedača. Jednog dana sam susreo nekadašnju voditeljicu Tribine, sada ženu srednjih godina, ostarelu pre vremena. Nećete mi verovati, ali tamo više nije bilo nijedne crte nekadašnje lepotice. Kratko i bezvoljno razgovarali smo o prošlosti, pominjala je mnoga imena koja mi ništa nisu značila. Jedva sam čekao da se pozdravimo. Na rastanku je rekla:
             – Nikad neću zaboraviti onu pticu! Sećaš li se? Što ne napišeš nešto o tome?
-            <i>Mirko Kovač</i>`,
+            Mirko Kovač`,
     video: false,
     audio: 'url',
     questions: [
@@ -2507,268 +2507,268 @@ Meša Selimović`,
     subtitle: 'Hasanaginica (odlomak)',
     type: lyrics,
     text: `AGA HASANAGA
-            <br> HASANAGINICA
-            <br> SULTANIJA
-            <br> FATA
-            <br> MEHO
-            <br> AHMED
-            <br> njihova djeca
-            <br> BEG PINTOROVIĆ, brat Hasanaginičin
-            <br> ZARIFHANUMA, mati Hasanaginičina
-            <br> UMMIHANA, mati Hasanagina
-            <br> IMOTSKI KADIJA
-            <br> TETKA HATA
-            <br> TETKA AIŠA
-			<br> IBRAHIM
-            <br> HUSREF
-            <br> rodbina kadijina
-            <br> ROBINJICA VLAHINJA
-            <br> LATIFA, sluškinja u Zarifhanume
-            <br> HUSEJIN, stari sluga Hasanagin
-            <br> SVATÂ STAREŠINA
-            <br> Mali “begović” u bešici. Sluškinje. Sluge. Askeri (vojnici). Kmetovi. Robinjice. Robovi. Igračice. Igrači. Muslimi. Muslimke. Jengjijice (svatovice). Svatovi. Djeca. Itd.
+             HASANAGINICA
+             SULTANIJA
+             FATA
+             MEHO
+             AHMED
+             njihova djeca
+             BEG PINTOROVIĆ, brat Hasanaginičin
+             ZARIFHANUMA, mati Hasanaginičina
+             UMMIHANA, mati Hasanagina
+             IMOTSKI KADIJA
+             TETKA HATA
+             TETKA AIŠA
+			 IBRAHIM
+             HUSREF
+             rodbina kadijina
+             ROBINJICA VLAHINJA
+             LATIFA, sluškinja u Zarifhanume
+             HUSEJIN, stari sluga Hasanagin
+             SVATÂ STAREŠINA
+             Mali “begović” u bešici. Sluškinje. Sluge. Askeri (vojnici). Kmetovi. Robinjice. Robovi. Igračice. Igrači. Muslimi. Muslimke. Jengjijice (svatovice). Svatovi. Djeca. Itd.
             
 			Prvi se i treći čin događa na Hasanaginoj kuli, drugi kod kuće begovice Zarifhanume.
             PRIZOR TREĆI
-            <br> PRIJAŠNJI. HASANAGINICA. SULTANIJA.
+             PRIJAŠNJI. HASANAGINICA. SULTANIJA.
             Na vrata slijeva naglo je sunula u avliju HASANAGINICA, blijeda i uznemirena. Vitka je to, lijepa i mlada žena; ima joj jedva trideset i dvije godine, a još je vidjeti i mlađa; bijelo joj je dugoljasto miloliko lice i ruke bijele. Odjevena u svijetlu anteriju (zobuncem), na kojoj su pod vratom dukati; dimije su izvezene srebrom, a na glavi joj je jemenija (rubac). Došavši do bostana naglo je zastala Hasanaginica i stisnula se uz sjenicu, kao da će se srušiti; mrtvo je upiljila oči u zemlju, kao da je nešto izgubila. Za njom se neopazice kao sjena pojavila na vratima najstarija joj kći SULTANIJA, djevojče u prvom cvijetu mladosti, jedva u šesnaestoj godini. Blagost i neka mirna razumnost vidjeti joj je na licu. Odjevena je kao i majka joj, tek nema na glavi jemenije, da joj prekrije bujnu svjetložutu kosu.
             
 			SULTANIJA
-            <br> <i>(još s vratiju)</i>
-            <br> Oh, majko!
+             (još s vratiju)
+             Oh, majko!
+             HASANAGINICA
+             (nijemo se okrene)
+             SULTANIJA
+             (doleti k njoj i obuhvati je rukom oko pasa)
+             Majko!
+             (Uzme je za tim za obje ruke.)
+             Gledni ovamo!
+             U moje oči – ko što ti to znaš!
+             Ti danas gledaš nekud u stranu,
+             ko izgubljena bježiš. Tražim te
+             po cieloj kuli, stanu, avliji.
+             A sve mi danas nekud izmičeš.
+             O, nešto se je zbilo! Tajiš mi.
+             Zar ne će babo doći?
             HASANAGINICA
-            <i>(nijemo se okrene)</i>
+             (mirno i gorko)
+             Doć’ će.
             SULTANIJA
-            <br> <i>(doleti k njoj i obuhvati je rukom oko pasa)</i>
-            <br> Majko!
-            <br> <i>(Uzme je za tim za obje ruke.)</i>
-            <br> Gledni ovamo!
-            <br> U moje oči – ko što ti to znaš!
-            <br> Ti danas gledaš nekud u stranu,
-            <br> ko izgubljena bježiš. Tražim te
-            <br> po cieloj kuli, stanu, avliji.
-            <br> A sve mi danas nekud izmičeš.
-            <br> O, nešto se je zbilo! Tajiš mi.
-            <br> Zar ne će babo doći?
+             Ti vesela si, mati, svaki dan
+             do danas bila. Uviek medj’ nama!
+             Prizivala nas djecu naokrug,
+             za doček babi sve si spremala.
+             Sva drhtala si, kad će doći čas,
+             da babajko nas sviju zagrli,
+             A eto danas, kad bi trebalo,
+             da svi smo tu na dvoru veseli,
+             ti – smrknuta si, tužna, skršena!
+             I dosad bábo s vojske dolazio,
+             al’ taka nikad – nikad nisi bila!
             HASANAGINICA
-            <br> <i>(mirno i gorko)</i>
-            <br> Doć’ će.
+             (svedj jednaka)
+             Oj, ni on nije nikad taki bio!
             SULTANIJA
-            <br> Ti vesela si, mati, svaki dan
-            <br> do danas bila. Uviek medj’ nama!
-            <br> Prizivala nas djecu naokrug,
-            <br> za doček babi sve si spremala.
-            <br> Sva drhtala si, kad će doći čas,
-            <br> da babajko nas sviju zagrli,
-            <br> A eto danas, kad bi trebalo,
-            <br> da svi smo tu na dvoru veseli,
-            <br> ti – smrknuta si, tužna, skršena!
-            <br> I dosad bábo s vojske dolazio,
-            <br> al’ taka nikad – nikad nisi bila!
+             Ta kakav, majko! Meni barem reci,
+             kad pred drugima kriješ. Reci mi!
             HASANAGINICA
-            <br> <i>(svedj jednaka)</i>
-            <br> Oj, ni on nije nikad taki bio!
+             O, nije više, što je negda bilo!
+             Ja nemam više age Hasanage,
+             ni djece nemam.
             SULTANIJA
-            <br> Ta kakav, majko! Meni barem reci,
-            <br> kad pred drugima kriješ. Reci mi!
+             (uprepaštena)
+             Bábe, djece nemaš?!
+             Što govoriš to, majko!
             HASANAGINICA
-            <br> O, nije više, što je negda bilo!
-            <br> Ja nemam više age Hasanage,
-            <br> ni djece nemam.
+             Ja ne govorim.
+             To aga – bábo – on to govori!
             SULTANIJA
-            <br> <i>(uprepaštena)</i>
-            <br> Bábe, djece nemaš?!
-            <br> Što govoriš to, majko!
+             A gdje i kad je to ti rekao?
             HASANAGINICA
-            <br> Ja ne govorim.
-            <br> To aga – bábo – on to govori!
+             Ni sama te još ne vjerujem rieči,
+             već cieli dan i cielu noćas noć
+             ja govorim ih sama sa sobom
+             po dva put i tri puta...
             SULTANIJA
-            <br> A gdje i kad je to ti rekao?
+             Što, zar sinoć?!
             HASANAGINICA
-            <br> Ni sama te još ne vjerujem rieči,
-            <br> već cieli dan i cielu noćas noć
-            <br> ja govorim ih sama sa sobom
-            <br> po dva put i tri puta...
+             (kao prečula njezino pitanje)
+             Da l’ mog’o ih je on izustiti?
+             Il’ da je kakva slabost staračka
+             Husejinu ih prišaptala valjda,
+             ра buncao ih sinoć...
             SULTANIJA
-            <br> Što, zar sinoć?!
+             Šta, Husejin?
+             I kakove su samo rieči to
+             Husejinove? Znadem tek toliko,
+             da veseli smo pošli spavati,
+             kad Huso nam je svima kazao,
+             dа ko večeras babo doći će.
+             I ti si, majko, bila vesela.
+             Ti svakoga si nas poljubila:
+             i Fatimu i Mehu, Ahmeda
+             i malog “bega” još u bešici.
+             Još liepe si nam kazivala pjesme:
+             o šatoru u gori zelenoj,
+             o kauru i bábi Hasanagi,
+             od ljutijeh što rana boluje
+             i što ih junak već prebolio!
             HASANAGINICA
-            <br> <i>(kao prečula njezino pitanje)</i>
-            <br> Da l’ mog’o ih je on izustiti?
-            <br> Il’ da je kakva slabost staračka
-            <br> Husejinu ih prišaptala valjda,
-            <br> ра buncao ih sinoć...
+             Da, tako bilo sve, Sultanijo!
+             Al’ kad sam sve vas u san spremila,
+             prošetala sam kuli po bedemu
+             ko svako veče. U to Huso je
+             već dočeko me – o da nije tako! –
+             I reko mi je mučno... polagano...
+             Rieč po rieč kano živu žeravicu!
+             U meni samo srce zamrlo –
+             oko mene se sve okrenulo.
+             I dvor i kula i to nebo gore...
+             Ko ranjena sam zvierka skočila,
+             Poletjela i htjela lomit vrat
+             niz bielu kulu...
             SULTANIJA
-            <br> Šta, Husejin?
-            <br> I kakove su samo rieči to
-            <br> Husejinove? Znadem tek toliko,
-            <br> da veseli smo pošli spavati,
-            <br> kad Huso nam je svima kazao,
-            <br> dа ko večeras babo doći će.
-            <br> I ti si, majko, bila vesela.
-            <br> Ti svakoga si nas poljubila:
-            <br> i Fatimu i Mehu, Ahmeda
-            <br> i malog “bega” još u bešici.
-            <br> Još liepe si nam kazivala pjesme:
-            <br> o šatoru u gori zelenoj,
-            <br> o kauru i bábi Hasanagi,
-            <br> od ljutijeh što rana boluje
-            <br> i što ih junak već prebolio!
+             Majko jedina!
+             Ta, kakove su rieči bile to,
+             da sa njih bi životu kidisala?!
             HASANAGINICA
-            <br> Da, tako bilo sve, Sultanijo!
-            <br> Al’ kad sam sve vas u san spremila,
-            <br> prošetala sam kuli po bedemu
-            <br> ko svako veče. U to Huso je
-            <br> već dočeko me – o da nije tako! –
-            <br> I reko mi je mučno... polagano...
-            <br> Rieč po rieč kano živu žeravicu!
-            <br> U meni samo srce zamrlo –
-            <br> oko mene se sve okrenulo.
-            <br> I dvor i kula i to nebo gore...
-            <br> Ko ranjena sam zvierka skočila,
-            <br> Poletjela i htjela lomit vrat
-            <br> niz bielu kulu...
+             Ja ne znam, da li pravo sam ih čula!
+             I dugo u njih vjerovala nisam,
+             tek pekle su me.
+             (Pokazuje na grudi.)
+             Tu su bile mi,
+             dо glave tek su sporo dopirale,
+             razumjeti ih nisam mogla, ne!
+             I nisam mogla pravo smirit se
+             u kuli nigdje. Tužna legla sam
+             sve misleć, da to ružni neki san
+             рre spavanja mi došo, pa sam htjela
+             mjesto njeg ljepši sanak usniti.
+             Аl’ nije bilo sna! Kroz pendžer je
+             u moju sobu mjesec svietlio.
+             Poludjet mišljah...
             SULTANIJA
-            <br> Majko jedina!
-            <br> Ta, kakove su rieči bile to,
-            <br> da sa njih bi životu kidisala?!
+             Šta je, reci mi.
             HASANAGINICA
-            <br> Ja ne znam, da li pravo sam ih čula!
-            <br> I dugo u njih vjerovala nisam,
-            <br> tek pekle su me.
-            <br> <i>(Pokazuje na grudi.)</i>
-            <br> Tu su bile mi,
-            <br> dо glave tek su sporo dopirale,
-            <br> razumjeti ih nisam mogla, ne!
-            <br> I nisam mogla pravo smirit se
-            <br> u kuli nigdje. Tužna legla sam
-            <br> sve misleć, da to ružni neki san
-            <br> рre spavanja mi došo, pa sam htjela
-            <br> mjesto njeg ljepši sanak usniti.
-            <br> Аl’ nije bilo sna! Kroz pendžer je
-            <br> u moju sobu mjesec svietlio.
-            <br> Poludjet mišljah...
+             (kao da je ne čuje)
+             Zar kriva sam? Zar drugoga zavoljeh?
+             Zar svraćah koga u dvor, da ga ljubim?
+             Ne rodih li mu djece petero:
+             pet cvjetova? Ta, šta mu skrivih ја?!
             SULTANIJA
-            <br> Šta je, reci mi.
+             Zar to bi on o tebi mislio!
+             Ne, ne, ja u to ne vjerujem, majko.
+             Ta, šta je reko? Što l’ poručio?
+             (S kule dopire tiha pjesmica MEHE i FATE:
+             “Kroz bašču mi Drina voda teče,
+             krajem Drine badem drvo raste,
+             il’ se vješaj il’ u Drinu skači!“
+             Iza pjesme smijeh.)
             HASANAGINICA
-            <br> <i>(kao da je ne čuje)</i>
-            <br> Zar kriva sam? Zar drugoga zavoljeh?
-            <br> Zar svraćah koga u dvor, da ga ljubim?
-            <br> Ne rodih li mu djece petero:
-            <br> pet cvjetova? Ta, šta mu skrivih ја?!
+             Do jutra nisam mogla usnuti.
+             Dva bulbula su svu noć pjevala
+             i s moje glave sanak tjerala.
+             Tišinom noćnom tad sam slušala:
+             pod kulu našu netko došao,
+             sedefli on je igro tamburu.
+             Do pendžera mi dopro muški glas.
+             Da nije ašik tvoj, Sultanijo?
             SULTANIJA
-            <br> Zar to bi on o tebi mislio!
-            <br> Ne, ne, ja u to ne vjerujem, majko.
-            <br> Ta, šta je reko? Što l’ poručio?
-            <br> (S kule dopire tiha pjesmica MEHE i FATE:
-            <br> “Kroz bašču mi Drina voda teče,
-            <br> krajem Drine badem drvo raste,
-            <br> il’ se vješaj il’ u Drinu skači!“
-            <br> Iza pjesme smijeh.)
+             Ja nemam jošte svoga dilbera
+             Da pjeva mi. Ti, majko, dobro znaš,
+             Da ja još nikog sevdisala nisam.
             HASANAGINICA
-            <br> Do jutra nisam mogla usnuti.
-            <br> Dva <a href="#null" class="prevod" data-modal="modal-197">bulbula</a> su svu noć pjevala
-            <br> i s moje glave sanak tjerala.
-            <br> Tišinom noćnom tad sam slušala:
-            <br> pod kulu našu netko došao,
-            <br> <a href="#null" class="prevod" data-modal="modal-198">sedefli</a> on je igro tamburu.
-            <br> Do pendžera mi dopro muški glas.
-            <br> Da nije ašik tvoj, Sultanijo?
+             Ah, tako liepa bila pjesma noćna
+             I tako mila! Pjesma ljubavna,
+             Što aga mi je znao pjevati
+             U dane mlade. Eno, slušaj ju!
+             To sada djeca gore pjevaju
+             Na kuli našoj. – S tim sam usnula.
             SULTANIJA
-            <br> Ja nemam jošte svoga <a href="#null" class="prevod" data-modal="modal-199">dilbera</a>
-            <br> Da pjeva mi. Ti, majko, dobro znaš,
-            <br> Da ja još nikog <a href="#null" class="prevod" data-modal="modal-200">sevdisala</a> nisam.
+             I spavala si dugo, dugo – majko!
+             Odskočilo je bilo jutros sunce
+             Visoko već – a ti si spavala,
+             I ja te nisam htjela buditi.
+             A tada mrka, mrka ustala si,
+             Pa k sluškinjama onda pošla si
+             Sva slomljena i poništena, tužna.
+             Među nas djecu nisi ni izišla,
+             Već skrila se u svoje odaje.
+             Za ručkom sve si tako ćutala,
+             Da svi smo bili žalosni. A tada
+             Ja nigdje naći nisam mogla te.
+             Sve bježiš od nas.
             HASANAGINICA
-            <br> Ah, tako liepa bila pjesma noćna
-            <br> I tako mila! Pjesma ljubavna,
-            <br> Što aga mi je znao pjevati
-            <br> U dane mlade. Eno, slušaj ju!
-            <br> To sada djeca gore pjevaju
-            <br> Na kuli našoj. – S tim sam usnula.
+             Bježala sam samo
+             Pred onim njeg’vim strašnim riečima.
             SULTANIJA
-            <br> I spavala si dugo, dugo – majko!
-            <br> Odskočilo je bilo jutros sunce
-            <br> Visoko već – a ti si spavala,
-            <br> I ja te nisam htjela buditi.
-            <br> A tada mrka, mrka ustala si,
-            <br> Pa k sluškinjama onda pošla si
-            <br> Sva slomljena i poništena, tužna.
-            <br> Među nas djecu nisi ni izišla,
-            <br> Već skrila se u svoje odaje.
-            <br> Za ručkom sve si tako ćutala,
-            <br> Da svi smo bili žalosni. A tada
-            <br> Ja nigdje naći nisam mogla te.
-            <br> Sve bježiš od nas.
+             Ta, kakvim, majko, kakvim riečima?
+             Daj, reci svojoj kćerci jedinoj,
+             jer “jedinom” me svojom zoveš ti,
+             ko sestra da sam tvoja. Reci mi!
+             I lakše će ti biti, kad mi rečeš...
             HASANAGINICA
-            <br> Bježala sam samo
-            <br> Pred onim njeg’vim strašnim riečima.
-            SULTANIJA
-            <br> Ta, kakvim, majko, kakvim riečima?
-            <br> Daj, reci svojoj kćerci jedinoj,
-            <br> jer “jedinom” me svojom zoveš ti,
-            <br> ko sestra da sam tvoja. Reci mi!
-            <br> I lakše će ti biti, kad mi rečeš...
-            HASANAGINICA
-            <br> Nek reče ti Husejin! Ja ne mogu?
-            <br> Jer to je tako strašno. – Tamo je!
-            <br> Oj Huso, starče, amo dođi sada!
+             Nek reče ti Husejin! Ja ne mogu?
+             Jer to je tako strašno. – Tamo je!
+             Oj Huso, starče, amo dođi sada!
             HUSEJIN
-            <br> <i>(digao se s tratine)</i>
-            <br> Zove li to hanuma baš mene?
+             (digao se s tratine)
+             Zove li to hanuma baš mene?
             HASANAGINICA
-            <br> Da, tebe, tebe! Samo tebe čujem
-            <br> Svu noćas noć i cieli danas dan.
-            <br> Ded kaži sada tu pred djevojkom,
-            <br> što reko si mi sinoć. Sve nam reci,
-            <br> jer i ja hoću čuti drugi put.
+             Da, tebe, tebe! Samo tebe čujem
+             Svu noćas noć i cieli danas dan.
+             Ded kaži sada tu pred djevojkom,
+             što reko si mi sinoć. Sve nam reci,
+             jer i ja hoću čuti drugi put.
             HUSEJIN
-            <br> <i>(došao naprijed)</i>
-            <br> Što li ću vam kazivati jade!
-            <br> Dosta ih je jednom čuti bilo.
+             (došao naprijed)
+             Što li ću vam kazivati jade!
+             Dosta ih je jednom čuti bilo.
             SULTANIJA
-            <br> Kaži, Huso, lakše će nam biti!
-            <br> Kaži, pa da utješimo majku!
+             Kaži, Huso, lakše će nam biti!
+             Kaži, pa da utješimo majku!
             HUSEJIN
-            <br> Kad zajaših konja lastavicu
-            <br> i kad dođoh aginu šatoru,
-            <br> sjedi aga mrko pred šatorom.
-            <br> Uza nj majka, uza nj je sestrica,
-            <br> uzа nj svieta i askera vojska.
-            <br> “<a href="#null" class="prevod" data-modal="modal-201">Selam alejć</a>! Aga Hasanaga!
-            <br> Evo tebi Huso <a href="#null" class="prevod" data-modal="modal-202">selam</a> nosi
-            <br> a od tvoje ljube i dječice,
-            <br> da te pitam, jesi li prizdravio
-            <br> I hoćeš li skoro bielom dvoru,
-            <br> da mi tebe, ago, dočekamo!”
-            <br> Ćuti aga, ništa ne govori,
-            <br> već pogleda majku i sestricu,
-            <br> pа na mene oči naoblači:
-            <br> ”Vrat se natrag, otkuda si došo!
-            <br> Isporuči Hasanaginici:
-            <br> Kada sutra na noćište panem,
-            <br> nek me mlada ne čeka u dvoru –
+             Kad zajaših konja lastavicu
+             i kad dođoh aginu šatoru,
+             sjedi aga mrko pred šatorom.
+             Uza nj majka, uza nj je sestrica,
+             uzа nj svieta i askera vojska.
+             “Selam alejć! Aga Hasanaga!
+             Evo tebi Huso selam nosi
+             a od tvoje ljube i dječice,
+             da te pitam, jesi li prizdravio
+             I hoćeš li skoro bielom dvoru,
+             da mi tebe, ago, dočekamo!”
+             Ćuti aga, ništa ne govori,
+             već pogleda majku i sestricu,
+             pа na mene oči naoblači:
+             ”Vrat se natrag, otkuda si došo!
+             Isporuči Hasanaginici:
+             Kada sutra na noćište panem,
+             nek me mlada ne čeka u dvoru –
             HASANAGINICA
-            <br> Oh, “ni u dvoru, ni u rodu mome!”
-            <br> On taki meni <a href="#null" class="prevod" data-modal="modal-203">haber</a> naslao!
+             Oh, “ni u dvoru, ni u rodu mome!”
+             On taki meni haber naslao!
             HUSEJIN
-            <br> “Ni u dvoru, ni u rodu mome”,
-            <br> tako reče – ja se <a href="#null" class="prevod" data-modal="modal-204">obeznani’</a>.
-            <br> Samo gledam, vjerovat ne mogu.
-            <br> “Idi, idi, u što si sad stao?
-            <br> Treba li ti jedno dvaput reći?
-            <br> Valja da si već podjetinjio,
-            <br> igrajuć se s dječicom po dvoru!”
-            <br> “Ago!” šanem, “nemoj, dobri ago,
-            <br> nemoj griešit duše na hanumi!
-            <br> Nije ovo da se šališ vrieme...”
-            <br> A on trže brza <a href="#null" class="prevod" data-modal="modal-205">samokresa</a>,
-            <br> dа ne strugnuh, ubi me ko zeca!
-            <br> Takog agu još ne vidjeh nigda.
-            <br> Jeste ljutit aga Hasanaga.
+             “Ni u dvoru, ni u rodu mome”,
+             tako reče – ja se obeznani’.
+             Samo gledam, vjerovat ne mogu.
+             “Idi, idi, u što si sad stao?
+             Treba li ti jedno dvaput reći?
+             Valja da si već podjetinjio,
+             igrajuć se s dječicom po dvoru!”
+             “Ago!” šanem, “nemoj, dobri ago,
+             nemoj griešit duše na hanumi!
+             Nije ovo da se šališ vrieme...”
+             A on trže brza samokresa,
+             dа ne strugnuh, ubi me ko zeca!
+             Takog agu još ne vidjeh nigda.
+             Jeste ljutit aga Hasanaga.
             SULTANIJA
-            <br> Zar majku nam je potjerao babo?
-            <br> Аl’ zašto, zašto?
+             Zar majku nam je potjerao babo?
+             Аl’ zašto, zašto?
             
-			<i>Milan Ogrizović</i>`,
+			Milan Ogrizović`,
     video: false,
     audio: 'url',
     questions: [
@@ -2865,7 +2865,7 @@ Meša Selimović`,
             ДАВИД: А како ти мене јопе’ мореш тако питати? Зар ти мислиш, болан, да ја не знам да овај ваш цар има за свашто закон? Знам ја то, знам: добро ја то знам. Немој мислити да не знам!
             СУДАЦ: Ама, ето, Давиде, да речемо да има закон и за јазавце, опет је то некако незгодно. Бистар си и паметан човјек, промисли се... Ти знаш, кад суд неког осуђује треба да зна колико је стар, је ли ожењен, има ли дјеце, како говори, које је вјере. Све је то потребно суду. Ето, које је вјере тај твој несретник?
             ДАВИД: Никакве! Да је икакве вјере, не би дир’о у моју сиротињу.
-            СУДАЦ <i>(смијуљи се)</i>: Је ли ожењен?
+            СУДАЦ (смијуљи се): Је ли ожењен?
             ДАВИД: Јес’, ожењен је.
             СУДАЦ: По чему знаш?
             ДАВИД: Знам, ’вамо, по нечем. То не треба славни суд да зна. Срамота је то вође и помислити, а камоли изрећи. Ожењен је, ожењен!
@@ -2873,7 +2873,7 @@ Meša Selimović`,
             ДАВИД: Има. О, да му видиш дјеце и вамилије! Пуна и’ долина више оне моје јадне и једине њивице што се зове Ни Давидова ни царска ни спа’иска.
             СУДАЦ: Како говори, Давиде, тај лопов, којим језиком?
             ДАВИД: То ти, главати господине, ’нако посигурно не умијем казати. Бркљачи ко и ти и ово дијете кад сте се нешто малоприје договарали. Забркљачи де, господине, мало на њег’ да видим ’оће ли...
-            СУДАЦ <i>(смије се, говори нешто и удара јазавца по њушци)</i>
+            СУДАЦ (смије се, говори нешто и удара јазавца по њушци)
             ДАВИД: Види, господине, види како диже њушку, како те разумије! Види курвина сина како се ко ђоја ражалостио. Не претварај се, лопове један! Иако говориш господиновим језиком, то ти неће помоћи. Слободно, немој се претварати.
             СУДАЦ: Кад је рођен, колико је стар овај твој лопов, Давиде?
             ДАВИД: Није он ни стар. Млад је он још.
@@ -2890,10 +2890,10 @@ Meša Selimović`,
             СУДАЦ: Како, како?
             ДАВИД: Све полако... Опрости, господине, помео сам се. Опрости, господине, молим те, збунио сам се, па не знам ни шта говорим. Кад год уђем у славни суд, чини ми се да ме из свију ћошкова боду у очи оне несретне, палиграпске куке. Жена ме је, бог је убио, устрашила, она моја крезуба бабетина!
             ПИСАРЧИЋ: Ја бих река’, господине судац, да се овај човјек претвара.
-            ДАВИД <i>(у себи)</i>: Е, мој синко, зар си ти то сад видио?... Не гријеши, дијете, душе. Не биједи ме код славног суда!... Ето, господине, казао сам све што си ме пит’о. Сад морате тог лопова по закону осудити.
+            ДАВИД (у себи): Е, мој синко, зар си ти то сад видио?... Не гријеши, дијете, душе. Не биједи ме код славног суда!... Ето, господине, казао сам све што си ме пит’о. Сад морате тог лопова по закону осудити.
             СУДАЦ: А име?
             ДАВИД: Име му је Јолпаз Давидов. Тако га свијет зове, а тако ће му и славни суд позивке писати, ако га данас не осудите на вјешала. Село му се зове Мелина, котар Бања Лука, окружје Бања Лука, а земља, мислим, главати господине, да ће и њему бити Босна. Кућна му је лумера, каже кнез, оне двије кантарске куке.
-            <i>Петар Кочић</i>`,
+            Петар Кочић`,
     video: false,
     audio: 'url',
     questions: [

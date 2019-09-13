@@ -57,15 +57,18 @@ const Bg = styled.div`
   filter: alpha(opacity = 50); /* required for opacity to work in IE */
 `;
 
-export const Modal = ({children, inner, isOpen, close}) => {
+export const Modal = ({children, inner, close, finish}) => {
   const [open, setOpen] = useState(false);
 
   const handlerClose = () => {
     setOpen(false);
-    if (close) {
-      close();
-    }
   };
+
+  useEffect(() => {
+    if (finish) {
+      setOpen(false)
+    }
+  }, [finish]);
 
   useEffect(() => {
     ReactModal.setAppElement('#root');

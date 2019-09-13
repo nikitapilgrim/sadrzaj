@@ -185,11 +185,12 @@ const ParagraphInner = styled.span`
 `;
 
 
-const Paragraph = ({text, count, getOffset, scrollToNext, typeText}) => {
+const Paragraph = ({text, count, getOffset, scrollToNext, typeText, checkWordOccurrence}) => {
   const ref = useRef(null);
   const {width, height} = useWindowSize();
   const [columnText, setColumnText] = useState();
   const [columns, setColumns] = useState(null);
+  const [prepareText, setPrepareText] = useState('');
 
   useEffect(() => {
     if (width >= 1440) {
@@ -210,18 +211,51 @@ const Paragraph = ({text, count, getOffset, scrollToNext, typeText}) => {
   });
 
   const findDictionary = (text) => {
-    const modalInfo = dictionary.find((word => text.includes(word.title)));
+    let foundedWords = [];
+    const splitIntoWords = text.split(' ');
+    const modalInfo = dictionary.find((word => splitIntoWords.includes(word.title)));
+    if (modalInfo) {
+      const foundIndex = splitIntoWords.findIndex(word => word === modalInfo.title);
+      foundedWords = [...foundedWords, splitIntoWords[foundIndex]];
+
+      /*if (!checkWordOccurrence(splitIntoWords[foundIndex])) {
+        splitIntoWords[foundIndex] = <Highlight onClick={() => MouseClick.play()}>{splitIntoWords[foundIndex]}</Highlight>
+      }*/
+    }
+    const check = (word) => {
+      console.log( word, checkWordOccurrence[0])
+      if (checkWordOccurrence[0].includes(word)) {
+        return true;
+      } else {
+        checkWordOccurrence[1]((state) => [...state, word]);
+        return false
+      }
+    };
+
     return (
       <>
-        {modalInfo && reactStringReplace(text, modalInfo.title, (match, i) => (
-          <Modal style={{display: 'inline-block'}} inner={<DictionaryInner data={modalInfo}/>
-          }>
-            <Highlight onClick={() => MouseClick.play()}>{match}</Highlight>
-          </Modal>
-        )) || text}
+        {splitIntoWords.map(word => {
+          const found = foundedWords.find((w) => word === w);
+          foundedWords = foundedWords.filter(w => w !== found);
+          return (
+            <>
+              {found && check(found) ? <Modal style={{display: 'inline-block'}} inner={<DictionaryInner data={modalInfo}/>
+                }>
+                  <Highlight onClick={() => MouseClick.play()}>{found}</Highlight>
+                </Modal> : <> {word} </> }
+            </>
+          );
+        })}
       </>
     );
   };
+  //
+  // {modalInfo && reactStringReplace(text, modalInfo.title, (match, i) => (
+  //   <Modal style={{display: 'inline-block'}} inner={<DictionaryInner data={modalInfo}/>
+  //   }>
+  //     <Highlight onClick={() => MouseClick.play()}>{match}</Highlight>
+  //   </Modal>
+  // )) || text}
 
   return (
     <div ref={ref}>
@@ -271,7 +305,7 @@ const Paragraph = ({text, count, getOffset, scrollToNext, typeText}) => {
       }*/
 /*{<Divider onClick={() => scrollToNext()} number={count}/>}*/
 
-const TextWithDividers = ({text, typeText, offsetParent}) => {
+const TextWithDividers = ({text, typeText, offsetParent, checkWordOccurrence}) => {
   //const prepare = text.match(/[\s\S]{1,600}/g); old way
   const [offsets, setOffsets] = useState([]);
   const [prepareText, setPrepareText] = useState([]);
@@ -280,7 +314,7 @@ const TextWithDividers = ({text, typeText, offsetParent}) => {
     let textCacheIndex = 0;
     const prepare = splitedText.reduce((acc, item) => {
       if (!acc.length) {
-        acc.push([[item]]);
+        acc.push([item]);
         return acc;
       }
       //const string = acc[textCacheIndex].reduce((acc, elem) => acc.join(elem));
@@ -317,6 +351,7 @@ const TextWithDividers = ({text, typeText, offsetParent}) => {
         const count = i + 1;
         return (
           <Paragraph
+            checkWordOccurrence={checkWordOccurrence}
             key={count}
             scrollToNext={scroll(count + 1)}
             getOffset={getOffsets(count)}
@@ -335,7 +370,7 @@ export const ArticleLayout = ({data, id, getOffset}) => {
   const {dispatch, articles} = useStoreon('articles');
   const ref = useRef(null);
   const [offset, setOffset] = useState();
-
+  const [occurrenceWord, setOccurrenceWord] = useState([]);
   /* useEffect(() => {
      if (articles.hasOwnProperty(data.id)) {
        const articleStorage = articles[data.id];
@@ -346,6 +381,15 @@ export const ArticleLayout = ({data, id, getOffset}) => {
      }
    }, [data]);
  */
+  const checkWordOccurrence = (word) => {
+    if (occurrenceWord.includes(word)) {
+      return true;
+    } else {
+      setOccurrenceWord((state) => [...state, word]);
+      return false
+    }
+  };
+
   const getMedal = (result) => {
     let medal = null;
     if (result <= 50) {
@@ -397,12 +441,16 @@ export const ArticleLayout = ({data, id, getOffset}) => {
             </Row>
             <MainContainer className='main'>
               <Buttons>
-                <TestButton onFinishTest={handlerFinishTest} questions={data.questions}/>
+                <TestButton onFinishTest={handlerFinishTest}
+                            questions={data.questions}/>
                 <AudioButton data={data.audio}/>
                 <VideoButton src={data.video}/>
               </Buttons>
               <TextContainer>
-                <TextWithDividers offsetParent={offset} typeText={data.type} text={data.text}/>
+                <TextWithDividers checkWordOccurrence={[occurrenceWord, setOccurrenceWord]}
+                                  offsetParent={offset}
+                                  typeText={data.type}
+                                  text={data.text}/>
               </TextContainer>
             </MainContainer>
             <PageNumber>{data.id}</PageNumber>
