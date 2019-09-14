@@ -144,7 +144,6 @@ const Medal = styled.div`
 `;
 
 const MedalPercent = styled.div`
-  transform: rotate(5deg);
   position: absolute;
   bottom: 55%;
   left: 13%;
