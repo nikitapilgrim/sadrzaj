@@ -2,9 +2,11 @@ import React, {useState, useEffect, useRef} from 'react';
 import dictionary from '../../../Data/dictionairy/dictionairy';
 import styled from 'styled-components';
 import useStoreon from 'storeon/react';
-import {useMount, useWindowSize, createMemo} from 'react-use';
+import {useMount, useWindowSize, createMemo, useLocalStorage} from 'react-use';
+import useComponentSize from '@rehooks/component-size'
 
 import {TextWithDividers} from './TextWithDividers';
+import {Paragraph} from './Paragraph';
 import {breakpoints} from '../../../mixins/breakpoints';
 import {TestButton} from '../../Buttons/TestButton.js';
 import {AudioButton} from '../../Buttons/AudioButton.js';
@@ -173,39 +175,14 @@ const Span = styled.span`
 `;
 
 export const ArticleLayout = ({data, id, getOffset, text}) => {
-  const [medal, setMedal] = useState(null);
-  const [percent, setPercent] = useState(null);
   const {dispatch, articles} = useStoreon('articles');
   const ref = useRef(null);
+  const textRef = useRef(null);
   const [offset, setOffset] = useState();
   const [preparedDataText, setPreparedDataText] = useState();
-  const [occurrenceWord, setOccurrenceWord] = useState(new Set());
+  let size = useComponentSize(textRef);
+  let { width, height } = size;
 
-  useEffect(() => {
-    let cacheFoundWords = new Set();
-    const linesText = text.split(/\n/); // divide the text into lines\
-    const data = linesText.reduce((acc, line, i) => {
-        const arrayWords = line.trim().split(' '); // divide the text into words
-        const dataLine = arrayWords.reduce((acc, word, i) => {
-          if (!cacheFoundWords.has(word)) {
-            const modalInfo = dictionary.find((w => w.title === word));
-            if (modalInfo) {
-              cacheFoundWords.add(modalInfo.title);
-              acc.push({word, data: modalInfo, id: i})
-            } else {
-              acc.push({word, id: i})
-            }
-          }
-          return acc
-        }, []);
-      acc.push({
-        line: dataLine,
-        id: i
-      });
-      return acc;
-    }, []);
-    setPreparedDataText(data);
-  }, [text]);
 
   const getMedal = (result) => {
     let medal = null;
@@ -263,21 +240,8 @@ export const ArticleLayout = ({data, id, getOffset, text}) => {
                 <AudioButton data={data.audio}/>
                 <VideoButton src={data.video}/>
               </Buttons>
-              <TextContainer>
-                <p>{preparedDataText && preparedDataText.map(item => {
-                  return (
-                   <>
-                     {item.line.map(item => {
-                        return (
-                          <>
-                            {item.data ? <> <Highlight data={item.data}/> </> : <> {item.word} </>}
-                          </>
-                        )
-                     })}
-                     <br/>
-                   </>
-                  )
-                })}</p>
+              <TextContainer ref={textRef}>
+                <Paragraph data={data.text}/>
                 <br/>
                 <i>{data.author}</i>
               </TextContainer>

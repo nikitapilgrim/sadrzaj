@@ -1,35 +1,39 @@
-import React, {useEffect, useRef, useState} from 'react';
-import {useMount, useWindowSize} from 'react-use';
-import styled from 'styled-components';
+import React, {useState} from 'react';
+import {Highlight} from './Highlight';
+import {createMemo} from 'react-use';
 import dictionary from '../../../Data/dictionairy/dictionairy';
-import UIfx from 'uifx';
-import {Modal} from '../../Modal/Modal';
-import {DictionaryInner} from '../../Modal/DictionairyInner';
 
-const MouseClick = new UIfx(require('../../../assets/sounds/fx/mouseclick.mp3'));
+const prepareText = (data) => {
+  let cacheFoundWords = new Set();
+  const linesText = data.split(/\n/); // divide the text into lines\
+  return linesText.reduce((acc, line, i) => {
+    const arrayWords = line.trim().split(' '); // divide the text into words
+    const dataLine = arrayWords.reduce((acc, word, i) => {
+      if (!cacheFoundWords.has(word)) {
+        const modalInfo = dictionary.find((w => w.title === word));
+        if (modalInfo) {
+          cacheFoundWords.add(modalInfo.title);
+          acc.push({word, data: modalInfo, id: i})
+        } else {
+          acc.push({word, id: i})
+        }
+      }
+      return acc
+    }, []);
+    acc.push({
+      line: dataLine,
+      id: i
+    });
+    return acc;
+  }, []);
+};
 
+const preparedDataText = createMemo(prepareText);
 
-const Highlight = styled.span`
-  color: #fff600;
-  font-weight: 900;
-  text-decoration: underline;
-  cursor: pointer;
-`;
+export const Paragraph = React.memo(({data}) => {
+  const result = preparedDataText(data);
 
-const ParagraphInner = styled.span`
-  div {
-    display: inline-block;
-  }
-`;
-
-export const Paragraph = ({text, count, getOffset, scrollToNext, typeText, checkWordOccurrence}) => {
-  const ref = useRef(null);
-  const {width, height} = useWindowSize();
-  const [columnText, setColumnText] = useState();
-  const [columns, setColumns] = useState(null);
-  const [prepareText, setPrepareText] = useState('');
-
-  useEffect(() => {
+ /* useEffect(() => {
     if (width >= 1440) {
       setColumns(true);
       const first = text.slice(0, text.length / 2);
@@ -38,64 +42,25 @@ export const Paragraph = ({text, count, getOffset, scrollToNext, typeText, check
     } else {
       setColumns(false);
     }
-  }, [width]);
+  }, [width]);*/
 
-
-  useMount(() => {
-    const top = ref.current.offsetTop;
-    getOffset(top);
-    return null;
-  });
-
-  const findDictionary = (text) => {
-    let foundedWords = [];
-    const splitIntoWords = text.split(' ');
-    const modalInfo = dictionary.find((word => splitIntoWords.includes(word.title)));
-    if (modalInfo) {
-      const foundIndex = splitIntoWords.findIndex(word => word === modalInfo.title);
-      foundedWords = [...foundedWords, splitIntoWords[foundIndex]];
-
-      /*if (!checkWordOccurrence(splitIntoWords[foundIndex])) {
-        splitIntoWords[foundIndex] = <Highlight onClick={() => MouseClick.play()}>{splitIntoWords[foundIndex]}</Highlight>
-      }*/
-    }
-    const check = (word) => {
-      if (checkWordOccurrence[0].has(word)) {
-        return true;
-      } else {
-        checkWordOccurrence[1]((state) => new Set(state).add(word));
-        return false
-      }
-    };
-
-    return (
-      <>
-        {splitIntoWords.map(word => {
-          const found = foundedWords.find((w) => word === w);
-          foundedWords = foundedWords.filter(w => w !== found);
-          return (
-            <>
-              {found && !check(found) ? <Modal style={{display: 'inline-block'}} inner={<DictionaryInner data={modalInfo}/>
-              }>
-                <Highlight onClick={() => MouseClick.play()}>{found}</Highlight>
-              </Modal> : <> {word} </> }
-            </>
-          );
-        })}
-      </>
-    );
-  };
 
   return (
-    <div ref={ref}>
-      <ParagraphInner>{text.map(item => {
-        return (
-          <>
-            {findDictionary(item)}
-            <br/>
-          </>
-        );
-      })}</ParagraphInner>
-    </div>
+    <>
+    {result && result.map(item => {
+      return (
+        <>
+          {item.line.map(item => {
+            return (
+              <>
+                {item.data ? <> <Highlight data={item.data}/> </> : <> {item.word} </>}
+              </>
+            )
+          })}
+          <br/>
+        </>
+      )
+    })}
+    </>
   );
-};
+});
