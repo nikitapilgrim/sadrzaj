@@ -371,16 +371,7 @@ export const ArticleLayout = ({data, id, getOffset}) => {
   const ref = useRef(null);
   const [offset, setOffset] = useState();
   const [occurrenceWord, setOccurrenceWord] = useState([]);
-  /* useEffect(() => {
-     if (articles.hasOwnProperty(data.id)) {
-       const articleStorage = articles[data.id];
-       if (articleStorage.hasOwnProperty('medal')) {
-         setMedal(Medals[articleStorage.medal]);
-         setPercent(articleStorage.percent);
-       }
-     }
-   }, [data]);
- */
+
   const checkWordOccurrence = (word) => {
     if (occurrenceWord.includes(word)) {
       return true;

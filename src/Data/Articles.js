@@ -1783,7 +1783,7 @@ Meša Selimović`,
     text: `Ćupriju podiže koja podsjeća na lûk dûge
            Allahu moj! Ima l’ na svijetu po ljepoti drûge?
            Jedan je Derviš zadivljen stao i rekao riječi:
-           Ostavit ćemo ćupriju a mi ćemo preći.</p>
+           Ostavit ćemo ćupriju a mi ćemo preći. 
            
 		   Godine 974. (1576–77)
            Derviš-paša Bajezidagić`,
