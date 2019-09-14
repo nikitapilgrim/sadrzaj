@@ -146,7 +146,7 @@ const Medal = styled.div`
 const MedalPercent = styled.div`
   position: absolute;
   bottom: 55%;
-  left: 13%;
+  left: 20%;
   text-shadow: 1px 1px 1px #000;
   color: #ffffff;
   font-size: 43px;
