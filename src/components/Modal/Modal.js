@@ -22,10 +22,10 @@ const Wrapper = styled.span`
 
 
 const CloseModal = styled.button`
-  position: absolute;
+  position: fixed;
   z-index: 2;
-  top: -72px;
-  right: 0;
+  top: 5vh;
+  right: 5vw;
   width: 72px;
   height: 75px;
   background: url("${CloseIcon}") no-repeat;

@@ -7,15 +7,14 @@ const correct = new UIfx(require('../../assets/sounds/fx/correct-answer.aac'));
 const worng = new UIfx(require('../../assets/sounds/fx/wrong-answer.aac'));
 
 const Title = styled.div`
-  width: 616px;
   text-shadow: 0 1px 0 #000000;
   color: #ffffff;
-  font-size: 41px;
+  font-size: 32px;
   font-weight: 900;
 `;
 
 const AnswersContainer = styled.div`
-  margin-top: 50px;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   button:not(:first-child) {
@@ -29,7 +28,7 @@ const AnswerButton = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px 25px;
+  padding: 12px 20px;
   box-shadow: 0 3px 0 #000000;
   border-radius: 5px;
   border: 1px solid #fcfbc4;
