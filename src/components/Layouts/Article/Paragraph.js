@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, Fragment} from 'react';
 import {Highlight} from './Highlight';
 import {createMemo} from 'react-use';
 import dictionary from '../../../Data/dictionairy/dictionairy';
@@ -49,16 +49,16 @@ export const Paragraph = React.memo(({data}) => {
     <>
     {result && result.map(item => {
       return (
-        <>
+        <Fragment key={item.id}>
           {item.line.map(item => {
             return (
-              <>
+              <Fragment key={item.id}>
                 {item.data ? <> <Highlight data={item.data}/> </> : <> {item.word} </>}
-              </>
+              </Fragment>
             )
           })}
           <br/>
-        </>
+        </Fragment>
       )
     })}
     </>
