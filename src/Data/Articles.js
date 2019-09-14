@@ -18,7 +18,8 @@ export default [
           sindžir-halke – moje b’jele ruke,
           bukagije – moje belenzuke!”
           
-          Lirska narodna pjesma (sevdalinka)`,
+          `,
+    author: 'Lirska narodna pjesma (sevdalinka)',
     video: false,
     audio: require(`../assets/sounds/pronunciation/testvoice.aac`),
     questions: [
@@ -219,7 +220,8 @@ Odgovara iz bostana kada:
 pak da pišem tri godine dana,
 ne bi moji’ ispisala jada!”
 
-Narodna lirska pjesma (sevdalinka)`,
+`,
+    author: 'Narodna lirska pjesma (sevdalinka)',
     video: false,
     audio: 'url',
     questions: [
@@ -415,7 +417,8 @@ Tu se tuku do dv’je stare majke
 i proklinju i staro i mlado
 ko rastavi i milo i drago.
 
-Narodna balada`,
+`,
+    author: 'Narodna balada',
     video: false,
     audio: 'url',
     questions: [
@@ -541,7 +544,8 @@ Mrak se počeo spuštati nad zemlju kad eto ti onog njegova prijatelja što mu j
 – Šta je, što me tražiš? Jesi li mi našao kupca kući?
 – Kakav kupac, kakva kuća? Došao ti kući trgovac koji ti se zadužio kod oca, pa eno sad na tri deve donio blago, sav dug i hedije. Nije ni znao da ti je otac umro, pa hajde sad ti primi to imáće.
 
-Alija Nametak`,
+`,
+    author: 'Alija Nametak',
     video: false,
     audio: 'url',
     questions: [
@@ -667,7 +671,8 @@ U smrtnoj muci riba oživje i skoči visoko iz vode u čitavoj svojoj dužini, �
 Starac osjeti nesvjesticu i mučninu te mu se smrači pred očima. Ali on otpusti uže s harpune i propusti ga polako kroz ranjave ruke, a kad mu se razbistrilo pred očima, ugleda kako riba leži na leđima, okrenuvši srebrnasti trbuh uvis. Držak harpune stršio je koso iz ribinih leđa, a morska voda crvenjela je od krvi što je tekla iz njezina srca. Najprije je bila tamna kao riblje jato usred plave vode koja je bila duboka više od jedne milje. Onda se raširila poput oblaka. A riba se srebrnasta i nepomična ljuljala na valovima.
             
             
-Ernest Hemingvej`,
+`,
+    author: 'Ernest Hemingvej',
     video: false,
     audio: 'url',
     questions: [
@@ -783,7 +788,8 @@ Na tom tavanu, gdje sam tražio samoću, saznavajući se, i pribježište od otv
 Zaboravio sam na nju docnije, život je raspršio snatrenja mladosti, moguća u vrelom zamišljanju bez prepreka, u slobodi željenja bez granica, rođena u neiskustvu. A javila se ponovo, kao podsmijeh, kad mi je bilo najteže.
 Bio jednom jedan dječak, u očevoj kući, nad rijekom, koji je sanjao zlatne snove, jer ništa nije znao o životu.
 
-Meša Selimović`,
+`,
+    author: 'Meša Selimović',
     video: false,
     audio: 'url',
     questions: [
@@ -905,7 +911,8 @@ Meša Selimović`,
             Starac osjeti nesvjesticu i mučninu te mu se smrači pred očima. Ali on otpusti uže s harpune i propusti ga polako kroz ranjave ruke, a kad mu se razbistrilo pred očima, ugleda kako riba leži na leđima, okrenuvši srebrnasti trbuh uvis. Držak harpune stršio je koso iz ribinih leđa, a morska voda crvenjela je od krvi što je tekla iz njezina srca. Najprije je bila tamna kao riblje jato usred plave vode koja je bila duboka više od jedne milje. Onda se raširila poput oblaka. A riba se srebrnasta i nepomična ljuljala na valovima.
             
           
-          Ernest Hemingvej`,
+          `,
+    author: 'Ernest Hemingvej',
     video: false,
     audio: 'url',
     questions: [
@@ -1023,7 +1030,8 @@ Meša Selimović`,
             Što jeste – jeste, bilo je očigledno da se zaista osjeća bijedno što me je morao oboriti. Zato sam navio staru ploču. Rekao sam mu da sam pravi pravcati degenerik i sve što ide uz to. Rekao sam mu da bih uradio tačno isto što i on da sam se našao na njegovom mjestu i da mnogi ljudi nisu u stanju da shvate kakva je to muka biti nastavnik. Ukratko, štosove te vrste. Stare pjesme.
                       
           
-          Džerom D. Selindžer`,
+          `,
+    author: 'Džerom D. Selindžer',
     video: false,
     audio: 'url',
     questions: [
@@ -1139,7 +1147,8 @@ Meša Selimović`,
             “Ne brini, Dejve. Ovdje Frenk Pul. Posmatram tvoje srce i disanje – sve je savršeno normalno. Samo se opusti – polako. Sada ćemo otvoriti vrata i izvući te napolje.”
             Blaga svjetlost ispuni komoru; spram ulaza koji se sve više širio, on razabra obrise pokretnih obličja. I upravo tog časa sjećanje mu se potpuno povrati i on shvati gdje se, u stvari, nalazi. Iako se bezbjedno vratio sa najdaljih međa smrti, bio je odsutan samo nedjelju dana. Kada bude izašao iz hibernakuluma, neće ugledati hladno Saturnovo nebo; ono se i dalje nalazilo više od godinu dana u budućnost i milijardu milja daleko. Još je bio u odjeljenju za obuku u Središtu za svemirski let u Hjustonu, pod vrelim Suncem Teksasa.
 			
-            Artur Klark`,
+            `,
+    author: 'Artur Klark',
     video: false,
     audio: 'url',
     questions: [
@@ -1271,7 +1280,8 @@ Meša Selimović`,
             Onda sam ja njih upitala za brod koji je prije mnogo godina bio odveo moj narod, pravila sam znak broda i pokazivala na istok, ali me oni nisu razumjeli. Tek kad sam stigla u misiju Santa Barbare i upoznala oca Gonzalesa, od njega sam doznala da je onaj brod bio potonuo u nekoj velikoj oluji malo nakon dolaska u njegov kraj i da na čitavom moru ondje nije bilo drugoga broda. To je bio razlog što se bijeli ljudi nisu vratili po mene. Isplovili smo desetog dana. Tog jutra nebo je bilo plavo, a od vjetra ni daha. Krenuli smo ravno prema suncu.
             Dugo sam stajala i gledala Otok plavih dupina. S vida mi je posljednji iščeznuo Visoki rt. Mislila sam na Tontua koji ondje leži pod kamenjem svakakvih boja, a i na Won-a-nee koja je tko zna gdje, i na malu crvenu lisicu koja bi mi uzaludno grebla po ogradi, i na svoj kanu skriven u špilji, i na sve one sretne dane.
             Iz mora su izranjali dupini i plivali ispred broda. Ligama su tako ujutro plivali, vezući mnoge pjenušave preplete. Moje su ptičice cvrkutale u krleci, a kraj mene jе sjedio Rontu-Aru.
-            Skot O’ Del`,
+            `,
+    author: 'Skot O’ Del',
     video: false,
     audio: 'url',
     questions: [
@@ -1369,7 +1379,8 @@ Meša Selimović`,
             *
             ...Равнодушно гледају ти горостаси кад златни облаци, прамен по прамен, просипају своје злато, кад се умиљавају свеже горске маглице плаве као једро грожђе, кад се сунце помеша са зимом и као златне пчеле лепршају пахуљице снега.
             Чудна драж је заронити у тишину и покрета и звука. Негде на дно човека падају мисли, и глава плива у несвестици визија. Та шума, то су закопани џинови који хоће да пођу, и гле, ако одједаред ишчупају ноге из земље, заљуљају своја огромна телеса, и почне путовати црна шума са белом шубаром на глави... Тишина. Бескрајна шумска путовања, и на белоћи стоји само траг мојих дугих дрвених ципела. Чудно ми је и не могу да схватим. Смешно ми је и смејем се Сфингиним смехом без веселости. У тишини је све, и воља за животом и воља за пропашћу. Дух одриче, а живот хоће живот...
-            Исидора Секулић`,
+            `,
+    author: 'Исидора Секулић',
     video: false,
     audio: 'url',
     questions: [
@@ -1492,7 +1503,8 @@ Meša Selimović`,
            Ништа се не усијече тако јасно у памћење као сјећање на велики пожар у ноћи.
            У неким новинама одштампана је читуља једној ријеткости. Изгорјела је једне ноћи иза добро осигураних замандаљених капија...
            Из бедекера је истргнута страница о мравињаку, гдје се годинама и данима зацјењивало, уцјењивало, процјењивало и цјенкало, док густ кисео дим није однио све у бесцијење...
-           Зуко Џумхур`,
+           `,
+    author: 'Зуко Џумхур',
     video: false,
     audio: 'url',
     questions: [
@@ -1588,7 +1600,8 @@ Meša Selimović`,
             Nema na njemu šara i ukrasa – nego ima nešto silno i moćno, tako kao da je karavana zagazila u vodu, tu se skamenila – i ostala... U poretku jednom skladnom, a preko vode – od jedne do druge njene obale.
   Onaj što ju je zidao, nije nam svoje ime ostavio, pa pred sobom gledamo djelo – a ne znamo ime njegovog tvorca. Mora da je aršinom mjerio svaki kamen, svaki luk, svaki stub, svako okno – svaki prst na mostu, jer tu je sve skladno, sve izmjereno, sve po aršinu. Pa je i kod popravaka tako mjereno – sve na metar i na santimetar, kako bi sve bilo kao što je i nekad bilo – prije gotovo četiri stoljeća. Popravljan je više puta – jer nijedan od ratova nije prošao a da ovu starinu nije rušio; i zanimljivo je da su uz obadva velika rata bili porušeni isti lukovi, isti stubovi. To jest: ono što nisu mogli toliki povodnji i toliko vrijeme, mogla je ruka rušioca. Porušeni lukovi ličili su tada na kakve pećine – i bila je to tužna slika; stajao sam tada na obali i gledao je. Ni Drina više nije bila lijepa, jer to dvoje – na ovom mjestu, kad se nađu jedno bez drugog, nije više lijepo; i sve je ličilo na srušen hram, na pustoš.
   Danas su te rane zacijeljene, i jedva se poznaje gdje su i bile, ili se nikako i ne poznaje, nego je onako kao i nekad – kad je ovu ćupriju, ispustivši aršin iz ruku, ostavio za sobom njen graditelj. Bilo je to godine 1577. Davno i davno! Mnogo je od tada niz Drinu prošlo vode, mnogo ljudi sjelo na “sofu” – i odatle, sa sredine mosta, sa visine od oko petnaest metara iznad vode, gledalo dolje niz Drinu, i gore uz Drinu, i pred sobom grad Višegrad. A ako je neko umio, mogao je tu odmah prema “sofi ”, a na ploči mramornoj, čitati ovakav natpis na mostu: “Gospodin Mehmed-paša, mudrac svog vremena, potrošio je svoj imetak na zadužbine. Niko neće reći za imetak koji se troši na zadužbine, da je rasipanje. Bio je svjestan da su svakom njegova djela najbolje potomstvo. Podigao je most, kojem na svijetu nema ravna. Nemoj reći da je propao imetak, koji se troši na ovakva djela.“
-            Ćamil Sijarić`,
+            `,
+    author: 'Ćamil Sijarić',
     video: false,
     audio: 'url',
     questions: [
@@ -1716,7 +1729,8 @@ Meša Selimović`,
     Što nikuda ne ide iz kuće.
       Slavim svoju vječitu ružu
     Za sutra, danas i juče.
-    Ruben Dario`,
+    `,
+    author: 'Ruben Dario',
   },
   {
     id: 15,
@@ -1772,7 +1786,8 @@ Meša Selimović`,
             donijelo si mi mir.
                 
             
-            Wuppertal, marta 2008.
+            `,
+    author: `Wuppertal, marta 2008.
             Ivica Vanja Rorić`,
   },
   {
@@ -1785,7 +1800,8 @@ Meša Selimović`,
            Jedan je Derviš zadivljen stao i rekao riječi:
            Ostavit ćemo ćupriju a mi ćemo preći. 
            
-		   Godine 974. (1576–77)
+		   `,
+    author: `Godine 974. (1576–77)
            Derviš-paša Bajezidagić`,
     video: false,
     audio: 'url',
@@ -1971,7 +1987,8 @@ Meša Selimović`,
            I najednom se te prekrasne i prežalosne oči koje su se već stale zaklapati od napora, naglo i silno otvoriše. Zjenice se raširile u užasu jednom, divlje, preneraženo, kao da su ugledale nešto neviđeno strašno.
            Žene su osjetile da je u sobu došla Smrt.
            
-			Slavko Kolar`,
+			`,
+    author: `Slavko Kolar`,
     video: false,
     audio: 'url',
     questions: [
@@ -2089,7 +2106,8 @@ Meša Selimović`,
            Сјетила сам се тада оне дјевојчице која је прије много година горко плакала што није смјела одјенути нови капутић једне кишне недјеље.
            Порумењела сам у том тренутку... и постидјела се својих суза.
             
-			Злата Коларић-Кишур`,
+			`,
+    author: `Злата Коларић-Кишур`,
     video: false,
     audio: 'url',
     questions: [
@@ -2196,7 +2214,8 @@ Meša Selimović`,
             Još se i danas pitam nije li to bio privid, moja duševna ptica, spasonosni anđeo, pojava na poziv mašte da se oslobodi zarobljenica mog detinjstva. San o ptici često me i danas pohodi. Stekel ga tumači kao biseksualni simbol, za mene pak ima duhovno značenje, zaručničku vrednost Hristove poruke: budi bezazlen kao grlica!
             U vreme dok sam radio na ovoj priči brinuo sam o mnogim nedostacima, a ponajviše o nepouzdanom svršetku, ali tada mi je u pomoć priskočio slučaj, zaštitnik pripovedača. Jednog dana sam susreo nekadašnju voditeljicu Tribine, sada ženu srednjih godina, ostarelu pre vremena. Nećete mi verovati, ali tamo više nije bilo nijedne crte nekadašnje lepotice. Kratko i bezvoljno razgovarali smo o prošlosti, pominjala je mnoga imena koja mi ništa nisu značila. Jedva sam čekao da se pozdravimo. Na rastanku je rekla:
             – Nikad neću zaboraviti onu pticu! Sećaš li se? Što ne napišeš nešto o tome?
-            Mirko Kovač`,
+            `,
+    author: `Mirko Kovač`,
     video: false,
     audio: 'url',
     questions: [
@@ -2290,7 +2309,8 @@ Meša Selimović`,
             Još se i danas pitam nije li to bio privid, moja duševna ptica, spasonosni anđeo, pojava na poziv mašte da se oslobodi zarobljenica mog detinjstva. San o ptici često me i danas pohodi. Stekel ga tumači kao biseksualni simbol, za mene pak ima duhovno značenje, zaručničku vrednost Hristove poruke: budi bezazlen kao grlica!
             U vreme dok sam radio na ovoj priči brinuo sam o mnogim nedostacima, a ponajviše o nepouzdanom svršetku, ali tada mi je u pomoć priskočio slučaj, zaštitnik pripovedača. Jednog dana sam susreo nekadašnju voditeljicu Tribine, sada ženu srednjih godina, ostarelu pre vremena. Nećete mi verovati, ali tamo više nije bilo nijedne crte nekadašnje lepotice. Kratko i bezvoljno razgovarali smo o prošlosti, pominjala je mnoga imena koja mi ništa nisu značila. Jedva sam čekao da se pozdravimo. Na rastanku je rekla:
             – Nikad neću zaboraviti onu pticu! Sećaš li se? Što ne napišeš nešto o tome?
-            Mirko Kovač`,
+            `,
+    author: `Mirko Kovač`,
     video: false,
     audio: 'url',
     questions: [
@@ -2411,7 +2431,8 @@ Meša Selimović`,
            A meni sada, kada sam zašao u godine, više nije jasno zašto sam joj govorio te riječi, zašto sam se šalio...
            (1886)
             
-			Anton Pavlovič Čehov`,
+			`,
+    author: `Anton Pavlovič Čehov`,
     video: false,
     audio: 'url',
     questions: [
@@ -2768,7 +2789,8 @@ Meša Selimović`,
              Zar majku nam je potjerao babo?
              Аl’ zašto, zašto?
             
-			Milan Ogrizović`,
+			`,
+    author: `Milan Ogrizović`,
     video: false,
     audio: 'url',
     questions: [
@@ -2893,7 +2915,8 @@ Meša Selimović`,
             ДАВИД (у себи): Е, мој синко, зар си ти то сад видио?... Не гријеши, дијете, душе. Не биједи ме код славног суда!... Ето, господине, казао сам све што си ме пит’о. Сад морате тог лопова по закону осудити.
             СУДАЦ: А име?
             ДАВИД: Име му је Јолпаз Давидов. Тако га свијет зове, а тако ће му и славни суд позивке писати, ако га данас не осудите на вјешала. Село му се зове Мелина, котар Бања Лука, окружје Бања Лука, а земља, мислим, главати господине, да ће и њему бити Босна. Кућна му је лумера, каже кнез, оне двије кантарске куке.
-            Петар Кочић`,
+            `,
+    author: `Петар Кочић`,
     video: false,
     audio: 'url',
     questions: [

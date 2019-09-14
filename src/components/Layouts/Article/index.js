@@ -278,6 +278,8 @@ export const ArticleLayout = ({data, id, getOffset, text}) => {
                    </>
                   )
                 })}</p>
+                <br/>
+                <i>{data.author}</i>
               </TextContainer>
             </MainContainer>
             <PageNumber>{data.id}</PageNumber>
