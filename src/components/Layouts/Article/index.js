@@ -140,7 +140,7 @@ const MedalWrapper = styled.div`
 
 const Medal = styled.div`
   position: relative;
-  transform: rotate(-5deg);
+  transform: rotate(-10deg);
 `;
 
 const MedalPercent = styled.div`
