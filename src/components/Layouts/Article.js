@@ -224,11 +224,11 @@ const Paragraph = ({text, count, getOffset, scrollToNext, typeText, checkWordOcc
       }*/
     }
     const check = (word) => {
-      console.log( word, checkWordOccurrence[0])
-      if (checkWordOccurrence[0].includes(word)) {
+      console.log( word, checkWordOccurrence[0]);
+      if (checkWordOccurrence[0].has(word)) {
         return true;
       } else {
-        checkWordOccurrence[1]((state) => [...state, word]);
+        checkWordOccurrence[1]((state) => new Set(state).add(word));
         return false
       }
     };
@@ -240,7 +240,7 @@ const Paragraph = ({text, count, getOffset, scrollToNext, typeText, checkWordOcc
           foundedWords = foundedWords.filter(w => w !== found);
           return (
             <>
-              {found && check(found) ? <Modal style={{display: 'inline-block'}} inner={<DictionaryInner data={modalInfo}/>
+              {found && !check(found) ? <Modal style={{display: 'inline-block'}} inner={<DictionaryInner data={modalInfo}/>
                 }>
                   <Highlight onClick={() => MouseClick.play()}>{found}</Highlight>
                 </Modal> : <> {word} </> }
@@ -371,7 +371,7 @@ export const ArticleLayout = ({data, id, getOffset}) => {
   const {dispatch, articles} = useStoreon('articles');
   const ref = useRef(null);
   const [offset, setOffset] = useState();
-  const [occurrenceWord, setOccurrenceWord] = useState([]);
+  const [occurrenceWord, setOccurrenceWord] = useState(new Set());
 
   const checkWordOccurrence = (word) => {
     if (occurrenceWord.includes(word)) {

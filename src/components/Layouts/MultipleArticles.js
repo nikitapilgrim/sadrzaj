@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from 'react';
 import {DVL} from 'react-dynamic-virtual-list';
-import {ArticleLayout} from './Article.js';
+import {ArticleLayout} from './Article/index';
 
 export const MultipleArticles = ({data, getOffset}) => {
 
   const renderArticle = (item) => {
-    return <ArticleLayout getOffset={getOffset} id={`article-${item.id}`} key={item.id} data={item}/>;
+    return <ArticleLayout getOffset={getOffset} id={`article-${item.id}`} key={item.id} text={item.text} data={item}/>;
   };
 
   return (
