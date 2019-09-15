@@ -1,17 +1,14 @@
 import React, {useState, useEffect, useRef} from 'react';
-import dictionary from '../../../Data/dictionairy/dictionairy';
 import styled from 'styled-components';
 import useStoreon from 'storeon/react';
 import {useMount, useWindowSize, createMemo, useLocalStorage} from 'react-use';
-import useComponentSize from '@rehooks/component-size'
 
 import {TextWithDividers} from './TextWithDividers';
-import {Paragraph} from './Paragraph';
 import {breakpoints} from '../../../mixins/breakpoints';
 import {TestButton} from '../../Buttons/TestButton.js';
 import {AudioButton} from '../../Buttons/AudioButton.js';
 import {VideoButton} from '../../Buttons/VideoButton';
-import {Highlight} from './Highlight';
+import {TextContainer} from './TextContainer';
 import {Divider} from '../../Divider';
 
 import bg from '../../../assets/img/backgrounds/halka07.jpg';
@@ -76,21 +73,6 @@ const MainContainer = styled.div`
     flex-direction: row;
   }
   border-bottom: 1px solid red;
-`;
-
-const TextContainer = styled.p`
-  margin: 0;
-  margin-top: 24px;
-  text-shadow: 1px 1px 0 #000000;
-  color: #ffffff;
-  font-size: 20px;
-  font-weight: 500;
-  @media ${breakpoints.laptop} { 
-    margin: 0;
-  }
-  div {
-    display: inline-block;
-  }
 `;
 
 const Buttons = styled.div`
@@ -179,9 +161,6 @@ export const ArticleLayout = ({data, id, getOffset, text}) => {
   const ref = useRef(null);
   const textRef = useRef(null);
   const [offset, setOffset] = useState();
-  const [preparedDataText, setPreparedDataText] = useState();
-  let size = useComponentSize(textRef);
-  let { width, height } = size;
 
 
   const getMedal = (result) => {
@@ -240,11 +219,7 @@ export const ArticleLayout = ({data, id, getOffset, text}) => {
                 <AudioButton data={data.audio}/>
                 <VideoButton src={data.video}/>
               </Buttons>
-              <TextContainer ref={textRef}>
-                <Paragraph data={data.text}/>
-                <br/>
-                <i>{data.author}</i>
-              </TextContainer>
+              <TextContainer id={data.id} data={data.text}/>
             </MainContainer>
             <PageNumber>{data.id}</PageNumber>
           </Content>

@@ -12,12 +12,12 @@ const Wrapper = styled.span`
   cursor: pointer;
 `;
 
-export const Highlight = ({data}) => {
+export const Highlight = ({data, word}) => {
   return (
     <>
         <Modal style={{display: 'inline-block'}} inner={<DictionaryInner data={data}/>
         }>
-          <Wrapper onClick={() => MouseClick.play()}>{data.title}</Wrapper>
+          <Wrapper onClick={() => MouseClick.play()}>{word}</Wrapper>
         </Modal>
     </>
   )

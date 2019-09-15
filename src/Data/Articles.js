@@ -7,7 +7,7 @@ export default [
     title: 'Narodna književnost',
     subtitle: 'Majka Fatu kroz tri gore viče',
     type: lyrics,
-    text: `Majka Fatu kroz tri gore viče:
+    text: `{{Majka(25)}} Fatu kroz tri gore viče:
           “Jesi l’, kćeri, ub’jelila platno?”
           Fata joj se kroz sedam odziva:
           “Nisam, majko, ni do vode došla,
