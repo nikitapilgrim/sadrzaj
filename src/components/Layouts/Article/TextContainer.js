@@ -1,4 +1,4 @@
-import React, {useState, useRef, useEffect} from 'react';
+import React, {useState, useRef, useEffect, useCallback} from 'react';
 import {Paragraph} from './Paragraph';
 import styled from 'styled-components';
 import useComponentSize from '@rehooks/component-size';
@@ -20,6 +20,11 @@ const Wrapper = styled.p`
   div {
     display: inline-block;
   }
+`;
+
+const Separator = styled.div`
+  margin-top: 30px;
+  width: 100%;
 `;
 
 const parseTemplate = (template) => {
@@ -50,48 +55,52 @@ const prepareText = (data) => {
         const modalInfo = dictionary.find((w => w.title === word));
         if (modalInfo) {
           cacheFoundWords.add(modalInfo.title);
-          acc.push({word, data: modalInfo, id: i})
+          acc.push({word, data: modalInfo, id: i});
         } else {
-          acc.push({word, id: i})
+          acc.push({word, id: i});
         }
       }
-      return acc
+      return acc;
     }, []);
     acc.push({
       line: dataLine,
-      id: i
+      id: i,
     });
     return acc;
   }, []);
 };
 
+const chunk = (arr, size) =>
+  Array.from({length: Math.ceil(arr.length / size)}, (v, i) =>
+    arr.slice(i * size, i * size + size),
+  );
+
 const preparedDataText = createMemo(prepareText);
 
-export const TextContainer = React.memo(({id, data}) => {
+export const TextContainer = React.memo(({id, data, author}) => {
   let ref = useRef(null);
   let size = useComponentSize(ref);
-  const [paragraphSize, setParagraphSize] = useState(null);
   let {width, height} = size;
   const {width: wWidth, height: wheight} = useWindowSize();
   const text = preparedDataText(data);
-  const [validCountLines, setValidCountLines] = useState(1);
-
-  const onRenderString = (height) => {
-    const lines = Math.round(paragraphSize / height);
-    //console.log(lines)
-    setValidCountLines(lines);
-  };
+  const [paragraphsCount, setParagraphsCount] = useState();
+  const [paragraphSize, setParagraphSize] = useState();
 
   useEffect(() => {
-    console.log(validCountLines, text.length, id)
-  }, [validCountLines])
+    const paragraphSize = Math.round(wheight * 0.8);
+    setParagraphSize(paragraphSize);
+  }, [height]);
 
-  //console.log(text[0])
- //console.log(height, wheight)
   useEffect(() => {
-    setParagraphSize(Math.round(wheight * 0.50))
-    //console.log(text)
-  }, [wheight]);
+    if (paragraphSize) {
+      const lines = Math.round(height/ paragraphSize);
+      const a = lines || 1;
+      const parts = Math.round(text.length / a);
+      if (parts && parts !== Infinity) {
+        setParagraphsCount(chunk(text, parts));
+      }
+    }
+  }, [paragraphSize, height]);
 
   /* useEffect(() => {
     if (width >= 1440) {
@@ -107,9 +116,18 @@ export const TextContainer = React.memo(({id, data}) => {
 
   return (
     <Wrapper ref={ref}>
-      <Paragraph onRenderString={onRenderString} text={text}/>
+      {paragraphsCount ? paragraphsCount.map((item, i, array) => {
+        console.log(i, array.length)
+        return (
+          <>
+            <Paragraph key={item.id} text={item}/>
+            {i !== array.length - 1 && <Separator/>}
+          </>
+        );
+      }) : <Paragraph text={[text[0]]}/>}
+
       <br/>
-      <i>{data.author}</i>
+      <i>{author}</i>
     </Wrapper>
   );
 });

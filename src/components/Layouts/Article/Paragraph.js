@@ -8,14 +8,14 @@ const Wrapper = styled.p`
   max-height: ${props => `${props.maxHeight}px`};
 `;
 
-export const Paragraph = ({text, maxHeight, onRenderString}) => {
+export const Paragraph = ({text, maxHeight}) => {
   const ref = useRef(null);
-  let size = useComponentSize(ref);
+  /*let size = useComponentSize(ref);
   let {width, height} = size;
 
   useEffect(() => {
     onRenderString(height)
-  }, [height]);
+  }, [height]);*/
 
   return (
     <Wrapper ref={ref} maxHeight={maxHeight}>

@@ -219,7 +219,7 @@ export const ArticleLayout = ({data, id, getOffset, text}) => {
                 <AudioButton data={data.audio}/>
                 <VideoButton src={data.video}/>
               </Buttons>
-              <TextContainer id={data.id} data={data.text}/>
+              <TextContainer author={data.author} id={data.id} data={data.text}/>
             </MainContainer>
             <PageNumber>{data.id}</PageNumber>
           </Content>
