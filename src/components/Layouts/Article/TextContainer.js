@@ -117,7 +117,6 @@ export const TextContainer = React.memo(({id, data, author}) => {
   return (
     <Wrapper ref={ref}>
       {paragraphsCount ? paragraphsCount.map((item, i, array) => {
-        console.log(i, array.length)
         return (
           <>
             <Paragraph key={item.id} text={item}/>
