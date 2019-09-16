@@ -2295,101 +2295,6 @@ Bio jednom jedan dječak, u očevoj kući, nad rijekom, koji je sanjao zlatne sn
   {
     id: 26,
     title: 'Umjetnička književnost - Pripovijetka',
-    subtitle: 'Sećanje na šarenu pticu',
-    type: essay,
-    text: `Posle mnogo godina našao sam se u gradu mog dečaštva kao gost na Tribini mladih. Bio sam dočekan s kuđenjem, prigovarali su mi na crnoj slici sveta i osuđivali moje knjige. Pokajao sam se što sam pristao da gostujem u gradu koji me i ranije obasipao grdnjama, pa ako hoćete i prognao, jer sam idiličnu sliku zavičaja ukaljao ružnim opisima. Sala Tribine bila je malena i zagušljiva; prosto sam vapio za zrakom, a bio sam toliko utučen pogrdama da se nisam usudio tražiti čašu vode, iako su mi se usta sušila. I taman sam se ponadao da će lepa voditeljica objaviti kraj ovom neslavnom gostovanju, kad se na ulazu sale pojaviše invalidska kolica; njih je gurao crnoput mladić s kovrdžavom kosom, u majici koja je isticala njegovu mišićavost. U kolicima je sedeo momak izduženog lica, pomalo izobličenog i bledog, s maljama što su se hvatale samo uz rub lica i podbradak. Glavu je držao malo nagnutu u stranu, ali ne na onaj način nemoćnog.
-            – Sad moraš još malo ostati – rekla je voditeljica. – To je naš Fahro, redovni posetilac Tribine.
-            Crnoputi momak probio se s kolicima do prozora i spretno ga otvorio tako da nas je osvežio zrak, a prijao je i njegovom bolesnom prijatelju. Vani su se čule ptice; miris lipe zapljusnuo nas je kao neki poetski dah. Sala je bila puna dnevnog svetla. Bolesni dečak iz mog detinjstva gledao me kao neznanca, istim onim lepim, plavim očima. Sada nije imalo svrhe potezati uspomene iz Mahale; mogao sam misliti samo o tome kako se na životnoj mapi naše sudbine dodiruju i udaljuju i najzad slivaju u isti tok vremena. Njegov otac je umro od opake bolesti; kažu da je dugo ležao pod tim teretom kao neki kažnjenik. Umro je u neorealističkom dekoru Mahale, a poslednji njegov razgovor sa sinom bio je o filmu.
-            – Šta se daje u bioskopu? – upitao je slabim, promuklim glasom.
-            – Pustinja straha.
-            – Žao mi je što film neću s tobom gledati, ali pustinja straha je preda mnom i ja sam već zakoračio tamo. Imam i ulaznicu.
-            U njegovoj ostavštini, među dokumentima, pronađena je beležnica. U njoj su bili podaci o sedamsto filmova koje je gledao u toku svog nesrećnog i protivurečenog života. Dečak je nastavio kao i otac, počeo je da vodi svoju istoriju filma, da unosi podatke u svoju beležnicu, predano, brižljivo i s akribijom, i da, na koncu, daje svoje ocene. Voleo je američke filmove o divljem zapadu, avanturističke filmove i spektakle. Kabinet doktora Kaligarija gledao je šest puta. Bergmana nije podnosio. Taj mladić mi je postavio pitanje: utiče li film na literaturu? i s ogorčenjem naveo nekog književnika koji je izjavio da prezire film. Takođe je zamolio da za njegovu beležnicu navedem filmove i režisere koje volim. To pitanje me spaslo od onih što su već bili počeli s uvredama i sramoćenjem, nazivajući me literarnom nakazom.
-            Tada sam izrazio sumnju u književnika koji prezire film i naveo nekog hispanoameričkog pisca, ne sećam se tačno njegovog imena, mogao bi biti Fuentes ili Oktavio Paz, zašto ne, a on je rekao da je film umetnost uskrsnuća, a literatura umetnost raspeća. Možda je to preterano, ali je rečeno s ozbiljnošću, pogotovu što je uskrsnuće nagrada pojedincu da se obuče u sliku nebesku. Ako se čovek ukazuje kao slika božja, onda je bog izumio film. I Borhes ističe u prologu prvog izdanja Sveopšte istorije beščašća da su na njegove prozne sastave uticali prvi filmovi Jozefa von Sternberga. Takođe izjavljuje da je uprkos slabom vidu gledao hiljade filmova. Ispričao sam o beogradskoj kinoteci kao novom hramu; tamo su se podjednako nalazili i pisci i slikari i arhitekte i režiseri i manijaci, ne samo kao zaljubljenici u film, već kao ljudi koji su pohađali časove jedinstvene prakse. Film je umetnost zadovoljstva, a literatura umetnost melankolije, to sam naveo ne sećajući se otkuda i kako je to ostalo u mom pamćenju.
-            Tek što sam bio započeo svoju listu filmova, i za mladićevu beležnicu naveo najpoetičniji film Los Olvidados, a na prvo mesto stavio svog omiljenog reditelja Luisa Bunjuela, dogodilo se nešto neobično: u salu je uletela jedna lepa šarena ptica, lepršala je u uglovima dvorane pribijajući se uz zid, grebući kandžicama i ljušteći kreč. U nekoliko mahova bezglavo je udarila u staklo gornjeg zatvorenog dela prozora. Jedna peruška, kao pahulja, pala je ozgo na moje rame. Pojava ptice izazvala je radost i ushićenje u dvorani, samo je bolesni mladić Fahro uzdrhtao uplašen da će se ptica ozlediti. Kad je pronašla prozor i otprhnula, u sali je zavladala tišina kakvu posle nikad nisam doživeo. Sen krila te ptice je tajanstveni znak pod kojim smo se razišli.
-            Još se i danas pitam nije li to bio privid, moja duševna ptica, spasonosni anđeo, pojava na poziv mašte da se oslobodi zarobljenica mog detinjstva. San o ptici često me i danas pohodi. Stekel ga tumači kao biseksualni simbol, za mene pak ima duhovno značenje, zaručničku vrednost Hristove poruke: budi bezazlen kao grlica!
-            U vreme dok sam radio na ovoj priči brinuo sam o mnogim nedostacima, a ponajviše o nepouzdanom svršetku, ali tada mi je u pomoć priskočio slučaj, zaštitnik pripovedača. Jednog dana sam susreo nekadašnju voditeljicu Tribine, sada ženu srednjih godina, ostarelu pre vremena. Nećete mi verovati, ali tamo više nije bilo nijedne crte nekadašnje lepotice. Kratko i bezvoljno razgovarali smo o prošlosti, pominjala je mnoga imena koja mi ništa nisu značila. Jedva sam čekao da se pozdravimo. Na rastanku je rekla:
-            – Nikad neću zaboraviti onu pticu! Sećaš li se? Što ne napišeš nešto o tome?
-            `,
-    author: `Mirko Kovač`,
-    video: false,
-    audio: 'url',
-    questions: [
-      {
-        title: 'This is title for 1st question',
-        question: 'Pisac se sjećao Tribine mladih na kojoj se neprijatno osjećao, jer su ga…',
-        answers: [
-          {
-            title: 'obasipali grdnjama i proglasili lošim piscem',
-            right: true,
-          },
-          {
-            title: 'podsjećali na teško djetinjstvo',
-            right: false,
-
-          },
-          {
-            title: 'This is title for 2nd question',
-            question: 'Atmosferu u sali je promijenio ulazak…',
-            answers: [
-              {
-                title: 'mladića u invalidskim kolicima',
-                right: true,
-              },
-              {
-                title: 'otvaranje prozora u sali',
-                right: false,
-              },
-            ],
-          },
-          {
-            title: 'This is title for 3rd question',
-            question: 'Mladić u kolicima je bio zaljubljenik u…',
-            answers: [
-              {
-                title: 'književnost',
-                right: false,
-              },
-              {
-                title: 'film',
-                right: true,
-              },
-            ],
-          },
-          {
-            title: 'This is title for 4th question',
-            question: 'Pisac je doživio dolazak ptice kao tajanstveni znak poslije koga je uslijedilo njegovo…',
-            answers: [
-              {
-                title: 'oslobađanje od neprijatnosti i pritiska koji je trpio',
-                right: true,
-              },
-              {
-                title: 'saznanje da je sve prolazno',
-                right: false,
-              },
-            ],
-          },
-          {
-            title: 'This is title for 5th question',
-            question: 'Ptica u književnosti je simbol…',
-            answers: [
-              {
-                title: 'ljubavi',
-                right: false,
-              },
-              {
-                title: 'slobode',
-                right: true,
-              },
-            ],
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: 27,
-    title: 'Umjetnička književnost - Pripovijetka',
     subtitle: 'Šala (odlomak)',
     type: essay,
     text: `Vedro zimsko podne... Mraz je jak, puca, i Nađenjki, koja me drži ispod ruke, srebrnastim injem prekriva kovrdže na sljepoočnicama i malje iznad gornje usne. Stojimo na visokom klizalištu. Od naših nogu do same zemlje prostire se strma površina, u kojoj se sunce ogleda kao u ogledalu. Pored nas su male sanke, tapacirane svijetlocrvenom čojom.
@@ -2523,7 +2428,7 @@ Bio jednom jedan dječak, u očevoj kući, nad rijekom, koji je sanjao zlatne sn
     ],
   },
   {
-    id: 28,
+    id: 27,
     title: 'Umjetnička književnost – Drama',
     subtitle: 'Hasanaginica (odlomak)',
     type: lyrics,
@@ -2877,7 +2782,7 @@ Bio jednom jedan dječak, u očevoj kući, nad rijekom, koji je sanjao zlatne sn
     ],
   },
   {
-    id: 29,
+    id: 28,
     title: 'Umjetnička književnost - Drama',
     subtitle: 'Јазавац пред судом (Одломак)',
     type: essay,

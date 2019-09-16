@@ -3,13 +3,11 @@ import styled from 'styled-components';
 import useStoreon from 'storeon/react';
 import {useMount, useWindowSize, createMemo, useLocalStorage} from 'react-use';
 
-import {TextWithDividers} from './TextWithDividers';
 import {breakpoints} from '../../../mixins/breakpoints';
 import {TestButton} from '../../Buttons/TestButton.js';
 import {AudioButton} from '../../Buttons/AudioButton.js';
 import {VideoButton} from '../../Buttons/VideoButton';
 import {TextContainer} from './TextContainer';
-import {Divider} from '../../Divider';
 
 import bg from '../../../assets/img/backgrounds/halka07.jpg';
 

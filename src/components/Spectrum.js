@@ -1,9 +1,17 @@
 import React, {Component} from 'react';
+import styled from 'styled-components';
+
+const NotCanvas = styled.div`
+
+`
+
+const Elem = styled.div`
+
+`
 
 export class AudioSpectrum extends Component {
   constructor(props) {
     super(props);
-
     this.animationId = null;
     this.audioContext = null;
     this.audioEle = null;
@@ -82,26 +90,31 @@ export class AudioSpectrum extends Component {
         if (capYPositionArray.length < Math.round(this.props.meterCount)) {
           capYPositionArray.push(value);
         }
-
         ctx.fillStyle = this.props.capColor;
         // draw the cap, with transition effect
         if (value < capYPositionArray[i]) {
           // let y = cheight - (--capYPositionArray[i])
-          let preValue = --capYPositionArray[i];
-          let y = (270 - preValue) * cheight / 270;
-          ctx.fillRect(i * (this.props.meterWidth + this.props.gap), y, this.props.meterWidth, this.props.capHeight);
+          //let preValue = --capYPositionArray[i];
+          //let y = (270 - preValue) * cheight / 270;
+          //ctx.fillRect(i * (this.props.meterWidth + this.props.gap), y, this.props.meterWidth, this.props.capHeight);
         } else {
           // let y = cheight - value
           let y = (270 - value) * cheight / 270;
-          ctx.fillRect(i * (this.props.meterWidth + this.props.gap), y, this.props.meterWidth, this.props.capHeight);
-          capYPositionArray[i] = value;
+          //ctx.fillRect(i * (this.props.meterWidth + this.props.gap), y, this.props.meterWidth, this.props.capHeight);
+          //capYPositionArray[i] = value;
         }
 
         ctx.fillStyle = gradient; // set the filllStyle to gradient for a better look
 
+        const height = 50;
         // let y = cheight - value + this.props.capHeight
         let y = (270 - value) * (cheight) / 270 + this.props.capHeight;
-        ctx.fillRect(i * (this.props.meterWidth + this.props.gap), y, this.props.meterWidth, cheight); // the meter
+        let g = (270 - value) * (cheight) / 100 + this.props.capHeight;
+        y = (cheight / 2 - value / 2);
+        g = (cheight / 2 + value / 3) + height;
+        ctx.fillRect(i * (this.props.meterWidth + this.props.gap), y, this.props.meterWidth, value || 5); // the meter
+        //ctx.fillRect(i * (this.props.meterWidth + this.props.gap), g, this.props.meterWidth, height); // the meter
+        //ctx.fillRect(i * -(this.props.meterWidth - this.props.gap), y, this.props.meterWidth, cheight); // the meter
       }
       this.animationId = requestAnimationFrame(drawMeter);
     };
@@ -150,7 +163,9 @@ export class AudioSpectrum extends Component {
 
   render() {
     return (
-      <canvas id={this.canvasId} width={this.props.width} height={this.props.height}></canvas>
+      <>
+        <canvas id={this.canvasId} width={this.props.width} height={this.props.height}></canvas>
+      </>
     );
   }
 }

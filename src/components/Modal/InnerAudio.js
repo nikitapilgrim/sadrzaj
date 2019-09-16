@@ -6,6 +6,7 @@ import FastBack from '../../assets/svg/fast_back.svg';
 import PlaySVG from '../../assets/svg/play.svg';
 import PauseSVG from '../../assets/svg/pause.svg';
 import FastForward from '../../assets/svg/fast_forward.svg';
+import {SoundExample} from '../Pts';
 
 import UIfx from 'uifx'
 const mouseClick = new UIfx(require('../../assets/sounds/fx/mouseclick.mp3'));
@@ -96,7 +97,22 @@ export const InnerAudio = ({data, close}) => {
       {stop: 1, color: '#FFF'},
     ],
   };
-
+  const optionst= {
+    id: 'audio-canvas',
+    height: 200,
+    width: 300,
+    audioId: 'audio-modal',
+    capColor: 'transparent',
+    capHeight: 2,
+    meterWidth: 2,
+    meterCount: 512,
+    gap: 4,
+    meterColor: [
+      {stop: 0, color: '#FFF'},
+      {stop: 0.5, color: '#FFF'},
+      {stop: 1, color: '#FFF'},
+    ],
+  };
   return (
     <Wrapper>
       <AudioContainer>
