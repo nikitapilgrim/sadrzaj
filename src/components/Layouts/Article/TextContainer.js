@@ -77,7 +77,7 @@ const chunk = (arr, size) =>
 
 const preparedDataText = createMemo(prepareText);
 
-export const TextContainer = React.memo(({id, data, author}) => {
+export const TextContainer = React.memo(({id, data, author, onReady}) => {
   let ref = useRef(null);
   let size = useComponentSize(ref);
   let {width, height} = size;

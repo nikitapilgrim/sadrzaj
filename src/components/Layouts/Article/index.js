@@ -161,7 +161,7 @@ export const ArticleLayout = ({data, id, getOffset, text}) => {
   const ref = useRef(null);
   const textRef = useRef(null);
   const [offset, setOffset] = useState();
-
+  const [textReady, setTextReady] = useState(false);
 
   const getMedal = (result) => {
     let medal = null;
@@ -219,7 +219,7 @@ export const ArticleLayout = ({data, id, getOffset, text}) => {
                 <AudioButton data={data.audio}/>
                 <VideoButton src={data.video}/>
               </Buttons>
-              <TextContainer author={data.author} id={data.id} data={data.text}/>
+              <TextContainer onReady={textReady} author={data.author} id={data.id} data={data.text}/>
             </MainContainer>
             <PageNumber>{data.id}</PageNumber>
           </Content>
