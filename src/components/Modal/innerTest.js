@@ -17,6 +17,7 @@ const OrderStage = styled.div`
   font-size: 38px;
   font-weight: 700;
   color: #fff;
+  text-shadow: 2px 2px 0 #000000;
 `;
 
 
@@ -27,7 +28,7 @@ export const InnerTest = ({onRight, stage, data, close, nextStage}) => {
         <Stage stage={stage} onRight={onRight} data={data} nextStage={nextStage}/>
       </StageContainer>
       <OrderStage>
-        Pitanje {stage[0]} / {stage[1]}
+        Pitanje {stage[0]+1} / {stage[1]}
       </OrderStage>
     </Wrapper>
   );

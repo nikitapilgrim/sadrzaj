@@ -46,7 +46,7 @@ export const TestButton = ({questions, onFinishTest}) => {
   const [finish, setFinish] = useState(false);
 
   useEffect(() => {
-    setQuestionsCount(questions.length - 1);
+    setQuestionsCount(questions.length);
   }, [questions]);
 
 
