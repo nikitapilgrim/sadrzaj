@@ -110,6 +110,7 @@ export class AudioSpectrum extends Component {
         // let y = cheight - value + this.props.capHeight
         let y = (270 - value) * (cheight) / 270 + this.props.capHeight;
         let g = (270 - value) * (cheight) / 100 + this.props.capHeight;
+        value = value / 2;
         y = (cheight / 2 - value / 2);
         g = (cheight / 2 + value / 3) + height;
         ctx.fillStyle = 'black';
