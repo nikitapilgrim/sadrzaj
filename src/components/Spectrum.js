@@ -57,6 +57,7 @@ export class AudioSpectrum extends Component {
     let cheight = this.audioCanvas.height - this.props.capHeight;
     let capYPositionArray = []; // store the vertical position of hte caps for the preivous frame
     let ctx = this.audioCanvas.getContext('2d');
+    ctx.lineCap = 'round';
     let gradient = ctx.createLinearGradient(0, 0, 0, 300);
 
     if (this.props.meterColor.constructor === Array) {
@@ -104,7 +105,6 @@ export class AudioSpectrum extends Component {
           //capYPositionArray[i] = value;
         }
 
-        ctx.fillStyle = gradient; // set the filllStyle to gradient for a better look
 
         const height = 50;
         // let y = cheight - value + this.props.capHeight
@@ -112,7 +112,12 @@ export class AudioSpectrum extends Component {
         let g = (270 - value) * (cheight) / 100 + this.props.capHeight;
         y = (cheight / 2 - value / 2);
         g = (cheight / 2 + value / 3) + height;
-        ctx.fillRect(i * (this.props.meterWidth + this.props.gap), y, this.props.meterWidth, value || 5); // the meter
+        ctx.fillStyle = 'black';
+        ctx.fillRect(i * (this.props.meterWidth + this.props.gap), y, 2, value + 2 || 4); // the meter
+        ctx.fillStyle = gradient; // set the filllStyle to gradient for a better look
+        ctx.fillRect(i * (this.props.meterWidth + this.props.gap), y, 2, value || 2); // the meter
+
+
         //ctx.fillRect(i * (this.props.meterWidth + this.props.gap), g, this.props.meterWidth, height); // the meter
         //ctx.fillRect(i * -(this.props.meterWidth - this.props.gap), y, this.props.meterWidth, cheight); // the meter
       }
