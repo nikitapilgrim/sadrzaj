@@ -217,7 +217,7 @@ export const ArticleLayout = ({data, id, getOffset, text}) => {
                 <AudioButton data={data.audio}/>
                 <VideoButton src={data.video}/>
               </Buttons>
-              <TextContainer onReady={textReady} author={data.author} id={data.id} data={data.text}/>
+              <TextContainer type={data.type} onReady={textReady} author={data.author} id={data.id} data={data.text}/>
             </MainContainer>
             <PageNumber>{data.id}</PageNumber>
           </Content>

@@ -77,7 +77,7 @@ const chunk = (arr, size) =>
 
 const preparedDataText = createMemo(prepareText);
 
-export const TextContainer = React.memo(({id, data, author, onReady}) => {
+export const TextContainer = React.memo(({id, data, author, onReady, type}) => {
   let ref = useRef(null);
   let size = useComponentSize(ref);
   let {width, height} = size;
@@ -119,11 +119,11 @@ export const TextContainer = React.memo(({id, data, author, onReady}) => {
       {paragraphsCount ? paragraphsCount.map((item, i, array) => {
         return (
           <>
-            <Paragraph key={item.id} text={item}/>
+            <Paragraph type={type} key={item.id} text={item}/>
             {i !== array.length - 1 && <Separator/>}
           </>
         );
-      }) : <Paragraph text={[text[0]]}/>}
+      }) : <Paragraph type={type} text={[text[0]]}/>}
 
       <br/>
       <i>{author}</i>
