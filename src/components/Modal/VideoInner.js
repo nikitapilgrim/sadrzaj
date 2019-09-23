@@ -36,6 +36,9 @@ const ControlPanel = styled.div`
   align-items: center;
   justify-content: center;
   margin-top: 30px;
+  svg {
+    filter:drop-shadow(2px 3px 5px black)
+  }
 `;
 
 const PlayButton = styled.button`

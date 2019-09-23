@@ -6,7 +6,6 @@ import FastBack from '../../assets/svg/fast_back.svg';
 import PlaySVG from '../../assets/svg/play.svg';
 import PauseSVG from '../../assets/svg/pause.svg';
 import FastForward from '../../assets/svg/fast_forward.svg';
-import {SoundExample} from '../Pts';
 
 import UIfx from 'uifx'
 const mouseClick = new UIfx(require('../../assets/sounds/fx/mouseclick.mp3'));
@@ -30,6 +29,9 @@ const ControlPanel = styled.div`
   align-items: center;
   justify-content: center;
   margin-top: 30px;
+  svg {
+    filter:drop-shadow(2px 3px 5px black)
+  }
 `;
 
 const PlayButton = styled.button`
@@ -65,6 +67,9 @@ export const InnerAudio = ({data, close}) => {
     id: 'audio-modal',
   });
 
+  const [options, setOptions] = useState(null);
+
+
   const  [play, setPlay] = useState(false);
 
   const handlerPlayVideo = () => {
@@ -81,38 +86,29 @@ export const InnerAudio = ({data, close}) => {
     }
   };
 
-  const options = {
-    id: 'audio-canvas',
-    height: 200,
-    width: 300,
-    audioId: 'audio-modal',
-    capColor: 'transparent',
-    capHeight: 2,
-    meterWidth: 2,
-    meterCount: 512,
-    gap: 4,
-    meterColor: [
-      {stop: 0, color: '#FFF'},
-      {stop: 0.5, color: '#FFF'},
-      {stop: 1, color: '#FFF'},
-    ],
-  };
-  const optionst= {
-    id: 'audio-canvas',
-    height: 200,
-    width: 300,
-    audioId: 'audio-modal',
-    capColor: 'transparent',
-    capHeight: 2,
-    meterWidth: 2,
-    meterCount: 512,
-    gap: 4,
-    meterColor: [
-      {stop: 0, color: '#FFF'},
-      {stop: 0.5, color: '#FFF'},
-      {stop: 1, color: '#FFF'},
-    ],
-  };
+  useEffect(() => {
+    if (ref.current) {
+      setOptions({
+        id: 'audio-canvas',
+        height: 200,
+        width: 300,
+        audioId: 'audio-modal',
+        audioEle: ref.current,
+        capColor: 'transparent',
+        capHeight: 2,
+        meterWidth: 2,
+        meterCount: 512,
+        gap: 4,
+        meterColor: [
+          {stop: 0, color: '#FFF'},
+          {stop: 0.5, color: '#FFF'},
+          {stop: 1, color: '#FFF'},
+        ],
+      })
+    }
+  }, [ref]);
+
+
   return (
     <Wrapper>
       <AudioContainer>
@@ -120,7 +116,7 @@ export const InnerAudio = ({data, close}) => {
           {audio}
         </Audio>
       </AudioContainer>
-      <AudioSpectrum {...options}/>
+      {ref.current && <AudioSpectrum {...options}/>}
       <ControlPanel>
         <RewindBack onClick={() => {
           mouseClick.play();

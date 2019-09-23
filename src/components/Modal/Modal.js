@@ -1,10 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
-import ReactModal from 'react-modal';
+import ReactModal from 'react-responsive-modal';
 import CloseIcon from '../../assets/img/icons/close_icon.png';
-ReactModal.defaultStyles.overlay.background = 'none';
-ReactModal.defaultStyles.content.background = 'none';
-ReactModal.defaultStyles.content.border = 'none';
+import UIfx from 'uifx';
+const MouseClick = new UIfx(require('../../assets/sounds/fx/mouseclick.mp3'));
 
 const Wrapper = styled.span`
   display: flex;
@@ -13,7 +12,7 @@ const Wrapper = styled.span`
   align-items: center;
   height: 100%;
   width: 100%;
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
@@ -44,7 +43,7 @@ const Inner = styled.span`
 `;
 
 const Bg = styled.div`
-  position: absolute;
+  position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
@@ -54,7 +53,6 @@ const Bg = styled.div`
   width: 100%;
   background-color: #6c5738;
   opacity: 0.5;
-  filter: alpha(opacity = 50); /* required for opacity to work in IE */
 `;
 
 export const Modal = ({children, inner, close, finish}) => {
@@ -70,9 +68,6 @@ export const Modal = ({children, inner, close, finish}) => {
     }
   }, [finish]);
 
-  useEffect(() => {
-    ReactModal.setAppElement('#root');
-  }, []);
 
   useEffect(() => {
     const root = document.querySelector('#root');
@@ -95,18 +90,35 @@ export const Modal = ({children, inner, close, finish}) => {
     }, true);
   });
 
+  const style = {
+    overlay: {
+      background: 'none',
+
+    },
+    modal: {
+      background: 'none',
+      boxShadow: 'none'
+    }
+  }
+
   return (
     <>
-      <ReactModal isOpen={open}>
+      <ReactModal onClose={handlerClose} open={open} showCloseIcon={false} center={true} styles={style}>
         <Wrapper>
           <Bg/>
           <Inner>
             {inner}
-            <CloseModal onClick={() => setOpen(false)}/>
+            <CloseModal onClick={() => {
+              setOpen(false);
+              MouseClick.play()
+            }}/>
           </Inner>
         </Wrapper>
       </ReactModal>
-      <div onClick={() => setOpen(true)}>
+      <div onClick={() => {
+        setOpen(true);
+        MouseClick.play()
+      }}>
         {children}
       </div>
     </>

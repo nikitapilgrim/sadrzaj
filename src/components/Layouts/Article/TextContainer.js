@@ -8,6 +8,7 @@ import dictionary from '../../../Data/dictionairy/dictionairy';
 import {breakpoints} from '../../../mixins/breakpoints';
 
 const Wrapper = styled.p`
+  width: 100%;
   margin: 0;
   margin-top: 24px;
   text-shadow: 1px 1px 0 #000000;
@@ -29,9 +30,11 @@ const Separator = styled.div`
 
 const parseTemplate = (template) => {
   if (template[1] === '{' && template[0] === '{') {
-    const word = template.slice(2, -6);
+    const wordLeft = 2;
     const left = template.indexOf('(');
     const right = template.lastIndexOf(')');
+    const wordRight = left;
+    const word = template.slice(wordLeft, wordRight);
     const id = template.slice(left + 1, right);
     return [word, +id];
   }

@@ -153,25 +153,30 @@ export const Start = () => {
 
   useMount(() => {
     const preload = document.querySelector('#preload');
+    const percentDIV = document.querySelector('#percent');
     const five = document.querySelector('#five');
     const twentyfive = document.querySelector('#twentyfive');
     const fifty = document.querySelector('#fifty');
     const seventyfive = document.querySelector('#seventyfive');
     const onehundred = document.querySelector('#onehundred');
 
-    const setChecked = (elem) => () => {
+    const setChecked = (elem, percent) => () => {
       elem.checked = true;
+      percentDIV.innerHTML = `${percent}%`;
     };
 
-    setTimeout(setChecked(five), 100);
-    setTimeout(setChecked(twentyfive), 500);
-    setTimeout(setChecked(fifty), 900);
-    setTimeout(setChecked(seventyfive), 1300);
-    setTimeout(setChecked(onehundred), 1500);
     setTimeout(() => {
-      preload.style.display = 'none';
-    }, 2000)
-  });
+      setTimeout(setChecked(five, 5), 100);
+      setTimeout(setChecked(twentyfive, 25), 500);
+      setTimeout(setChecked(fifty, 50), 900);
+      setTimeout(setChecked(seventyfive, 75), 1300);
+      setTimeout(setChecked(onehundred, 100), 1500);
+      setTimeout(() => {
+        preload.style.display = 'none';
+      }, 2000)
+    });
+    }, 2000);
+
 
   return (
     <Wrapper>

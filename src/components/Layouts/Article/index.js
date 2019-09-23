@@ -2,6 +2,7 @@ import React, {useState, useEffect, useRef} from 'react';
 import styled from 'styled-components';
 import useStoreon from 'storeon/react';
 import {useMount, useWindowSize, createMemo, useLocalStorage} from 'react-use';
+import useComponentSize from '@rehooks/component-size';
 
 import {breakpoints} from '../../../mixins/breakpoints';
 import {TestButton} from '../../Buttons/TestButton.js';
@@ -34,6 +35,7 @@ const Inner = styled.div`
   margin: 0 auto;
   background-color: rgba(255,255,255, 0.2);
   padding: 40px;
+  padding-bottom: 70px;
   position: relative;
 `;
 
@@ -70,7 +72,7 @@ const MainContainer = styled.div`
   @media ${breakpoints.laptop} {
     flex-direction: row;
   }
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #fff;
 `;
 
 const Buttons = styled.div`
@@ -123,6 +125,9 @@ const MedalWrapper = styled.div`
 const Medal = styled.div`
   position: relative;
   transform: rotate(-10deg);
+  svg {
+    filter:drop-shadow(2px 3px 5px black)
+  }
 `;
 
 const MedalPercent = styled.div`
@@ -136,10 +141,11 @@ const MedalPercent = styled.div`
 `;
 
 const PageNumber = styled.div`
-  color: #bf9e3d;
+  color: #fff;
   position: absolute;
-  bottom: -25px;
+  bottom: -50px;
   right: 0;
+  font-size: 30px;
 `;
 
 const Columns = styled.div`
@@ -160,6 +166,8 @@ export const ArticleLayout = ({data, id, getOffset, text}) => {
   const textRef = useRef(null);
   const [offset, setOffset] = useState();
   const [textReady, setTextReady] = useState(false);
+  let size = useComponentSize(ref);
+  let {width, height} = size;
 
   const getMedal = (result) => {
     let medal = null;
@@ -180,12 +188,12 @@ export const ArticleLayout = ({data, id, getOffset, text}) => {
     getMedal(Math.round(right * 100 / count) || 0);
   };
 
-  useMount(() => {
+  useEffect(() => {
     const top = ref.current.offsetTop;
     setOffset(top);
     getOffset(data.id, top);
     return null;
-  });
+  }, [height]);
 
   return (
     <>

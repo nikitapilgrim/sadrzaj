@@ -7,7 +7,7 @@ export default [
     title: 'Narodna književnost',
     subtitle: 'Majka Fatu kroz tri gore viče',
     type: lyrics,
-    text: `{{Majka(25)}} Fatu kroz tri gore viče:
+    text: `Majka Fatu kroz tri gore viče:
           “Jesi l’, kćeri, ub’jelila platno?”
           Fata joj se kroz sedam odziva:
           “Nisam, majko, ni do vode došla,
@@ -16,7 +16,7 @@ export default [
           samo stani, ja ću započeti:
           tamnica mu moja njedra bila,
           sindžir-halke – moje b’jele ruke,
-          bukagije – moje belenzuke!”
+          bukagije – moje {{belenzuke!(3)}}”
           
           `,
     author: 'Lirska narodna pjesma (sevdalinka)',
@@ -206,19 +206,21 @@ export default [
     title: 'Narodna književnost',
     subtitle: 'Ljubavi rastanak',
     type: lyrics,
-    text: `Dva cvijeta u bostanu rasla:
+    text: `Dva cvijeta u {{bostanu(4)}} rasla:
 plavi zumbul i zelena kada.
 Plavi zumbul ode na Doljane,
 osta kada u bostanu sama.
 Poručuje zumbul sa Doljana:
 “Dušo moja, u bostanu kado,
 kako ti je u bostanu samoj?”
-Odgovara iz bostana kada:
-“Što je nebo, da je list
-što je gora, da su 
-što je more, da je crn
+Odgovara iz bostana {{kada(5)}}:
+“Što je nebo, da je list ’artije,
+što je gora, da su {{kalemovi(7)}},
+što je more, da je crn {{murećep(8)}},
 pak da pišem tri godine dana,
 ne bi moji’ ispisala jada!”
+
+Narodna lirska pjesma (sevdalinka)
 
 `,
     author: 'Narodna lirska pjesma (sevdalinka)',
@@ -325,7 +327,7 @@ pa besjedi Omerova majka:
 “Mili sine, Omer’, momče mlado,
 ti ne ljubi Mejrime djevojke!
 Ljepšom će te oženiti majka –
-l’jepom Fatom novoga serdara.
+l’jepom Fatom novoga {{serdara(10)}}.
 Još je Fata od roda bogata,
 i tebe će potpomoći blagom.”
 Аl’ besjedi Omer momče mlado:
@@ -384,12 +386,12 @@ pon’ješe ga Mejrinome dvoru.
 Аl’ besjedi l’јере Mejre majka:
 “Muč’, ne luduj, Mejrima djevojko!
 Muč’, ne luduj, kad budala nisi!
-Sad tvoj Omer drugu dragu ljubi,
+Sad tvoj Omer drugu {{dragu(80)}} ljubi,
 a za tebe mladu i ne mari!”
 Al’ besjedi Mejrima djevojka:
 “Đul miriše, mila moja majko,
 đul miriše – Omerova duša.”
-Ona strča dolje niz čardake,
+Ona strča dolje niz {{čardake(15)}},
 pa istrča na sokak na vrata,
 vidi granu sitnoga bisera,
 bogom brati do dva pobratima:
@@ -520,18 +522,18 @@ ko rastavi i milo i drago.
     text: `Tuturuza je ispričao najnoviju hridsku dogodovštinu. Slinić koji je kad je, ozgodnio i postao čaršijski prvak, promijenio prezime, oćutio je neku večer nekakvo orgecanje u magazi pod kućom. Pomislio je na hrsuza pa je uzdigao svu kućnu čeljad na noge da ga hvataju. I komšije su opkolile kuću i poredale se pred magazna vrata. Slinić je nagovarao hrsuza da izađe, da se ne boji, neće mu ništa biti. “Izađi slobodno! Neću te prijaviti policiji!” Štropot bakrenog suda nije prestajao, ali hrsuz nije htio napolje. Da ga ohrabri, Slinić ga je nagovarao da se ne stidi. “Slobodno ti izađi! I ja sam pod mladost bio takav!” Odškrinuo je magazna vrata. Najednom se nešto u magazi skrha, a na vrata jurne pas, krupan kao tele, i pobjegne između svijeta. Sve bi dobro bilo da nije bilo tuđeg svijeta, iz komšiluka. I tako se proču priča i sađe odmah ujutro do Baščaršije, pa Slinić ne može s mirom među svijet.
 Mahmutaga, dobričak i mehak čovjek, zacenuo se od smijeha. Sve ga suze oblile. Jedva je progovorio:
 – Bolji ti je dram smijeha, nego tovar suza.
-Tuturuza je malo promućkao u glavi, a onda hrabro progovorio, makar se malo i pribojavao da protuslovi uglednom čaršijskom starcu, posljednjem ćehaji abadžijskog esnafa:
+Tuturuza je malo promućkao u glavi, a onda hrabro progovorio, makar se malo i pribojavao da protuslovi uglednom čaršijskom starcu, posljednjem ćehaji abadžijskog {{esnafa(22)}}:
 – I jedna suza može nekad vrijediti više od tovara zlata.
 – A oklen ti to znaš? – oglasio se prijekorno šeh Meco.
 Ako baš hoćete da znate, da vam ispričam.
 – Tamam! – pristade Mahmutaga.
-Ženskadija koja se spremala čuti neku pjesmu iznenadila se kad se Tuturuza podiže na koljena i poče, upravo kao kakav hodža sa ćursa, pričati priču koju niko od njih nije bio čuo.
-U Bagdadu, u glavnoj džamiji Azamiji, pred džumu bilo je puno svijeta, ali váiz nije došao. Svijet se osvrtao neće li ga opaziti kako ulazi na glavna vrata, da ustane ispred njega na noge, da se razmakne i napravi mu prolaz do ćursa. Ali, nije ga bilo. Bilo je još uleme, ali njega nije bilo, a nije svakom dano da vâzi. Je li bilo tako udešeno da on taj dan ne dođe pa da se zamoli učeni šejh Musaddik iz Kufe, koji je tih dana boravio u Bagdadu i upravo bio u Azamiji, da on taj dan vázi, jer je bio nadaleko znan kao učenjak i váiz, ne znam. Kako ne bî stalnog vaiza, nekoliko hodža zamoli šejha Musaddika da im on toga dana provazi. On se malo nećkao, ali ga zamoliše da im barem ispriča o čemu se u posljednje vrijeme priča u Kufi. Napokon pristade i pope se na ćurs.
+Ženskadija koja se spremala čuti neku pjesmu iznenadila se kad se Tuturuza podiže na koljena i poče, upravo kao kakav hodža sa {{ćursa(23)}}, pričati priču koju niko od njih nije bio čuo.
+U Bagdadu, u glavnoj džamiji Azamiji, pred džumu bilo je puno svijeta, ali váiz nije došao. Svijet se osvrtao neće li ga opaziti kako ulazi na glavna vrata, da ustane ispred njega na noge, da se razmakne i napravi mu prolaz do ćursa. Ali, nije ga bilo. Bilo je još {{uleme(26)}}, ali njega nije bilo, a nije svakom dano da vâzi. Je li bilo tako udešeno da on taj dan ne dođe pa da se zamoli učeni šejh Musaddik iz Kufe, koji je tih dana boravio u Bagdadu i upravo bio u Azamiji, da on taj dan vázi, jer je bio nadaleko znan kao učenjak i váiz, ne znam. Kako ne bî stalnog vaiza, nekoliko hodža zamoli šejha Musaddika da im on toga dana provazi. On se malo nećkao, ali ga zamoliše da im barem ispriča o čemu se u posljednje vrijeme priča u Kufi. Napokon pristade i pope se na ćurs.
 Svi su u nj uperili oči, a slijepi, i takvih na istoku ima uvijek dosta, pomalo su zakrenuli glavu ustranu da im uho na koje bolje čuju bude okrenuto prema ćursu.
 Šejh Musaddik se pomolio Bogu onom dovom kojom se Musa pejgamber obratio Bogu da mu rasprostrani prsa i odriješi čvor s jezika, a onda prešao na začudnu priču o događaju koji se nedavno zbio u Kufi, gdje se naširoko prepričavao.
 U Kufi je bio jedan trgovac vrlo bogat, koji je pošteno trgovao, lijepo zarađivao, ugledao sirotinju, davao robu i na veresiju, pozajmljivao i gotovinu bez kamata, a svijet mu se pošteno oduživao i nikad ga niko nije zakinuo, a ni on nikoga. Jednom trgovcu iz Basre dao je na veresiju dosta skupocjene robe i u tome je i umro, a da nije obavijestio ni sina koji je uza nj radio i naslijedio ga.
 I taj njegov sin je trgovao, radio, stanovao u očinskoj kući, imao ženu i djecu i dobro živio. Jedno vrijeme je trgovina napredovala, a on, kao otac mu, dijelio, kupovao, zajmao i posuđivao drugima, neki vraćali posuđeno i oduživali se, a neki ga, namjerno ili slučajno, zakidali pa se u dugu zemanu desilo da je spao na najtanje grane. Čak mu se trgovina potpuno ispraznila, kuća ogoljela, pa je došlo vrijeme da nije mogao sebe i svoju kućnu čeljad ni prehraniti.
-Smišljao šta da uradi pa odluči prodati kuću ne bi li se time neko vrijeme izdržavao, pa jeda jednom krene posao naprijed. Ali mu se nije dalo dati kuću na telala pa da se javno prodaje. Imao je jednog dobrog prijatelja pa ga poče tražiti da od njega uzajmi nešto malo novca dok ne proda kuću. Tražio ga je po svoj Kufi, a nigdje da ga susretne. Ni kući ga nije bilo. Gladan on, gladna mu kućna čeljad – mora ga naći pa gdje bilo da bilo. Pođe prema džamiji da klanja jer se primaklo vrijeme akšama, kad ugleda ahbaba kako nosi u ruci somun. Pozdraviše se, a trgovac ga odmah zamoli da mu pozajmi nešto novca dok ne proda kuću, a najprije je njemu nudi da je on kupi. Gladna su mu kućna čeljad, a i on, pa... Postiđen je oborio oči preda se, a prijatelj mu se popipa po džepovima, po pasu, ali kese s novcem nema.
+Smišljao šta da uradi pa odluči prodati kuću ne bi li se time neko vrijeme izdržavao, pa jeda jednom krene posao naprijed. Ali mu se nije dalo dati kuću na telala pa da se javno prodaje. Imao je jednog dobrog prijatelja pa ga poče tražiti da od njega uzajmi nešto malo novca dok ne proda kuću. Tražio ga je po svoj Kufi, a nigdje da ga susretne. Ni kući ga nije bilo. Gladan on, gladna mu kućna čeljad – mora ga naći pa gdje bilo da bilo. Pođe prema džamiji da klanja jer se primaklo vrijeme {{akšama(30)}}, kad ugleda ahbaba kako nosi u ruci somun. Pozdraviše se, a trgovac ga odmah zamoli da mu pozajmi nešto novca dok ne proda kuću, a najprije je njemu nudi da je on kupi. Gladna su mu kućna čeljad, a i on, pa... Postiđen je oborio oči preda se, a prijatelj mu se popipa po džepovima, po pasu, ali kese s novcem nema.
 – Evo ti ovaj somun pa hajde kući, kad ste gladni, a ja ću ti poslije naći para koliko ti bude trebalo.
 Zahvali se onaj trgovac, uze somun pa se uputi odmah kući. Podigao onaj somun do usta da odgrize barem zalogaj, a hljeb miriše kao duša. Ne, neće ga načinjati nego će ga cijela donijeti kući.
 Tako misli trgovac i uputi se najbližim sokakom kući, kad niz sokak ide jedna žena, vodi dijete. Dijete kao švrače mršavo, izvalilo krupne crne oči pa njima jede onaj somun u trgovčevim rukama. Gurkā mater i pokazuje joj trgovčev somun. Kad dođoše uprema se žena zastade i zamoli trgovca da radi Allaha otkine samo zalogaj somuna jer joj je dijete gladno – i ne pamti kad su posljednji put jeli. Trgovac htjede otkinuti komad, ali kad ču da nisu odavno jeli, a on i njegova djeca su ipak nešto jučer pregrizli, dade ženi cio somun.
@@ -542,7 +544,7 @@ Pođe trgovac kući, ali od umora i gladi ne može dalje pa se spusti ukraj ulic
 Mrak se počeo spuštati nad zemlju kad eto ti onog njegova prijatelja što mu je dao somun, sav se oznojio i zapuhao se od umora i trke. Ugleda trgovca pa će kao izvan sebe:
 – Gdje si, pobogu? Izgubih noge tražeći te... Svu sam Kufu obio, a tebe nigdje, kao da si u zemlju propao.
 – Šta je, što me tražiš? Jesi li mi našao kupca kući?
-– Kakav kupac, kakva kuća? Došao ti kući trgovac koji ti se zadužio kod oca, pa eno sad na tri deve donio blago, sav dug i hedije. Nije ni znao da ti je otac umro, pa hajde sad ti primi to imáće.
+– Kakav kupac, kakva kuća? Došao ti kući trgovac koji ti se zadužio kod oca, pa eno sad na tri deve donio blago, sav dug i {{hedije(34)}}. Nije ni znao da ti je otac umro, pa hajde sad ti primi to imáće.
 
 `,
     author: 'Alija Nametak',
@@ -626,134 +628,11 @@ Mrak se počeo spuštati nad zemlju kad eto ti onog njegova prijatelja što mu j
     ],
   },
   {
-    id: 5,
-    title: 'Umjetnička književnost - Roman',
-    subtitle: 'Starac i more (Odlomci)',
-    type: essay,
-    text: `Starac Santjago, kubanski ribar, živi u krajnjoj bijedi u jednoj kolibici na obali mora. Već osamdeset i četiri dana uzalud isplovljava da nešto ulovi, ali nema sreće. Jedini mu je prijatelj jedan dječak kome otac zabranjuje da se viđa sa njim.
-Osamdeset i petog dana izgledalo je kao da se sreća starom ribaru osmjehnula. Ulovio je veliku sabljarku. Dva dana ga riba vuče za sobom, a starac posljednjim snagama uspijeva da se održi u svojoj lađici...
-*
-Dva sata kasnije riba je još uvijek kružila, dok je starac bio sav mokar od znoja, a duboko u kostima osjećao je težak umor. Krugovi su sada ipak bili mnogo manji, a po nagibu povraza starac zaključi da se riba postepeno diže prema površini.
-Već se jedan sat starcu mračilo pred očima, a slani znoj zalijevao mu je oči i ranu iznad oka i na čelu. Nije se bojao što mu se pred očima mrači. To je prirodno kad čovjek ovako naporno povlači povraz. Ali dva puta je osjetio da ga hvata nesvjestica i da mu se vrti u glavi, i to ga je zabrinulo.
-– Ne smijem iznevjeriti samoga sebe, pa da umrem kraj ovakve ribe – reče. – Bože, pomozi mi da izdržim kad sam je već tako lijepo privukao. Izmolit ću sto očenaša i sto zdravomarija. Ali sad ih ne mogu izmoliti.
-Uzmi kao da sam ih već izmolio, pomisli. Izmolit ću ih kasnije.
-Upravo tada osjeti na povrazu, koji je držao objema rukama, neko udaranje i trzanje. Osjećalo se nešto oštro, tvrdo i teško.
-Udara kopljem u žicu na kraju povraza, pomisli. Do toga je moralo doći. To je morala učiniti. Ali mogla bi zbog toga iskočiti, a ja bih volio da i dalje kruži. Onda je morala iskočiti da udahne zraka. Ali poslije toga svaki će skok proširiti usjeklinu udice, pa bi se mogla otkačiti.
-– Ne skači, ribo, reče. – Ne skači.
-Riba je još nekoliko puta udarila u žicu, i svaki put kad je trgnula glavom starac je popustio malo povraza.
-Ne smijem joj zadavati nove muke, pomisli. Moje nisu važne. Ja mogu savladati svoje. Ali ona bi od bola mogla pobjesniti.
-Nešto kasnije riba prestade udarati u žicu i opet poče polako kružiti. Starac je sada neprekidno povlačio povraz. Ali ponovo osjeti da ga hvata nesvjestica. On zgrabi malo morske vode lijevom rukom i polije glavu. Zatim se iznova polije i protrlja zatiljak.
-– Nemam grčeva – reče. – Riba će uskoro izaći, a ja ću izdržati. Moraš izdržati. O tome nema ni govora.
-On se nasloni koljenima na pramac, a povraz načas ponovo prebaci preko leđa. Sad ću se odmoriti dok je ona na vanjskoj polovini kruga, a kad dođe bliže, ustat ću i vući je, odluči on.
-.......
-Prvi put je ugledao ribu kad se treći put okrenula. Najprije ju je opazio kao dugačku sjenu, koja se tako dugo vukla ispod čamca da nije mogao vjerovati da je tako dugačka.
-Ne – reče. – Ne može biti tako velika.
-Ali ona je zaista bila tako velika, i na kraju ovog kruga približila se površini samo trideset jardi od čamca, te joj starac vidje repnu peraju iznad vode. Bila je viša od najveće kose i vrlo blijede ljubičaste boje nad tamnoplavom vodom. Bila je povijena, a kako je riba plivala ispod same površine, starac je mogao vidjeti njeno golemo tijelo i ljubičaste pruge koje su je opasivale. Leđna joj je peraja bila spuštena, a goleme prsne peraje raširene.
-Na ovom krugu starac joj opazi oči, a ugleda i dvije sive ustavice kako plivaju kraj nje. Ponekad bi se prilijepile na nju. Ponekad bi pobjegle. A ponekad bi mirno plivale u sjeni ribe. Svaka je bila dugačka preko tri stope a kad bi zaplivale brzo, savijale bi tijelo kao jegulje.
-Starac se uznojio, ali ne samo zbog sunca. Svaki put kad je riba mirno, spokojno zaokrenula prema njemu, starac je pritezao sve više povraza, te je bio siguran da će nakon dva kruga imati priliku da zabije harpunu u nju.
-Samo je moram privući blizu, blizu, blizu, pomisli. Ne smijem je gađati u glavu. Moram je pogoditi u srce.
-– Budi miran i jak, starče – reče.
-U idućem krugu leđa ribe proviriše iz vode, ali je bila predaleko od čamca. I u sljedećem krugu bila je još uvijek predaleko, ali više nad vodom, pa je starac bio siguran da će je, kad pritegne još malo povraza, privući do čamca.
-Harpunu s laganim užetom smotanim u okrugloj košarici bio je već odavno pripremio i drugi kraj užeta omotao oko bitve na pramcu.
-Riba se kružeći približavala mirna i lijepa, mičući samo velikim repom. Starac upre svu snagu da je privuče bliže. Riba se samo načas nakrenu na bok. Zatim se ispravi i iznova nastavi kruženje.
-– Pokrenuo sam je – reče starac. – Pokrenuo sam je, dakle.
-Ponovo osjeti da ga hvata nesvjestica, ali je ipak svom snagom potezao veliku ribu. Pokrenuo sam je, pomisli. Možda ću je ovaj put izvrnuti. Vucite, ruke, pomisli. Držite se, noge. Glavo, izdrži mi. Nikada me još nisi iznevjerila. Ovaj put ću je izvrnuti.
-Ali kad je skupio svu svoju snagu i stao je privlačiti iz petnih žila, još prije nego je došla do čamca riba se malo nakrenu, a onda ispravi i otpliva dalje.
-– Ribo – reče starac. – Ribo, ionako ćeš umrijeti. Zar moraš ubiti i mene?
-Ovako nećemo ništa postići, pomisli. Usta su mu se tako osušila da nije mogao govoriti, ali sada nije mogao dohvatiti vode. Ovaj put je moram privući, pomisli. Ne bih mogao izdržati još mnogo krugova. Mogao bih, reče sam sebi. Mogao bih uvijek.
-Kad se riba idući put okrenula, gotovo ju je privukao, ali ona se ipak ispravila i lagano otplovila.
-Ubit ćeš me, ribo, pomisli starac. Ali imaš pravo. Nikad nisam vidio većeg, ljepšeg, mirnijeg ili plemenitijeg stvora od tebe, sestro. Hajde, ubij me. Svejedno mi je tko će koga ubiti.
-Počinje ti se mutiti u glavi, starče, pomisli. Moraš sačuvati bistru glavu. Sačuvaj bistru glavu i podnesi sve kao muškarac. Ili kao riba, pomisli.
-Iznova pokuša, ali s istim uspjehom. Tako, pomisli, i osjeti da ga izdaju snage, još prije nego je počeo; pokušat ću još jednom.
-On sakupi sav svoj bol, i posljednje ostatke snage, i davno preživjeli ponos i usredotoči ih protiv ribinih muka, i riba se izvrnu na bok i zapliva polagano na boku, gotovo dodirujući čamac kljunom, i poče prolaziti mimo njega, onako dugačka, duboka, široka, srebrnasta, išarana ljubičastim prugama i beskrajna u vodi.
-Starac ispusti povraz i stane na njega nogom te podiže harpunu što je više mogao, i zarinu je svom snagom i s još više snage, koju je u tom času prikupio, u bok ribe, upravo iza velike prsne peraje, koja se dizala sve do starčevih prsiju. Osjetio je kako se željezo zarilo u meso, pa se navali na harpunu svom težinom i zarinu je još dublje.
-U smrtnoj muci riba oživje i skoči visoko iz vode u čitavoj svojoj dužini, širini, snazi i ljepoti. Činilo se kao da lebdi u zraku iznad starca u čamcu. A onda pade s takvom žestinom da je voda zapljusnula preko starca i čitava čamca.
-Starac osjeti nesvjesticu i mučninu te mu se smrači pred očima. Ali on otpusti uže s harpune i propusti ga polako kroz ranjave ruke, a kad mu se razbistrilo pred očima, ugleda kako riba leži na leđima, okrenuvši srebrnasti trbuh uvis. Držak harpune stršio je koso iz ribinih leđa, a morska voda crvenjela je od krvi što je tekla iz njezina srca. Najprije je bila tamna kao riblje jato usred plave vode koja je bila duboka više od jedne milje. Onda se raširila poput oblaka. A riba se srebrnasta i nepomična ljuljala na valovima.
-            
-            
-`,
-    author: 'Ernest Hemingvej',
-    video: false,
-    audio: 'url',
-    questions: [
-      {
-        title: 'Odaberi tačan odgovor',
-        question: 'Ernest Hemingvej, pisac romana „Starac i more“, je dobitnik…',
-        answers: [
-          {
-            title: 'Pulicerove nagrade',
-            right: false,
-          },
-          {
-            title: 'Nobelove nagrade',
-            right: true,
-          },
-        ],
-      },
-      {
-        title: 'Odaberi tačan odgovor',
-        question: 'U romanima se prikazuje…',
-        answers: [
-          {
-            title: 'cijeli život jednog lika',
-            right: true,
-          },
-          {
-            title: 'jedan važan događaj iz života književnog lika',
-            right: false,
-          },
-        ],
-      },
-      {
-        title: 'Odaberi tačan odgovor',
-        question: 'Slikajući nesklad između ribareve snage i težine borbe sa ribom, pisac se poslužio stilskom figurom koja se zove…',
-        answers: [
-          {
-            title: 'kontrast',
-            right: true,
-          },
-          {
-            title: 'simbol',
-            right: false,
-          },
-        ],
-      },
-      {
-        title: 'Odaberi tačan odgovor',
-        question: 'Ribareve riječi upućene ribi: „Nikad nisam vidio većeg, ljepšeg, mirnijeg ili plemenitijeg stvora od tebe, sestro“, izražavaju…',
-        answers: [
-          {
-            title: 'zadovoljstvo zbog dobrog ulova',
-            right: false,
-          },
-          {
-            title: 'saznanje da narušava sklad i ljepotu prirode',
-            right: true,
-          },
-        ],
-      },
-      {
-        title: 'Odaberi tačan odgovor',
-        question: 'Legenda je…',
-        answers: [
-          {
-            title: 'istinita priča o nekom važnom događaju ili ličnosti.',
-            right: false,
-          },
-          {
-            title: 'priča sa nestvarnim elementima o nekom važnom događaju ili ličnosti.',
-            right: true,
-          },
-        ],
-      },
-    ],
-  },
-  {
     id: 6,
     title: 'Umjetnička književnost - Roman',
     subtitle: 'Zlatna ptica (Odlomci iz romana “Derviš i smrt”)',
     type: essay,
-    text: `Svoju priču “o odnosu i sukobu između ideologije i ozlojeđenog pojedinca”, kako je i sam rekao o temi romana, Meša Selimović je prenio na derviša Nurudina, intelektualca, koji je nakon kratkog ratovanja i prve promašene ljubavi našao utočište u vjeri. Te okolnosti su razlog sukoba, podijeljenosti čovjeka između vjere i slobodnog izbora da odlučuje, između mirenja i pobune, slobode i neslobode – ukratko, svega onoga što je pisac osjećao kada je saznao da je izgubio brata pod neshvatljivim okolnostima. Odlomci su uzeti iz drugog dijela romana i govore o susretu mladog derviša sa dječakom koji ima samo majku i slijepu baku.
+    text: `Svoju priču “o odnosu i sukobu između ideologije i ozlojeđenog pojedinca”, kako je i sam rekao o temi romana, Meša Selimović je prenio na derviša Nurudina, intelektualca, koji je nakon kratkog ratovanja i prve promašene ljubavi našao utočište u vjeri. Te okolnosti su razlog sukoba, podijeljenosti čovjeka između vjere i slobodnog izbora da odlučuje, između mirenja i pobune, slobode i neslobode – ukratko, svega onoga što je pisac osjećao {{kada(5)}} je saznao da je izgubio brata pod neshvatljivim okolnostima. Odlomci su uzeti iz drugog dijela romana i govore o susretu mladog derviša sa dječakom koji ima samo majku i slijepu baku.
 *
 Biće nesrećan koji svoju dušu okalja.
 Jedno dijete je govorilo o svome strahu, davno. Ličilo je na pjesmicu:
@@ -761,10 +640,10 @@ Na tavanu
 ima jedna greda koja udara u glavu,
 ima jedan vjetar koji lupa kapkom,
 ima jedan miš koji viri iz ćoška.
-Bilo mu je šest godina, veselim plavim očima gledao je zadivljeno u vojnike, i u mene, mladog derviša-askera, bili smo drugovi, i prijatelji, ne znam da li je ikog u životu toliko volio, jer sam ga dočekivao radosno i nisam pokazivao da sam stariji.
+Bilo mu je šest godina, veselim plavim očima gledao je zadivljeno u vojnike, i u mene, mladog {{derviša-askera(58)}}, bili smo drugovi, i prijatelji, ne znam da li je ikog u životu toliko volio, jer sam ga dočekivao radosno i nisam pokazivao da sam stariji.
 Ljeto je bilo, smjenjivala se kiša i vrelina, stanovali smo u čadorima, na ravnici punoj komaraca i kreketa žaba, sat hoda od Save, uz nekadašnji han, gdje je mališan stanovao s majkom i poluslijepom bakom.
 Jednom, dok sam sjedio u polju, na trulom panju, u gruboj slakovini do koljena, sam, zaglušen cikom zrikavaca pod vrelim suncem (uvijek je nešto cičalo, pištalo, pjevalo na ovoj ravnici), smućen onim što sam čuo od vojnika o mladoj ženi u hanu, vidio sam dječaka kako je zastao u travi, utonuo gotovo do grla. Javio mi se s povjerenjem. Bili smo već poznanici.
-Puštao sam da me vodi svojim djetinjim putevima, da razgovaramo djetinjim jezikom, da mislimo na djetinji način, srećan kad mi je to uspijevalo potpuno, jer sam osjećao da sam tako obogaćen. Pravili smo svirale od trave sabljarke i uživali u oštrom piskavom zvuku koji je nastajao kad je zeleno sječivo sjeklo vazduh iz usta. Pažljivo smo djeljali zovino drvo, izbacujući vlažnu srčiku, da dobijemo šupljinu punu skrivenih glasova. Nizali smo u vijenac plave i žute barske cvjetove da ih odnese majci, poslije sam ga nagovorio da kiti topoline grane, da ne bih mislio ništa ružno.
+Puštao sam da me vodi svojim djetinjim putevima, da razgovaramo djetinjim jezikom, da mislimo na djetinji način, srećan kad mi je to uspijevalo potpuno, jer sam osjećao da sam tako obogaćen. Pravili smo svirale od trave sabljarke i uživali u oštrom piskavom zvuku koji je nastajao kad je zeleno sječivo sjeklo vazduh iz usta. Pažljivo smo djeljali zovino drvo, izbacujući vlažnu {{srčiku(61)}}, da dobijemo šupljinu punu skrivenih glasova. Nizali smo u vijenac plave i žute barske cvjetove da ih odnese majci, poslije sam ga nagovorio da kiti topoline grane, da ne bih mislio ništa ružno.
 – Hoće li na granama niknuti cvijeće? – pitao me.
 – Možda i hoće – rekao sam, pomalo i sam vjerujući u to cvjetno oživljavanje sivog drveta.
 – Gdje je sunce – pitao me jednom.
@@ -784,7 +663,7 @@ Kad je padala kiša, sjedio sam s njim u jednoj od soba prostrane kuće, vodio m
 – Zar ne znaš? – čudio se moj mali učitelj. – To je ptica od zlata. Nju je teško naći.
 I u mojoj kući bio je tavan. Sjedio sam šćućuren na starom bačenom sedlu, sam u tom svijetu neupotrebljivih stvari što su izgubile raniji oblik i poprimale novi, prema dobu dana i mojim raspoloženjima, prema jačoj ili slabijoj svjetlosti što ih je preobličavala, prema tuzi ili radosti u meni. Jašući na sedlu u susret želji da nešto bude, da se desi nešto iz maglovitih dječijih maštanja što su se hirovito mijenjala, nestvarna kao i stvari u tavanskoj polutami.
 Taj tavan me stvarao, kao što me stvaralo i bezbroj drugih mjesta i prilika, susreta, ljudi, nastajao sam u hiljadama izmjena, i uvijek mi se činilo da je sve ranije nestajalo sa novom promjenom, da se gubilo kao beznačajno u maglama proteklog vremena. A onda sam, uvijek nanovo, i neočekivano, nalazio tragove svega što je bivalo, kao žive iskopine, kao svoje vlastite naslage, i mada stare i ružne, postajale su drage i lijepe. Taj ponovo otkriveni neizgubljeni dio mene, što nije samo sjećanje, vrijeme je uljepšalo i vraćalo iz nedohvatljivih daljina, spajajući me s njim. Tako je postojao dvojako, kao djelić moje sadašnje ličnosti, i kao sjećanje. Kao sadašnjost, i kao početak.
-Na tom tavanu, gdje sam tražio samoću, saznavajući se, i pribježište od otvorenih širina zavičaja, iako sam ga volio više nego majku, mislio sam često o zlatnoj ptici iz neninih priča. Nisam znao šta je ta zlatna ptica, ali dok sam slušao kako pada kiša po krovu od šindre, i otvoreni kapak lupa na vjetru, i bezbroj očiju viri iz ćoškova, zamišljao sam kako pronalazim svoju zlatnu pticu, kao junak iz neninih žubornih kazivanja, znajući da se tako, na neki čudan, neobjašnjiv način, ostvaruje sreća.
+Na tom tavanu, gdje sam tražio samoću, saznavajući se, i pribježište od otvorenih širina zavičaja, iako sam ga volio više nego majku, mislio sam često o zlatnoj ptici iz neninih priča. Nisam znao šta je ta zlatna ptica, ali dok sam slušao kako pada kiša po krovu od {{šindre(62)}}, i otvoreni kapak lupa na vjetru, i bezbroj očiju viri iz ćoškova, zamišljao sam kako pronalazim svoju zlatnu pticu, kao junak iz neninih žubornih kazivanja, znajući da se tako, na neki čudan, neobjašnjiv način, ostvaruje sreća.
 Zaboravio sam na nju docnije, život je raspršio snatrenja mladosti, moguća u vrelom zamišljanju bez prepreka, u slobodi željenja bez granica, rođena u neiskustvu. A javila se ponovo, kao podsmijeh, kad mi je bilo najteže.
 Bio jednom jedan dječak, u očevoj kući, nad rijekom, koji je sanjao zlatne snove, jer ništa nije znao o životu.
 
@@ -884,7 +763,7 @@ Bio jednom jedan dječak, u očevoj kući, nad rijekom, koji je sanjao zlatne sn
             Ne smijem joj zadavati nove muke, pomisli. Moje nisu važne. Ja mogu savladati svoje. Ali ona bi od bola mogla pobjesniti.
             Nešto kasnije riba prestade udarati u žicu i opet poče polako kružiti. Starac je sada neprekidno povlačio povraz. Ali ponovo osjeti da ga hvata nesvjestica. On zgrabi malo morske vode lijevom rukom i polije glavu. Zatim se iznova polije i protrlja zatiljak.
             – Nemam grčeva – reče. – Riba će uskoro izaći, a ja ću izdržati. Moraš izdržati. O tome nema ni govora.
-            On se nasloni koljenima na pramac, a povraz načas ponovo prebaci preko leđa. Sad ću se odmoriti dok je ona na vanjskoj polovini kruga, a kad dođe bliže, ustat ću i vući je, odluči on.
+            On se nasloni koljenima na {{pramac(64)}}, a povraz načas ponovo prebaci preko leđa. Sad ću se odmoriti dok je ona na vanjskoj polovini kruga, a kad dođe bliže, ustat ću i vući je, odluči on.
             .......
             Prvi put je ugledao ribu kad se treći put okrenula. Najprije ju je opazio kao dugačku sjenu, koja se tako dugo vukla ispod čamca da nije mogao vjerovati da je tako dugačka.
             Ne – reče. – Ne može biti tako velika.
@@ -977,10 +856,112 @@ Bio jednom jedan dječak, u očevoj kući, nad rijekom, koji je sanjao zlatne sn
   {
     id: 8,
     title: 'Umjetnička književnost - Roman',
+    subtitle: 'Legenda o Ali-paši',
+    type: essay,
+    text: `Taj hamalin sa svojim užetom zabačenim preko pokrpljenog fermena, taj Alija zvan “leptir”, zato što je dnevno i po desetak puta obilazio cijelu čaršiju, bio je tada u tihom i lijepom šeheru svuda poznata i rado viđena osoba. Uvijek veseo, spreman na šalu, uvijek brz za ma kakav posao. Mnogi bi čaršinlija kuckajući oznojen u svoju bakrenu posudu, ili šijući s mukom debeli kožni ćurak, govorio: “Baš je Leptir sretan! – On voli sunce.”
+
+A i volio ga je Alija više nego časti ili dobro jelo, volio skoro koliko i Mehaginu Almasu, djevojku za kojom je čeznutljivo gledao kao gladnik u izlog najfinijih poslastica...
+
+Voljeti sunce... Voljeti ga ljubavlju, kako je to samo u ona vremena bilo moguće! Kad ono veselo zasja na svodu, Alija bi, makar i ne zaradio toga dana ništa, odlazio više šume nad Kovačima (gdje su danas velike i lijepe kuće), na čistinu, legao na ledinu, a svoje lijepo lice okrenuo suncu, zaklopio oči pa snatrio. Vilinske bajke izlazile mu pred oči. Bajke iz sunčanih zraka koje su i preko spuštenih kapaka tim očima godile svojom toplinom i čistoćom... Ležeći tako hamal bi Alija doživljavao – ne, proživljavao – krasne trenutke, sate, dane, godine, vjekove... negdje daleko, u carstvu priča, u carstvu svoje bujne mašte koju je tako bila razbuktala čvrsta vjera i vječiti optimizam njegove vesele duše. A sunce bi svog prijatelja grijalo, grijalo blaže i bolje nego druge i razgovaralo s njime. Jest, baš s tim Alijom hamalom, koga su zbog njegova lutanja nazivali srednjovjekovni čaršinlije “sretnim leptirom”.
+
+Pričalo bi sunce Aliji priču o postanku svijeta, o nabiranju brda, o dubini denjiza, o kulama koje se gordo uzdižu negdje iznad oblaka, o hazreti Hidru, vječito živome evliji, dobrome mudracu, koji svima pomaže. Pričalo bi mu sunce preko svojih toplih zraka o nježnosti hurija u dženetu, o slastima bogatstva i raskoši u Stambolu, o pješačenju brdima i vjetru samumu u pustinji, o blagoj sjenci palminih listova, o karavanama kamila koje vode zakukuljeni Arapi, ili o životu oblaka, ljubavi zvijezda, raskoši duge... Slušao bi Alija te priče, slušao i uživao, a osmijeh sreće igrao bi na njegovim poluotvorenim usnicama, ispod svileno plavih brkova. Osmijeh kakav nikad neće zatitrati oko usta najbogatijih Sarajlija: Mehage kazaza, Omerage kazandžije, Jefte abadžije, Joze kujundžije ili gazde Ješue sarafa...
+
+I iz takve jedne priče sunca isplela bi Alijina mašta čudne bajke, svijet patuljaka i divova, svijet djevojaka najljepših glasova, svijet pjesme i ljubavi, ili pak svijet junaka, među kojima je on, razumije se, najjači...
+
+Zar nije bio Alija sretan? Sretan sa svojim užetom, sirotinjom i bezbrižnošću, s čvrstom vjerom i svojim suncem?...
+
+Znali šeherljani za ta njegova maštanja, koja su nazivali hava-muhabetom, razgovorom sa zrakom, ali su baš zbog toga i voljeli svog Leptira. Možda je baš radi toga i bio mekan i blag u postupanju s ljudima. Možda ga je baš ta ljubav prema suncu odgojila u čovjeka koji nikom ne bi rekao ni “po tamo se”, iako je bio snažniji i razvijeniji od svih šeherskih ukoljica. Ta ga je ljubav nekako uzdizala, odvajala od ostalih hamala, mada je on bio izvrstan drug i uvijek spreman pomoći nekom starijem nosaču. Znao je on po čitav sat gurati kolica uza svog druga Muradifa bez ikakve nagrade osim onog: “Bog ti dao”. Ta ga je ljubav znala odvući od posla, istrgnuti iz svagdašnjice i pozvati na ledinu.
+
+I toga proljetnog dana, baš kad je stigao do Miljacke, u Donje Tabake da se među kožarima raspita za posao, Alija je pogledao u nebo. Njegov ga je prijatelj zvao odozgor nasmijan, pozvao ga je u travu, u prirodu, da mu priča... Oh, kako je lijep i veseo taj njegov prijatelj danas. Kako se iz njegova sjaja širi blaga toplina i daje miris jorgovanu, žubor Miljacki, djevojačkoj pjesmi ljepotu, a ljudskom radu volju i veselje... Zato Alija pohita iz Tabaka na svoju ledinu, premda ništa nije bio zaradio...
+
+Uzalud je za njim skakutao hrapav glas kožarskog majstora hadži-Edhema:
+
+– Leptire, da mi izneseš s vode one razapete kože!
+
+– Ode on na ledinu – kroz smijeh je hadžiji doviknuo susjedov šegrt Abdulah.
+
+– Ah, da Bogdo mogu i ja... Nejse... doći će koji drugi hamal, koji je samo hamal, a ne i sretni Leptir.
+
+Kada je Alija stigao u slobodu, tamo izvan gradskih bedema, tamo daleko od ljudi i graje, legao je na ledinu, ruke skupio pod glavu, ispružio noge, a udisao svježi šumski zrak mirisav od rascvalih breza... A sunce ga peklo, milovalo...
+
+Ovaj put je Aliji došla čudna misao, bajka tako smjela da se uplašio i trgnuo se sav naježen.
+
+Dok mu je visokim čelom plesala mekana kosa, oslobođena turbana, koji mu je pao u travu više glave, dok su mu licem skakutale i igrale sjenke šiblja, Alija je ležao i snatrio... Nije osjetio kako mu kroz poderanu staru firalu na desnoj nozi viri prst. Nije osjetio kako mu na okrpljenim čakširama mile bube, niti je čuo sviruckanje i zujanje muha oko sebe... On je bio u polusnu, sretan, sretan... A smjela misao vezla je nit po nit nov život po njegovu mozgu...
+
+– Eh, da sam paša...
+
+            
+          
+          `,
+    author: 'Ernest Hemingvej',
+    video: false,
+    audio: 'url',
+    questions: [
+      {
+        title: 'Odaberi tačan odgovor',
+        question: 'Hamalin Alija je dobio nadimak Leptir zato što je…',
+        answers: [
+          {
+            title: 'kada bi ga sunce izmamilo, lutao izvan grada',
+            right: true,
+          },
+          {
+            title: 'bio lijep i vitak mladić',
+            right: false,
+          },
+        ],
+      },
+      {
+        title: 'Odaberi tačan odgovor',
+        question: 'Alija je bio sretan jer je bio…',
+        answers: [
+          {
+            title: 'sanjar',
+            right: true,
+          },
+          {
+            title: 'bogat',
+            right: false,
+          },
+        ],
+      },
+      {
+        title: 'Alija je bio dobar drug jer je uvijek…',
+        question: 'Slikajući nesklad između ribareve snage i težine borbe sa ribom, pisac se poslužio stilskom figurom koja se zove…',
+        answers: [
+          {
+            title: 'pomagao starijim nosačima',
+            right: true,
+          },
+          {
+            title: 'bio skroman kad je naplaćivao svoju pomoć',
+            right: false,
+          },
+        ],
+      },
+      {
+        title: 'Odaberi tačan odgovor',
+        question: 'Leptirov osmijeh „nikada neće zatitrati oko usta najbogatijih Sarajlija jer…',
+        answers: [
+          {
+            title: 'su bogate Sarajlije prezirale Leptira.',
+            right: false,
+          },
+          {
+            title: 'bogate Sarajlije nisu imale sposobnost da uživaju u malim stvarima kao što je ljepota sunčanog dana.',
+            right: true,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 8,
+    title: 'Umjetnička književnost - Roman',
     subtitle: 'Lovac u žitu',
     type: essay,
     text: `Roman “Lovac u žitu” po mnogo čemu je neobičan i zato već dugo, kod mnogih generacija, izaziva “ljubav na prvi pogled”. Roman počinje bez uvoda, direktno se ulazi u radnju i pričanje ima retrospektivni tok.
-            Pričalac, glavni lik romana, Holden Kolfild, o događajima govori kada je već sve preživio i razbolio se. Dok leži u bolesničkoj postelji, svojom pričom obuhvata sve ono što se dogodilo u nekoliko dana oko Božića. Holden se odlikovao oštrinom zapažanja i stalno isticao da mrzi sve što zvuči lažno, istrošeno i licemjerno, a svijet u kome je živio davao je mnogo primjera za to. Shvatao je da se većina ponaša po šablonu, da većina govori ono što sredina u kojoj se nalazi voli da čuje ili ono što je navikla da čuje.
+            Pričalac, glavni lik romana, Holden Kolfild, o događajima govori {{kada(5)}} je već sve preživio i razbolio se. Dok leži u bolesničkoj postelji, svojom pričom obuhvata sve ono što se dogodilo u nekoliko dana oko Božića. Holden se odlikovao oštrinom zapažanja i stalno isticao da mrzi sve što zvuči lažno, istrošeno i licemjerno, a svijet u kome je živio davao je mnogo primjera za to. Shvatao je da se većina ponaša po šablonu, da većina govori ono što sredina u kojoj se nalazi voli da čuje ili ono što je navikla da čuje.
             *
             Lice starog Spensera postajalo je sve ozbiljnije. Znao sam da će biti tako. “I tako, ti nas ostavljaš, eh?”, rekao je.
             “Da, gospodine. Tako izgleda.”
@@ -991,7 +972,7 @@ Bio jednom jedan dječak, u očevoj kući, nad rijekom, koji je sanjao zlatne sn
             “Oh... e pa, da je život kao sportska utakmica i te stvari. I da je treba igrati prema propisanim pravilima. Bio je prilično ljubazan. Hoću da kažem, nije skakao do plafona niti nešto slično. Samo je govorio i govorio o tome kako je život utakmica i te stvari. Znate već i sami šta.”
             “Život jeste sportska utakmica, mladiću. Život jeste utakmica koju treba igrati po propisanim pravilima.”
             “Da, gospodine. Znam da jeste. Znam to.”
-            Utakmica, kako da ne! I jeste mi neka utakmica. Ako se nađeš na onoj strani gdje su sve glavne dase i asovi, onda jeste, u redu – to priznajem. Ali ako se nađeš na drugoj strani, gdje nikakvih dasa nema, onda kakva je to utakmica? Nikakva. Nema utakmice. “Da li je Dr. Termer napisao pismo tvojim roditeljima?”, upitao me je stari Spenser.
+            Utakmica, kako da ne! I jeste mi neka utakmica. Ako se nađeš na onoj strani gdje su sve glavne dase i {{asovi(70)}}, onda jeste, u redu – to priznajem. Ali ako se nađeš na drugoj strani, gdje nikakvih dasa nema, onda kakva je to utakmica? Nikakva. Nema utakmice. “Da li je Dr. Termer napisao pismo tvojim roditeljima?”, upitao me je stari Spenser.
             “Rekao je da će im napisati u ponedjeljak.”
             “Jesi li ih ti obavijestio?”
             “Nisam, gospodine, nisam ih obavijestio jer ću ih vjerovatno vidjeti u srijedu uveče, kada dođem kući.”
@@ -1001,7 +982,7 @@ Bio jednom jedan dječak, u očevoj kući, nad rijekom, koji je sanjao zlatne sn
             Zatim je rekao: “Imao sam čast da se upoznam sa tvojim ocem i majkom kada su prije nekoliko nedjelja došli da malo porazgovaraju sa Dr. Termerom. Silni su to ljudi.”
             “Da, jesu. Veoma su dobri.”
             Silni. Evo riječi koju iz dubine duše mrzim. Tako lažno zvuči. Mogao bih povraćati svaki put kada je čujem.
-            Iznenada je stari Spenser poprimio držanje kao da je pronašao nešto vrlo zgodno da mi kaže, nešto oštro kao igla. Zavalio se dublje u fotelju i nekako se kao promeškoljio. Bila je to, međutim, lažna uzbuna. Šta je uradio, samo je podigao Atlantic Monthly sa krila i pokušao da ga baci na krevet, pored mene. Promašio je. Za svega nekoliko centimetara, ali svejedno je promašio. Ustao sam, podigao list i položio ga na krevet. Tada sam, iznenada, osjetio ludačku želju da pobjegnem nekuda dovraga iz te sobe. Mogao sam osjetiti da mi se sprema strašna lekcija. Samo po sebi to mi ne bi mnogo smetalo, ali nešto nisam bio raspoložen da slušam nečije propovijedi, mirišem Viksove kapljice za nos i gledam starog Spensera u pidžami i bademantilu, i sve to odjednom. Nisam, zaista.
+            Iznenada je stari Spenser poprimio držanje kao da je pronašao nešto vrlo zgodno da mi kaže, nešto oštro kao igla. Zavalio se dublje u fotelju i nekako se kao promeškoljio. Bila je to, međutim, lažna uzbuna. Šta je uradio, samo je podigao Atlantic Monthly sa krila i pokušao da ga baci na krevet, pored mene. Promašio je. Za svega nekoliko centimetara, ali svejedno je promašio. Ustao sam, podigao list i položio ga na krevet. Tada sam, iznenada, osjetio ludačku želju da pobjegnem nekuda dovraga iz te sobe. Mogao sam osjetiti da mi se sprema strašna lekcija. Samo po sebi to mi ne bi mnogo smetalo, ali nešto nisam bio raspoložen da slušam nečije propovijedi, mirišem Viksove kapljice za nos i gledam starog Spensera u pidžami i {{bademantilu(71)}}, i sve to odjednom. Nisam, zaista.
             Stvar je, međutim, već počela. “Šta je to s tobom, mladiću?”, rekao je stari Spenser. Rekao je to prilično strogo, bar za njega. “Koliko si predmeta imao u ovom polugodištu?”
             “Pet, gospodine”.
             “Pet. A iz koliko si predmeta pao?”
@@ -1011,7 +992,7 @@ Bio jednom jedan dječak, u očevoj kući, nad rijekom, koji je sanjao zlatne sn
             “Znam to, gospodine. Svjestan sam toga. Vi tu niste mogli ništa učiniti.”
             “Apsolutno ništa”, ponovio je, još jednom. Takve stvari dovode me do ludila – kad neko dva puta ponavlja jedno te isto, iako je već čuo priznanje. Zatim je rekao isto i treći put. “Ali apsolutno ništa. Duboko sumnjam da si otvorio udžbenik i jedan jedini put u toku čitavog polugodišta. Jesi li? Reci mi istinu, mladiću.”
             “E pa... malo sam kao zavirio u njega nekoliko puta”, odgovorio sam. Nisam želio da povrijedim njegove osjećaje. Bio je lud za istorijom.
-            “Zavirio si, eh?”, rekao je veoma sarkastično. “Ah, tvoj ispitni zadatak je tamo gore na ormaru. Na vrhu one gomile papira. Donesi ga, molim te, ovamo.”
+            “Zavirio si, eh?”, rekao je veoma {{sarkastično(72)}}. “Ah, tvoj ispitni zadatak je tamo gore na ormaru. Na vrhu one gomile papira. Donesi ga, molim te, ovamo.”
             Bio je to odvratan trik, ali sam ustao i donio mu zadatak – druge alternative, niti bilo čega, nije bilo. Zatim sam opet sjeo na ovaj njegov betonski krevet. Ljudi moji, nemate pojma koliko sam žalio što sam uopšte dolazio da se s njim pozdravim.
             Držao je u rukama moj ispitni zadatak kao da je nešto pogano ili nešto tako slično. “Egipćane smo učili od 4. novembra do 2. decembra”, rekao je. “Ti si za slobodnu temu izabrao da pišeš o njima. Da li želiš da čuješ ono što si napisao?”
             “Ne, gospodine, ne baš naročito”, rekao sam.
@@ -1121,7 +1102,7 @@ Bio jednom jedan dječak, u očevoj kući, nad rijekom, koji je sanjao zlatne sn
             Tri člana istraživačke ekipe, koji neće biti potrebni sve dok brod ne uđe na završnu orbitu oko Saturna, prespavaće cijelo putovanje do odredišta. Na ovaj način biće ušteđene tone hrane i drugih potrošnih dobara; gotovo je podjednako bila važna okolnost što će tim biti svjež i poletan, neiznuren desetomjesečnim putovanjem, kada bude trebalo da stupi u dejstvo.
             “Otkriće” će ući na parkirnu orbitu oko Saturna, postavivši novi mjesec džinovske planete. Kretaće se naprijed- nazad po dva miliona milja dugačkoj elipsi koja će ga na jednom kraju dovesti sasvim blizu Saturna, da bi ga potom zaputila preko orbita svih osamdeset većih mjeseca. Imaće na raspolaganju stotinu dana da kartografišu i izučavaju jedan svijet osamdeset puta prostraniji od Zemlje i okružen svitom od bar petnaest poznatih satelita – od kojih je jedan velik poput planete Merkur.
             Tu mora da se nahode čudesa koja se stoljećima mogu izučavati; prva ekspedicija može da preduzme samo preliminarna izviđanja. Sve što ona bude otkrila biće radiovezom upućeno na Zemlju; čak i ako se istraživači nikada ne vrate, njihova otkrića neće biti izgubljena.
-            Poslije stotinu dana “Otkriće” će zamrijeti. Svi članovi posade otići će u hibernaciju; samo će ključni sistemi nastaviti da dejstvuju, a nad njima će bdjeti neumorni elektronski mozak broda. Letjelica će nastaviti da kruži oko Saturna po orbiti koja će u toj mjeri biti određena da će ljudi uvijek tačno znati gdje da potraže svog planetnog izaslanika, kako sada tako i kroz hiljadu godina. Ali kroz samo pet godina, prema sadašnjim planovima, tamo će prispjeti “Otkriće II”. Čak i ako do tada protekne šest, sedam ili osam godina, usnulim putnicima biće svejedno. Za sve njih časovnik će stati, kao što je već stao za Vajtheda, Kaminskog i Hantera. Ponekad je Boumen, kao zapovjednik “Otkrića”, zavidio svojoj trojici besvjesnih kolega u zamrznutom spokoju hibernakuluma. Njih uopšte nije morila dosada, niti ih je opterećivala odgovornost; sve dok ne stignu do Saturna, spoljni svijet uopšte neće postojati za njih.
+            Poslije stotinu dana “Otkriće” će zamrijeti. Svi članovi posade otići će u hibernaciju; samo će ključni sistemi nastaviti da dejstvuju, a nad njima će bdjeti neumorni elektronski mozak broda. Letjelica će nastaviti da kruži oko Saturna po orbiti koja će u toj mjeri biti određena da će ljudi uvijek tačno znati gdje da potraže svog planetnog izaslanika, kako sada tako i kroz hiljadu godina. Ali kroz samo pet godina, prema sadašnjim planovima, tamo će prispjeti “Otkriće II”. Čak i ako do tada protekne šest, sedam ili osam godina, usnulim putnicima biće svejedno. Za sve njih časovnik će stati, kao što je već stao za Vajtheda, Kaminskog i Hantera. Ponekad je Boumen, kao zapovjednik “Otkrića”, zavidio svojoj trojici besvjesnih kolega u zamrznutom spokoju {{hibernakuluma(73)}}. Njih uopšte nije morila dosada, niti ih je opterećivala odgovornost; sve dok ne stignu do Saturna, spoljni svijet uopšte neće postojati za njih.
             Ali taj svijet bdio je nad njima posredstvom njihovih biosenzornih displeja. Neupadljivo smješteno među mnogobrojnim instrumentima na kontrolnoj tabli, nalazilo se pet malih panela sa natpisima “Hanter”, “Vajthed”, “Kaminski”, “Pul” i “Boumen”. Posljednja dva bila su prazna i beživotna; njihovo vrijeme doći će tek za godinu dana. Ostali su sadržali sazviježđa sićušnih, zelenih svjetala koja su obznanjivala da je sve u redu; uz to, na svakome je bio smješten mali displej preko koga su nizovi sjajnih linija pratili spore ritmove što su označavali bilo, disanje, i moždanu djelatnost.
             Bilo je trenutaka kada je Boumen, iako potpuno svjestan da je to sasvim nepotrebno – budući da bi se uzbuna oglasila istog trena čim bi nešto pošlo naopako – uključio i audio-izlaz. Stao bi da sluša, napola hipnotisan, beskrajno spore otkucaje srca svojih usnulih kolega, ne skidajući pogled sa tromih talasa koji su sinhrono marširali preko ekrana.
             Najvećma su ga očaravali displeji EEG-a – elektronski potpisi triju ličnosti koje su jednom postojale i koje će jednog dana ponovo postojati. Bili su gotovo lišeni vršaka i dolja, električnih eksplozija koje su obilježavale djelatnost budnog mozga – ili čak mozga u stanju normalnog spavanja. Ukoliko je i preostao neki djelić svijesti, on se nalazio izvan domašaja uređaja, ali i pamćenja.
@@ -1142,10 +1123,10 @@ Bio jednom jedan dječak, u očevoj kući, nad rijekom, koji je sanjao zlatne sn
             A onda se hranilica ponovo podiže i on opet ostade da spokojno počiva. Sada je bio kadar da pokreće ruke i noge; pomisao na koračanje više nije predstavljala nemoguć san.
             Iako je osjećao da mu se snaga brzo vraća, uopšte ne bi mario ako bi tu ostao dovijeka da leži kada više ne bi bilo spoljnjih podsticaja. A onda mu se obrati novi glas – ovog puta u potpunosti ljudski, a ne sazdan od električnih impulsa sabranih u cjelini u memoriji koja je bila više nego ljudska. Bio je to takođe poznat glas, premda je proteklo neko vrijeme prije no što ga je prepoznao.
             “Zdravo, Dejve. Fino se povraćaš. Možeš sada da govoriš. Znaš li gdje se nalaziš?”
-            Mozgao je oko toga neko vrijeme. Ako je stvarno na orbiti oko Saturna, šta se dogodilo tokom svih onih mjeseci od kako je krenuo sa Zemlje? Ponovo je počeo da se pita da li pati od amnezije. Paradoksalno, sama ova pomisao ga je ospokojila. Ako se mogao sjetiti riječi “amnezija”, onda mu se mozak jamačno nalazi u dobrom stanju...
+            Mozgao je oko toga neko vrijeme. Ako je stvarno na orbiti oko Saturna, šta se dogodilo tokom svih onih mjeseci od kako je krenuo sa Zemlje? Ponovo je počeo da se pita da li pati od {{amnezije(75)}}. {{Paradoksalno(76)}}, sama ova pomisao ga je ospokojila. Ako se mogao sjetiti riječi “amnezija”, onda mu se mozak jamačno nalazi u dobrom stanju...
             Ali još nije znao gdje je, a govornik sa druge strane veze mora da je potpuno razumio njegovu situaciju.
             “Ne brini, Dejve. Ovdje Frenk Pul. Posmatram tvoje srce i disanje – sve je savršeno normalno. Samo se opusti – polako. Sada ćemo otvoriti vrata i izvući te napolje.”
-            Blaga svjetlost ispuni komoru; spram ulaza koji se sve više širio, on razabra obrise pokretnih obličja. I upravo tog časa sjećanje mu se potpuno povrati i on shvati gdje se, u stvari, nalazi. Iako se bezbjedno vratio sa najdaljih međa smrti, bio je odsutan samo nedjelju dana. Kada bude izašao iz hibernakuluma, neće ugledati hladno Saturnovo nebo; ono se i dalje nalazilo više od godinu dana u budućnost i milijardu milja daleko. Još je bio u odjeljenju za obuku u Središtu za svemirski let u Hjustonu, pod vrelim Suncem Teksasa.
+            Blaga svjetlost ispuni komoru; spram ulaza koji se sve više širio, on razabra obrise pokretnih obličja. I upravo tog časa sjećanje mu se potpuno povrati i on shvati gdje se, u stvari, nalazi. Iako se bezbjedno vratio sa najdaljih međa smrti, bio je odsutan samo nedjelju dana. Kada bude izašao iz {{hibernakuluma(73)}}, neće ugledati hladno Saturnovo nebo; ono se i dalje nalazilo više od godinu dana u budućnost i milijardu milja daleko. Još je bio u odjeljenju za obuku u Središtu za svemirski let u Hjustonu, pod vrelim Suncem Teksasa.
 			
             `,
     author: 'Artur Klark',
@@ -1257,7 +1238,7 @@ Bio jednom jedan dječak, u očevoj kući, nad rijekom, koji je sanjao zlatne sn
     title: 'Umjetnička književnost - Roman',
     subtitle: 'Otok plavih dupina',
     type: essay,
-    text: ` “Otok plavih dupina” je roman o stvarnom događaju iz života jedne Indijanke koja je na pustom ostrvu sama provela 18 godina, od 1835. do 1853. godine. Ovaj odlomak govori o njenom povratku u civilizaciju.
+    text: ` “Otok plavih {{dupina(77)}}” je roman o stvarnom događaju iz života jedne Indijanke koja je na pustom ostrvu sama provela 18 godina, od 1835. do 1853. godine. Ovaj odlomak govori o njenom povratku u civilizaciju.
             *
             O njegovu glasu što me zove razmišljala sam već odavno, još od one olujne noći kad je brod bio otplovio. Za ta dva proljeća i dva ljeta nije bilo dana da nisam otišla na rt i gledala more, uvijek u zoru, pa opet u sumrak.
             Ujutro sam osjetila miris dima njihove vatre. Sišla sam u klanac i okupala se na izvoru, pa se ogrnula vidrinim krznom i navukla suknju od kormoranova. I okitila se ogrlicom od crnih kamenčića i crnim naušnicama. Modrim muljem preko nosa nacrtala sam znak našeg plemena.
@@ -1275,7 +1256,7 @@ Bio jednom jedan dječak, u očevoj kući, nad rijekom, koji je sanjao zlatne sn
             Znala sam da je to rekao jer je jedan od njih stao preda me i nekom uzicom mjerio mi visinu od vrata do peta i širinu ramena.
             Haljina je bila plava. Sastavili su je od dva para hlača, onih istih kakve su nosili bijeli ljudi. Hlače su razrezali na komade, pa je jedan od njih sjeo na kamen i one komade opet sastavljao nekom bijelom niti. Imao je dug nos, baš kao igla kojom je baratao. Sjedio je cijelo popodne na kamenu, a igla mu išla gore-dolje, unutra-van, blistajući se nа suncu.
             Tu i tamo bi pridizao haljinu i klimao glavom, kao da je zadovoljan. Klimala sam i ja kao da sam zadovoljna, ali nisam bila. Radije bih ostala u svojoj suknji od kormoranova perја i ogrtaču od vidrina krzna, koji su bili mnogo ljepši od onoga što mi je on pravio.
-            Haljina me pokrivala od vrata do stopala, a nije mi se sviđala ni zbog boje ni zato što me grebala. I bilo mi je vruće u njoj. Ipak sam se nasmiješila, strpala suknju od kormoranova perja u košaru, da je nosim ondje preko mora, u neko doba kad oko mene ne bude ljudi. Brod je ostao u Koraljnoj dragi devet dana. Bio je došao po vidre, ali vidri nije bilo. Zacijelo je ipak bilo ostalo još nekih koje su pamtile Aleute, jer onog jutra nije nijedne bilo na vidiku.
+            Haljina me pokrivala od vrata do stopala, a nije mi se sviđala ni zbog boje ni zato što me grebala. I bilo mi je vruće u njoj. Ipak sam se nasmiješila, strpala suknju od kormoranova perja u košaru, da je nosim ondje preko mora, u neko doba kad oko mene ne bude ljudi. Brod je ostao u Koraljnoj dragi devet dana. Bio je došao po vidre, ali vidri nije bilo. Zacijelo je ipak bilo ostalo još nekih koje su pamtile {{Aleute(81)}}, jer onog jutra nije nijedne bilo na vidiku.
             Znala sam kamo su bile otišle. Bile su otišle do Visoke hridi, ali kad su mi ljudi pokazali oružje koje su ponijeli da bi njime ubijali vidre, zavrtjela sam glavom i pravila se da ih ne razumijem. Pokazivali su u moje vidrino krzno, a ja sam svejedno vrtjela glavom.
             Onda sam ja njih upitala za brod koji je prije mnogo godina bio odveo moj narod, pravila sam znak broda i pokazivala na istok, ali me oni nisu razumjeli. Tek kad sam stigla u misiju Santa Barbare i upoznala oca Gonzalesa, od njega sam doznala da je onaj brod bio potonuo u nekoj velikoj oluji malo nakon dolaska u njegov kraj i da na čitavom moru ondje nije bilo drugoga broda. To je bio razlog što se bijeli ljudi nisu vratili po mene. Isplovili smo desetog dana. Tog jutra nebo je bilo plavo, a od vjetra ni daha. Krenuli smo ravno prema suncu.
             Dugo sam stajala i gledala Otok plavih dupina. S vida mi je posljednji iščeznuo Visoki rt. Mislila sam na Tontua koji ondje leži pod kamenjem svakakvih boja, a i na Won-a-nee koja je tko zna gdje, i na malu crvenu lisicu koja bi mi uzaludno grebla po ogradi, i na svoj kanu skriven u špilji, i na sve one sretne dane.
@@ -1368,7 +1349,7 @@ Bio jednom jedan dječak, u očevoj kući, nad rijekom, koji je sanjao zlatne sn
             У научним извјештајима је забележено да цео норвешки народ, који живи на 322.000 км, има само два и по милиона људи, и да на квадратном километру живи просечно седам становника. Али то треба тако разумети, да тамо горе, изнад Нурфјура (Нордфјорд), врло често тек на десет квадратних километара долази седам људи: и кад се узме у обзир да тих седам људи могу бити једна породица, излази задњи факат да се кроз многе крајеве Норвешке путује а једва се срета човек...
             *
             ...Бог Тор је бацио очи поубијаних џинова на небо и тако су постале звезде. И стога су можда те звезде тако мало милостиве према људима што овде живе. Одиста, мало је овде веселих звезданих ноћи и топлих сунчаних дана. Ово је земља окретања и идења за сунцем. Сви предмети, природни и вештачки, стоје у насилном положају, имају криву осовину, и не познају ону сигурну симетрију крајева где је десно и лево свеједно, где су исток и запад благословене стране света. Све се нагиње и тражи сунчану страну, јер ко је на сунчаној страни (Солбакке) тај је богат и срећан, а чија је кућа у хладу јела и смрека тај је сиромах и тужан...
-            Норвежанин живи као и његова бреза, то тако карактеристично и тако симболично дрво целе његове земље. У јужним и западним крајевима она је силно дрво, лепша можда него игде на свету. А према сјеверу, на фјеловима, увученим далеко од мора и од топле струје, по оним страшним висоравнима које су често мокар, често суви песак, а понајвише снег или раздробљени камен, бреза се грчи, савија, тањи, смањује се од дрвета до жбуна, од жбуна до пузаве богаљасте биљке, хвата се за камење да је ветрови не покидају, рије кроз песак који је затрпава, болује, мучи се, и чак тамо иза Хамерфеста умире са оном чудном, ућутканом сумњом северњака кога добри бог целог века кињи...
+            Норвежанин живи као и његова бреза, то тако карактеристично и тако симболично дрво целе његове земље. У јужним и западним крајевима она је силно дрво, лепша можда него игде на свету. А према сјеверу, на {{фјеловима(86)}}, увученим далеко од мора и од топле струје, по оним страшним висоравнима које су често мокар, често суви песак, а понајвише снег или раздробљени камен, бреза се грчи, савија, тањи, смањује се од дрвета до жбуна, од жбуна до пузаве богаљасте биљке, хвата се за камење да је ветрови не покидају, рије кроз песак који је затрпава, болује, мучи се, и чак тамо иза Хамерфеста умире са оном чудном, ућутканом сумњом северњака кога добри бог целог века кињи...
             *
             ...Норвежани, рекла бих, претрпели су у прошлом столећу неку врсту националног очајања. Дуготрајна унија, дуготрајно расипање, норвешких сила на данско-норвешке циљеве нити је могло национално сасвим да их успава, нити национално сасвим да их разбуди. Једва су се пренули. Зар народ који има снагу и здравље као нико у Европи, који има једну од најлепших земаља на свету, народ који је имао писану књижевност раније него културни Енглези, и који од малих и по историји несрећних европских народа има највишу и најбољу културу у Европи, зар тај народ да не може сам за себе стајати и сам своју бригу бринути!
             И онда су учинили да буду сами и своји, Норвежани сасвим, али, како ми се чини и у новој фази им је културна осетљивост остала јача од националне, и то ће им још дуго сметати да буду срчани и силни и коренито народни у свим манифестацијама свога духа и рада...
@@ -1471,21 +1452,21 @@ Bio jednom jedan dječak, u očevoj kući, nad rijekom, koji je sanjao zlatne sn
            Била је она права, стара сарајевска зима са много снијега и неке чудне бијеле тишине. И била је ноћ. Поодмакло глухо доба над смиреном котлином око Миљацке.
            Не знам колико је било сати. Ни кад ме је мајка пробудила, ни кад сам бунован погледао у прозоре нисам помислио на вријеме.
            У завијаним окнима нашег прозора горио је град. Горјело је читаво Сарајево.
-           Наши прозори били су окренути према Имарету. Са наших прозора видио се велики дио Сарача, шиљати оџаци на медреси Куршумлији, мали сарајевски дућани Сефарда, Ташлихан, три минарета, стара синагога и дио зида и чесме пред Беговом џамијом.
+           Наши прозори били су окренути према {{Имарету(90)}}. Са наших прозора видио се велики дио {{Сарача(91)}}, шиљати оџаци на медреси Куршумлији, мали сарајевски дућани {{Сефарда(93)}}, {{Ташлихан(94)}}, три минарета, стара синагога и дио зида и чесме пред Беговом џамијом.
            Те ноћи све је блистало у топлој позлати огња. Сокаци су били пуни буновног свијета.
            Сви смо трчали према буктињи која нас је мамила и омамљивала.
            Пламен је надвисио старе јабланове, минарета и смеђу сахат-кулу.
-           Те тихе зимске ноћи горио је Колобара хан.
+           Те тихе зимске ноћи горио је Колобара {{хан(96)}}.
            Дим је био пун мириса штављених брављих кожа.
            Можда се ништа не усијече тако јасно у памћење као неки велики пожар у ноћи.
            Док сам цртао старца у лијевом углу цртежа, сјетио сам се старог аџе кога сам посљедњи пут видио те ноћи.
-           Аџо је имао смијешан мали дућан у једном ћошку старог хана. Његов дућан више је личио на повећи сандук за шећер или неко лимено посуђе него на радњу у којој је романијским сељацима хамајлијама и чудотворним записима истјеривао зле духове, ограме, демоне и шејтане. Осим дивита и неколико пожутјелих старих ћитаба, који су изгледали као испуцани црепови са каквог заборављеног турбета, више ничега није ни било.
+           Аџо је имао смијешан мали дућан у једном ћошку старог хана. Његов дућан више је личио на повећи сандук за шећер или неко лимено посуђе него на радњу у којој је романијским сељацима хамајлијама и чудотворним записима истјеривао зле духове, ограме, демоне и шејтане. Осим дивита и неколико пожутјелих старих {{ћитаба(101)}}, који су изгледали као испуцани црепови са каквог заборављеног турбета, више ничега није ни било.
            Можда је такав некада давно био и дућан онога Мула Мустафе Башескије, мудрог и веселог хроничара старих сарајевских прилика и улица.
            Башескије, који се подједнако молио за спас душа и оних који гоне и оних који су гоњени.
            Аџо је стајао те ноћи погурен и нијем. Читаве те ноћи аџо је шапутао неку дугу спасоносну молитву.
            Добрих духова ноћас није било.
            Ватра је горјела читаве дуге зимске вечери.
-           Ватра је прогутала чађаве таване и диванхане, јадна имања сиромаха, читав један инвентар фукарлука и туге. Лучеви диреци пуцали су као рамазанске бешчеталаме.
+           Ватра је прогутала чађаве таване и {{диванхане(102)}}, јадна имања сиромаха, читав један инвентар фукарлука и туге. Лучеви диреци пуцали су као рамазанске {{бешчеталаме(114)}}.
            Ујутро је освануло згариште.
            Црно и укочено као дугачак леш некаквог џина који се читаве ноћи носио са црвеним бичевима огњене агоније.
            Стара авлија је била пуна мртвих птица.
@@ -1520,61 +1501,61 @@ Bio jednom jedan dječak, u očevoj kući, nad rijekom, koji je sanjao zlatne sn
             title: 'dječak, posmatrač požara',
             right: true,
           },
+        ],
+      },
+      {
+        title: 'This is title for 2nd question',
+        question: 'Pripovjedaču Аdžin dućan budi asocijacije na…',
+        answers: [
           {
-            title: 'This is title for 2nd question',
-            question: 'Pripovjedaču Аdžin dućan budi asocijacije na…',
-            answers: [
-              {
-                title: 'putopisca Čelebiju',
-                right: true,
-              },
-              {
-                title: 'Mula Mustafu Bašeskiju',
-                right: false,
-              },
-            ],
+            title: 'putopisca Čelebiju',
+            right: true,
           },
           {
-            title: 'This is title for 3rd question',
-            question: 'Bašeskija je poznat po svome…',
-            answers: [
-              {
-                title: 'ljetopisu',
-                right: true,
-              },
-              {
-                title: 'historijskom romanu',
-                right: false,
-              },
-            ],
+            title: 'Mula Mustafu Bašeskiju',
+            right: false,
+          },
+        ],
+      },
+      {
+        title: 'This is title for 3rd question',
+        question: 'Bašeskija je poznat po svome…',
+        answers: [
+          {
+            title: 'ljetopisu',
+            right: true,
           },
           {
-            title: 'This is title for 4th question',
-            question: 'Fra Grgo Martić je bio…',
-            answers: [
-              {
-                title: 'slikar',
-                right: false,
-              },
-              {
-                title: 'sakupljač narodnih umotvorina',
-                right: true,
-              },
-            ],
+            title: 'historijskom romanu',
+            right: false,
+          },
+        ],
+      },
+      {
+        title: 'This is title for 4th question',
+        question: 'Fra Grgo Martić je bio…',
+        answers: [
+          {
+            title: 'slikar',
+            right: false,
           },
           {
-            title: 'This is title for 5h question',
-            question: 'Kojim se od navedenih riječi pisac u svom putopisu nije služio:',
-            answers: [
-              {
-                title: 'turcizmima, orjentalizmima, germanizmima, lokalizmima',
-                right: false,
-              },
-              {
-                title: 'riječima iz latinskog i grčkog jezika',
-                right: true,
-              },
-            ],
+            title: 'sakupljač narodnih umotvorina',
+            right: true,
+          },
+        ],
+      },
+      {
+        title: 'This is title for 5h question',
+        question: 'Kojim se od navedenih riječi pisac u svom putopisu nije služio:',
+        answers: [
+          {
+            title: 'turcizmima, orjentalizmima, germanizmima, lokalizmima',
+            right: false,
+          },
+          {
+            title: 'riječima iz latinskog i grčkog jezika',
+            right: true,
           },
         ],
       },
@@ -1587,10 +1568,10 @@ Bio jednom jedan dječak, u očevoj kući, nad rijekom, koji je sanjao zlatne sn
     type: essay,
     text: `U jednoj narodnoj pjesmi ima stih:
             “Kad prebrodi Drinu valovitu,
-  stade gazit’ Bosnu kalovitu.”
+  stade gazit’ Bosnu {{kalovitu(115)}}.”
             U ovom prvom stihu pjesnik je apsolutno pogodio, jer istina je da je Drina jedna voda i valovita i plahovita. Pa je valjda otuda i nastala priča: kako je neka djevojka, koja je bila nesrećna u svojoj ljubavi, od svih voda našla da je Drina najdublja, i svoju nesrećnu ljubav prekratila ovako: “Savi oči pa u Drinu skoči.“
             Tu gdje je danas Višegrad – nekad se preko Drine prelazilo splavom; mora da je iznad vode bila opružena žica za koju je dolje bio privezan splav – i ljudi tako prelazili sa jedne na drugu stranu, uz plaćanje, naravno, lađarine. Ostala je priča – a može biti da je tako i bilo: da su nekakvim splavom, ili nekakvom lađom, na tom mjestu, gdje je Višegrad, prevezli nekad jadno dijete iz nedalekog sela Sokolovića, koje će kasnije – pošto se odškolovalo u Carigradu, odraslo i dobilo visoke činove, postati i jedan od carskih vezira, onaj koji je tri cara služio, a zvao se Mehmed-paša Sokolović.
-  Šta je sve spadalo u životno djelo ovog paše, čiji je vijek trajao 73 godine, sigurno su zabilježili hroničari iako jesu – onda bi na čelo svih njegovih djela svakako spadala ćuprija na Drini. Zna se da to svoje veliko djelo – u svom dalekom rodnom kraju, u Bosni, zemlji kalovitoj, a na njenoj rijeci Drini valovitoj, nije vidio, jer umro je ubrzo – nisu bile prošle ni dvije godine od izgradnje mosta na Drini. Umro je od ruke svoga zemljaka – nekakvog šejha iz tekije u Novoj Kasabi; dakle, od čovjeka koji je bezbroj puta prelazio njegovim mostom – pa i onda kad je pošao u Carigrad sa namjerom da ubije pašu. Ubio ga je pred džamijom – kad je paša išao na molitvu, i to tako što mu je – uz uobičajeno metanisanje, pružio nekakvu molbu ljudi svoga kraja da je pročita, i dokle je vezir čitao molbu, šejh se dotle poslužio nožem.
+  Šta je sve spadalo u životno djelo ovog paše, čiji je vijek trajao 73 godine, sigurno su zabilježili hroničari iako jesu – onda bi na čelo svih njegovih djela svakako spadala ćuprija na Drini. Zna se da to svoje veliko djelo – u svom dalekom rodnom kraju, u Bosni, zemlji kalovitoj, a na njenoj rijeci Drini valovitoj, nije vidio, jer umro je ubrzo – nisu bile prošle ni dvije godine od izgradnje mosta na Drini. Umro je od ruke svoga zemljaka – nekakvog šejha iz tekije u Novoj Kasabi; dakle, od čovjeka koji je bezbroj puta prelazio njegovim mostom – pa i onda kad je pošao u Carigrad sa namjerom da ubije pašu. Ubio ga je pred džamijom – kad je paša išao na molitvu, i to tako što mu je – uz uobičajeno {{metanisanje(117)}}, pružio nekakvu molbu ljudi svoga kraja da je pročita, i dokle je vezir čitao molbu, šejh se dotle poslužio nožem.
   Zna se da je mnogo građevina ostalo iza svoga velikoga vezira, a najveća i najljepša je ova na Drini – most kakav ni na jednoj vodi u carevini – ni do tada ni poslije, nije izgrađen.
   Odgovara vodi na kojoj je – jer je Drina, takva kakva je, tražila upravo i takav most nad sobom. Na jedanaest je lukova. Od kamena je – i to ne samo tesanog, nego i glačanog, i željeznim mačkama utvrđenog, a željezo zaliveno olovom: da se most održi, da vječno traje – i već traje blizu četiri stoljeća.
   Stajao sam bezbroj puta na tome mostu i mislio na vrijeme: prolazilo je kao dolje pod njima Drina, a on ostajao... ostao je i onda kad ga je Drina za više od metar i po preplavila – godine 1896, poslije čega će u narodu ostati izreka: “Održa se kao Most na Drini!“
@@ -1599,7 +1580,7 @@ Bio jednom jedan dječak, u očevoj kući, nad rijekom, koji je sanjao zlatne sn
   Putnici i prolaznici staće i diviće se mostu na Drini; a koliko ih je ovuda prošlo za njegovih do danas – 395 godina! Prolazile su njim vojske i karavani, bogati i siromašni, siti i mahniti; osuđeni, protjerani, prognani; prolazili su učeni, umni a i ludi; srećni i nesrećni; mladi i stari – a to će reći cio jedan bijeli svijet, onaj što je hodio džadama – jer ovaj Most i jest dio džade; dio puta – onaj nad vodom, na drugi način jedva prolaznom, jer je to Drina! Ona koja nadođe – ”... od brega do brega!“
             Nema na njemu šara i ukrasa – nego ima nešto silno i moćno, tako kao da je karavana zagazila u vodu, tu se skamenila – i ostala... U poretku jednom skladnom, a preko vode – od jedne do druge njene obale.
   Onaj što ju je zidao, nije nam svoje ime ostavio, pa pred sobom gledamo djelo – a ne znamo ime njegovog tvorca. Mora da je aršinom mjerio svaki kamen, svaki luk, svaki stub, svako okno – svaki prst na mostu, jer tu je sve skladno, sve izmjereno, sve po aršinu. Pa je i kod popravaka tako mjereno – sve na metar i na santimetar, kako bi sve bilo kao što je i nekad bilo – prije gotovo četiri stoljeća. Popravljan je više puta – jer nijedan od ratova nije prošao a da ovu starinu nije rušio; i zanimljivo je da su uz obadva velika rata bili porušeni isti lukovi, isti stubovi. To jest: ono što nisu mogli toliki povodnji i toliko vrijeme, mogla je ruka rušioca. Porušeni lukovi ličili su tada na kakve pećine – i bila je to tužna slika; stajao sam tada na obali i gledao je. Ni Drina više nije bila lijepa, jer to dvoje – na ovom mjestu, kad se nađu jedno bez drugog, nije više lijepo; i sve je ličilo na srušen hram, na pustoš.
-  Danas su te rane zacijeljene, i jedva se poznaje gdje su i bile, ili se nikako i ne poznaje, nego je onako kao i nekad – kad je ovu ćupriju, ispustivši aršin iz ruku, ostavio za sobom njen graditelj. Bilo je to godine 1577. Davno i davno! Mnogo je od tada niz Drinu prošlo vode, mnogo ljudi sjelo na “sofu” – i odatle, sa sredine mosta, sa visine od oko petnaest metara iznad vode, gledalo dolje niz Drinu, i gore uz Drinu, i pred sobom grad Višegrad. A ako je neko umio, mogao je tu odmah prema “sofi ”, a na ploči mramornoj, čitati ovakav natpis na mostu: “Gospodin Mehmed-paša, mudrac svog vremena, potrošio je svoj imetak na zadužbine. Niko neće reći za imetak koji se troši na zadužbine, da je rasipanje. Bio je svjestan da su svakom njegova djela najbolje potomstvo. Podigao je most, kojem na svijetu nema ravna. Nemoj reći da je propao imetak, koji se troši na ovakva djela.“
+  Danas su te rane zacijeljene, i jedva se poznaje gdje su i bile, ili se nikako i ne poznaje, nego je onako kao i nekad – kad je ovu ćupriju, ispustivši aršin iz ruku, ostavio za sobom njen graditelj. Bilo je to godine 1577. Davno i davno! Mnogo je od tada niz Drinu prošlo vode, mnogo ljudi sjelo na “sofu” – i odatle, sa sredine mosta, sa visine od oko petnaest metara iznad vode, gledalo dolje niz Drinu, i gore uz Drinu, i pred sobom grad Višegrad. A ako je neko umio, mogao je tu odmah prema “sofi ”, a na ploči mramornoj, čitati ovakav natpis na mostu: “Gospodin Mehmed-paša, mudrac svog vremena, potrošio je svoj imetak na {{zadužbine(123)}}. Niko neće reći za imetak koji se troši na zadužbine, da je rasipanje. Bio je svjestan da su svakom njegova djela najbolje potomstvo. Podigao je most, kojem na svijetu nema ravna. Nemoj reći da je propao imetak, koji se troši na ovakva djela.“
             `,
     author: 'Ćamil Sijarić',
     video: false,
@@ -1797,7 +1778,7 @@ Bio jednom jedan dječak, u očevoj kući, nad rijekom, koji je sanjao zlatne sn
     type: essay,
     text: `Ćupriju podiže koja podsjeća na lûk dûge
            Allahu moj! Ima l’ na svijetu po ljepoti drûge?
-           Jedan je Derviš zadivljen stao i rekao riječi:
+           Jedan je {{Derviš(56)}} zadivljen stao i rekao riječi:
            Ostavit ćemo ćupriju a mi ćemo preći. 
            
 		   `,
@@ -1921,23 +1902,660 @@ Bio jednom jedan dječak, u očevoj kući, nad rijekom, koji je sanjao zlatne sn
     ],
   },
   {
+    id: 21,
+    title: 'Umjetnička književnost - Pripovijetka',
+    subtitle: 'Шпијун',
+    text: `Дошавши у уред, стари подворник Коста прогура се кроз гомилу сељака, који су збијени и притијешњени стајали у ходнику и живо се препирали, уљезе у своју тијесну канцеларију, збаци са чупаве главе улупљени и замашћени шешир у прикрајак, и окренувши се на пети, узе некакву прљаву, разгуљену крпетину, па лагано, гегуцкајући, оде у предстојникову собу.
+           – Ух!... Опет запрзнио!... – прогунђа промукло, испод ока гледајући по соби и мргодећи се. – Опет!
+           Па, као размишљајући би ли или не би радио, лијено поче отирати прашину са књига и столца, поче размјештати некакве списе и хартије што су били разбацани по столу и око стола, поче тражити остатке цигара по тешким дубоким пепеоницама и трпати их у џеп.
+           Пошто је све свршио, лагано оде до прозора, подигне танке завјесе и провири напоље. Уживао је да га они са улице виде како свако јутро провирује из предстојникове собе. Вјеровао је да му сви завиде на томе.
+           Затим се опет врати и, по обичају, сједе на предстојникову столицу. Рашчупа неколико остатака од предстојникових цигара и замота у нов цигар. Запали.
+           – Лијепо ли је овако, пост му љубим – уздахну, пребацивши ногу преко ноге и одбијајући димове. – И лако ли је!...
+           Ослухнувши мало, брзо скочи са столице и нешто поче чистити, трљати, распремати.
+           – Ево предстојника! – викну узбуђено, врпољећи се. – Ево га!...
+           Чим предстојник уљезе, Коста бржебоље притрча, прихвати му штап и шешир, и, токорсе, поче чистити капут као да стреса прашину, макар што је капут био чист и никакве прашине на њему није било... Предстојник, одмакавши се, удари дланом о длан, протрља руке, поправи цвикер, завуче руке у џепове и звиждућући поче шетати по соби.
+           – А шта ти чекаш – пискутљиво запита Косту, који је тих, скроман, погурен стајао покрај врата и са страхом га гледао.
+           – Шта ћеш?
+           – Чекам шта ће ваша милост заповидјети – одговори Коста шапатом, једном руком грчевито теглећи пеш од капута и лукаво се смијешећи.
+           – Не требаш ми...
+           Коста се скупи, преви и, дубоко се поклонивши, прихвати за штекавицу на вратима.
+           – Стој! – викну предстојник изненада, исправљајући се и заповједнички дижући руку. – Стани! Коста стаде.
+           – Знаш ли да те ја волим? – запита предстојник ласкаво, искрививши главу и гледајући га преко наочала.
+           Коста опусти руке низа се и, усиљавајући се да се опет насмије, блесасто развуче лице. Не одговори ништа...
+           И моја те госпођа воли и сви те волимо, јер... јер си услужан, покоран, вјеран... и никад не протестираш и не буниш се... Ми те волимо и знамо да би ти сигурно нама за љубав све учинио.
+           – Ако хоћеш, и у воду да скочим, што се рекне – одговори Коста осокољен, премјештајући се с ноге на ногу. – Све...
+           – А ти, имаш ли дјеце? – нагласи предстојник јаче.
+           – Четворо, богу на аманет!
+           – Треба ти и боља плаћа?
+           Коста приклони главу лијевоме рамену и пјевајући отегну:
+           – Хај – хај!
+           Предстојник му лагано приступи и ухвати га за раме.
+           – Имаћеш бољу плаћу и још... још...
+           Па му погледа у очи, прошапута тише:
+           – Ако је знао зарадити...
+           Дохвати једну столичицу, опкорачи је и сједе према Кости... Скрстивши руке на наслон од столице, спусти браду на њих.
+           – Данас су чудне прилике настале – рече тихо, цупкајући ногом – и некакве нове струје јављају се... Чују се некакви протести, граје, тужбе... По чаршији говоре, вичу... А ти идеш по чаршији, састајеш се... а добар си човјек и сви ти вјерују.
+           Вјерују, фала богу – одговори Коста поносито, па се мало исправи.
+           – Па ја бих да ти будеш мој “повјерљив човјек” и... да ми јављаш шта ко говори и како се говори...
+           Коста не одговори.
+           Предстојник, натежући се, устаде и одгурну столицу. Коста лијено слегну раменима.
+           – Но?
+           – Шта? – мукло запита Коста, правећи се да не разумије.
+           – Хоћеш ли бити мој “повјерљиви човјек?”...
+           Коста поче поправљати јаку од кошуље, ширити је; поче ушмркивати, кашљати.
+           – Ама то се у нас не назива чо’јек, него шпијун, господине – проциједи кроз зубе. Предстојник се подругљиво осмјехну.
+           – Нека се назива како се хоће, али ја желим да ме послушаш – рече. – Или да добијеш бољу плаћу, или... да отрчиш из службе... Смисли се!... Бирај!...
+           Коста се у души борио сам са собом читаво поподне. Предвече крену према Ракићевој механи...
+           Недалеко од њега, за омањим ниским столом, сједила су три бакала и, на беспослици, играли домина... Један, дугулендра, држећи чађаве домине на широком длану и међу прстима, непрестано је звецкао њима и непрестано зијевао... Зијевајући псовао је “проклето вријеме” кад човјек нема прилике ни “да што заради” и, уједно, корио другове што затежу игру.
+           Чувши његову псовку, Кости падоше на памет предстојникове ријечи. Устаде и гегуцкајући приступи дугулендри:
+           – Чујеш, немој ти тако говорити и немој ништа проклињати – рече тихо, тапшући га по рамену. – Нипошто!...
+           – Хм!...
+           – Ако је киша, не причај да је киша... Ако је магла, не кажи да је магла... И нипошто не проклињи!... Нипошто!...
+           – Их!...
+           – Благосиљај и ђавола и све називај благословеним.
+           – А што, болан? – запита дугулендра отегнуто, звецкајући доминама.
+           – Јер су избили “повјерљиви људи”, па те могу чути...
+           Дугулендра отпрсну и одмахну руком.
+           – Тешто!
+           – Никоме сад не вјеруј!... Ни ћаћи рођеноме не вјеруј... Ни ја сам себи не вјерујем!...
+           И не објашњавајући ништа, оде у друге механе.
+           Тек предвече јави се предстојнику. Био је раздрљен, рашчупан, дроњав, са упрљаним рукама и облаћеним ногавицама; дуга, просиједа коса пала му је по челу и покрила ситне водњикаве очи, бркови му се опустили и пали по напола отвореним устима, брада му се овлажила и побијељела од пљувачке. Раскорачивши се нашироко и чувајући се да не падне, стаде пред предстојника и широко застења:
+           – Ево ме...
+           – Но? – запита предстојник тихо, пишући нешто, а и не осврћући се на њега. – Шта је?
+           – Био сам и чуо сам...
+           Предстојник остави перо и погледа га. И одмах скочи, и стиснувши зубе, диже руку да га удари. У задњи час, ипак, као да се предомисли, па одступи мало и оштро запита:
+           – Шта си чуо?
+           – Кнежевић каже да му се отелила крава; Петру Божовићу обосио коњ, те отишао да га поткује; Илија Митров изгубио на картама три гроша и опсовао попа; Станко...
+           – Стани! – викну предстојник љутито, ударајући ногом о под. – Доста је!...
+           – Још нијесам свршио – отегну Коста тепајући и вадећи некакве хартије. – Има овдје читава читуља...
+           Предстојник застаде.
+           – Зар су ти то важни гласови? – запита подругљиво.
+           – А зар ја могу што друго чути? – окреса Коста растресајући хартије и загледајући их. – И зар ће ми неко нешто казати кад ено сва чаршија прича како је читав шехер препун шпијуна?...
+           Предстојник збаци цвикер на сто и тресну читавим снопом хартија.
+           – Ко прича? Ко? – нагло запита. Чаршија.
+           – А ко ти је казао?... Ко?
+           Предстојник се прислони леђима уза сто и љутит, бијесан, поче ломити прсте.
+           – Ко је причао?... Ко?... – запита самог себе и опет погледа у Косту. – Да нијеси ти?...
+           Коста не одговори.
+           – Ти?... Ти?... Ти?...
+           Па га ухвати за прса и поче дрмусати.
+           Коста се некако отрже, затетура и, посрћући, ухвати се за зид.
+           – Господине, ја ћу сам себе осудити на десет дана хавса – рече заплићући – само да нешто кажем... Запиши тамо: Коста Кошчинић осудио се на десет дана тамнице само да добије дозволу да нешто рекне...
+           – Шта ћеш казати? – откреса предстојник сурово, одмјеравајући гдје би га, по обичају, ударио ногом. – Будалаштине!...
+           Коста се блесасто зацерека и дубоко се наклони.
+           – Питам те ја, господине, ко је од нас двојице виша будала: или ја, који сам постао тамо твој “чо’јек”, или ти, који си ме одабрао?
+           Па, држећи се зида и једнако се церекајући, пође вратима.
+           – Ето... бели сам те запитао и искалио се – рече вирећи иза каната. – А сад лијепо одох у хавс! Збогом!
+           
+			Светозар Ћоровић`,
+    video: 'url',
+    audio: 'url',
+    questions: [
+      {
+        title: 'This is title for 1st question',
+        question: 'Na početku pripovijetke upoznajemo se sa podvornikom Kostom i predstojnikom, jedina dva lika u priči. Psihološka karakterizacija likova izvršena je na osnovu….',
+        answers: [
+          {
+            title: 'dijaloga',
+            right: true
+          },
+          {
+            title: 'detaljnog opisa njihove spoljašnjosti',
+            right: false
+          }
+        ]
+      },
+      {
+        title: 'This is title for 2nd question',
+        question: 'Prvi utisak o likovima i kancelariji je da…',
+        answers: [
+          {
+            title: 'je sve u savršenom redu',
+            right: false
+          },
+          {
+            title: 'ne drže do reda i urednosti',
+            right: true
+          }
+        ]
+      },
+      {
+        title: 'This is title for 3rd question',
+        question: 'Između podvornika i predstojnika vlada odnos…',
+        answers: [
+          {
+            title: 'iskrenosti',
+            right: false
+          },
+          {
+            title: 'podilaženja i lažne privrženosti',
+            right: true
+          }
+        ]
+      },
+      {
+        title: 'This is title for 4th question',
+        question: 'Upotreba blažih riječi kojima se izbjegava uvredljiv ton one riječi koja direktno označava neku pojavu ili predmet naziva se…',
+        answers: [
+          {
+            title: 'eufemizam',
+            right: true
+          },
+          {
+            title: 'sarkazam',
+            right: false
+          }
+        ]
+      },
+      {
+        title: 'This is title for 5h question',
+        question: '„Povjerljiv čovjek“ je eufemizam za izraz…',
+        answers: [
+          {
+            title: 'sluga',
+            right: false
+          },
+          {
+            title: 'špijun',
+            right: true
+          }
+        ]
+      },
+      {
+        title: 'This is title for 6th question',
+        question: 'Podvornik Kosta je…',
+        answers: [
+          {
+            title: 'pristao da bude špijun',
+            right: false
+          },
+          {
+            title: 'samo glumio špijuna',
+            right: true
+          }
+        ]
+      },
+      {
+        title: 'This is title for 7h question',
+        question: 'Odnosi u sredini koja je opisana u priči zasnivaju se na…',
+        answers: [
+          {
+            title: 'strahu od potkazivanja',
+            right: false
+          },
+          {
+            title: 'strogom redu koji održava predstojnik',
+            right: true
+          }
+        ]
+      },
+    ]
+  },
+  {
+    id: 22,
+    title: 'Umjetnička književnost - Pripovijetka',
+    subtitle: 'Ujka Filip',
+    text: `“Živ sam!” kazao je upadajući u sobu, naglo, kao iz puške izbačen, cepteći sav od uzbuđenja. “Živ sam! Nisu me ubili! Nisu me ubili, svinje jedne! Prosto ne mogu da verujem... ne mogu da verujem!” Onako kratak i trbušat, žurno je prošao uzanim prostorom između stola i otomana i srušio se u fotelju. Pokrio je rukama lice. Nije glumio; bio je odviše uzbuđen. Kao i uvek, mislio je prvo na sebe, samo na sebe, a onda se tek setio da i nekog drugog ima u sobi.“
+           Jutros si stigao i odmah me potražio. To je lepo od tebe. Daj da te zagrlim... daj da te zagrlim!” rekao je ne dižući se, posmatrajući svoje pružene ruke, i već je, opet, mislio na sebe, samo na sebe, kao da je jedino on bio u opasnosti ovoga rata. “Ah, nisam to očekivao! Nisam verovao da ću se spasti, da ću još ikog zagrliti njima!”
+           Soba je bila neprijatna. Tesna, zagušljiva i mračna, pretrpana oveštalim građanskim nameštajem, kao da je u njoj sabrano sve što je od tri porodice nasleđeno i godinama čuvano. Trpezarija i pisaći sto sa kvrgavim nogama, klimava, iskrivljena etažera za knjige, pijanino i otoman sa visokim naslonom, presvučen mušemom. Na zidu fotografije, slike, “Ostrvo mrtvih” i “Čas anatomije”, na pisaćem stolu pritiskivač za hartiju u vidu mrtvačke lobanje i nekoliko lekarskih instrumenata, a sva soba puna vazni sa suvim cvećem, pepeljara, poslužavnika, jastuka i drugih ukrasa. Sve je bilo isto, nepromenjeno, samo je ustajali vazduh, natopljen memlom, zadahom naftalina, prašine i crvotočine, bio četiri godine stariji.
+           “Kako si se izmenio za ovo vreme! Da mi Štefi nije kazala, ne bih te poznao. Pocrneo si, ojačao, postao muževniji, a i uniforma ti lepo stoji. Reklo bi se gotovo da vam u vojsci nije bilo rđavo. A?” Pitao je, gledajući iskosa, podozrivo, jednim okom, iza zlatom optočenih naočara. “A mi? A ja? Vidi šta je od mene ostalo. Vidi kako sve na meni visi!” Zavukao je prst pod okovratnik košulje i rukom protresao kaput; a imao je još okrugle rumene obraze i isturen trbuh, kao jastuk zavučen pod košulju i pantalone. “Ne možeš ni zamisliti koliko se propatilo, kakve sam teške časove preživeo kakva sam poniženja i lišavanja morao trpeti za sve ovo strašno vreme. I vi ste... (“Oh, i mi smo!... setio se, dakle, ipak!“)... i vi ste bili u opasnosti, ali to je nešto drugo. Borba nije svaki dan, a ni svako zrno ne pogađa – zar ne? – jer ko bi inače ostao živ. Vojnik može da se brani, da se ukopa u zemlju. Da pobegne ako treba. A ovde? Strah... stalni, zaslepljujući, od kog se ne može uteći, teskobno osećanje da si poput ovce određen da te jednog dana uhvate za vrat i izvuku iz tora. Četiri godine, dragi moj, četiri puta po trista šezdeset i pet dana stalne strepnje da će me odvesti s ulice, iz kuće, od ručka, od večere, ili noću dići iz kreveta. Pa onda ta ponižavajuća varoška glad i oskudica. Nisam bio izelica – Štefi me hranom nikada nije mazila, ona je i u tome bila uvek nemački stroga – a ni ponesen za dobrim jelom i pićem. (“Sem u gostima... sem u gostima, u tuđoj kući”... kao da je šaputalo iz starog zidnog sata, ali on to, zabavljen sobom, razume se, nije mogao čuti). Ali to stalno iščekivanje da li će Štefi uspeti da donese sa pijace glavicu kupusa ili mrkvu, to odvratno cenkanje sa seljacima za šaku brašna ili torbicu krompira, stajanje od izjutra do uveče u beskrajnim redovima, lutanje po varoši, uvek u potrazi za hranom, poput gladnog pseta koje njuška oko kapija i podrumskih prozora. To je bilo tako ponižavajuće, tako nedostojno čoveka... veruj mi, dragi, tako nedostojno čoveka.”
+           Opet je rukama pokrio lice. Jedini prozor, okrenut dvorištu, bio je otvoren, ali zastrt zavesom. Ulicama su, još od ranog jutra, kuljali narod i vojska. Vikalo se: “Živela pobeda!” i “Živela sloboda!”, a vojne muzike nisu prestajale da sviraju. Sve je napolju bilo uskovitlano, puno prašine, buke, vreve i znoja.
+           Pokrenuo se i, kao iglom uboden, skočio sa fotelje. “Pobeda... pobeda!” uzviknuo je šireći ruke. “Živ sam! Prosto da ne verujem. Prevario sam ih, gadove!.. Otišli su. Pobegli su juče, a nisu stigli da me ubiju. Dođe mi da se uštinem da bih bio siguran da ne sanjam. Uzeo je opet da šeta po sobi udarajući od uzbuđenja rukom o ruku. U prolazu očešao se o stočić i oborio srebrni poslužavnik, koji je tresnuo o pod.
+           Otvorila su se vrata i u sobu je provirila Štefanija – Štefi, kako ju je on zvao – zapuštenija i ružnija no ikad. Tanki kukasti nos joj je podrhtavao; mora da je prisluškivala za vratima.
+           “Šta se desilo?” pitala je sa praga, onako suva, upalih grudi, u prljavoj pocepanoj pregači i jednoj od svojih domaćih kapa, držeći u ruci krpu kojom je brisala prašinu. “Šta si razbio?”
+           “Ništa!” odgovorio je dižući sa poda poslužavnik, i pokazao joj ga: “Ovo je samo palo!” a ona je još jednom prešla po sobi strogim, ispitujućim pogledom, i nečujno zatvorila vrata.
+           “Ona me je spasla”, rekao je pošto je izišla. “Ona me je spasla i prvoga rata; izmolila je oca da me zadrži u bolnici kad je trebalo da me premeste na front. Od dobrovoljne bolničarke i kćerke jednog pukovnika to je bilo mnogo. Hladna je i stroga žena i tvoji je nisu mnogo marili (“Ružna je, zla i tvrdica, govorili su. Od muževljevih starih okovratnika plela je konopce, od njegovih dotrajalih šešira krojila je sebi kape, parala je čarape da bi iskoristila konac, sebe i njega morila je glađu i nikog nije pozivala u kuću.”), ali mogu ti reći da je u suštini imala dobru dušu, a kad je bila mlada, kad je bila sasvim mlada, bila je i lepuškasta. Da nije bilo nje, ko zna šta bi bilo sa mnom. Kuću i ove stvari ona je, štedeći, stekla, a sad mi je život spasla. Kao prava Nemica i kći bivšeg pukovnika, ona je to mogla; imala je veza. Ali i ja sam pomagao, ni ja nisam sedeo skrštenih ruku. Nisam bio dobar lekar – istina je – a ni vredan i vešt da zaradim velike pare, ali nisam bogme ni od onih tunjavka koji dozvoljavaju da im se nešto pravi na glavu. Bili su im potrebni lekari, ali, dođavola, i oni su dobro znali da sam ja nikakav lekar! Štefi je ipak udesila da me prime u prosekturu, a i meni je to bilo draže; pre ili kasnije umro bi mi neki bolesnik i onda bih ja ispao kriv. Veruj da sam ih se naparao kao niko ovoga rata. Posao prljav, lešinarski, ali sam mislio: i to će proći; glavno je izdržati i sačuvati glavu. Štefi im je pokazala moje ordenje iz prvoga rata, a i sva odlikovanja svoga oca, kojih je imala celu gomilu. Upisala se opet u dobrovoljne bolničarke, nosila je i kukasti krst na rukavu, na kući je isticala nemačku zastavu, pozivala oficire na večeru, a ja sam sa posla odlazio pravo kući, manji od makova zrna, i bez velike potrebe ne bih izlazio na ulicu. Štefi je dokazala da sam se sa njome venčao u crkvi – katolik dakle – a tvrdili smo da mi je i mati bila Nemica. Prevario sam ih. Prevario svinje jedne! Morao sam da se ponižavam, da lažem i da varam, straha sam se nagutao, ali eto me živa, sa glavom na ramenima.”
+            
+			Erih Koš`,
+    video: 'url',
+    audio: 'url',
+    questions: [
+      {
+        title: 'This is title for 1st question',
+        question: 'Ujka Filip je bio oduševljen činjenicom što je…',
+        answers: [
+          {
+            title: 'preživio rat',
+            right: true
+          },
+          {
+            title: 'čovječanstvo dočekalo mir',
+            right: false
+          }
+        ]
+      },
+      {
+        title: 'This is title for 2nd question',
+        question: 'Ujka Filip je mislio samo na sebe. Takve ljude nazivamo…',
+        answers: [
+          {
+            title: 'nesebičnim',
+            right: false
+          },
+          {
+            title: 'sebičnim',
+            right: true
+          }
+        ]
+      },
+      {
+        title: 'This is title for 3rd question',
+        question: 'Opis unutrašnjosti neke prostorije naziva se…',
+        answers: [
+          {
+            title: 'eksterijer',
+            right: false
+          },
+          {
+            title: 'enterijer',
+            right: true
+          }
+        ]
+      },
+      {
+        title: 'This is title for 4th question',
+        question: 'Ujka Filip priča o svojim nedaćama u toku rata. Govor jednog lica naziva se…',
+        answers: [
+          {
+            title: 'monolog',
+            right: true
+          },
+          {
+            title: 'refren',
+            right: false
+          }
+        ]
+      },
+      {
+        title: 'This is title for 5h question',
+        question: 'Kakvim se Filip pokazao u toku rata?',
+        answers: [
+          {
+            title: 'kao kukavica',
+            right: true
+          },
+          {
+            title: 'uvijek spreman da pomogne',
+            right: false
+          }
+        ]
+      },
+      {
+        title: 'This is title for 6th question',
+        question: 'Filip je bio…',
+        answers: [
+          {
+            title: 'požrtvovan u svom poslu',
+            right: false
+          },
+          {
+            title: 'loš ljekar',
+            right: true
+          }
+        ]
+      },
+      {
+        title: 'This is title for 7h question',
+        question: 'Filip je morao da se ponižava i laže – kako sam kaže. Štefanija je bila…',
+        answers: [
+          {
+            title: 'sušta suprotnost',
+            right: false
+          },
+          {
+            title: 'ista kao i on',
+            right: true
+          }
+        ]
+      },
+    ]
+  },
+  {
+    id: 20,
+    title: 'Umjetnička književnost - Pripovijetka',
+    subtitle: 'Moj djed',
+    text: `Jesenas je umro moj djed. Prije bi čovjek rekao da je usnuo nego umro. Zadnjih se pet godina nije baš ni u čem promijenio jer se upravo nije šta imalo na njem promijeniti. Kao srebro bijela kosa nije mogla još bjeljom postati, navorano čelo i lice sa plavim i crvenkastim piknjicama bilo je i ljeti i zimi jednako, kao iz kamena isklesano, a hod i govor ostao mu isti – pa kad smo ga bijelo obučena i na odru pružena gledali, činilo nam se da žmiravim očima sanja.
+           Dva se dana pred smrt potuži da mu nije najbolje, treći dan ujutro ispovjedi se i pričesti, a sat iza toga ležao je mrtav...
+           Zadnje dvije godine nije ni odlazio nikuda sa stana; jedino na Uskrs, ako je bilo lijepa vremena, dođe u crkvu. Uvijek je govorio da mu je na stanu laglje, a čim dođe u selo, kao da oslabi i ostari.
+           – Nije to više za mene, drugo je življenje i drugi je svijet u selu, a drugi u mojim prsima; ovo nekoliko dana hoću ja da po svojoj voljici poživim.
+           Na stanu imao je svoju sobicu sa dva prozorčića, sâm ju je meo i čistio, da je bilo u njoj glatko i umiljato kao u ptičjem gnijezdu. Kad god sam dospio, otrčim djedaku na stan. Najprije sam mu morao ispripovijedati što je novo kod nas u selu – a on gutao svaku moju riječ, čudeći se koječemu kako se ljudi i običaji danomice mijenjaju. Kad dovršim, onda se djed maši pod slamnjaču pa mi izvadi oraha i lješnika, ili ode na tavan pa mi skine koju jabuku ili suhu šljivu; takovo što uvijek se kod njega našlo. I ostalog bilo svega na stanu: tu su bile krave i ovce, kokoši i pure; imao djed i vina i šljivovice. Živio je kao sat: niti će ranije leći niti kasnije ustati, niti preko mjere najesti niti napiti se.
+           – Tko pomalo pije, dugo će piti – rekao bi mi svaki put kad god je ispraznio svoju svakidašnju mjericu šljivovice. Za dosadu i dugo vrijeme nije djed znao, uvijek je našao sebi posla, bilo ljeti ili zimi. U proljeće popravlja on oko plotova, krči pomalo po livadi i šljiviku, skida màšinu s voćaka i okresuje ih, nikad ni časka neće stati da se odmori; kadikad tek pogleda na nebo da vidi koje je doba dana. Jelo si je najvolio sâm pripravljati; slaninu ispržiti na ražnju, udariti u tavicu dvoje-troje jaja, gljive začiniti – nije nitko umio kao on. – Rekao bih da bez njegova znanja niti je šta postalo niti čega nestalo sa stana. On je vidio prvu grlicu i čuo prvog slavuja, on je znao za ptičja gnijezda, svaki dan ih je sva obašao da vidi je li u redu s njima... On je znao za prvu jagodu na livadi i za prvu trešnju na deblu. Razgovarao se sa čitavom božjom prirodom, ničega nije bilo što bi njemu bilo nepoznato. Kad je djed rekao: – To bome ne znam što je, toga ja još nijesam vidio! – onda smo znali da toga sigurno nitko u selu ne zna. Po zvijezdama je znao kakovo će vrijeme biti, pa prije svakog važnijeg posla, bilo oranja ili kosidbe, izaći će on po dva, po tri puta preko noći da vidi kako je na nebu... Djed je od mladosti bio lovac, u svaki je šuplji hrast zavirio, znao je za svaki zgodniji grmečak i baricu kud patke padaju. Nad posteljom mu visila stara, kratka puška, sva crna i iskrpana debelom žicom. Ne bi djed ni za tri dana ispripovijedao koliko je zvjeradi njom natukao! Koliko li je lisica zaglavilo pred kokošinjakom s te zarđale puškice, koliko li je vukova zabolo nosom u snijeg kad je staráčko, tjerajući svinje u žir, iza klade pripalio... Kad god se diže hajka, svaki put se sastanu lovci i gospoda na djedakovu stanu, a on kao da se pomladi! Nije on tada žalio ni praseta ni purana, ni vina ni šljivovice, samo da gostima ugodi. A kakva mu je tek bila stara kao zlato žuta šljivovica, kako li je tek znao ispeći odojče na ražnju! Dok se lovci s djedom ne porazgovore i ne posavjetuju, neće se hajka započeti. On je dobro znao koliko se u zadnje vrijeme viđalo i čulo vukova u toj i toj zabrani, i gdje i kako bi im čovjek mogao najbolje doći do kože. Kada se hajka svrši, obistini se na dlaku što je djed unaprijed kazao. Kad se lovci naručaju i malo pougriju vincem, onda postave nišane i pucaju da se vidi tko zna bolje nanišaniti, čija li će puška najdalje dobaciti. Jedni postave jajce na kolac, a drugi objese crvenu lukovicu na koncu o granu. Nišane gospoda s finim puškama ali niti se jaje raspada, niti se lukovica ziba... Dosadi to djedu, lati se svoje lunte, pa jednim hicem raspršti jaje, a drugim odbije pol lukovice.
+           – Vaše puške su za paradu, ali s ovom se tuče – rekne djed pola u šali pola uštipljivo, da vrati milo za drago onima koji su mu se ispotiha nasmijali kad je iznio svoju zarđalicu.
+           Svakomu djed hoće po volji učiniti, i odraslu i nejaku, a ako kad i ukori, učini to nekako uz put, kao da tek prigovara. Kad se ukućani štogod porječkaju i posvade, onda svi redom idu djedu da se potuže, jer svaki misli da baš njega ima djed najradije, premda on ni sâm nije znao tko mu je najmiliji. Djed se je znao svačijoj ćudi prilagoditi; žestoke je mirnom riječju utažio, svadljivcima se podrugivao da su se morali sami sebe zastidjeti – i što bi se okrenuo, opet sve bilo izmireno kao da se nikad i ne posvadiše. Sa ženama bilo mu je već malo teže na kraj izaći, jer sačuvaj bog da bi ikad jedna drugoj ma u čemgod popustila. Zanovijeta i prigovara jedna drugoj sve dok djed ne sazna za prepirku, no čim djed spazi da se jedna pred drugom mrgodi, onda neće prestati prigovarati i peckati, tobože sve u šali, dok se najkasnije i jedna i druga u sav glas nasmiju i naposljetku izmire.
+           Lijenosti i neradinosti nije djed živ gledati mogao, žene su morale brzati pred njegovim očima radio se lagan ili težak posao; jao si ga onoj koja bi se usudila reći da je ruke bole ili da se je umorila. Tê djed nije gledati mogao, nekmoli da progovori riječ s njome... Košulje i gaće morale su snahe praviti isto onakove kao što mu ih je njegova pokojna pravila, ali ako nije sve onako bilo (već možda i bolje), onda djed najprije bude čangrizav, kasnije kao da se ražalosti, tužeći se da danas mlađi slabo poštuju starije, da je teško svomu bez svojega, i da nema ni njemu već dugo života otkako mu njegove babe nesta... No ta zlovolja i žalobnost nije dugo trajala – našali li se tkogod, probrblja li koje dijete štogod smiješno ili pametno, odmah se i djed udobrovolji i postane onaj stari dobričina.
+           Teških poslova nije radio niti se je u što miješao dok ga nijesu za savjet upitali.
+           – Ja velim tako, a vi sad radite kako bolje znate – odgovorio bi on obično iza svakog takva razgovora. Premda mu je svaki savjet zlata vrijedio, ipak se nije nametao da zna najbolje. – Nije on više znao ni za veliku radost ni za veliku žalost. Pođe li koji posao dobro za rukom, i dok se drugi ukućani hvališu i koliko su zaslužili i koliko nijesu, dotle on samo šuteći sluša, tek mu na oku vidiš da je sjajnije i radosnije, pa će naposljetku reći: – E, pa hvala bogu kad je tako došlo! Bez njegove pomoći nikud-nikamo! – Bude li kakve nesreće ili nezgode, da se svi drugi razjade i duhom klonu, opet on šutljiv i miran: – E, a šta ćemo, de! Ne može uvijek samo dobro biti; da ne bude i kad kakve nesreće, evo moje glave ako se svijet ne bi pomamio – zna bog šta radi – Svakomu je odlanulo kad je čuo takove riječi.
+           Kad se radi u hrpi, bilo to na gumnu u vršaju ili na livadi kupeći sijeno, onda je djed najveseliji, onda nitko ni riječi ne govori, sve sluša djeda, a on redom niže: sad jednu šaljivu, sad jednu ozbiljnu; sad zamnije gumnom radosno smijanje, sad zasine u mnogom oku bistra suzica...
+           Svi smo ga jednako štovali i svakako se ulagivali, ne bi li mu ugodili. Kad dođe zima i zapane snijeg, onda navalimo na nj kao gavrani: “Djede, ja bih sanice!” “Djede, napravi i meni, i ja bih!” A ispod njegovih ruku samo što bi se stvarale saone! Prebije li se kojoj ženi preslica, pukne li zipka ili stalak – opet: Daj, djede, pravi i opravljaj!... A on sve voljko i bez prigovora radi, da bi ga čovjek blagoslovio.
+           Pred djedovim prozorom na stanu bila baščica s nekoliko bresaka i s jednom dugačkom lozom; tu su žene (da se bolje očuva) obično ostavljale sjemenjake od raznog povrća, a djevojke sadile cvijeće. Kad je suša, djed će, uz povrće, i cvijeće zaliti i neće nijedne nedjelje ili svetka zaboraviti da ga ne nabere i pošalje kući djevojkama, svojim unukama, da se okite kad u crkvu pođu. Ali zato kad mlade odu kupovati ma kakve oprave, uvijek ćeš čuti pri izboru: “Ovo ne smijem uzeti, ovo ne bi bilo djedu po ćudi.” I najmanju malenkost na opravi opazi djed, pa nije li mu po volji, sigurno će turiti pod nos. On je doduše i sâm uživao kad je vidio svoju čeljad lijepo obučenu, ali kojekakvih suvišnih tričarija nije mogao trpjeti. – “Bolje bi bilo da si kupila opanke nego tu rugobu; samo se neka pod jesen potužiti da nemaš zimske obuće” – prišio bi on obijesnim djevojkama kad bi donijele s vašara kakvu suvišnu cifrariju... Kad dođe sajam, onda svi upremo oči u djeda. Sa stana će on otići na sajam, pa će svima donijeti ma najmanji darak. Čudne li vike i vreve onda: svatko misli da je njegov dar najljepši. Djedov darak, ma najsitniji, ipak nam je bio najdraži. A kad djed s jednoga sajma svima donese nešto, kome kolačić, kome igračku, cipelice ili maramicu – samo neposlušnoj djevojčici Kati ne donese ništa, onda ode šapat od usta do usta: “Kati nije djed ništa donio, ama baš ništa...” A namiguša Kata morade se zatvoriti u kiljer i do sita naplakati. Veće kazne nije moglo biti u našoj kući.
+           Već dvije-tri godine pred smrt često djed spominje da mu neće biti teško umrijeti dok nas vidi ovako složne i poslušne. “A kad nestane toga strahopočitanja u vama, onda najbolje da nestane i mene, ne daj bog da te nesreće doživim!” – dodao bi svečanim glasom. Kao da je znao, ponavljao je pod konac života češće te riječi, a nama bilo da proplačemo, a iz očiju nam je mogao djed čitati da mu se bojazan neće ispuniti.
+           Djed je tako srastao nama uz dušu i oko, da nijesmo ni pomisliti mogli da bi on ikad umro; nama je uza nj tako bilo kao da će navijek živjeti. Kad prvi put čusmo: umro nam je djed! – zazujaše nam te riječi tako čudno u ušima, da smo u prvi čas ostali bez boli i bez suza... Dugo ga ne mogasmo zaboraviti; dugo se obazirasmo za njim, hoće li doći sa stana i donijeti nam kitu jagoda i vijenac prvih trešanja... Ali njega nema!... A mi sretni i blaženi kad ga u snu vidimo kako nam pripovijeda i ljulja nas na koljenu.
+           A naveče kad izmolimo svagdašnju molitvu, u duši se sjetimo i djeda: – Smiluj se, bože, našemu djedu!
+           
+		   Josip Kozarac`,
+    video: 'url',
+    audio: 'url',
+    questions: [
+      {
+        title: 'This is title for 1st question',
+        question: 'Kroz cijelu priču „Moj djed“ građen je lik ________ ',
+        answers: [
+          {
+            title: 'djeda',
+            right: true
+          },
+          {
+            title: '',
+            right: false
+          },
+          {
+            title: '',
+            right: false
+          },
+        ]
+      },
+      {
+        title: 'This is title for 2nd question',
+        question: 'Opis lica, odjela, pojave neke osobe, kao i njenih osjećanja, naziva se _________',
+        answers: [
+          {
+            title: 'portret',
+            right: true
+          },
+          {
+            title: '',
+            right: false
+          }
+        ]
+      },
+      {
+        title: 'This is title for 3rd question',
+        question: 'Pripovijedanje počinje od…',
+        answers: [
+          {
+            title: 'djedove mladosti pa do smrti (hronološko pričanje)',
+            right: false
+          },
+          {
+            title: 'od djedove smrti, vraćajući se u njegove pozne i mlađe godine (retrospektivno pričanje)',
+            right: true
+          }
+        ]
+      },
+      {
+        title: 'This is title for 4th question',
+        question: 'Ko se javlja u ulozi pripovjedača?',
+        answers: [
+          {
+            title: 'djed',
+            right: false
+          },
+          {
+            title: 'dječak',
+            right: true
+          }
+        ]
+      },
+      {
+        title: 'This is title for 5th question',
+        question: 'U kojim formama je ispričana priča? (Jesenas je umro moj djed…Dugo ga ne mogasmo zaboraviti…)',
+        answers: [
+          {
+            title: 'U 1. i 3. licu',
+            right: true
+          },
+          {
+            title: '',
+            right: false
+          }
+        ]
+      },
+    ]
+  },
+  {
+    id: 19,
+    title: 'Umjetnička književnost - Pripovijetka',
+    subtitle: 'Bašta sljezove boje',
+    text: `Muškarci obično slabo razlikuju boje, ali jedan takav neznajša u bojama kakav je bio moj djed, e, takvog je bilo teško naći. Njegov spektar svodio se na svega četiri osnovne boje, a ono ostalo – to nije ni postojalo ili se svodilo, u najmanju ruku (ako je čiča dobre volje!), na neki vrlo neodređen opis: “Žuto je, a kao i nije žuto, nego nešto onako – i jest i nije.”
+           Kako je na ovome našem šarenom svijetu većina stvorenja i predmeta obojena “i jest i nije” bojom, to je s mojim djedom oko toga uvijek dolazilo do nesporazuma i neprilika.
+           U jedno od najprijatnijih doba godine, skoro preko noći, rascvjetao bi se u baštici kraj naše kuće crni sljez i ljupko prosinuo iza kopljaste pocrnjele ograde. On je u mirna sunčana jutra zračio tako povjerljivo i umiljato da to nije moglo izmaći čak ni djedovu oku i on bi udobrovoljeno gunđao majući se po dvorištu:
+           – Pazider ga, sva se bašta modri kao čivit.
+           Ono, istina, na sljezovu cvijetu jedva da je negdje i bilo tragova modre boje, ali ako je djed kazao da je modra, onda ima da bude modra i kvit. Isto se tako moglo desiti da neke godine djed rekne za tu istu baštu da se crveni, i onda za tu godinu tako i važi: sljez mora ostati crven.
+           Djedov rođak Sava Damjanović, negdašnji kradljivac sitne stoke, a pod starost ispičutura i pričalica, i nenamjerno je znao da najedi mog dobrog djeda. Dok djed priča, on ti ga istom začuđeno prekine:
+           – Otkud lisica crvena kad je žuta!
+           – Hm, žuta? – beči se djed. – Žut je tvoj nos. Sava zabrinuto pipne svoj ružičast baburast nos i vreči:
+           – Crvena! Ta sve nacije odavde do Bihaća znaju da je žuta, a ti...
+           Savin svijet prostire se do Bihaća, jer je čiča nekoliko puta tamo ležao u hapsu, ali čak ni ti prostori ne mogu da razuvjere mog djeda.
+           – Hm, Bihaća! I drugi su ljudi ležali u bihaćkoj Kuli pa ne vele da je lisica žuta. Bolje ti je pij tu moju rakiju i ćuti, ne kvari mi unučadi.
+           A unučad, nas troje, nabili se u ćošak blizu staraca i čekamo kad će Sava započeti sa svojim lopovskim doživljajima. Prepirka o bojama baš nas nimalo ne interesuje, lisica je lisica, pa ma kakve farbe bila.
+           Zbog djedove tvrdoglavosti u pogledu boja, i ja sam, već na prvom koraku od kuće, upao u nepriliku.
+           Bilo je to u prvom razredu osnovne škole.
+           Negdje sredinom godine učiteljica nam je pričala o vuku, te živi ovako, te hrani se onako, dok će ti odjednom upitati:
+           – Djeco, ko zna kakve je boje vuk? Ja prvi digoh ruku.
+           Evo ga, Branko će nam kazati.
+           – Vuk je zelen! – okidoh ja ponosito. Učiteljica se trže i začuđeno nadiže obrve.
+           – Bog s tobom, dijete, gdje si to čuo?
+           – Kaže moj djed – odvalih ja samouvjereno.
+           – Nije tačno, vuk nije zelen.
+           – Jeste, zelen je! – neočekivano se uzjogunih ja kao pravi unuk čestitog djeda Rade.
+           Učiteljica mi priđe sasvim blizu, ljutito uzriki u moje lice i povuče me za uvo.
+           – Kaži ti svome mudrom djedu da to nije istina. Vuk je siv. Siv, zapamti.
+           Skoro plačući otklipsao sam toga dana kući i šmrcajući ispričao djedu sve što se u školi dogodilo.
+           Ni slutio nisam kakva će se bura oko toga podići.
+           Šta! Pred čitavim razredom njegovog unuka, miIjenca, tegliti za uši, a uvaženu starinu posprdno nazvati mudrim, bolje rečeno, budalom! Dotle li smo došli? I još reći da vuk nije zelen već nekakav... hm! E, to ne može tek tako proći.
+           Sjutradan, pušući poput guska, djed je doperjao sa mnom u školsko dvorište i pred svom dječurlijom razgalamio se na učiteljicu:
+           – A je li ti, šiškavico, ovakva i onakva, ti mi bolje od mene znaš kakav je vuk, а?! Nije zelen? Pazi ti nje! Ja se s vucima rodio i odrastao, čitavog vijeka s njima muku mučim, a ona ti tu... Po turu bi tebe trebalo ovim štapom, pa da se jednom naučiš pameti.
+           Izvika se djed, rasplaka se učiteljica, a i mi, đaci, od svega toga uhvatismo neku vajdu: toga dana nije bilo nastave.
+           Već sljedećeg jutra djeda otjeraše žandarmi. Odsjedi starina sedam dana u sreskoj buvari, a kad se vrati, ublijedio i mučaljiv, on mi naveče poprijeti prstom.
+           – A ti, jezičko, nek te ja još jednom čujem da blejiš kakav je ko, pa ću ti ja pokazati. Vuk je zelen, heh! Šta te se tiče kakav je ko.
+           – Pa kad me je ona pitala.
+           – Pitala te, hm! Imao si da ćutiš, pa kvit.
+           Sljedećeg proljeća, bujnog i kišovitog, sljez u našoj bašti rascvjeta se kao nikada dotad, ali starina kao da ga ni zapazio nije. Nisu tu pomagala ni sva trtljanja neumornog rođaka Save, djed je bio slijep i za boje i za sve cvijeće ovoga svijeta. Tuga da te uhvati.
+           Minulo je od tih neveselih dana već skoro pola vijeka, djeda odavna nema na ovome svijetu, a ja još ni danas posigurno ne znam kakve je boje sljez. Znam samo da u proljeće iza naše potamnjele baštenske ograde prosine nešto ljupko, prozračno i svijetlo pa ti se prosto plače, iako ne znaš ni šta te boli ni šta si izgubio.
+           
+		   Branko Ćopić`,
+    video: 'url',
+    audio: 'url',
+    questions: [
+      {
+        title: 'This is title for 1st question',
+        question: 'Glavni lik priče „Bašta sljezove boje“ je…',
+        answers: [
+          {
+            title: 'dječak',
+            right: true
+          },
+          {
+            title: 'djed',
+            right: false
+          },
+          {
+            title: 'Branko Ćopić',
+            right: false
+          },
+        ]
+      },
+      {
+        title: 'This is title for 2nd question',
+        question: 'Osnovno osjećanje u priči je…',
+        answers: [
+          {
+            title: 'ljubav između unuka i djeda',
+            right: true
+          },
+          {
+            title: 'žalost zbog djedove nemogućnosti da razlikuje boje',
+            right: false
+          }
+        ]
+      },
+      {
+        title: 'This is title for 3rd question',
+        question: 'To što je djed „zagalamio“ na učiteljicu čini…',
+        answers: [
+          {
+            title: 'uvod u radnju',
+            right: false
+          },
+          {
+            title: 'vrhunac radnje',
+            right: true
+          }
+        ]
+      },
+      {
+        title: 'This is title for 4th question',
+        question: 'Čitava priča je…',
+        answers: [
+          {
+            title: 'humorna',
+            right: false
+          },
+          {
+            title: 'i vedra i tužna',
+            right: true
+          }
+        ]
+      },
+      {
+        title: 'This is title for 5th question',
+        question: 'Radnja priče se iznosi…',
+        answers: [
+          {
+            title: 'najvećim dijelom retrospektivno',
+            right: true
+          },
+          {
+            title: 'hronološki',
+            right: false
+          }
+        ]
+      },
+    ]
+  },
+  {
+    id: 18,
+    title: 'Umjetnička književnost - Pripovijetka',
+    subtitle: 'Књига',
+    text: `Сиромашни дјечак са села враћа се у град послије љетњег распуста. Полази у трећи разред гимназије (то је данашњи узраст ученика седмог разреда, јер је основна школа трајала четири године, а онда је почињала средња) са својом старом жељом – да умјесто већ кориштених уџбеника, намијењених сиромашним ђацима, добије нове, чисте, бијеле књиге. За њега је било важно и то да сада, као ученик трећег разреда, може позајмљивати књиге из школске библиотеке. Међутим, када је први пут узео књигу, догодило се да се спотакао и да му је књига пала и том приликом се озбиљно оштетила – њен унутрашњи дио испао је из корица. Од тада књига за њега постаје мора. Како вратити оштећену књигу? Како се појавити пред библиотекарем? Како то сакрити од других? То су само нека од питања која су га мучила.
+           *
+           Тако је дечак почео прве дане свога трећег разреда. За време школских часова, док је професор са шиљастом прогрушаном брадом објашњавао грчку азбуку, дечак је гледао кроз прозор врхове дрвета, пуне још бујног септембарског зеленила и делић светлог неба у даљини. Одсутан духом и неспособан да запамти те нове знакове, он је мислио само на упропашћену књигу са којом неће никад смети да изиђе пред строгог библиотекара, а која се, како њему све више изгледа, не може ни поправити ни набавити. И та је мисао, стална и мучна, губила све брже свој првобитни облик. Тако је било за време предавања, у игри и при другарским шалама. У сваком секунду он је знао да у свету постоји нешто покварено и разваљено, нека његова незгода и кривица коју не сме ником да призна и не уме да поправи, а за коју ће морати једног дана да одговара.
+           Ипак му се у игри или при шетњама са друговима дешавало да успе да се заборави и да сатима не помисли на своју тајну. Смејао се, трчао или разговарао весело и безбрижно као и остали. Али тада би се наједном, као физички бол, јавила у њему мисао на скривену књигу. И сваки пут је тај бол био утолико љући и тежи уколико су тренутна радост и кратки заборав били јачи и дубљи, јер је на стари бол долазио увек још и прекор самом себи што га је изневерио. И кад би после таквих часова одлазио да легне у своју постељу, расањен у тами, он је ту налазио своју бригу, будну и непомичну, и сваки пут мало већу и тежу него што је оставио јутрос кад је устао.
+           Недеље и месеци пролазили су, а догађај са књигом, обичан и незнатан сам по себи, добивао је, стално и све брже и брже, нестварни и аветињски изглед мучне тајне и непоправљиве грешке коју ваља крити.
+           Све је то било лудо, излишно и у основи безразложно, а ипак стварно и болно, стварније од дневних игара и разговора. Почео је да избегава другове и њихове забаве. А на најбезбрижније међу њима гледао је са незлобивом али болном завишћу.
+           Шта све није у тим јесењим ноћима пролазило кроз детињу главу? Какве се све могућности нису оцртавале и какви немогући снови испредали?
+           Ноћ је пролазила, а он је мислио. Да повери неком шта му се десило? Да потражи негде савета како да то питање реши и да се ослободи бриге? При самој помисли на то њега би нешто огрејало изнутра, све би постало за тренутак јасно, лако и једноставно. Пред њим су се редала лица његових другова. Испредао је до ситница читаве разговоре, своју исповест и њихове одговоре и изразе лица, и на крају долазио до уверења да би то било узалудно и, што је још горе – немогућно. Помишљао је да каже ствар газдарици, али сам израз њеног лица, брижан и удовички, одвраћао га је од тога. Решавао се да пише оцу све потанко и да тражи савета и помоћи, или чак да оде једног дана до библиотеке, да сачека професора и да му, насамо, искрено призна ствар. И пошто би дуго оживљавао у себи своје речи и њихове одговоре, све до најмањег покрета и изразе лица, увидео би да је то изнад његове снаге, и остајао опет сам са својом тајном, која је после сваког таквог размишљања бивала тежа.
+           Долазио је на мисао да се молитвом избави од свега. И шапутао би, заиста, све познате молитве, нечујно, дуго и усрдно. Са дланом на устима, да друг који спава у истој соби не би чуо, упућивао је жарке речи право богу и његовим свецима, који, аветињски – оно што изазива ужас, страх као што се каже, могу да чине и већа чуда, и тражио да се раскоричена књига састави, да може да је мирно и слободно врати оном човеку, не излажући се ни сам не зна каквим строгостима, понижењима и казнама. Заспао би тако, уљуљкан својим сопственим шапатом. А пре свитања би се будио, са плашљивом али дивном надом у себи, одлазио до ковчега и ту налазио своју књигу, јадно и безнадежно раскинуту надвоје, онакву каква је била пре свих његових нада и молитава, и, чини му се, још гору и безнаднију. И враћао би се, поражен, у постељу.
+           Да умрем – мислио је тада дечак у кревету, стегнутих вилица, сав згрчен – да умрем сада одмах! Умрети значило би не морати поверавати се никоме, не чекати чуда која неће да дођу, не одговарати за оно што ниси крив, не морати никад више ступити пред оног риђег, подругљивог човека. То би значило да нестане мене, али са мном и књига, здравих, оштећених и поправљених, и библиотека и библиотекара, и одговорности, и страха од њих.
+           “Боже, дај да умрем пре него што дође крај семестра и онај неизбежни тренутак кад ћу морати изићи пред библиотекара и одговарати за покварену књигу!”
+           Затим је мислио како би било да изгори гимназијска зграда, заједно са библиотеком и списком позајмљених књига. Да ли би се тад морале враћати преостале књиге? Или не, да изгори ова кућа у којој он живи, са свим стварима, па и са том књигом у ковчегу. Како би тада било лакше одговарати!
+           Не, најбоље би било и најсигурније: умрети.
+           Али уместо да умре, он би редовно заспао са том својом жељом. А после, у сну, јавља се опет оштећена књига у најфантастичнијим облицима и страх од тешке, неправедне и нејасне одговорности, и са њим опет и у сну – жеља да умре, да нестане из живота, сниваног као и стварног, потпуно и заувек.
+           С временом дечак је постајао све више усамљен и повучен у себе. Смршао је, јер је јео мало и жвакао зловољно и слабо. То није нико примећивао. Али су зато професори приметили да је попустио у учењу. Два месеца узастопце добивао је из грчког језика и математике неповољне оцене.
+           Професор грчког језика, човек ћутљив и једак, није се много бавио њиме. Поставио би му два питања и, добивши несигурне одговоре, само би сикћући и са неразумљивом мржњом изговорио:
+           – На место!
+           Рђаве оцене ређале су се једна за другом.
+           Много је теже дечаку било са професором математике, мршавим и доброћудним старцем, који га је забринуто гледао преко златног оквира својих бистрих и некако добрих и веселих наочара.
+           – Шта је с тобом, Латковићу? Ја сам навикао да од тебе добивам другачије одговоре. Прени се, човече!
+           А дечак је трептао очима, стидио се и ћутао.
+           Тако, сви траже од њега само напор и питају за плодове тога напора, а нема никога коме би могао да се повери и да потражи савета и излаза.
+           Са сујеверним страхом заобилазио је излоге књижара у којима су биле поређане нове и лепо укоричене књиге. А кад би се међу друговима повела реч о библиотеци или о каквој било књизи, он би одједном поцрвенео, почео збуњено да замуцкује, забашурује, и скреће говор на друге ствари, док му се по грудима разливало, као физички бол, његово већ познато мучно осећање од помисли на неку нејасну и непоправљиву штету која му се десила и за коју још нико не зна, али за коју ће морати да одговара. А то осећање било је утолико теже уколико се он више трудио да га сакрије. Често му се чинило да му се другови намерно обраћају са питањима која се односе на библиотеку, књиге и њихове повезе. На свако такво питање он би одговарао ћутањем, обарајући очи и чекајући кад ће му неко отворено казати да зна да он у свом ковчегу држи разваљену књигу.
+           Сви су дани били тешки, али нарочито мучан био је уторник. Тога дана он није могао да мисли ни на шта друго до на своју књигу. Уторником после подне другови су враћали прочитане књиге и узимали нове. Он није смео ни помислити на то. Не би се бојао да изиђе, ако треба, пред директора и пред сваки суд овог света, али ето, нема снаге ни храбрости да изиђе пред тога крупног риђег човека који суво, крто тражи од свакога да брзо, јасно и одређено каже шта хоће. И то још да изиђе са оштећеном књигом! Не, за то нема храбрости. Њега се боји више од свега на свету.
+           
+		   Иво Андрић`,
+    video: 'url',
+    audio: 'url',
+    questions: [
+      {
+        title: 'This is title for 1st question',
+        question: 'U novelama se opisuje…',
+        answers: [
+          {
+            title: 'jedan događaj iz života glavnog lika',
+            right: true
+          },
+          {
+            title: 'više događaja u kojima učestvuje veći broj likova',
+            right: false
+          }
+        ]
+      },
+      {
+        title: 'This is title for 2nd question',
+        question: 'Glavni lik u noveli „Knjiga“ je…',
+        answers: [
+          {
+            title: 'bibliotekar',
+            right: false
+          },
+          {
+            title: 'dječak',
+            right: true
+          }
+        ]
+      },
+      {
+        title: 'This is title for 3rd question',
+        question: 'Priča se zove „Knjiga“ zbog toga što se…',
+        answers: [
+          {
+            title: 'dječaku ispunila želja da iznajmljuje knjige iz biblioteke',
+            right: false
+          },
+          {
+            title: 'dječaku dogodilo da ošteti knjigu što je bilo uzrok njegovog velikog straha',
+            right: true
+          }
+        ]
+      },
+      {
+        title: 'This is title for 4th question',
+        question: 'Dječakov strah je bio…',
+        answers: [
+          {
+            title: 'primjeren događaju sa knjigom',
+            right: false
+          },
+          {
+            title: 'preveliki u odnosu na ono što se dogodilo',
+            right: true
+          }
+        ]
+      },
+      {
+        title: 'This is title for 5th question',
+        question: 'Ivo Andrić je dobitnik… ',
+        answers: [
+          {
+            title: 'Pulicerove nagrade',
+            right: false
+          },
+          {
+            title: 'Nobelove nagrade',
+            right: true
+          }
+        ]
+      },
+    ]
+  },
+  {
     id: 23,
     title: 'Umjetnička književnost - Pripovijetka',
     subtitle: 'Breza',
     type: essay,
-    text: `Lijepa i mlada djevojka Janica udaje se za Marka Labudana, dopadljivog momka, seoskog lugara na koga djevojke i mlade žene često pogledaju. Zapravo, Marko ne bi nikada ni zapazio Janicu jer po seoskom ukusu ona nije bila nimalo lijepa. Ali njegov šef je obratio pažnju na njenu izuzetnost, a kako je Marko nastojao da ponešto usvoji od gospodske finoće, tako se odlučio da, na čuđenje sela, zaprosi Janicu. U poređenju sa drugim djevojkama “Tanka je ona i slabašna. Ali visoka i strojna. Pa dok druge cure i snaše teško koračaju kao medvjedi, u njenom hodu ima nešto ritma, možda čak elegancije. Oči su joj plave, plavlje od jasnoga neba, a za kosu rekoše neki da je crvenkasta, a neki da je zlatna ili pozlaćena. Svakako, izvrsno je pristajala onom okruglom, bijelom lišcu i onim nasmijanim, malim usnicama.”
+    text: `Lijepa i mlada djevojka Janica udaje se za Marka Labudana, dopadljivog momka, seoskog lugara na koga djevojke i mlade žene često pogledaju. Zapravo, Marko ne bi nikada ni zapazio Janicu jer po seoskom ukusu ona nije bila nimalo lijepa. Ali njegov šef je obratio pažnju na njenu izuzetnost, a kako je Marko nastojao da ponešto usvoji od gospodske finoće, tako se odlučio da, na čuđenje sela, zaprosi Janicu. U poređenju sa drugim djevojkama “Tanka je ona i slabašna. Ali visoka i {{strojna(155)}}. Pa dok druge cure i snaše teško koračaju kao medvjedi, u njenom hodu ima nešto ritma, možda čak elegancije. Oči su joj plave, plavlje od jasnoga neba, a za kosu rekoše neki da je crvenkasta, a neki da je zlatna ili pozlaćena. Svakako, izvrsno je pristajala onom okruglom, bijelom lišcu i onim nasmijanim, malim usnicama.”
            Četiri-pet nedjelja Janica leži teško bolesna.
            *
            Čitava stvar se razvijala prilično brzo. Dva mjeseca prije toga rodila je Janica dijete. Nije na žalost bio dečko, već curica. Curica malešna kao zemička, a glasna kao jare.
-           Odležala Janica par dana u krevetu, desetak dana muvala se po kući, a onda je potjeraše na pašu. – Kaj bi se tu po hiži potezala kakti kakva frajla! – rekla je stara Labudanka.
-           Nije Janici bilo baš najslađe, ali tko da vječno ratuje s babom! Što se mora – kažu ljudi – nije ni teško. Uostalom, sve bi dobro bilo da se dragi bog umilostivio pa da je dao lijepo i toplo vrijeme, ali eto udariše jesenske kiše, hladne i beskrajne, pa badava i ona stara golema ambrela, badava novi opanci, Janica se vraćala sva mokra, prozebla, pokisla do kosti, a plava kao šljiva.
+           Odležala Janica par dana u krevetu, desetak dana muvala se po kući, a onda je potjeraše na pašu. – Kaj bi se tu po hiži potezala kakti kakva {{frajla(159)}}! – rekla je stara Labudanka.
+           Nije Janici bilo baš najslađe, ali tko da vječno ratuje s babom! Što se mora – kažu ljudi – nije ni teško. Uostalom, sve bi dobro bilo da se dragi bog umilostivio pa da je dao lijepo i toplo vrijeme, ali eto udariše jesenske kiše, hladne i beskrajne, pa badava i ona stara golema {{ambrela(160)}}, badava novi opanci, Janica se vraćala sva mokra, prozebla, pokisla do kosti, a plava kao šljiva.
            .......
            Umrlo joj u to vrijeme i dijete. Vidjelo siroče da za nj nema života i da je samo na nepriliku. Mati ga nije mogla više dojiti, kravsko mlijeko nije mu nikako prijalo. Došli užasni grčevi i mala se curica preselila na drugi svijet prije negoli je pravo ovaj i zagledala. Uostalom, pravo je učinila! Svi su joj to odobrili, jer šta će tu bez matere!?
            Marko se nije pačao u domaće poslove, pa se tako nije izjavio niti da dovezu daske za lijes niti protiv toga. Njemu je bilo sve svejedno.
-           Druge su njega brige trle. Svatovsko je bilo vrijeme i za nekih desetak dana trebala je biti svadba kod Žugečića, u bogatoj kući na Žugečić-brdu. Njega, Marka Labudana, lugara zemljišne zajednice, pozvali su za zastavnika. Poznata je stvar bila da u tri župe nije bilo takvog barjaktara kakav je bio Marko Labudan. Bio je on čovjek od oka, a kad je progutao koju litru, ni vrag ga ne bi nadvikao ni nadskakao. Pun šala i vragolija koje je pokupio širom svijeta, on je izazivao udivljenje u ženskoga i muškog. Pa kad se još uzme u obzir njegov lugarski rang, njegov šešir s perjanicom, pa puška, onda je jasno što je to značilo za svatove, za mladu i za mladenca, imati Marka Labudana za barjaktara. Da ih on predvodi, da on pred svatovima poigrava, da on juška i vrišti, kako to samo on zna!
+           Druge su njega brige trle. Svatovsko je bilo vrijeme i za nekih desetak dana trebala je biti svadba kod Žugečića, u bogatoj kući na Žugečić-brdu. Njega, Marka Labudana, lugara zemljišne zajednice, pozvali su za {{zastavnika(162)}}. Poznata je stvar bila da u tri župe nije bilo takvog barjaktara kakav je bio Marko Labudan. Bio je on čovjek od oka, a kad je progutao koju litru, ni vrag ga ne bi nadvikao ni nadskakao. Pun šala i vragolija koje je pokupio širom svijeta, on je izazivao udivljenje u ženskoga i muškog. Pa kad se još uzme u obzir njegov lugarski rang, njegov šešir s perjanicom, pa puška, onda je jasno što je to značilo za svatove, za mladu i za mladenca, imati Marka Labudana za barjaktara. Da ih on predvodi, da on pred svatovima poigrava, da on juška i vrišti, kako to samo on zna!
            I sad baš u takvo vrijeme razboli mu se žena! Koliko neprilika! Šta će, umre li mu u nezgodan čas? Recimo, uoči samih svatova.
            Udešava Marko svoju patentnu klopku, pa se sve češe iza uha. Jedan zaponac ne radi onako kako bi trebalo, ali još mu je veći jad ta njegova žena i njena bolest.
-           Najbolje bi mu išlo u račun kad bi pričekala bar dvije-tri nedjelje pa onda umrla ako već umrijeti mora. Ili da umre odmah! Samo da mu ne bi pokvarila svatove, jer zbogom onda barjaktarija, zbogom ono veselje, pa gospodsko društvo (jer bit će tamo sigurno g. bilježnik, blagajnik, učitelj, a možda i sam velečasni), zbogom onda dobra večerica i ono fino Žugečićevo vino!...
+           Najbolje bi mu išlo u račun kad bi pričekala bar dvije-tri nedjelje pa onda umrla ako već umrijeti mora. Ili da umre odmah! Samo da mu ne bi pokvarila svatove, jer zbogom onda barjaktarija, zbogom ono veselje, pa gospodsko društvo (jer bit će tamo sigurno g. {{bilježnik(166)}}, blagajnik, učitelj, a možda i sam velečasni), zbogom onda dobra večerica i ono fino Žugečićevo vino!...
            Ne može se reći da Marko nije volio svoju ženu i da mu nije žao bilo što će umrijeti, ali opet: može li joj on pomoći? Pa da plače dan i noć, njojzi od toga nikakva korist!
            .......
            Ima li, na priliku, smisla zvati doktora? Pomoći joj neće, to je sigurna stvar, samo će biti više troška. Ako je vozi k doktoru, umrijet će putem, ako li pak doktora zove, tu mu konja nahrani i napoji, pa još slušaj njegove prigovore: zašto pijete svi iz jedne čaše, zašto jedete iz jedne zdjele, zašto toliki spavate u jednoj sobi, zašto obojke sušite na peći. Zašto? Zašto? Lako je gospodi prigovarati, ali je teško siromahu čovjeku živjeti! Muči se on na sve fele i načine čitavu godinu i onda na koncu ništa nema!
@@ -1950,9 +2568,9 @@ Bio jednom jedan dječak, u očevoj kući, nad rijekom, koji je sanjao zlatne sn
            I toga su dana dolazile žene. Kako koja dođe, uzdahne tužno i još tužnije nazove:
            – Faljen Isus!...
            – Na sve veke budi faljen! – odgovara stara Kata Labudanka, kao da pamuk kroz nos provlači.
-           Ona je sitna, gurava i vječno nekud čađava kao da u dimnjaku spava. Od posla, razumije se, i nema kad da se uredi, a nije joj više do cifranja. Muva se ona po svoj kući. Sve prigleda. Skokne na dvorište, svađa se s kokošima, doziva piliće, zagleda i u štalu, pa vikne koju susjedu preko plota, pa se opet zaleti u sobu.
+           Ona je sitna, gurava i vječno nekud čađava kao da u dimnjaku spava. Od posla, razumije se, i nema kad da se uredi, a nije joj više do {{cifranja(168)}}. Muva se ona po svoj kući. Sve prigleda. Skokne na dvorište, svađa se s kokošima, doziva piliće, zagleda i u štalu, pa vikne koju susjedu preko plota, pa se opet zaleti u sobu.
            U sobi je sumorno i nekako kiselo. Možda od onog napoja uz peć ili od krumpira i drača, što se na peći kuha za svinje.
-           Dva okanca, mutna i malena (toliko da glava nešto jačeg kalibra ne može kroz njih), propuštaju malo svjetla. U kutu do peći sjedi stara majka, mati Mike Labudana. Ona je slijepa, gluha i bez zuba. Nitko joj godina ne zna i ona u kući ništa ne znači. Vječno prede u svom kutu ili čija perje, i one prazne, upale čeljusti neprestano nešto melju. Nitko se na nju ne osvrće, a ona vječno nešto mrmlja. Da li psuje ili se bogu moli – tko bi to znao i razumio! Do nje se uz peć protegnuo stari pepeljasti mačak (on se jedini oko nje mazi!), pa s njom prede u istom taktu.
+           Dva {{okanca(169)}}, mutna i malena (toliko da glava nešto jačeg kalibra ne može kroz njih), propuštaju malo svjetla. U kutu do peći sjedi stara majka, mati Mike Labudana. Ona je slijepa, gluha i bez zuba. Nitko joj godina ne zna i ona u kući ništa ne znači. Vječno prede u svom kutu ili čija perje, i one prazne, upale čeljusti neprestano nešto melju. Nitko se na nju ne osvrće, a ona vječno nešto mrmlja. Da li psuje ili se bogu moli – tko bi to znao i razumio! Do nje se uz peć protegnuo stari pepeljasti mačak (on se jedini oko nje mazi!), pa s njom prede u istom taktu.
            Po zemljanom neravnom podu koprca se dvoje musave djece Janičine jetrve Jage. Oni se natežu, dreče i natjeravaju po sobi. S njima zajedno provodi dane i jedna pura, jadni invalid, kojoj je neki ljubazni susjed prebio nogu a Marko joj napravio nekakvi majstorski patentni zavoj, neku protezu pa ta ćurka svečano šepa i tužno pijuče.
            Žene se na sve to ne obaziru. One posjedaju po krevetima, jedna do druge, kao kokoši na grani. U posljednje ih vrijeme naročito interesira da li ih i koju od njih još Janica pozna. Zato je svaka pridošlica pita milo i slatko:
            – Janek!... Oj Janice! Je li me još poznaš?... Oj Janek, daj me pogledaj, daj!...
@@ -1960,10 +2578,10 @@ Bio jednom jedan dječak, u očevoj kući, nad rijekom, koji je sanjao zlatne sn
            Žene bi se samo značajno pogledale i kritički zaklimale glavama.
            – Ej, mila moja, kaj me zbilja ne poznaš? – uzviknula je gotovo uvrijeđena Janičina tetica Jela. – Em sem to ja, tvoja tetica!
            – Morti vas pozna – rekla je Bara Pavunčecova – ali joj siroti nî do govora, nî do razgovora!...
-           – Kak samo zlo izgleda! – uzdahnula druga. – Bleda je i žuta kakti list v jeseni!...
-           – Ej, Janica, Janica, na kaj si došla. Da ti sebe vidiš, ne bi se poznala! Bi li se, bogica boga, sama sebe prepala!...
+           – Kak samo {{zlo(171)}} {{izgleda(171)}}! – uzdahnula druga. – Bleda je i žuta kakti list v jeseni!...
+           – Ej, Janica, Janica, na kaj si došla. Da ti sebe vidiš, ne bi se poznala! Bi li se, {{bogica(172)}} {{boga(172)}}, sama sebe prepala!...
            Marena Brezovka, jedra udovica kojoj je predlani grom ubio muža (a koja je rado na Marka pogledavala), uzdahnu i reče:
-           – Žene drage, ako ćemo pravo, ona nigdar nî ni bila prejaka. Neću ja nju ogovarjati, ali vi i same znaste da je navek bila tenka i slabašna. Pak je i nadšumar rekel, da zgledi kakti breza...
+           – Žene drage, ako ćemo pravo, ona nigdar nî ni bila prejaka. Neću ja nju ogovarjati, ali vi i same znaste da je navek bila tenka i slabašna. Pak je i nadšumar {{rekel(175)}}, da zgledi kakti breza...
            – Istina, istina! – potvrdila je tetica Jela koja još nije mogla prežaliti što Marko nije uzeo njenu kćer. – Ja se ni denes nemrem dosti načuditi da je Marko baš nju štel zeti!...
            – Bogme, takov čovek!... Mogel je dobiti curu debelu kak mesaricu, pak još i bogatu...
            – E, kaj ćete, takva vam je muška pamet!...
@@ -1971,9 +2589,9 @@ Bio jednom jedan dječak, u očevoj kući, nad rijekom, koji je sanjao zlatne sn
            – Oj Janek, je li ti kaj treba?...
            Ali Janica nije davala odgovora.
            – Je li ti, Janica, čuješ kaj se mi razgovarjamo? – pita je opet Marena Brezovka, ljubezno i preljubezno.
-           – Ej, bogica boga, ona svoje misli ima! Morti se ona već i s ajngeli spominja... Samo da bi joj bog i majka božja dali zdravljica!
+           – Ej, bogica boga, ona svoje misli ima! Morti se ona već i s ajngeli {{spominja(180)}}... Samo da bi joj bog i majka božja dali zdravljica!
            – Teško da bu toga! – primjećuje kroz nos stara Kata.
-           – Sè je vu bože ruke. Dragi Bog sè može, fala mu budi i dika!...
+           – Sè je vu bože ruke. Dragi Bog sè može, fala mu budi i {{dika(183)}}!...
            – To se zna!...
            Onda opet stara Kata nadovezuje kakva je Janica bila kao snaha. Otvoreno govoreći, nije bila baš “prenajbolja”. Raditi je htjela, tek je previše bila gizdava, svoje glave, a koji put i oštra jezika. Puno nije pripovijedala, niti se puno svađala, ali je znala dobro odbrusiti. Ipak, šteta ju je, jer je mlada pak bi se popravila.
            Malo-pomalo prijeđoše žene na drugi razgovor: o kokošima, o predivu, o muževima i susjedama. Dok su one tako pričajući zaboravile na bolesnicu da je bodre i tješe, Janica najednom uzdahnu i mučno prošaputa:
@@ -2083,7 +2701,7 @@ Bio jednom jedan dječak, u očevoj kući, nad rijekom, koji je sanjao zlatne sn
     title: 'Umjetnička književnost - Pripovijetka',
     subtitle: 'Сузе којих се стидим',
     type: essay,
-    text: `У прољеће кад се природа обнавља, те голе гране заодјене младим свијетлозеленим лишћем, а блатне ливаде дарежљиво покрије свјежим зеленим сагом, буди се и у људима жеља да одјену нову одјећу. Зажеле они да одбаце поношене зимске капуте, који у магловитим зимским данима и нису изгледали тако сиви, излизани и нагризени прашином; као сада у пуном сунчаном сјају. Па и они који нису ташти, а нису више ни млади, радују се кад се могу извући из старе зимске чахуре.
+    text: `У прољеће кад се природа обнавља, те голе гране заодјене младим свијетлозеленим лишћем, а блатне ливаде дарежљиво покрије свјежим зеленим сагом, буди се и у људима жеља да одјену нову одјећу. Зажеле они да одбаце поношене зимске капуте, који у магловитим зимским данима и нису изгледали тако сиви, излизани и нагризени прашином; као сада у пуном сунчаном сјају. Па и они који нису {{ташти(184)}}, а нису више ни млади, радују се кад се могу извући из старе зимске чахуре.
            Али кад је нетко у деветој години живота, а готово свих девет година носио је прекројену одјећу старије сестре као ја, онда је та жеља још јача него код других сретника који често добивају нове хаљине. И кад такво деветогодишње створење напокон дочека капут, који није још ни једном преокретан, те још мирише по дућану, онда је радост с пуним правом голема.
            Такву сам радост осјећала и ја, кад сам једне лијепе прољетне недјеље први пут навукла нове жуте ципеле, плави капутић и плаву морнарску капицу. Све зајамчено ново новцато.
            На капутићу жута дугмад љескала се као да је од суха злата. Права дивота! Била сам увјерена да ће очи свијета бити уперене само у ме кад се појавим у тој дивоти. Та помисао удвостручила је моју радост, али и моју нестрпљивост: кад ће ми бити допуштено да се покажем јавно у пуној паради.
@@ -2208,9 +2826,9 @@ Bio jednom jedan dječak, u očevoj kući, nad rijekom, koji je sanjao zlatne sn
             – Šta se daje u bioskopu? – upitao je slabim, promuklim glasom.
             – Pustinja straha.
             – Žao mi je što film neću s tobom gledati, ali pustinja straha je preda mnom i ja sam već zakoračio tamo. Imam i ulaznicu.
-            U njegovoj ostavštini, među dokumentima, pronađena je beležnica. U njoj su bili podaci o sedamsto filmova koje je gledao u toku svog nesrećnog i protivurečenog života. Dečak je nastavio kao i otac, počeo je da vodi svoju istoriju filma, da unosi podatke u svoju beležnicu, predano, brižljivo i s akribijom, i da, na koncu, daje svoje ocene. Voleo je američke filmove o divljem zapadu, avanturističke filmove i spektakle. Kabinet doktora Kaligarija gledao je šest puta. Bergmana nije podnosio. Taj mladić mi je postavio pitanje: utiče li film na literaturu? i s ogorčenjem naveo nekog književnika koji je izjavio da prezire film. Takođe je zamolio da za njegovu beležnicu navedem filmove i režisere koje volim. To pitanje me spaslo od onih što su već bili počeli s uvredama i sramoćenjem, nazivajući me literarnom nakazom.
-            Tada sam izrazio sumnju u književnika koji prezire film i naveo nekog hispanoameričkog pisca, ne sećam se tačno njegovog imena, mogao bi biti Fuentes ili Oktavio Paz, zašto ne, a on je rekao da je film umetnost uskrsnuća, a literatura umetnost raspeća. Možda je to preterano, ali je rečeno s ozbiljnošću, pogotovu što je uskrsnuće nagrada pojedincu da se obuče u sliku nebesku. Ako se čovek ukazuje kao slika božja, onda je bog izumio film. I Borhes ističe u prologu prvog izdanja Sveopšte istorije beščašća da su na njegove prozne sastave uticali prvi filmovi Jozefa von Sternberga. Takođe izjavljuje da je uprkos slabom vidu gledao hiljade filmova. Ispričao sam o beogradskoj kinoteci kao novom hramu; tamo su se podjednako nalazili i pisci i slikari i arhitekte i režiseri i manijaci, ne samo kao zaljubljenici u film, već kao ljudi koji su pohađali časove jedinstvene prakse. Film je umetnost zadovoljstva, a literatura umetnost melankolije, to sam naveo ne sećajući se otkuda i kako je to ostalo u mom pamćenju.
-            Tek što sam bio započeo svoju listu filmova, i za mladićevu beležnicu naveo najpoetičniji film Los Olvidados, a na prvo mesto stavio svog omiljenog reditelja Luisa Bunjuela, dogodilo se nešto neobično: u salu je uletela jedna lepa šarena ptica, lepršala je u uglovima dvorane pribijajući se uz zid, grebući kandžicama i ljušteći kreč. U nekoliko mahova bezglavo je udarila u staklo gornjeg zatvorenog dela prozora. Jedna peruška, kao pahulja, pala je ozgo na moje rame. Pojava ptice izazvala je radost i ushićenje u dvorani, samo je bolesni mladić Fahro uzdrhtao uplašen da će se ptica ozlediti. Kad je pronašla prozor i otprhnula, u sali je zavladala tišina kakvu posle nikad nisam doživeo. Sen krila te ptice je tajanstveni znak pod kojim smo se razišli.
+            U njegovoj ostavštini, među dokumentima, pronađena je beležnica. U njoj su bili podaci o sedamsto filmova koje je gledao u toku svog nesrećnog i protivurečenog života. Dečak je nastavio kao i otac, počeo je da vodi svoju istoriju filma, da unosi podatke u svoju beležnicu, predano, brižljivo i s {{akribijom(192)}}, i da, na koncu, daje svoje ocene. Voleo je američke filmove o divljem zapadu, avanturističke filmove i spektakle. Kabinet doktora Kaligarija gledao je šest puta. Bergmana nije podnosio. Taj mladić mi je postavio pitanje: utiče li film na literaturu? i s ogorčenjem naveo nekog književnika koji je izjavio da prezire film. Takođe je zamolio da za njegovu beležnicu navedem filmove i režisere koje volim. To pitanje me spaslo od onih što su već bili počeli s uvredama i sramoćenjem, nazivajući me literarnom nakazom.
+            Tada sam izrazio sumnju u književnika koji prezire film i naveo nekog hispanoameričkog pisca, ne sećam se tačno njegovog imena, mogao bi biti Fuentes ili {{Oktavio Paz(196)}}, zašto ne, a on je rekao da je film umetnost uskrsnuća, a literatura umetnost raspeća. Možda je to preterano, ali je rečeno s ozbiljnošću, pogotovu što je uskrsnuće nagrada pojedincu da se obuče u sliku nebesku. Ako se čovek ukazuje kao slika božja, onda je bog izumio film. I Borhes ističe u prologu prvog izdanja Sveopšte istorije beščašća da su na njegove prozne sastave uticali prvi filmovi {{Jozefa von Sternberga(198)}}. Takođe izjavljuje da je uprkos slabom vidu gledao hiljade filmova. Ispričao sam o beogradskoj kinoteci kao novom hramu; tamo su se podjednako nalazili i pisci i slikari i arhitekte i režiseri i manijaci, ne samo kao zaljubljenici u film, već kao ljudi koji su pohađali časove jedinstvene prakse. Film je umetnost zadovoljstva, a literatura umetnost melankolije, to sam naveo ne sećajući se otkuda i kako je to ostalo u mom pamćenju.
+            Tek što sam bio započeo svoju listu filmova, i za mladićevu beležnicu naveo najpoetičniji film Los Olvidados, a na prvo mesto stavio svog omiljenog reditelja {{Luisa Bunjuela(199)}}, dogodilo se nešto neobično: u salu je uletela jedna lepa šarena ptica, lepršala je u uglovima dvorane pribijajući se uz zid, grebući kandžicama i ljušteći kreč. U nekoliko mahova bezglavo je udarila u staklo gornjeg zatvorenog dela prozora. Jedna peruška, kao pahulja, pala je ozgo na moje rame. Pojava ptice izazvala je radost i ushićenje u dvorani, samo je bolesni mladić Fahro uzdrhtao uplašen da će se ptica ozlediti. Kad je pronašla prozor i otprhnula, u sali je zavladala tišina kakvu posle nikad nisam doživeo. Sen krila te ptice je tajanstveni znak pod kojim smo se razišli.
             Još se i danas pitam nije li to bio privid, moja duševna ptica, spasonosni anđeo, pojava na poziv mašte da se oslobodi zarobljenica mog detinjstva. San o ptici često me i danas pohodi. Stekel ga tumači kao biseksualni simbol, za mene pak ima duhovno značenje, zaručničku vrednost Hristove poruke: budi bezazlen kao grlica!
             U vreme dok sam radio na ovoj priči brinuo sam o mnogim nedostacima, a ponajviše o nepouzdanom svršetku, ali tada mi je u pomoć priskočio slučaj, zaštitnik pripovedača. Jednog dana sam susreo nekadašnju voditeljicu Tribine, sada ženu srednjih godina, ostarelu pre vremena. Nećete mi verovati, ali tamo više nije bilo nijedne crte nekadašnje lepotice. Kratko i bezvoljno razgovarali smo o prošlosti, pominjala je mnoga imena koja mi ništa nisu značila. Jedva sam čekao da se pozdravimo. Na rastanku je rekla:
             – Nikad neću zaboraviti onu pticu! Sećaš li se? Što ne napišeš nešto o tome?
@@ -2297,7 +2915,7 @@ Bio jednom jedan dječak, u očevoj kući, nad rijekom, koji je sanjao zlatne sn
     title: 'Umjetnička književnost - Pripovijetka',
     subtitle: 'Šala (odlomak)',
     type: essay,
-    text: `Vedro zimsko podne... Mraz je jak, puca, i Nađenjki, koja me drži ispod ruke, srebrnastim injem prekriva kovrdže na sljepoočnicama i malje iznad gornje usne. Stojimo na visokom klizalištu. Od naših nogu do same zemlje prostire se strma površina, u kojoj se sunce ogleda kao u ogledalu. Pored nas su male sanke, tapacirane svijetlocrvenom čojom.
+    text: `Vedro zimsko podne... Mraz je jak, puca, i Nađenjki, koja me drži ispod ruke, srebrnastim injem prekriva kovrdže na sljepoočnicama i malje iznad gornje usne. Stojimo na visokom klizalištu. Od naših nogu do same zemlje prostire se strma površina, u kojoj se sunce ogleda kao u ogledalu. Pored nas su male sanke, tapacirane svijetlocrvenom {{čojom(201)}}.
            – Da se spustimo, Nadežda Petrovna! – nagovaram je. – Samo jednom! Siguran sam, ostaćemo živi i zdravi.
            Ali, Nađenjka se plaši. Čitav prostor od njenih malih kaljača do kraja zaleđenog klizališta izgleda joj kao strašna, neizmjerno duboka provalija. Obamire i gubi dah čim pogleda dolje, čim joj samo predložim da sjedne u sanke, a šta će tek biti ako rizikuje da poleti u provaliju! Umrijeće, poludjeće.
            – Preklinjem vas! – kažem. – Nemojte se plašiti! Shvatite, to je malodušnost, kukavičluk!
@@ -2313,7 +2931,7 @@ Bio jednom jedan dječak, u očevoj kući, nad rijekom, koji je sanjao zlatne sn
            – Hajdemo još jednom... da se sankamo.
            Stepeništem se penjemo na klizalište. Opet blijedu, drhtavu Nađenjku smještam u sanke, opet letimo u strašnu provaliju, opet fijuče vjetar i škripe saonici, i opet ja, prilikom najjačeg i najbučnijeg letenja sanki, poluglasno kažem:
            – Volim vas, Nađenjka!
-           Čim se zaustave sanke, Nađenjka pogledom obuhvata klizalište, niz koje smo se upravo spustili, zatim mi dugo zuri u lice, osluškuje moj glas, ravnodušan i bezosjećajan, a sva, sva ona, pa čak i njen muf, i kapuljača, i čitava njena figura izražavaju krajnju nedoumicu. Na licu joj piše:
+           Čim se zaustave sanke, Nađenjka pogledom obuhvata klizalište, niz koje smo se upravo spustili, zatim mi dugo zuri u lice, osluškuje moj glas, ravnodušan i bezosjećajan, a sva, sva ona, pa čak i njen {{muf(202)}}, i kapuljača, i čitava njena figura izražavaju krajnju nedoumicu. Na licu joj piše:
            “U čemu je stvar? Ko je izgovorio one riječi? On, ili sam ih samo pričula?“
            Ta neizvjesnost je uznemiruje, izvodi iz takta. Jadna djevojčica mi ne odgovara na pitanja, mršti se, samo što ne zaplače.
            – Hoćemo li kući? – pitam.
@@ -2325,7 +2943,7 @@ Bio jednom jedan dječak, u očevoj kući, nad rijekom, koji je sanjao zlatne sn
            Sa sankanja je pratim kući, ona nastoji da hoda što laganije, usporava korake i sve čeka ne bih li joj kazao one riječi. I vidim kako joj pati duša, kako se suzdržava da ne kaže:
            “Ma, neće biti da ih je govorio vjetar! Neću da mi to govori vjetar!” Sutradan ujutro dobio sam ceduljicu: “A ko danas pođete na sankanje, svratite po mene. N.” I od tada svakodnevno odlazim na sankanje sa Nađenjkom, a dok letimo sankama, ja svaki put poluglasno izgovaram iste riječi:
            – Volim vas, Nađa!
-           Ubrzo se Nađenjka navikava na tu rečenicu, kao na vino ili na morfijum. Ne može da živi bez nje. Istina, letenje niz klizalište i dalje joj je strašno, ali strah i opasnost sada već pridaju naročitu draž izjavi ljubavi, riječima koje i dalje predstavljaju zagonetku i muče joj dušu. Osumnjičeni smo nas dvojica: ja i vjetar... Ko joj od nad dvojice izjavljuje ljubav, ona ne zna, ali, po svemu sudeći, već joj je svejedno; nije bitno iz koje posude ćeš piti – bitno je samo biti pijan.
+           Ubrzo se Nađenjka navikava na tu rečenicu, kao na vino ili na {{morfijum(203)}}. Ne može da živi bez nje. Istina, letenje niz klizalište i dalje joj je strašno, ali strah i opasnost sada već pridaju naročitu draž izjavi ljubavi, riječima koje i dalje predstavljaju zagonetku i muče joj dušu. Osumnjičeni smo nas dvojica: ja i vjetar... Ko joj od nad dvojice izjavljuje ljubav, ona ne zna, ali, po svemu sudeći, već joj je svejedno; nije bitno iz koje posude ćeš piti – bitno je samo biti pijan.
            Jednog podneva odem na sankanje sam; pošto sam upao u gužvu, vidim kako Nađenjka prilazi klizalištu, kako me traži pogledom... Zatim se bojažljivo penje stepeništem... Strašno joj je da se sanka sama, o, kako joj je strašno! Blijeda je kao snijeg, drhti, ide kao na gubilište, ali ide, ide bez osvrtanja, odlučno. Po svoj prilici, najzad se usudila da proba: hoće li čuti one čudesne slatke riječi i kad nije sa mnom? Gledam je kako blijeda, usta otvorenih od užasa, sjeda u sanke, zatvara oči pa, pošto se zanavijek oprostila sa zemljom, kreće... “Šššš”, škripe saonici. Čuje li Nađenjka one riječi, ne znam... Samo vidim kako iz sanki ustaje iznemogla, slaba. A na licu joj se vidi kako i sama ne zna da li je nešto čula ili nije. Strah, koji ju je spopao dok se vozila dolje, oduzeo joj je sposobnost da čuje, da razlikuje zvuke, da razumijeva...
            Ali, evo, nastupa proljećni mjesec mart... Sunce postaje umilnije. Naše ledeno klizalište tamni, gubi svoj sjaj i najzad kopni. Prestajemo da se sankamo. Jadna Nađenjka više nema gdje da čuje one riječi, a nema ko ni da ih izgovara, jer se vjetar ne čuje, a ja se spremam u Peterburg – na dugo, vjerovatno zauvijek.
            Nekako pred odlazak, dva dana ranije, u sumrak, sjedim ja u baštici, a tu bašticu i Nađenjkino dvorište razdvaja visoka ograda sa gvozdenim šiljcima... Još je prilično hladno, ispod stajskog đubreta je još snijeg, drveće je mrtvo, ali već miriše proljeće i vrane bučno gaču dok se spremaju za počinak. Prilazim ogradi i dugo gledam kroz šupljinu. Vidim kako Nađenjka izlazi na doksat i tužan, čežnjiv pogled upire u nebo... Proljećni vjetar joj duva pravo u blijedo, snuždeno lice... Podsjeća je na onaj vjetar koji nam je fijukao na klizalištu, kad je slušala one tri riječi, i lice joj postaje žalosno, žalosno, niz obraz joj klizi suza... I jadna djevojčica pruža obje ruke, kao da moli vjetar da joj još jednom donese one riječi. A ja sam sačekao vjetar da poluglasno kažem:
@@ -2659,7 +3277,7 @@ Bio jednom jedan dječak, u očevoj kući, nad rijekom, koji je sanjao zlatne sn
              sjedi aga mrko pred šatorom.
              Uza nj majka, uza nj je sestrica,
              uzа nj svieta i askera vojska.
-             “Selam alejć! Aga Hasanaga!
+             “{{Selam alejć(208)}}! Aga Hasanaga!
              Evo tebi Huso selam nosi
              a od tvoje ljube i dječice,
              da te pitam, jesi li prizdravio
@@ -2677,7 +3295,7 @@ Bio jednom jedan dječak, u očevoj kući, nad rijekom, koji je sanjao zlatne sn
              On taki meni haber naslao!
             HUSEJIN
              “Ni u dvoru, ni u rodu mome”,
-             tako reče – ja se obeznani’.
+             tako reče – ja se {{obeznani(210)}}’.
              Samo gledam, vjerovat ne mogu.
              “Idi, idi, u što si sad stao?
              Treba li ti jedno dvaput reći?
@@ -2686,7 +3304,7 @@ Bio jednom jedan dječak, u očevoj kući, nad rijekom, koji je sanjao zlatne sn
              “Ago!” šanem, “nemoj, dobri ago,
              nemoj griešit duše na hanumi!
              Nije ovo da se šališ vrieme...”
-             A on trže brza samokresa,
+             A on trže brza {{samokresa(211)}},
              dа ne strugnuh, ubi me ko zeca!
              Takog agu još ne vidjeh nigda.
              Jeste ljutit aga Hasanaga.
@@ -2801,7 +3419,7 @@ Bio jednom jedan dječak, u očevoj kući, nad rijekom, koji je sanjao zlatne sn
             СУДАЦ: Како говори, Давиде, тај лопов, којим језиком?
             ДАВИД: То ти, главати господине, ’нако посигурно не умијем казати. Бркљачи ко и ти и ово дијете кад сте се нешто малоприје договарали. Забркљачи де, господине, мало на њег’ да видим ’оће ли...
             СУДАЦ (смије се, говори нешто и удара јазавца по њушци)
-            ДАВИД: Види, господине, види како диже њушку, како те разумије! Види курвина сина како се ко ђоја ражалостио. Не претварај се, лопове један! Иако говориш господиновим језиком, то ти неће помоћи. Слободно, немој се претварати.
+            ДАВИД: Види, господине, види како диже њушку, како те разумије! Види курвина сина како се {{ко ђоја(212)}} ражалостио. Не претварај се, лопове један! Иако говориш господиновим језиком, то ти неће помоћи. Слободно, немој се претварати.
             СУДАЦ: Кад је рођен, колико је стар овај твој лопов, Давиде?
             ДАВИД: Није он ни стар. Млад је он још.
             СУДАЦ: Не питам те то, већ би рад знати колико му је година. И то ми је потребно.

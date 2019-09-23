@@ -117,23 +117,17 @@ const SubmenuWrapper = styled.ol`
   }
 `;
 
-const MenuItem = ({title, submenu, scrollToArticle}) => {
+const MenuItem = ({title, submenu, scrollToArticle, open, handler}) => {
   const [submenuState, setSubmenuState] = useState(true);
 
   const handlerScroll = (id) => () => {
     scrollToArticle(id);
-    MouseClick.play();
-  };
-
-  const handlerClick = () => {
-    setSubmenuState(!submenuState);
-    MouseClick.play();
   };
 
   return (
-    <Li>
-      <Title className={'menu__main'} onClick={handlerClick}>{title}</Title>
-      <SubmenuWrapper hiddenSubmenu={submenuState}>{submenu.map((item) => {
+    <Li onClick={handler}>
+      <Title className={'menu__main'}>{title}</Title>
+      <SubmenuWrapper hiddenSubmenu={!open}>{submenu.map((item) => {
           return (
               <Li key={item.id}>
                 <Subtitle onClick={handlerScroll(item.id)}>{item.title}</Subtitle>
@@ -174,8 +168,16 @@ export const Menu = ({scrollToArticle}) => {
     MouseClick.play();
   };
 
+  const handlerOpenSubmenu = (elem) => () => {
+    let newState = menuItems.map(item => {
+      item.open = item.menuId === elem.menuId;
+      return item;
+    });
+    setMenuItems(newState);
+  };
+
   useMount(() => {
-    const items = ArticleData.reduce((acc, article) => {
+    const items = ArticleData.reduce((acc, article, i) => {
       const title = article.title;
       const convertedTitle = convertTitles(title);
       const check = acc.findIndex(item => item.title === title);
@@ -194,12 +196,13 @@ export const Menu = ({scrollToArticle}) => {
           title: article.subtitle,
           id: article.id,
         }];
-        acc.push({title, submenu});
+        acc.push({title, submenu, open: false, menuId: i});
       }
       return acc;
     }, []);
     setMenuItems(items);
   });
+
 
   return (
     <Wrapper ref={ref} hidden={menuHidden} onClick={handlerClickMenu}>
@@ -208,8 +211,12 @@ export const Menu = ({scrollToArticle}) => {
         <Hamburger/>
       </HamburgerWrapper>
       <MenuHidden hidden={menuHidden}>
-        {menuItems && menuItems.map((item, index) => <MenuItem scrollToArticle={scrollToArticle} key={index}
-                                                               title={item.title} submenu={item.submenu}/>)}
+        {menuItems && menuItems.map((item, index) => {
+          return (
+          <MenuItem handler={handlerOpenSubmenu(item)} scrollToArticle={scrollToArticle} key={index}
+                    open={item.open} title={item.title} submenu={item.submenu}/>
+          )
+        })}
       </MenuHidden>
     </Wrapper>
   );

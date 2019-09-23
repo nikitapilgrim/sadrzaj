@@ -6,9 +6,10 @@ import {breakpoints} from '../../../mixins/breakpoints';
 import {Highlight} from './Highlight';
 
 const Wrapper = styled.p`
+  width: 100%;
   max-height: ${props => `${props.maxHeight}px`};
   @media ${breakpoints.laptop} { 
-    columns: ${props => props.type === 'essay' && '2'};
+    columns: ${props => props.type === 'lyrics' && '2'};
   }
 `;
 

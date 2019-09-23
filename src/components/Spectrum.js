@@ -1,13 +1,6 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
 
-const NotCanvas = styled.div`
-
-`
-
-const Elem = styled.div`
-
-`
 
 export class AudioSpectrum extends Component {
   constructor(props) {
@@ -145,7 +138,8 @@ export class AudioSpectrum extends Component {
     let {audioId, audioEle} = this.props;
     if (!audioId && !audioEle) {
       console.log('target audio not found!');
-      return;
+      this.audioEle = this.props.audioEle;
+      //return;
     } else if (audioId) {
       this.audioEle = document.getElementById(audioId);
     } else {
@@ -169,9 +163,7 @@ export class AudioSpectrum extends Component {
 
   render() {
     return (
-      <>
-        <canvas id={this.canvasId} width={this.props.width} height={this.props.height}></canvas>
-      </>
+        <canvas id={this.canvasId} width={this.props.width} height={this.props.height}/>
     );
   }
 }
