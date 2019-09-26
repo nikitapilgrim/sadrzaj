@@ -629,7 +629,7 @@ Mrak se počeo spuštati nad zemlju kad eto ti onog njegova prijatelja što mu j
     ],
   },
   {
-    id: 6,
+    id: 5,
     title: 'Umjetnička književnost - Roman',
     subtitle: 'Zlatna ptica (Odlomci iz romana “Derviš i smrt”)',
     type: essay,
@@ -746,7 +746,7 @@ Bio jednom jedan dječak, u očevoj kući, nad rijekom, koji je sanjao zlatne sn
     ],
   },
   {
-    id: 7,
+    id: 6,
     title: 'Umjetnička književnost - Roman',
     subtitle: 'Starac i more',
     type: essay,
@@ -855,7 +855,7 @@ Bio jednom jedan dječak, u očevoj kući, nad rijekom, koji je sanjao zlatne sn
     ],
   },
   {
-    id: 8,
+    id: 7,
     title: 'Umjetnička književnost - Roman',
     subtitle: 'Legenda o Ali-paši',
     type: essay,
