@@ -1,19 +1,24 @@
 import React, {useEffect, useState} from 'react';
 import styled from 'styled-components';
 import useAudio from 'react-use/lib/useAudio';
+import {breakpoints} from '../../mixins/breakpoints';
 import {AudioSpectrum} from '../Spectrum'
 import FastBack from '../../assets/svg/fast_back.svg';
 import PlaySVG from '../../assets/svg/play.svg';
 import PauseSVG from '../../assets/svg/pause.svg';
 import FastForward from '../../assets/svg/fast_forward.svg';
-
-import UIfx from 'uifx'
-const mouseClick = new UIfx(require('../../assets/sounds/fx/mouseclick.mp3'));
+import {FX} from '../../assets/sounds/fx/index'
 
 const Wrapper = styled.div`
   position: relative;
   max-width: 620px;
 `;
+
+const CanvasWrapper = styled.div`
+   canvas {
+    width: 100%;
+   }
+`
 
 const Audio = styled.div`
   display: none;
@@ -29,8 +34,12 @@ const ControlPanel = styled.div`
   align-items: center;
   justify-content: center;
   margin-top: 30px;
+  transform: scale(0.7);
   svg {
     filter:drop-shadow(2px 3px 5px black)
+  }
+   @media ${breakpoints.tablet} {
+      transform: scale(1);
   }
 `;
 
@@ -73,7 +82,7 @@ export const InnerAudio = ({data, close}) => {
   const  [play, setPlay] = useState(false);
 
   const handlerPlayVideo = () => {
-    mouseClick.play();
+    FX.mouseClick.play();
     if (play) {
       controls.play();
       setPlay(!play);
@@ -116,10 +125,12 @@ export const InnerAudio = ({data, close}) => {
           {audio}
         </Audio>
       </AudioContainer>
-      {ref.current && <AudioSpectrum {...options}/>}
+      <CanvasWrapper>
+        {ref.current && <AudioSpectrum {...options}/>}
+      </CanvasWrapper>
       <ControlPanel>
         <RewindBack onClick={() => {
-          mouseClick.play();
+          FX.mouseClick.play();
           controls.seek(state.time - 5)
         }}>
           <FastBack/>
@@ -128,7 +139,7 @@ export const InnerAudio = ({data, close}) => {
           {play ? <PlaySVG/> : <PauseSVG/>}
         </PlayButton>
         <Rewind onClick={() => {
-          mouseClick.play();
+          FX.mouseClick.play();
           controls.seek(state.time + 5);
         }}>
           <FastForward/>

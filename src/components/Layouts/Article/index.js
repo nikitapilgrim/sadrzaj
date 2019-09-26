@@ -18,7 +18,7 @@ import MedalThree from '../../../assets/svg/medal_3.svg';
 
 
 const Wrapper = styled.div`
-  padding: 100px 50px;
+  padding: 50px 0px;
   @media ${breakpoints.laptop} {
     padding: 100px 50px;
   }
@@ -47,8 +47,12 @@ const Title = styled.h1`
   margin: 0;
   text-shadow: 2px 2px 0 #000000;
   color: #ffffff;
-  font-size: 31px;
-  font-weight: 700;
+  font-size: 22px;
+  font-weight: 500;
+  @media ${breakpoints.laptop} {
+    font-size: 31px;
+    font-weight: 700;
+  }
 `;
 
 const Subtitle = styled.h2`
@@ -57,11 +61,12 @@ const Subtitle = styled.h2`
   text-shadow: 2px 2px 0 #000000;
   color: #ffffff;
   font-size: 33px;
+  line-height: 1;
   @media ${breakpoints.laptop} {
-      font-size: 52px;
+      font-size: 52px;  
+      line-height: 48px;
   }
   font-weight: 900;
-  line-height: 48px;
 `;
 
 const MainContainer = styled.div`
@@ -81,8 +86,8 @@ const Buttons = styled.div`
   align-items: center;
   justify-content: flex-start;
   position: relative;
-  left: -60px;
-  transform: scale(0.5);
+  left: -64px;
+  transform: scale(0.7);
   
   & > div:not(:first-child) {
       margin-left: 10px;
@@ -92,6 +97,7 @@ const Buttons = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-end;
+    transform: scale(0.5);
     position: absolute;
     top: -46px;
     left: -221px;
@@ -111,10 +117,11 @@ const Row = styled.div`
 
 const MedalContainer = styled.div`
     position: absolute;
-    right: -109px;
+    right: -57px;
     top: 0;
     @media ${breakpoints.laptop} {
-      
+          right: -109px;
+
     }
 `;
 
@@ -124,10 +131,16 @@ const MedalWrapper = styled.div`
 
 const Medal = styled.div`
   position: relative;
-  transform: rotate(-10deg);
+  transform: rotate(-10deg) scale(0.6);
   svg {
     filter:drop-shadow(2px 3px 5px black)
   }
+   @media ${breakpoints.laptop} {
+        transform: rotate(-10deg);
+       svg {
+          filter:drop-shadow(2px 3px 5px black)
+        }
+    }
 `;
 
 const MedalPercent = styled.div`
@@ -160,7 +173,7 @@ const Span = styled.span`
   flex-wrap: wrap;
 `;
 
-export const ArticleLayout = ({data, id, getOffset, text}) => {
+export const ArticleLayout = React.memo(({data, id, getOffset, text}) => {
   const {dispatch, articles} = useStoreon('articles');
   const ref = useRef(null);
   const textRef = useRef(null);
@@ -196,7 +209,6 @@ export const ArticleLayout = ({data, id, getOffset, text}) => {
   }, [height]);
 
   return (
-    <>
       <Wrapper ref={ref} id={id}>
         <Inner>
           <Content>
@@ -222,8 +234,8 @@ export const ArticleLayout = ({data, id, getOffset, text}) => {
               <Buttons>
                 <TestButton onFinishTest={handlerFinishTest}
                             questions={data.questions}/>
-                <AudioButton data={data.audio}/>
-                <VideoButton src={data.video}/>
+                {data.audio && <AudioButton data={data.audio}/>}
+                {data.video && <VideoButton src={data.video}/>}
               </Buttons>
               <TextContainer type={data.type} onReady={textReady} author={data.author} id={data.id} data={data.text}/>
             </MainContainer>
@@ -231,6 +243,5 @@ export const ArticleLayout = ({data, id, getOffset, text}) => {
           </Content>
         </Inner>
       </Wrapper>
-    </>
   );
-};
+});

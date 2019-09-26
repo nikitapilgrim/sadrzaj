@@ -1,9 +1,11 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import styled from 'styled-components';
 import ReactModal from 'react-responsive-modal';
 import CloseIcon from '../../assets/img/icons/close_icon.png';
-import UIfx from 'uifx';
-const MouseClick = new UIfx(require('../../assets/sounds/fx/mouseclick.mp3'));
+import {useClickAway} from 'react-use';
+import {breakpoints} from '../../mixins/breakpoints';
+import {FX} from '../../assets/sounds/fx/index'
+
 
 const Wrapper = styled.span`
   display: flex;
@@ -31,6 +33,7 @@ const CloseModal = styled.button`
   background-size: cover;
   border: none;
   cursor: pointer;
+  outline: none;
 `;
 
 const Inner = styled.span`
@@ -39,7 +42,10 @@ const Inner = styled.span`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 100%;
+  @media ${breakpoints.laptop} { 
+      width: 80%;
+  }
 `;
 
 const Bg = styled.div`
@@ -55,8 +61,12 @@ const Bg = styled.div`
   opacity: 0.5;
 `;
 
-export const Modal = ({children, inner, close, finish}) => {
+export const Modal = React.memo(({children, inner, close, finish}) => {
   const [open, setOpen] = useState(false);
+  const ref = useRef(null);
+  useClickAway(ref, () => {
+    setOpen(false);
+  });
 
   const handlerClose = () => {
     setOpen(false);
@@ -64,7 +74,7 @@ export const Modal = ({children, inner, close, finish}) => {
 
   useEffect(() => {
     if (finish) {
-      setOpen(false)
+      setOpen(false);
     }
   }, [finish]);
 
@@ -73,10 +83,10 @@ export const Modal = ({children, inner, close, finish}) => {
     const root = document.querySelector('#root');
     if (open) {
       root.style.filter = 'blur(5px)';
-      root.style.transform = 'scale(1.05)'
+      //root.style.transform = 'scale(1.05)'
     } else {
       root.style.filter = 'none';
-      root.style.transform = 'none'
+      root.style.transform = 'none';
     }
   }, [open]);
 
@@ -93,11 +103,13 @@ export const Modal = ({children, inner, close, finish}) => {
   const style = {
     overlay: {
       background: 'none',
+      padding: '0px !important',
 
     },
     modal: {
       background: 'none',
-      boxShadow: 'none'
+      boxShadow: 'none',
+      padding: '0px !important',
     }
   }
 
@@ -106,21 +118,21 @@ export const Modal = ({children, inner, close, finish}) => {
       <ReactModal onClose={handlerClose} open={open} showCloseIcon={false} center={true} styles={style}>
         <Wrapper>
           <Bg/>
-          <Inner>
+          <Inner ref={ref}>
             {inner}
             <CloseModal onClick={() => {
               setOpen(false);
-              MouseClick.play()
+              FX.mouseClick.play()
             }}/>
           </Inner>
         </Wrapper>
       </ReactModal>
       <div onClick={() => {
         setOpen(true);
-        MouseClick.play()
+        FX.mouseClick.play()
       }}>
         {children}
       </div>
     </>
   );
-};
+});

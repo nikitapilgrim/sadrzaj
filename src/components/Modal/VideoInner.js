@@ -1,12 +1,12 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
+import {breakpoints} from '../../mixins/breakpoints';
 import {useVideo} from 'react-use';
 import PauseSVG from '../../assets/svg/pause.svg'
 import PlaySVG from '../../assets/svg/play.svg'
 import FastBack from '../../assets/svg/fast_back.svg';
 import FastForward from '../../assets/svg/fast_forward.svg';
-import UIfx from 'uifx'
-const mouseClick = new UIfx(require('../../assets/sounds/fx/mouseclick.mp3'));
+import {FX} from '../../assets/sounds/fx/index'
 
 const Wrapper = styled.div`
   
@@ -14,8 +14,10 @@ const Wrapper = styled.div`
 
 const VideoWrapper = styled.div`
    position: relative;
+   
    video {
     box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    max-width: 100%;
    }
   &:before, &:after{
     height: 99%;
@@ -36,6 +38,12 @@ const ControlPanel = styled.div`
   align-items: center;
   justify-content: center;
   margin-top: 30px;
+  transform: scale(0.7);
+  @media ${breakpoints.tablet} {
+    width: auto;
+      transform: scale(1);
+  }
+  
   svg {
     filter:drop-shadow(2px 3px 5px black)
   }
@@ -66,9 +74,9 @@ const RewindBack = styled.button`
   height: 41px;
 `;
 
-export const VideoInner = ({src = 'http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4'}) => {
+export const VideoInner = ({src}) => {
   const [video, state, controls, ref] = useVideo(
-    <video controls src={'http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4'}/>
+    <video controls src={src}/>
   );
   const  [play, setPlay] = useState(true);
 
@@ -93,7 +101,7 @@ export const VideoInner = ({src = 'http://clips.vorwaerts-gmbh.de/big_buck_bunny
       </VideoWrapper>
       <ControlPanel>
         <RewindBack onClick={() => {
-          mouseClick.play();
+          FX.mouseClick.play();
           controls.seek(state.time - 5)
         }}>
           <FastBack/>
@@ -102,7 +110,7 @@ export const VideoInner = ({src = 'http://clips.vorwaerts-gmbh.de/big_buck_bunny
           {play ? <PlaySVG/> : <PauseSVG/>}
         </PlayButton>
         <Rewind onClick={() => {
-          mouseClick.play();
+          FX.mouseClick.play();
           controls.seek(state.time + 5);
         }}>
           <FastForward/>

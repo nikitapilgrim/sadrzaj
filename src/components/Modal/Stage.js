@@ -9,8 +9,11 @@ const worng = new UIfx(require('../../assets/sounds/fx/wrong-answer.aac'));
 const Title = styled.div`
   text-shadow: 0 1px 0 #000000;
   color: #ffffff;
-  font-size: 32px;
+  font-size: 22px;
   font-weight: 900;
+   @media ${breakpoints.tablet} {
+     font-size: 32px;
+  }
 `;
 
 const AnswersContainer = styled.div`
@@ -33,10 +36,20 @@ const AnswerButton = styled.button`
   border-radius: 5px;
   border: 1px solid #fcfbc4;
   background-color: #c79e1f;
+  font-size: 22px;
 `;
 
+const AnswerInput = ({onInput}) => {
 
-export const Stage = ({stage, data, onRight, nextStage}) => {
+  return (
+    <input onKeyUp={(e) => {
+      onInput(e.target.value)
+    }}/>
+  )
+};
+
+
+export const Stage = React.memo(({data, onRight, nextStage}) => {
   const {title, answers, question} = data;
 
   const stageHandler = (right) => () => {
@@ -51,18 +64,27 @@ export const Stage = ({stage, data, onRight, nextStage}) => {
     }
   };
 
+  const inputHandler = (right) => (value) => {
+    if (right === value) {
+      correct.play();
+      nextStage();
+    }
+  };
+
   return (
     <>
       <Title>{question}</Title>
       <AnswersContainer>
-        {answers.map((answer, index) => {
+        {answers.length > 1 ? answers.map((answer, index) => {
           return (
             <AnswerButton key={index} right={answer.right} onClick={stageHandler(answer.right)}>
               {answer.title}
             </AnswerButton>
           );
-        })}
+        }) :
+          <AnswerInput onInput={inputHandler(answers[0].title)}/>
+        }
       </AnswersContainer>
     </>
   );
-};
+});

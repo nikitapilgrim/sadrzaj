@@ -79,7 +79,7 @@ const Bg = styled.div`
 const Title = styled.div`
   text-shadow: 0 4px 0 #000000;
   color: #ffffff;
-  font-size: 56px;
+  font-size: 46px;
   font-weight: 900;
   @media ${breakpoints.tablet} {
     font-size: 108px;

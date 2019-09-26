@@ -4,9 +4,7 @@ import {useMount} from 'react-use';
 import {breakpoints} from '../../mixins/breakpoints';
 import {Hamburger} from './Hamburger';
 import {useClickAway} from 'react-use';
-import UIfx from 'uifx'
-
-const MouseClick = new UIfx(require('../../assets/sounds/fx/mouseclick.mp3'));
+import {FX} from '../../assets/sounds/fx/index'
 
 import ArticleData from '../../Data/Articles';
 
@@ -34,7 +32,7 @@ const Wrapper = styled.div`
 const Logo = styled.div`
   text-shadow: 0 3px 0 #000000;
   color: #ffffff;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 900;
   text-transform: uppercase;
 `;
@@ -62,7 +60,7 @@ const Title = styled.span`
   font-weight: 900;
   line-height: 60px;
   
-  &:before, &:after {
+  /*&:before, &:after {
     display: block;
     content: '';
     width: 100% ;
@@ -78,16 +76,16 @@ const Title = styled.span`
     position: relative;
     bottom: -2px;
     background-color: #000000;
-  }
+  }*/
 `;
 
 const Subtitle = styled.span`
   text-shadow: 0 2px 0 #000000;
   color: #ffffff;
   font-weight: 500;
-  font-size: 36px;
+  font-size: 16px;
   @media ${breakpoints.tablet} {
-     font-size: 16px;
+     font-size: 22px;
   }
 `;
 
@@ -111,9 +109,9 @@ const SubmenuWrapper = styled.ol`
   margin: 0;
   padding: 0;
   list-style: none; 
-  padding-top: 20px;
+  padding-top: 0px;
   @media ${breakpoints.desktop} {
-    padding-top: 40px;
+    padding-top: 0px;
   }
 `;
 
@@ -162,14 +160,20 @@ export const Menu = ({scrollToArticle}) => {
   });
 
   const handlerClickMenu = (e) => {
-    if (!e.target.classList.contains('menu__main')) {
-      setMenuHidden(!menuHidden);
-    }
-    MouseClick.play();
+    setTimeout(() => {
+      if (!e.target.classList.contains('menu__main')) {
+        setMenuHidden(!menuHidden);
+      }
+    }, 100)
+    FX.mouseClick.play();
   };
 
   const handlerOpenSubmenu = (elem) => () => {
     let newState = menuItems.map(item => {
+      if (item.open) {
+        item.open = false;
+        return item;
+      }
       item.open = item.menuId === elem.menuId;
       return item;
     });

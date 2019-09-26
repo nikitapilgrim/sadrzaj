@@ -9,11 +9,11 @@ const Wrapper = styled.p`
   width: 100%;
   max-height: ${props => `${props.maxHeight}px`};
   @media ${breakpoints.laptop} { 
-    columns: ${props => props.type === 'lyrics' && '2'};
+    columns: ${props => props.columns && '2'};
   }
 `;
 
-export const Paragraph = ({text, maxHeight, type}) => {
+export const Paragraph = ({text, maxHeight, columns, type}) => {
   const ref = useRef(null);
   /*let size = useComponentSize(ref);
   let {width, height} = size;
@@ -23,7 +23,7 @@ export const Paragraph = ({text, maxHeight, type}) => {
   }, [height]);*/
 
   return (
-    <Wrapper type={type} ref={ref} maxHeight={maxHeight}>
+    <Wrapper columns={columns} type={type} ref={ref} maxHeight={maxHeight}>
       {text && text.map(item => {
         return (
           <Fragment key={item.id}>

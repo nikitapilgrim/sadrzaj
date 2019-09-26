@@ -15,10 +15,8 @@ import {Articles} from './pages/Articles.js';
 const WithProviders = () => {
   return (
     <StoreContext.Provider value={store}>
-      <ModalProvider>
         <Route path="/" component={Start}/>
         <Route path="/articles" component={Articles}/>
-      </ModalProvider>
     </StoreContext.Provider>
   );
 };

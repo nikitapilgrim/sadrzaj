@@ -10,13 +10,13 @@ import {breakpoints} from '../../../mixins/breakpoints';
 const Wrapper = styled.p`
   width: 100%;
   margin: 0;
-  margin-top: 24px;
   text-shadow: 1px 1px 0 #000000;
   color: #ffffff;
   font-size: 20px;
   font-weight: 500;
   @media ${breakpoints.laptop} { 
     margin: 0;
+    
   }
   div {
     display: inline-block;
@@ -29,8 +29,8 @@ const Separator = styled.div`
 `;
 
 const parseTemplate = (template) => {
-  if (template[1] === '{' && template[0] === '{') {
-    const wordLeft = 2;
+  if (template.indexOf('{{') !== -1) {
+    const wordLeft = template.indexOf('{') + 2;
     const left = template.indexOf('(');
     const right = template.lastIndexOf(')');
     const wordRight = left;
@@ -80,17 +80,14 @@ const chunk = (arr, size) =>
 
 const preparedDataText = createMemo(prepareText);
 
-export const TextContainer = React.memo(({id, data, author, onReady, type}) => {
-  let ref = useRef(null);
-  let size = useComponentSize(ref);
-  let {width, height} = size;
-  const {width: wWidth, height: wheight} = useWindowSize();
-  const text = preparedDataText(data);
+const Lyrics = ({text, height, type}) => {
   const [paragraphsCount, setParagraphsCount] = useState();
   const [paragraphSize, setParagraphSize] = useState();
+  const {width: wWidth, height: wheight} = useWindowSize();
+  const [columns, setColumns] = useState(false);
 
   useEffect(() => {
-    const paragraphSize = Math.round(wheight * 0.8);
+    const paragraphSize = Math.round(wheight * 0.7);
     setParagraphSize(paragraphSize);
   }, [height]);
 
@@ -103,22 +100,13 @@ export const TextContainer = React.memo(({id, data, author, onReady, type}) => {
         setParagraphsCount(chunk(text, parts));
       }
     }
+    if (type === 'lyrics') {
+      setColumns(text.length > 30)
+    }
   }, [paragraphSize, height]);
 
-  /* useEffect(() => {
-    if (width >= 1440) {
-      setColumns(true);
-      const first = text.slice(0, text.length / 2);
-      const second = text.slice(text.length / 2, text.length);
-      setColumnText([first, second]);
-    } else {
-      setColumns(false);
-    }
-  }, [width]);*/
-
-
   return (
-    <Wrapper ref={ref}>
+    <>
       {paragraphsCount ? paragraphsCount.map((item, i, array) => {
         return (
           <>
@@ -127,6 +115,26 @@ export const TextContainer = React.memo(({id, data, author, onReady, type}) => {
           </>
         );
       }) : <Paragraph type={type} text={[text[0]]}/>}
+    </>
+  )
+
+};
+
+export const TextContainer = React.memo(({id, data, author, onReady, type}) => {
+  let ref = useRef(null);
+  let size = useComponentSize(ref);
+  let {width, height} = size;
+  const {width: wWidth, height: wheight} = useWindowSize();
+  const text = preparedDataText(data);
+
+
+  return (
+    <Wrapper ref={ref}>
+      {type === 'lyrics' ?
+        <Lyrics type={type} height={height} text={text}/> :
+        <Paragraph type={type} text={text}/>
+      }
+
 
       <br/>
       <i>{author}</i>

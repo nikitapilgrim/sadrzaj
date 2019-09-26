@@ -44,7 +44,7 @@ export const VideoButton = ({src}) => {
     <Modal
       inner={<VideoInner src={src}/>}>
       <Wrapper>
-          <span>Video</span>
+          <span>Pogledaj</span>
       </Wrapper>
     </Modal>
   );

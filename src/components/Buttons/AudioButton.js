@@ -53,7 +53,7 @@ export const AudioButton = ({data}) => {
         inner={<InnerAudio data={data} close={() => setModalOpen(false)}/>}>
       <Wrapper onClick={() => setModalOpen(true)}>
         <PlayIcon/>
-        <span>Audio</span>
+        <span>Poslušaj</span>
       </Wrapper>
     </Modal>
   );

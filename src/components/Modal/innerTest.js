@@ -1,6 +1,7 @@
 import React from 'react';
 import {Stage} from './Stage.js'
 import styled from 'styled-components';
+import {breakpoints} from '../../mixins/breakpoints';
 
 const Wrapper = styled.div`
   position: relative;
@@ -13,15 +14,19 @@ const StageContainer = styled.div`
 
 const OrderStage = styled.div`
   text-align: center;
-  margin-top: 200px;
+  margin-top: 100px;
   font-size: 38px;
   font-weight: 700;
   color: #fff;
   text-shadow: 2px 2px 0 #000000;
+   @media ${breakpoints.tablet} {
+      margin-top: 200px;
+  }
+
 `;
 
 
-export const InnerTest = ({onRight, stage, data, close, nextStage}) => {
+export const InnerTest = React.memo(({onRight, stage, data, close, nextStage}) => {
   return (
     <Wrapper>
       <StageContainer>
@@ -32,4 +37,4 @@ export const InnerTest = ({onRight, stage, data, close, nextStage}) => {
       </OrderStage>
     </Wrapper>
   );
-};
+});
