@@ -20,6 +20,7 @@ export default [
           
           `,
     author: 'Lirska narodna pjesma (sevdalinka)',
+    year: false,
     video: false,
     audio: require(`../assets/sounds/pronunciation/testvoice.aac`),
     questions: [
@@ -220,10 +221,9 @@ Odgovara iz bostana kada:
 pak da pišem tri godine dana,
 ne bi moji’ ispisala jada!”
 
-Narodna lirska pjesma (sevdalinka)
-
 `,
     author: 'Narodna lirska pjesma (sevdalinka)',
+    year: false,
     video: false,
     audio: false,
     questions: [
@@ -278,7 +278,7 @@ Narodna lirska pjesma (sevdalinka)
             right: false,
           },
           {
-            title: 'dada stvori jasnu sliku o njenoj tuzi, bolu',
+            title: 'da stvori jasnu sliku o njenoj tuzi, bolu',
             right: true,
           },
         ],
@@ -385,9 +385,9 @@ pon’ješe ga Mejrinome dvoru.
 đul miriše oko našeg dvora;
 čini mi se – Omerova duša.”
 Аl’ besjedi l’јере Mejre majka:
-“{{Muč(80)}}’, ne luduj, Mejrima djevojko!
+“{{Muč(14)}}’, ne luduj, Mejrima djevojko!
 Muč’, ne luduj, kad budala nisi!
-Sad tvoj Omer drugu dragu ljubi,
+Sad tvoj Omer drugu {{dragu(-)}} ljubi,
 a za tebe mladu i ne mari!”
 Al’ besjedi Mejrima djevojka:
 “Đul miriše, mila moja majko,
@@ -422,6 +422,7 @@ ko rastavi i milo i drago.
 
 `,
     author: 'Narodna balada',
+    year: false,
     video: false,
     audio: false,
     questions: [
@@ -549,6 +550,7 @@ Mrak se počeo spuštati nad zemlju kad eto ti onog njegova prijatelja što mu j
 
 `,
     author: 'Alija Nametak',
+    year: false,
     video: false,
     audio: false,
     questions: [
@@ -633,7 +635,7 @@ Mrak se počeo spuštati nad zemlju kad eto ti onog njegova prijatelja što mu j
     title: 'Umjetnička književnost - Roman',
     subtitle: 'Zlatna ptica (Odlomci iz romana “Derviš i smrt”)',
     type: essay,
-    text: `Svoju priču “o odnosu i sukobu između ideologije i ozlojeđenog pojedinca”, kako je i sam rekao o temi romana, Meša Selimović je prenio na {{derviša(56)}} Nurudina, intelektualca, koji je nakon kratkog ratovanja i prve promašene ljubavi našao utočište u vjeri. Te okolnosti su razlog sukoba, podijeljenosti čovjeka između vjere i slobodnog izbora da odlučuje, između mirenja i pobune, slobode i neslobode – ukratko, svega onoga što je pisac osjećao {{kada(5)}} je saznao da je izgubio brata pod neshvatljivim okolnostima. Odlomci su uzeti iz drugog dijela romana i govore o susretu mladog derviša sa dječakom koji ima samo majku i slijepu baku.
+    text: `Svoju priču “o odnosu i sukobu između ideologije i ozlojeđenog pojedinca”, kako je i sam rekao o temi romana, Meša Selimović je prenio na {{derviša(56)}} Nurudina, intelektualca, koji je nakon kratkog ratovanja i prve promašene ljubavi našao utočište u vjeri. Te okolnosti su razlog sukoba, podijeljenosti čovjeka između vjere i slobodnog izbora da odlučuje, između mirenja i pobune, slobode i neslobode – ukratko, svega onoga što je pisac osjećao kada je saznao da je izgubio brata pod neshvatljivim okolnostima. Odlomci su uzeti iz drugog dijela romana i govore o susretu mladog derviša sa dječakom koji ima samo majku i slijepu baku.
 *
 Biće nesrećan koji svoju dušu okalja.
 Jedno dijete je govorilo o svome strahu, davno. Ličilo je na pjesmicu:
@@ -670,6 +672,7 @@ Bio jednom jedan dječak, u očevoj kući, nad rijekom, koji je sanjao zlatne sn
 
 `,
     author: 'Meša Selimović',
+    year: false,
     video: false,
     audio: false,
     questions: [
@@ -793,6 +796,7 @@ Bio jednom jedan dječak, u očevoj kući, nad rijekom, koji je sanjao zlatne sn
           
           `,
     author: 'Ernest Hemingvej',
+    year: false,
     video: false,
     audio: false,
     questions: [
@@ -894,7 +898,8 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
             
           
           `,
-    author: 'Ernest Hemingvej',
+    author: 'Enver Čolaković',
+    year: false,
     video: false,
     audio: false,
     questions: [
@@ -931,7 +936,7 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
         question: 'Slikajući nesklad između ribareve snage i težine borbe sa ribom, pisac se poslužio stilskom figurom koja se zove…',
         answers: [
           {
-            title: 'pomagao starijim nosačima',
+            title: 'kontrast, simbol',
             right: true,
           },
           {
@@ -962,7 +967,7 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
     subtitle: 'Lovac u žitu',
     type: essay,
     text: `Roman “Lovac u žitu” po mnogo čemu je neobičan i zato već dugo, kod mnogih generacija, izaziva “ljubav na prvi pogled”. Roman počinje bez uvoda, direktno se ulazi u radnju i pričanje ima retrospektivni tok.
-            Pričalac, glavni lik romana, Holden Kolfild, o događajima govori {{kada(5)}} je već sve preživio i razbolio se. Dok leži u bolesničkoj postelji, svojom pričom obuhvata sve ono što se dogodilo u nekoliko dana oko Božića. Holden se odlikovao oštrinom zapažanja i stalno isticao da mrzi sve što zvuči lažno, istrošeno i licemjerno, a svijet u kome je živio davao je mnogo primjera za to. Shvatao je da se većina ponaša po šablonu, da većina govori ono što sredina u kojoj se nalazi voli da čuje ili ono što je navikla da čuje.
+            Pričalac, glavni lik romana, Holden Kolfild, o događajima govori kada je već sve preživio i razbolio se. Dok leži u bolesničkoj postelji, svojom pričom obuhvata sve ono što se dogodilo u nekoliko dana oko Božića. Holden se odlikovao oštrinom zapažanja i stalno isticao da mrzi sve što zvuči lažno, istrošeno i licemjerno, a svijet u kome je živio davao je mnogo primjera za to. Shvatao je da se većina ponaša po šablonu, da većina govori ono što sredina u kojoj se nalazi voli da čuje ili ono što je navikla da čuje.
             *
             Lice starog Spensera postajalo je sve ozbiljnije. Znao sam da će biti tako. “I tako, ti nas ostavljaš, eh?”, rekao je.
             “Da, gospodine. Tako izgleda.”
@@ -1014,6 +1019,7 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
           
           `,
     author: 'Džerom D. Selindžer',
+    year: false,
     video: false,
     audio: false,
     questions: [
@@ -1131,6 +1137,7 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
 			
             `,
     author: 'Artur Klark',
+    year: false,
     video: false,
     audio: false,
     questions: [
@@ -1264,6 +1271,7 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
             Iz mora su izranjali dupini i plivali ispred broda. Ligama su tako ujutro plivali, vezući mnoge pjenušave preplete. Moje su ptičice cvrkutale u krleci, a kraj mene jе sjedio Rontu-Aru.
             `,
     author: 'Skot O’ Del',
+    year: false,
     video: false,
     audio: false,
     questions: [
@@ -1363,6 +1371,7 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
             Чудна драж је заронити у тишину и покрета и звука. Негде на дно човека падају мисли, и глава плива у несвестици визија. Та шума, то су закопани џинови који хоће да пођу, и гле, ако одједаред ишчупају ноге из земље, заљуљају своја огромна телеса, и почне путовати црна шума са белом шубаром на глави... Тишина. Бескрајна шумска путовања, и на белоћи стоји само траг мојих дугих дрвених ципела. Чудно ми је и не могу да схватим. Смешно ми је и смејем се Сфингиним смехом без веселости. У тишини је све, и воља за животом и воља за пропашћу. Дух одриче, а живот хоће живот...
             `,
     author: 'Исидора Секулић',
+    year: false,
     video: false,
     audio: false,
     questions: [
@@ -1467,7 +1476,7 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
            Аџо је стајао те ноћи погурен и нијем. Читаве те ноћи аџо је шапутао неку дугу спасоносну молитву.
            Добрих духова ноћас није било.
            Ватра је горјела читаве дуге зимске вечери.
-           Ватра је прогутала чађаве таване и {{диванхане(102)}}, јадна имања сиромаха, читав један инвентар фукарлука и туге. Лучеви диреци пуцали су као рамазанске {{бешчеталаме(114)}}.
+           Ватра је прогутала чађаве таване и {{диванхане(102)}}, јадна имања сиромаха, читав један инвентар фукарлука и туге. Лучеви диреци пуцали су као рамазанске {{бешчеталаме(104)}}.
            Ујутро је освануло згариште.
            Црно и укочено као дугачак леш некаквог џина који се читаве ноћи носио са црвеним бичевима огњене агоније.
            Стара авлија је била пуна мртвих птица.
@@ -1487,6 +1496,7 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
            Из бедекера је истргнута страница о мравињаку, гдје се годинама и данима зацјењивало, уцјењивало, процјењивало и цјенкало, док густ кисео дим није однио све у бесцијење...
            `,
     author: 'Зуко Џумхур',
+    year: false,
     video: false,
     audio: false,
     questions: [
@@ -1584,6 +1594,7 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
   Danas su te rane zacijeljene, i jedva se poznaje gdje su i bile, ili se nikako i ne poznaje, nego je onako kao i nekad – kad je ovu ćupriju, ispustivši aršin iz ruku, ostavio za sobom njen graditelj. Bilo je to godine 1577. Davno i davno! Mnogo je od tada niz Drinu prošlo vode, mnogo ljudi sjelo na “sofu” – i odatle, sa sredine mosta, sa visine od oko petnaest metara iznad vode, gledalo dolje niz Drinu, i gore uz Drinu, i pred sobom grad Višegrad. A ako je neko umio, mogao je tu odmah prema “sofi ”, a na ploči mramornoj, čitati ovakav natpis na mostu: “Gospodin Mehmed-paša, mudrac svog vremena, potrošio je svoj imetak na {{zadužbine(123)}}. Niko neće reći za imetak koji se troši na zadužbine, da je rasipanje. Bio je svjestan da su svakom njegova djela najbolje potomstvo. Podigao je most, kojem na svijetu nema ravna. Nemoj reći da je propao imetak, koji se troši na ovakva djela.“
             `,
     author: 'Ćamil Sijarić',
+    year: false,
     video: false,
     audio: false,
     questions: [
@@ -1713,6 +1724,7 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
     Za sutra, danas i juče.
     `,
     author: 'Ruben Dario',
+    year: 'false'
   },
   {
     id: 15,
@@ -1769,8 +1781,8 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
                 
             
             `,
-    author: `Wuppertal, marta 2008.
-            Ivica Vanja Rorić`,
+    year: 'Wuppertal, marta 2008.',
+    author: `Ivica Vanja Rorić`,
   },
   {
     id: 16,
@@ -1783,8 +1795,8 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
            Ostavit ćemo ćupriju a mi ćemo preći. 
            
 		   `,
-    author: `Godine 974. (1576–77)
-           Derviš-paša Bajezidagić`,
+    author: `Derviš-paša Bajezidagić`,
+    year: 'Godine 974. (1576–77)',
     video: false,
     audio: false,
     questions: [
@@ -1792,10 +1804,6 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
         title: 'This is title for 1st question',
         question: 'Tarih je natpis sa datumom građenja mosta, džamije, knjižnice i sličnih građevina. Pisan je u obliku rečenice ili  .',
         answers: [
-          {
-            title: '',
-            right: false,
-          },
           {
             title: 'stiha',
             right: true,
@@ -1876,10 +1884,6 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
         title: 'This is title for 7h question',
         question: 'U doba osmanske vladavine u Bosni javljaju se pjesnici i prozni pisci koji su stvarali na orijentalnim jezicima, najviše na turskom. Među njima najpoznatiji je pisac sarajevskog Ljetopisa koji se zvao  .',
         answers: [
-          {
-            title: '',
-            right: false,
-          },
           {
             title: 'Bašeskija',
             right: true,
@@ -1988,7 +1992,9 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
            Па, држећи се зида и једнако се церекајући, пође вратима.
            – Ето... бели сам те запитао и искалио се – рече вирећи иза {{каната(152)}}. – А сад лијепо одох у хавс! Збогом!
            
-			Светозар Ћоровић`,
+			`,
+    author: 'Светозар Ћоровић',
+    year: false,
     video: false,
     audio: false,
     questions: [
@@ -2107,7 +2113,9 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
            “Ništa!” odgovorio je dižući sa poda poslužavnik, i pokazao joj ga: “Ovo je samo palo!” a ona je još jednom prešla po sobi strogim, ispitujućim pogledom, i nečujno zatvorila vrata.
            “Ona me je spasla”, rekao je pošto je izišla. “Ona me je spasla i prvoga rata; izmolila je oca da me zadrži u bolnici kad je trebalo da me premeste na front. Od dobrovoljne bolničarke i kćerke jednog pukovnika to je bilo mnogo. Hladna je i stroga žena i tvoji je nisu mnogo marili (“Ružna je, zla i tvrdica, govorili su. Od muževljevih starih okovratnika plela je konopce, od njegovih dotrajalih šešira krojila je sebi kape, parala je čarape da bi iskoristila konac, sebe i njega morila je glađu i nikog nije pozivala u kuću.”), ali mogu ti reći da je u suštini imala dobru dušu, a kad je bila mlada, kad je bila sasvim mlada, bila je i lepuškasta. Da nije bilo nje, ko zna šta bi bilo sa mnom. Kuću i ove stvari ona je, štedeći, stekla, a sad mi je život spasla. Kao prava Nemica i kći bivšeg pukovnika, ona je to mogla; imala je veza. Ali i ja sam pomagao, ni ja nisam sedeo skrštenih ruku. Nisam bio dobar lekar – istina je – a ni vredan i vešt da zaradim velike pare, ali nisam bogme ni od onih tunjavka koji dozvoljavaju da im se nešto pravi na glavu. Bili su im potrebni lekari, ali, dođavola, i oni su dobro znali da sam ja nikakav lekar! Štefi je ipak udesila da me prime u {{prosekturu(153)}}, a i meni je to bilo draže; pre ili kasnije umro bi mi neki bolesnik i onda bih ja ispao kriv. Veruj da sam ih se naparao kao niko ovoga rata. Posao prljav, lešinarski, ali sam mislio: i to će proći; glavno je izdržati i sačuvati glavu. Štefi im je pokazala moje ordenje iz prvoga rata, a i sva odlikovanja svoga oca, kojih je imala celu gomilu. Upisala se opet u dobrovoljne bolničarke, nosila je i kukasti krst na rukavu, na kući je isticala nemačku zastavu, pozivala oficire na večeru, a ja sam sa posla odlazio pravo kući, manji od makova zrna, i bez velike potrebe ne bih izlazio na ulicu. Štefi je dokazala da sam se sa njome venčao u crkvi – katolik dakle – a tvrdili smo da mi je i mati bila Nemica. Prevario sam ih. Prevario svinje jedne! Morao sam da se ponižavam, da lažem i da varam, straha sam se nagutao, ali eto me živa, sa glavom na ramenima.”
             
-			Erih Koš`,
+			`,
+    author: 'Erih Koš',
+    year: false,
     video: false,
     audio: false,
     questions: [
@@ -2233,7 +2241,9 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
            Djed je tako srastao nama uz dušu i oko, da nijesmo ni pomisliti mogli da bi on ikad umro; nama je uza nj tako bilo kao da će navijek živjeti. Kad prvi put čusmo: umro nam je djed! – zazujaše nam te riječi tako čudno u ušima, da smo u prvi čas ostali bez boli i bez suza... Dugo ga ne mogasmo zaboraviti; dugo se obazirasmo za njim, hoće li doći sa stana i donijeti nam kitu jagoda i vijenac prvih trešanja... Ali njega nema!... A mi sretni i blaženi kad ga u snu vidimo kako nam pripovijeda i ljulja nas na koljenu.
            A naveče kad izmolimo svagdašnju molitvu, u duši se sjetimo i djeda: – Smiluj se, bože, našemu djedu!
            
-		   Josip Kozarac`,
+		   `,
+    author: 'Josip Kozarac',
+    year: false,
     video: false,
     audio: false,
     questions: [
@@ -2342,7 +2352,9 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
            Sljedećeg proljeća, bujnog i kišovitog, sljez u našoj bašti rascvjeta se kao nikada dotad, ali starina kao da ga ni zapazio nije. Nisu tu pomagala ni sva trtljanja neumornog rođaka Save, djed je bio slijep i za boje i za sve cvijeće ovoga svijeta. Tuga da te uhvati.
            Minulo je od tih neveselih dana već skoro pola vijeka, djeda odavna nema na ovome svijetu, a ja još ni danas posigurno ne znam kakve je boje sljez. Znam samo da u proljeće iza naše potamnjele baštenske ograde prosine nešto ljupko, prozračno i svijetlo pa ti se prosto plače, iako ne znaš ni šta te boli ni šta si izgubio.
            
-		   Branko Ćopić`,
+		   `,
+    author: 'Branko Ćopić',
+    year: false,
     video: false,
     audio: false,
     questions: [
@@ -2451,7 +2463,9 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
            Са сујеверним страхом заобилазио је излоге књижара у којима су биле поређане нове и лепо укоричене књиге. А кад би се међу друговима повела реч о библиотеци или о каквој било књизи, он би одједном поцрвенео, почео збуњено да замуцкује, забашурује, и скреће говор на друге ствари, док му се по грудима разливало, као физички бол, његово већ познато мучно осећање од помисли на неку нејасну и непоправљиву штету која му се десила и за коју још нико не зна, али за коју ће морати да одговара. А то осећање било је утолико теже уколико се он више трудио да га сакрије. Често му се чинило да му се другови намерно обраћају са питањима која се односе на библиотеку, књиге и њихове повезе. На свако такво питање он би одговарао ћутањем, обарајући очи и чекајући кад ће му неко отворено казати да зна да он у свом ковчегу држи разваљену књигу.
            Сви су дани били тешки, али нарочито мучан био је уторник. Тога дана он није могао да мисли ни на шта друго до на своју књигу. Уторником после подне другови су враћали прочитане књиге и узимали нове. Он није смео ни помислити на то. Не би се бојао да изиђе, ако треба, пред директора и пред сваки суд овог света, али ето, нема снаге ни храбрости да изиђе пред тога крупног риђег човека који суво, крто тражи од свакога да брзо, јасно и одређено каже шта хоће. И то још да изиђе са оштећеном књигом! Не, за то нема храбрости. Њега се боји више од свега на свету.
            
-		   Иво Андрић`,
+		   `,
+    author: 'Иво Андрић',
+    year: false,
     video: false,
     audio: false,
     questions: [
@@ -2596,6 +2610,7 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
            
 			`,
     author: `Slavko Kolar`,
+    year: false,
     video: false,
     audio: false,
     questions: [
@@ -2715,6 +2730,7 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
             
 			`,
     author: `Злата Коларић-Кишур`,
+    year: false,
     video: false,
     audio: false,
     questions: [
@@ -2730,75 +2746,75 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
             title: ' želja jedne djevojčice da dobije novu odjeću',
             right: false,
           },
+        ],
+      },
+      {
+        title: 'This is title for 2nd question',
+        question: 'Ko priča o događaju?',
+        answers: [
           {
-            title: 'This is title for 2nd question',
-            question: 'Ko priča o događaju?',
-            answers: [
-              {
-                title: 'Zlata Kolarić – Kišur',
-                right: false,
-              },
-              {
-                title: 'djevojčica, glavna junakinja priče',
-                right: true,
-              },
-            ],
+            title: 'Zlata Kolarić – Kišur',
+            right: false,
           },
           {
-            title: 'This is title for 3rd question',
-            question: 'Djevojčica se radovala jer je',
-            answers: [
-              {
-                title: 'prvi put dobila novu odjeću',
-                right: false,
-              },
-              {
-                title: 'procvjetalo proljećno cvijeće',
-                right: true,
-              },
-            ],
+            title: 'djevojčica, glavna junakinja priče',
+            right: true,
+          },
+        ],
+      },
+      {
+        title: 'This is title for 3rd question',
+        question: 'Djevojčica se radovala jer je',
+        answers: [
+          {
+            title: 'prvi put dobila novu odjeću',
+            right: false,
           },
           {
-            title: 'This is title for 4th question',
-            question: 'Koji događaj u priči predstavlja preokret?',
-            answers: [
-              {
-                title: 'Kada je djevojčica dobila novu odjeću.',
-                right: false,
-              },
-              {
-                title: 'Kada je isprljala novu odjeću.',
-                right: true,
-              },
-            ],
+            title: 'procvjetalo proljećno cvijeće',
+            right: true,
+          },
+        ],
+      },
+      {
+        title: 'This is title for 4th question',
+        question: 'Koji događaj u priči predstavlja preokret?',
+        answers: [
+          {
+            title: 'Kada je djevojčica dobila novu odjeću.',
+            right: false,
           },
           {
-            title: 'This is title for 5th question',
-            question: 'Poslije pada djevojčica se osjećala…',
-            answers: [
-              {
-                title: 'kao glavni lik u komediji',
-                right: false,
-              },
-              {
-                title: 'osramoćeno',
-                right: true,
-              },
-            ],
+            title: 'Kada je isprljala novu odjeću.',
+            right: true,
+          },
+        ],
+      },
+      {
+        title: 'This is title for 5th question',
+        question: 'Poslije pada djevojčica se osjećala…',
+        answers: [
+          {
+            title: 'kao glavni lik u komediji',
+            right: false,
           },
           {
-            title: 'This is title for 6th question',
-            question: 'Koji je događaj pokazao djevojčici da isprljana odjeća nije bila vrijedna suza?',
-            answers: [
-              {
-                title: 'Kada je kao odrasla mogla kupovati što god poželi.',
-                right: false,
-              },
-              {
-                title: 'Kada je u povorci, među lijepo obučenom djecom, vidjela skromno obučenu, ali ponosnu djevojčicu.',
-                right: true,
-              },
-            ],
+            title: 'osramoćeno',
+            right: true,
+          },
+        ],
+      },
+      {
+        title: 'This is title for 6th question',
+        question: 'Koji je događaj pokazao djevojčici da isprljana odjeća nije bila vrijedna suza?',
+        answers: [
+          {
+            title: 'Kada je kao odrasla mogla kupovati što god poželi.',
+            right: false,
+          },
+          {
+            title: 'Kada je u povorci, među lijepo obučenom djecom, vidjela skromno obučenu, ali ponosnu djevojčicu.',
+            right: true,
           },
         ],
       },
@@ -2823,6 +2839,7 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
             – Nikad neću zaboraviti onu pticu! Sećaš li se? Što ne napišeš nešto o tome?
             `,
     author: `Mirko Kovač`,
+    year: false,
     video: false,
     audio: false,
     questions: [
@@ -2839,61 +2856,61 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
             right: false,
 
           },
+        ],
+      },
+      {
+        title: 'This is title for 2nd question',
+        question: 'Atmosferu u sali je promijenio ulazak…',
+        answers: [
           {
-            title: 'This is title for 2nd question',
-            question: 'Atmosferu u sali je promijenio ulazak…',
-            answers: [
-              {
-                title: 'mladića u invalidskim kolicima',
-                right: true,
-              },
-              {
-                title: 'otvaranje prozora u sali',
-                right: false,
-              },
-            ],
+            title: 'mladića u invalidskim kolicima',
+            right: true,
           },
           {
-            title: 'This is title for 3rd question',
-            question: 'Mladić u kolicima je bio zaljubljenik u…',
-            answers: [
-              {
-                title: 'književnost',
-                right: false,
-              },
-              {
-                title: 'film',
-                right: true,
-              },
-            ],
+            title: 'otvaranje prozora u sali',
+            right: false,
+          },
+        ],
+      },
+      {
+        title: 'This is title for 3rd question',
+        question: 'Mladić u kolicima je bio zaljubljenik u…',
+        answers: [
+          {
+            title: 'književnost',
+            right: false,
           },
           {
-            title: 'This is title for 4th question',
-            question: 'Pisac je doživio dolazak ptice kao tajanstveni znak poslije koga je uslijedilo njegovo…',
-            answers: [
-              {
-                title: 'oslobađanje od neprijatnosti i pritiska koji je trpio',
-                right: true,
-              },
-              {
-                title: 'saznanje da je sve prolazno',
-                right: false,
-              },
-            ],
+            title: 'film',
+            right: true,
+          },
+        ],
+      },
+      {
+        title: 'This is title for 4th question',
+        question: 'Pisac je doživio dolazak ptice kao tajanstveni znak poslije koga je uslijedilo njegovo…',
+        answers: [
+          {
+            title: 'oslobađanje od neprijatnosti i pritiska koji je trpio',
+            right: true,
           },
           {
-            title: 'This is title for 5th question',
-            question: 'Ptica u književnosti je simbol…',
-            answers: [
-              {
-                title: 'ljubavi',
-                right: false,
-              },
-              {
-                title: 'slobode',
-                right: true,
-              },
-            ],
+            title: 'saznanje da je sve prolazno',
+            right: false,
+          },
+        ],
+      },
+      {
+        title: 'This is title for 5th question',
+        question: 'Ptica u književnosti je simbol…',
+        answers: [
+          {
+            title: 'ljubavi',
+            right: false,
+          },
+          {
+            title: 'slobode',
+            right: true,
           },
         ],
       },
@@ -2945,6 +2962,7 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
             
 			`,
     author: `Anton Pavlovič Čehov`,
+    year: false,
     video: false,
     audio: false,
     questions: [
@@ -3303,6 +3321,7 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
             
 			`,
     author: `Milan Ogrizović`,
+    year: false,
     video: false,
     audio: false,
     questions: [
@@ -3433,6 +3452,7 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
             ДАВИД: Име му је Јолпаз Давидов. Тако га свијет зове, а тако ће му и славни суд позивке писати, ако га данас не осудите на вјешала. Село му се зове Мелина, котар Бања Лука, окружје Бања Лука, а земља, мислим, главати господине, да ће и њему бити Босна. Кућна му је лумера, каже кнез, оне двије кантарске куке.
             `,
     author: `Петар Кочић`,
+    year: false,
     video: false,
     audio: false,
     questions: [

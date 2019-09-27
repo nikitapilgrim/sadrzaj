@@ -29,7 +29,10 @@ const Wrapper = styled.div`
 `;
 
 const Main = styled.main`
-  //transform: scale(0.8);
+  padding-top: 50px;
+  @media ${breakpoints.laptop} {
+    padding-top: 100px;
+   }
 `
 
 const Header = styled.div`

@@ -36,6 +36,9 @@ const parseTemplate = (template) => {
     const wordRight = left;
     const word = template.slice(wordLeft, wordRight);
     const id = template.slice(left + 1, right);
+    if (id === '-') {
+      return [word, false]
+    }
     return [word, +id];
   }
 };
@@ -49,6 +52,10 @@ const prepareText = (data) => {
       const parsed = parseTemplate(word);
       if (parsed) {
         const [parsedWord, id] = parsed;
+        if (id === false) {
+          acc.push({word: parsedWord, id: i});
+          return acc
+        }
         const modalInfo = dictionary.find((w => w.id === id));
         acc.push({word: parsedWord, data: modalInfo, id: i});
         return acc;
@@ -110,17 +117,17 @@ const Lyrics = ({text, height, type}) => {
       {paragraphsCount ? paragraphsCount.map((item, i, array) => {
         return (
           <>
-            <Paragraph type={type} key={item.id} text={item}/>
+            <Paragraph columns={columns} type={type} key={item.id} text={item}/>
             {i !== array.length - 1 && <Separator/>}
           </>
         );
-      }) : <Paragraph type={type} text={[text[0]]}/>}
+      }) : <Paragraph columns={columns} type={type} text={[text[0]]}/>}
     </>
   )
 
 };
 
-export const TextContainer = React.memo(({id, data, author, onReady, type}) => {
+export const TextContainer = React.memo(({id, data, author,year, onReady, type}) => {
   let ref = useRef(null);
   let size = useComponentSize(ref);
   let {width, height} = size;
@@ -136,6 +143,7 @@ export const TextContainer = React.memo(({id, data, author, onReady, type}) => {
       }
 
 
+      <i>{year}</i>
       <br/>
       <i>{author}</i>
     </Wrapper>

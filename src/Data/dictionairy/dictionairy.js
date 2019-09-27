@@ -1942,4 +1942,5 @@ export default [
     audio: false,
     video: false,
   },
+
 ];

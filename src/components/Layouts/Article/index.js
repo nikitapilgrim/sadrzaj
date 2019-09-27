@@ -237,7 +237,7 @@ export const ArticleLayout = React.memo(({data, id, getOffset, text}) => {
                 {data.audio && <AudioButton data={data.audio}/>}
                 {data.video && <VideoButton src={data.video}/>}
               </Buttons>
-              <TextContainer type={data.type} onReady={textReady} author={data.author} id={data.id} data={data.text}/>
+              <TextContainer type={data.type} onReady={textReady} year={data.year} author={data.author} id={data.id} data={data.text}/>
             </MainContainer>
             <PageNumber>{data.id}</PageNumber>
           </Content>
