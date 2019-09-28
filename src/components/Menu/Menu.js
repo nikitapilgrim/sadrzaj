@@ -1,10 +1,9 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React, {useRef, useState} from 'react';
 import styled from 'styled-components';
-import {useMount} from 'react-use';
+import {useClickAway, useMount} from 'react-use';
 import {breakpoints} from '../../mixins/breakpoints';
 import {Hamburger} from './Hamburger';
-import {useClickAway} from 'react-use';
-import {FX} from '../../assets/sounds/fx/index'
+import {FX} from '../../assets/sounds/fx/index';
 
 import ArticleData from '../../Data/Articles';
 
@@ -24,8 +23,10 @@ const Wrapper = styled.div`
   background-color: #6e3c15;
   padding: 7px 15px 7px 14px;
   width: ${props => props.hidden ? 'auto' : '95%'};
+  height: ${props => props.hidden ? 'auto' : 'calc(100% - 6vh);'};
   @media ${breakpoints.tablet} {
     width: auto;
+    height: auto;
   }
 `;
 
@@ -58,7 +59,7 @@ const Title = styled.span`
     font-size: 48px;
   }
   font-weight: 900;
-  line-height: 60px;
+  line-height: 1.4;
   
   /*&:before, &:after {
     display: block;
@@ -103,8 +104,8 @@ const Li = styled.li`
 `;
 
 const SubmenuWrapper = styled.ol`
-  max-height: ${props => props.hiddenSubmenu ? '0' : '500px'};
-  transition: max-height 0.2s ease-out;
+  max-height: ${props => props.hiddenSubmenu ? '0' : '300px'};
+  transition: max-height 0.4s linear;
   overflow: hidden;
   margin: 0;
   padding: 0;

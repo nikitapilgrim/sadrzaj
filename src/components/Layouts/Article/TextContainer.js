@@ -1,9 +1,8 @@
-import React, {useState, useRef, useEffect, useCallback} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import {Paragraph} from './Paragraph';
 import styled from 'styled-components';
 import useComponentSize from '@rehooks/component-size';
-import {useWindowSize} from 'react-use';
-import {createMemo} from 'react-use';
+import {createMemo, useWindowSize} from 'react-use';
 import dictionary from '../../../Data/dictionairy/dictionairy';
 import {breakpoints} from '../../../mixins/breakpoints';
 
@@ -37,7 +36,7 @@ const parseTemplate = (template) => {
     const word = template.slice(wordLeft, wordRight);
     const id = template.slice(left + 1, right);
     if (id === '-') {
-      return [word, false]
+      return [word, false];
     }
     return [word, +id];
   }
@@ -54,7 +53,7 @@ const prepareText = (data) => {
         const [parsedWord, id] = parsed;
         if (id === false) {
           acc.push({word: parsedWord, id: i});
-          return acc
+          return acc;
         }
         const modalInfo = dictionary.find((w => w.id === id));
         acc.push({word: parsedWord, data: modalInfo, id: i});
@@ -100,7 +99,7 @@ const Lyrics = ({text, height, type}) => {
 
   useEffect(() => {
     if (paragraphSize) {
-      const lines = Math.round(height/ paragraphSize);
+      const lines = Math.round(height / paragraphSize);
       const a = lines || 1;
       const parts = Math.round(text.length / a);
       if (parts && parts !== Infinity) {
@@ -108,7 +107,7 @@ const Lyrics = ({text, height, type}) => {
       }
     }
     if (type === 'lyrics') {
-      setColumns(text.length > 30)
+      setColumns(text.length > 30);
     }
   }, [paragraphSize, height]);
 
@@ -123,11 +122,24 @@ const Lyrics = ({text, height, type}) => {
         );
       }) : <Paragraph columns={columns} type={type} text={[text[0]]}/>}
     </>
-  )
+  );
 
 };
 
-export const TextContainer = React.memo(({id, data, author,year, onReady, type}) => {
+const NormalText = ({text}) => {
+  return (
+    <>
+      {text && text.map((p) => {
+        return (
+          <Paragraph text={[p]}/>
+        );
+      })}
+    </>
+  );
+};
+
+
+export const TextContainer = React.memo(({id, data, author, year, onReady, type}) => {
   let ref = useRef(null);
   let size = useComponentSize(ref);
   let {width, height} = size;
@@ -139,7 +151,7 @@ export const TextContainer = React.memo(({id, data, author,year, onReady, type})
     <Wrapper ref={ref}>
       {type === 'lyrics' ?
         <Lyrics type={type} height={height} text={text}/> :
-        <Paragraph type={type} text={text}/>
+        <NormalText text={text}/>
       }
 
 

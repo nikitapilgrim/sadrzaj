@@ -1,12 +1,12 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
 import {breakpoints} from '../../mixins/breakpoints';
 import {useVideo} from 'react-use';
-import PauseSVG from '../../assets/svg/pause.svg'
-import PlaySVG from '../../assets/svg/play.svg'
+import PauseSVG from '../../assets/svg/pause.svg';
+import PlaySVG from '../../assets/svg/play.svg';
 import FastBack from '../../assets/svg/fast_back.svg';
 import FastForward from '../../assets/svg/fast_forward.svg';
-import {FX} from '../../assets/sounds/fx/index'
+import {FX} from '../../assets/sounds/fx/index';
 
 const Wrapper = styled.div`
   
@@ -56,6 +56,7 @@ const PlayButton = styled.button`
   height: 91px;
   margin: 0 30px;
   background: none;
+  outline: none;
 `;
 
 const Rewind = styled.button`
@@ -64,6 +65,7 @@ const Rewind = styled.button`
   border: none;
   width: 59px;
   height: 41px;
+  outline: none;
 `;
 
 const RewindBack = styled.button`
@@ -72,6 +74,7 @@ const RewindBack = styled.button`
   border: none;
   width: 59px;
   height: 41px;
+  outline: none;
 `;
 
 export const VideoInner = ({src}) => {

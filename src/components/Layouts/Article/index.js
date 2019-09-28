@@ -1,7 +1,6 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import styled from 'styled-components';
 import useStoreon from 'storeon/react';
-import {useMount, useWindowSize, createMemo, useLocalStorage} from 'react-use';
 import useComponentSize from '@rehooks/component-size';
 
 import {breakpoints} from '../../../mixins/breakpoints';
@@ -86,8 +85,9 @@ const Buttons = styled.div`
   align-items: center;
   justify-content: flex-start;
   position: relative;
-  left: -64px;
-  transform: scale(0.7);
+  left: 0px;
+  top: -12px;
+  //transform: scale(0.7);
   
   & > div:not(:first-child) {
       margin-left: 10px;
@@ -97,10 +97,10 @@ const Buttons = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-end;
-    transform: scale(0.5);
+    //transform: scale(0.5);
     position: absolute;
-    top: -46px;
-    left: -221px;
+    top: 2px;
+    left: -162px;
     & > div:not(:first-child) {
       margin-top: 10px;
     }

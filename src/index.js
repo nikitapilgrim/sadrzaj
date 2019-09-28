@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 import ReactDOM from 'react-dom';
-import HotManager from './HotManager'
-import App from './App'
+import HotManager from './HotManager';
+import App from './App';
 
 const root = document.querySelector('#root');
 

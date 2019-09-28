@@ -2,12 +2,12 @@ import React, {useEffect, useState} from 'react';
 import styled from 'styled-components';
 import useAudio from 'react-use/lib/useAudio';
 import {breakpoints} from '../../mixins/breakpoints';
-import {AudioSpectrum} from '../Spectrum'
+import {AudioSpectrum} from '../Spectrum';
 import FastBack from '../../assets/svg/fast_back.svg';
 import PlaySVG from '../../assets/svg/play.svg';
 import PauseSVG from '../../assets/svg/pause.svg';
 import FastForward from '../../assets/svg/fast_forward.svg';
-import {FX} from '../../assets/sounds/fx/index'
+import {FX} from '../../assets/sounds/fx/index';
 
 const Wrapper = styled.div`
   position: relative;
@@ -50,6 +50,7 @@ const PlayButton = styled.button`
   height: 91px;
   margin: 0 30px;
   background: none;
+  outline: none;
 `;
 
 const Rewind = styled.button`
@@ -58,6 +59,7 @@ const Rewind = styled.button`
   border: none;
   width: 59px;
   height: 41px;
+  outline: none;
 `;
 
 const RewindBack = styled.button`
@@ -66,6 +68,7 @@ const RewindBack = styled.button`
   border: none;
   width: 59px;
   height: 41px;
+  outline: none;
 `;
 
 export const InnerAudio = ({data, close}) => {

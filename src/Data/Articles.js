@@ -3054,7 +3054,7 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
   },
   {
     id: 26,
-    title: 'Umjetnička književnost – Drama',
+    title: 'Umjetnička književnost - Drama',
     subtitle: 'Hasanaginica (odlomak)',
     type: lyrics,
     text: `AGA HASANAGA

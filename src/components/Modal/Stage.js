@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import UIfx from 'uifx'
+import UIfx from 'uifx';
 import {breakpoints} from '../../mixins/breakpoints';
 
 const correct = new UIfx(require('../../assets/sounds/fx/correct-answer.aac'));

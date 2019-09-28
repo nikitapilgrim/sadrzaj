@@ -1,12 +1,12 @@
-import React, {useState, useEffect, useRef, Fragment} from 'react';
-import {useMount} from 'react-use';
-import useComponentSize from '@rehooks/component-size';
+import React, {Fragment, useRef} from 'react';
 import styled from 'styled-components';
 import {breakpoints} from '../../../mixins/breakpoints';
 import {Highlight} from './Highlight';
 
 const Wrapper = styled.p`
   width: 100%;
+  margin: 0;
+  margin-bottom: 4px;
   max-height: ${props => `${props.maxHeight}px`};
   @media ${breakpoints.laptop} { 
     columns: ${props => props.columns && '2'};
@@ -15,12 +15,6 @@ const Wrapper = styled.p`
 
 export const Paragraph = ({text, maxHeight, columns, type}) => {
   const ref = useRef(null);
-  /*let size = useComponentSize(ref);
-  let {width, height} = size;
-
-  useEffect(() => {
-    onRenderString(height)
-  }, [height]);*/
 
   return (
     <Wrapper columns={columns} type={type} ref={ref} maxHeight={maxHeight}>

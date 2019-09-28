@@ -10,30 +10,30 @@ const Wrapper = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px 15px;
+  padding: 4px 10px;
   box-shadow: 0 3px 0 #000000;
-  border-radius: 5px;
+  border-radius: 4px;
   border: 1px solid #fcfbc4;
   background-color: #c79e1f;
   svg {
-      width: 30px;
-      height: 30px;
+    width: 22px;
+    height: 22px;
   }
   span {
     text-shadow: 0 1px 0 #000000;
     color: #ffffff;
-    font-size: 22px;
+    font-size: 16px;
     font-weight: 900;
-    margin-left: 10px;
+    margin-left: 8px;
   }
   @media ${breakpoints.laptop} {
-    padding: 5px 20px;
+    padding: 2.5px 10px;
     svg {
-      width: 47px;
-      height: 40px;
+      width: 25px;
+      height: 20px;
     }
     span {
-      font-size: 44px;
+      font-size: 22px;
     }
   }
 `;

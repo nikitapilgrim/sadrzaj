@@ -1,10 +1,10 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import styled from 'styled-components';
 import ReactModal from 'react-responsive-modal';
 import CloseIcon from '../../assets/img/icons/close_icon.png';
 import {useClickAway} from 'react-use';
 import {breakpoints} from '../../mixins/breakpoints';
-import {FX} from '../../assets/sounds/fx/index'
+import {FX} from '../../assets/sounds/fx/index';
 
 
 const Wrapper = styled.span`

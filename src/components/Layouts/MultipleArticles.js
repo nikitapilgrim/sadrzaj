@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
 import {useMount} from 'react-use';
 import {ArticleLayout} from './Article/index';
@@ -28,10 +28,10 @@ export const MultipleArticles = ({data, getOffset}) => {
         if (prevTitle === item.title) {
           acc.push({...item, headline: false})
         } else {
-          acc.push({...item, headline: convertTitle})
+          acc.push({...item, headline: item.title})
         }
       } else {
-        acc.push({...item, headline: convertTitle})
+        acc.push({...item, headline: item.title})
       }
       return acc;
     }, []))

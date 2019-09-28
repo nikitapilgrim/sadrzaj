@@ -1,5 +1,4 @@
-import React, {useEffect} from 'react';
-import UIfx from 'uifx'
+import React from 'react';
 
 export const useUIFX = (sound) => {
 

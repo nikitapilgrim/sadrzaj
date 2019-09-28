@@ -1,5 +1,5 @@
 import React from 'react';
-import {Stage} from './Stage.js'
+import {Stage} from './Stage.js';
 import styled from 'styled-components';
 import {breakpoints} from '../../mixins/breakpoints';
 

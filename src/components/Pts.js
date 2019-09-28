@@ -1,5 +1,5 @@
-import {Pt, Group, Line, Create, Sound, Triangle, Const, Geom} from 'pts';
-import {PtsCanvas} from "react-pts-canvas";
+import {Const, Create, Geom, Group, Line, Pt, Sound, Triangle} from 'pts';
+import {PtsCanvas} from 'react-pts-canvas';
 
 
 /**
