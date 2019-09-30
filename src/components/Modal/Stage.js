@@ -39,10 +39,19 @@ const AnswerButton = styled.button`
   font-size: 22px;
 `;
 
+// HERE STYLING INPUT
+const Input = styled.input`
+  height: 50px;
+  width: 100%;
+  color: red;
+  background-color: cadetblue;
+  border: 1px solid black;
+`
+
 const AnswerInput = ({onInput}) => {
 
   return (
-    <input onKeyUp={(e) => {
+    <Input onKeyUp={(e) => {
       onInput(e.target.value)
     }}/>
   )
