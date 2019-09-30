@@ -16,13 +16,12 @@ export default [
           samo stani, ja ću započeti:
           tamnica mu moja njedra bila,
           sindžir-halke – moje b’jele ruke,
-          bukagije – moje {{belenzuke!(3)}}”
-          
+          bukagije – moje {{belenzuke!(3)}}” 
           `,
     author: 'Lirska narodna pjesma (sevdalinka)',
     year: false,
     video: false,
-    audio: require(`../assets/sounds/pronunciation/testvoice.aac`),
+    audio: require(`../assets/sounds/pronunciation/01.aac`),
     questions: [
       {
         title: 'This is title for 1st question',
@@ -220,12 +219,11 @@ Odgovara iz bostana kada:
 što je more, da je crn {{murećep(8)}},
 pak da pišem tri godine dana,
 ne bi moji’ ispisala jada!”
-
 `,
     author: 'Narodna lirska pjesma (sevdalinka)',
     year: false,
     video: false,
-    audio: false,
+    audio: require('../assets/sounds/pronunciation/02.aac'),
     questions: [
       {
         title: 'Odaberi tačan odgovor',
@@ -419,12 +417,11 @@ tada Mejru u raku spustiše.
 Tu se tuku do dv’je stare majke
 i proklinju i staro i mlado
 ko rastavi i milo i drago.
-
 `,
     author: 'Narodna balada',
     year: false,
     video: false,
-    audio: false,
+    audio: require('../assets/sounds/pronunciation/03.aac'),
     questions: [
       {
         title: 'Odaberi tačan odgovor',
@@ -547,7 +544,6 @@ Mrak se počeo spuštati nad zemlju kad eto ti onog njegova prijatelja što mu j
 – Gdje si, pobogu? Izgubih noge tražeći te... Svu sam Kufu obio, a tebe nigdje, kao da si u zemlju propao.
 – Šta je, što me tražiš? Jesi li mi našao kupca kući?
 – Kakav kupac, kakva kuća? Došao ti kući trgovac koji ti se zadužio kod oca, pa eno sad na tri deve donio blago, sav dug i {{hedije(34)}}. Nije ni znao da ti je otac umro, pa hajde sad ti primi to imáće.
-
 `,
     author: 'Alija Nametak',
     year: false,
@@ -669,7 +665,6 @@ Taj tavan me stvarao, kao što me stvaralo i bezbroj drugih mjesta i prilika, su
 Na tom tavanu, gdje sam tražio samoću, saznavajući se, i pribježište od otvorenih širina zavičaja, iako sam ga volio više nego majku, mislio sam često o zlatnoj ptici iz neninih priča. Nisam znao šta je ta zlatna ptica, ali dok sam slušao kako pada kiša po krovu od {{šindre(62)}}, i otvoreni kapak lupa na vjetru, i bezbroj očiju viri iz ćoškova, zamišljao sam kako pronalazim svoju zlatnu pticu, kao junak iz neninih žubornih kazivanja, znajući da se tako, na neki čudan, neobjašnjiv način, ostvaruje sreća.
 Zaboravio sam na nju docnije, život je raspršio snatrenja mladosti, moguća u vrelom zamišljanju bez prepreka, u slobodi željenja bez granica, rođena u neiskustvu. A javila se ponovo, kao podsmijeh, kad mi je bilo najteže.
 Bio jednom jedan dječak, u očevoj kući, nad rijekom, koji je sanjao zlatne snove, jer ništa nije znao o životu.
-
 `,
     author: 'Meša Selimović',
     year: false,
@@ -791,9 +786,7 @@ Bio jednom jedan dječak, u očevoj kući, nad rijekom, koji je sanjao zlatne sn
             On sakupi sav svoj bol, i posljednje ostatke snage, i davno preživjeli ponos i usredotoči ih protiv ribinih muka, i riba se izvrnu na bok i zapliva polagano na boku, gotovo dodirujući čamac kljunom, i poče prolaziti mimo njega, onako dugačka, duboka, široka, srebrnasta, išarana ljubičastim prugama i beskrajna u vodi.
             Starac ispusti povraz i stane na njega nogom te podiže harpunu što je više mogao, i zarinu je svom snagom i s još više snage, koju je u tom času prikupio, u bok ribe, upravo iza velike prsne peraje, koja se dizala sve do starčevih prsiju. Osjetio je kako se željezo zarilo u meso, pa se navali na harpunu svom težinom i zarinu je još dublje.
             U smrtnoj muci riba oživje i skoči visoko iz vode u čitavoj svojoj dužini, širini, snazi i ljepoti. Činilo se kao da lebdi u zraku iznad starca u čamcu. A onda pade s takvom žestinom da je voda zapljusnula preko starca i čitava čamca.
-            Starac osjeti nesvjesticu i mučninu te mu se smrači pred očima. Ali on otpusti uže s harpune i propusti ga polako kroz ranjave ruke, a kad mu se razbistrilo pred očima, ugleda kako riba leži na leđima, okrenuvši srebrnasti trbuh uvis. Držak harpune stršio je koso iz ribinih leđa, a morska voda crvenjela je od krvi što je tekla iz njezina srca. Najprije je bila tamna kao riblje jato usred plave vode koja je bila duboka više od jedne milje. Onda se raširila poput oblaka. A riba se srebrnasta i nepomična ljuljala na valovima.
-            
-          
+            Starac osjeti nesvjesticu i mučninu te mu se smrači pred očima. Ali on otpusti uže s harpune i propusti ga polako kroz ranjave ruke, a kad mu se razbistrilo pred očima, ugleda kako riba leži na leđima, okrenuvši srebrnasti trbuh uvis. Držak harpune stršio je koso iz ribinih leđa, a morska voda crvenjela je od krvi što je tekla iz njezina srca. Najprije je bila tamna kao riblje jato usred plave vode koja je bila duboka više od jedne milje. Onda se raširila poput oblaka. A riba se srebrnasta i nepomična ljuljala na valovima.    
           `,
     author: 'Ernest Hemingvej',
     year: false,
@@ -894,10 +887,7 @@ Ovaj put je Aliji došla čudna misao, bajka tako smjela da se uplašio i trgnuo
 Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji mu je pao u travu više glave, dok su mu licem skakutale i igrale sjenke šiblja, Alija je ležao i snatrio... Nije osjetio kako mu kroz poderanu staru firalu na desnoj nozi viri prst. Nije osjetio kako mu na okrpljenim čakširama mile bube, niti je čuo sviruckanje i zujanje muha oko sebe... On je bio u polusnu, sretan, sretan... A smjela misao vezla je nit po nit nov život po njegovu mozgu...
 
 – Eh, da sam paša...
-
-            
-          
-          `,
+`,
     author: 'Enver Čolaković',
     year: false,
     video: false,
@@ -1015,8 +1005,6 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
             Kada je konačno završio propovijed, pokušao je da baci na krevet i moj ispitni zadatak. Međutim, ponovo je promašio – naravno. Morao sam ponovo da ustanem, da ga podignem i položim na Atlantic Monthly. Dosadno je raditi jedno te isto svake dvije minute.
             “Šta bi ti uradio na mom mjestu?”, upitao je. “Reci mi istinu, mladiću.”
             Što jeste – jeste, bilo je očigledno da se zaista osjeća bijedno što me je morao oboriti. Zato sam navio staru ploču. Rekao sam mu da sam pravi pravcati degenerik i sve što ide uz to. Rekao sam mu da bih uradio tačno isto što i on da sam se našao na njegovom mjestu i da mnogi ljudi nisu u stanju da shvate kakva je to muka biti nastavnik. Ukratko, štosove te vrste. Stare pjesme.
-                      
-          
           `,
     author: 'Džerom D. Selindžer',
     year: false,
@@ -1134,7 +1122,6 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
             Ali još nije znao gdje je, a govornik sa druge strane veze mora da je potpuno razumio njegovu situaciju.
             “Ne brini, Dejve. Ovdje Frenk Pul. Posmatram tvoje srce i disanje – sve je savršeno normalno. Samo se opusti – polako. Sada ćemo otvoriti vrata i izvući te napolje.”
             Blaga svjetlost ispuni komoru; spram ulaza koji se sve više širio, on razabra obrise pokretnih obličja. I upravo tog časa sjećanje mu se potpuno povrati i on shvati gdje se, u stvari, nalazi. Iako se bezbjedno vratio sa najdaljih međa smrti, bio je odsutan samo nedjelju dana. Kada bude izašao iz {{hibernakuluma(73)}}, neće ugledati hladno Saturnovo nebo; ono se i dalje nalazilo više od godinu dana u budućnost i milijardu milja daleko. Još je bio u odjeljenju za obuku u Središtu za svemirski let u Hjustonu, pod vrelim Suncem Teksasa.
-			
             `,
     author: 'Artur Klark',
     year: false,
@@ -1592,7 +1579,7 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
             Nema na njemu šara i ukrasa – nego ima nešto silno i moćno, tako kao da je karavana zagazila u vodu, tu se skamenila – i ostala... U poretku jednom skladnom, a preko vode – od jedne do druge njene obale.
   Onaj što ju je zidao, nije nam svoje ime ostavio, pa pred sobom gledamo djelo – a ne znamo ime njegovog tvorca. Mora da je aršinom mjerio svaki kamen, svaki luk, svaki stub, svako okno – svaki prst na mostu, jer tu je sve skladno, sve izmjereno, sve po aršinu. Pa je i kod popravaka tako mjereno – sve na metar i na santimetar, kako bi sve bilo kao što je i nekad bilo – prije gotovo četiri stoljeća. Popravljan je više puta – jer nijedan od ratova nije prošao a da ovu starinu nije rušio; i zanimljivo je da su uz obadva velika rata bili porušeni isti lukovi, isti stubovi. To jest: ono što nisu mogli toliki povodnji i toliko vrijeme, mogla je ruka rušioca. Porušeni lukovi ličili su tada na kakve pećine – i bila je to tužna slika; stajao sam tada na obali i gledao je. Ni Drina više nije bila lijepa, jer to dvoje – na ovom mjestu, kad se nađu jedno bez drugog, nije više lijepo; i sve je ličilo na srušen hram, na pustoš.
   Danas su te rane zacijeljene, i jedva se poznaje gdje su i bile, ili se nikako i ne poznaje, nego je onako kao i nekad – kad je ovu ćupriju, ispustivši aršin iz ruku, ostavio za sobom njen graditelj. Bilo je to godine 1577. Davno i davno! Mnogo je od tada niz Drinu prošlo vode, mnogo ljudi sjelo na “sofu” – i odatle, sa sredine mosta, sa visine od oko petnaest metara iznad vode, gledalo dolje niz Drinu, i gore uz Drinu, i pred sobom grad Višegrad. A ako je neko umio, mogao je tu odmah prema “sofi ”, a na ploči mramornoj, čitati ovakav natpis na mostu: “Gospodin Mehmed-paša, mudrac svog vremena, potrošio je svoj imetak na {{zadužbine(123)}}. Niko neće reći za imetak koji se troši na zadužbine, da je rasipanje. Bio je svjestan da su svakom njegova djela najbolje potomstvo. Podigao je most, kojem na svijetu nema ravna. Nemoj reći da je propao imetak, koji se troši na ovakva djela.“
-            `,
+  `,
     author: 'Ćamil Sijarić',
     year: false,
     video: false,
@@ -1703,7 +1690,7 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
     title: 'Umjetnička književnost – Lirske pjesme',
     subtitle: 'Zavidim jedino pužu',
     video: false,
-    audio: false,
+    audio: require('../assets/sounds/pronunciation/14.aac'),
     questions: [],
     type: lyrics,
     text: `Iščekuje me draga, sin me čeka,
@@ -1724,14 +1711,14 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
     Za sutra, danas i juče.
     `,
     author: 'Ruben Dario',
-    year: 'false'
+    year: false
   },
   {
     id: 15,
     title: 'Umjetnička književnost – Lirske pjesme',
     subtitle: 'Kiša u Sarajevu',
     video: false,
-    audio: false,
+    audio: require('../assets/sounds/pronunciation/15.aac'),
     questions: [],
     type: lyrics,
     text: `(U gradu Wuppertalu
@@ -1778,9 +1765,7 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
             kao u dubok vir...
             Drago moje Sarajevo,
             donijelo si mi mir.
-                
-            
-            `,
+`,
     year: 'Wuppertal, marta 2008.',
     author: `Ivica Vanja Rorić`,
   },
@@ -1792,9 +1777,8 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
     text: `Ćupriju podiže koja podsjeća na lûk dûge
            Allahu moj! Ima l’ na svijetu po ljepoti drûge?
            Jedan je {{Derviš(56)}} zadivljen stao i rekao riječi:
-           Ostavit ćemo ćupriju a mi ćemo preći. 
-           
-		   `,
+           Ostavit ćemo ćupriju a mi ćemo preći.
+           `,
     author: `Derviš-paša Bajezidagić`,
     year: 'Godine 974. (1576–77)',
     video: false,
@@ -1991,7 +1975,6 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
            – Питам те ја, господине, ко је од нас двојице виша будала: или ја, који сам постао тамо твој “чо’јек”, или ти, који си ме одабрао?
            Па, држећи се зида и једнако се церекајући, пође вратима.
            – Ето... бели сам те запитао и искалио се – рече вирећи иза {{каната(152)}}. – А сад лијепо одох у хавс! Збогом!
-           
 			`,
     author: 'Светозар Ћоровић',
     year: false,
@@ -2112,7 +2095,6 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
            “Šta se desilo?” pitala je sa praga, onako suva, upalih grudi, u prljavoj pocepanoj pregači i jednoj od svojih domaćih kapa, držeći u ruci krpu kojom je brisala prašinu. “Šta si razbio?”
            “Ništa!” odgovorio je dižući sa poda poslužavnik, i pokazao joj ga: “Ovo je samo palo!” a ona je još jednom prešla po sobi strogim, ispitujućim pogledom, i nečujno zatvorila vrata.
            “Ona me je spasla”, rekao je pošto je izišla. “Ona me je spasla i prvoga rata; izmolila je oca da me zadrži u bolnici kad je trebalo da me premeste na front. Od dobrovoljne bolničarke i kćerke jednog pukovnika to je bilo mnogo. Hladna je i stroga žena i tvoji je nisu mnogo marili (“Ružna je, zla i tvrdica, govorili su. Od muževljevih starih okovratnika plela je konopce, od njegovih dotrajalih šešira krojila je sebi kape, parala je čarape da bi iskoristila konac, sebe i njega morila je glađu i nikog nije pozivala u kuću.”), ali mogu ti reći da je u suštini imala dobru dušu, a kad je bila mlada, kad je bila sasvim mlada, bila je i lepuškasta. Da nije bilo nje, ko zna šta bi bilo sa mnom. Kuću i ove stvari ona je, štedeći, stekla, a sad mi je život spasla. Kao prava Nemica i kći bivšeg pukovnika, ona je to mogla; imala je veza. Ali i ja sam pomagao, ni ja nisam sedeo skrštenih ruku. Nisam bio dobar lekar – istina je – a ni vredan i vešt da zaradim velike pare, ali nisam bogme ni od onih tunjavka koji dozvoljavaju da im se nešto pravi na glavu. Bili su im potrebni lekari, ali, dođavola, i oni su dobro znali da sam ja nikakav lekar! Štefi je ipak udesila da me prime u {{prosekturu(153)}}, a i meni je to bilo draže; pre ili kasnije umro bi mi neki bolesnik i onda bih ja ispao kriv. Veruj da sam ih se naparao kao niko ovoga rata. Posao prljav, lešinarski, ali sam mislio: i to će proći; glavno je izdržati i sačuvati glavu. Štefi im je pokazala moje ordenje iz prvoga rata, a i sva odlikovanja svoga oca, kojih je imala celu gomilu. Upisala se opet u dobrovoljne bolničarke, nosila je i kukasti krst na rukavu, na kući je isticala nemačku zastavu, pozivala oficire na večeru, a ja sam sa posla odlazio pravo kući, manji od makova zrna, i bez velike potrebe ne bih izlazio na ulicu. Štefi je dokazala da sam se sa njome venčao u crkvi – katolik dakle – a tvrdili smo da mi je i mati bila Nemica. Prevario sam ih. Prevario svinje jedne! Morao sam da se ponižavam, da lažem i da varam, straha sam se nagutao, ali eto me živa, sa glavom na ramenima.”
-            
 			`,
     author: 'Erih Koš',
     year: false,
@@ -2240,7 +2222,6 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
            Već dvije-tri godine pred smrt često djed spominje da mu neće biti teško umrijeti dok nas vidi ovako složne i poslušne. “A kad nestane toga strahopočitanja u vama, onda najbolje da nestane i mene, ne daj bog da te nesreće doživim!” – dodao bi svečanim glasom. Kao da je znao, ponavljao je pod konac života češće te riječi, a nama bilo da proplačemo, a iz očiju nam je mogao djed čitati da mu se bojazan neće ispuniti.
            Djed je tako srastao nama uz dušu i oko, da nijesmo ni pomisliti mogli da bi on ikad umro; nama je uza nj tako bilo kao da će navijek živjeti. Kad prvi put čusmo: umro nam je djed! – zazujaše nam te riječi tako čudno u ušima, da smo u prvi čas ostali bez boli i bez suza... Dugo ga ne mogasmo zaboraviti; dugo se obazirasmo za njim, hoće li doći sa stana i donijeti nam kitu jagoda i vijenac prvih trešanja... Ali njega nema!... A mi sretni i blaženi kad ga u snu vidimo kako nam pripovijeda i ljulja nas na koljenu.
            A naveče kad izmolimo svagdašnju molitvu, u duši se sjetimo i djeda: – Smiluj se, bože, našemu djedu!
-           
 		   `,
     author: 'Josip Kozarac',
     year: false,
@@ -2351,12 +2332,11 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
            – Pitala te, hm! Imao si da ćutiš, pa kvit.
            Sljedećeg proljeća, bujnog i kišovitog, sljez u našoj bašti rascvjeta se kao nikada dotad, ali starina kao da ga ni zapazio nije. Nisu tu pomagala ni sva trtljanja neumornog rođaka Save, djed je bio slijep i za boje i za sve cvijeće ovoga svijeta. Tuga da te uhvati.
            Minulo je od tih neveselih dana već skoro pola vijeka, djeda odavna nema na ovome svijetu, a ja još ni danas posigurno ne znam kakve je boje sljez. Znam samo da u proljeće iza naše potamnjele baštenske ograde prosine nešto ljupko, prozračno i svijetlo pa ti se prosto plače, iako ne znaš ni šta te boli ni šta si izgubio.
-           
 		   `,
     author: 'Branko Ćopić',
     year: false,
     video: false,
-    audio: false,
+    audio: require('../assets/sounds/pronunciation/20.aac'),
     questions: [
       {
         title: 'This is title for 1st question',
@@ -2462,7 +2442,6 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
            Тако, сви траже од њега само напор и питају за плодове тога напора, а нема никога коме би могао да се повери и да потражи савета и излаза.
            Са сујеверним страхом заобилазио је излоге књижара у којима су биле поређане нове и лепо укоричене књиге. А кад би се међу друговима повела реч о библиотеци или о каквој било књизи, он би одједном поцрвенео, почео збуњено да замуцкује, забашурује, и скреће говор на друге ствари, док му се по грудима разливало, као физички бол, његово већ познато мучно осећање од помисли на неку нејасну и непоправљиву штету која му се десила и за коју још нико не зна, али за коју ће морати да одговара. А то осећање било је утолико теже уколико се он више трудио да га сакрије. Често му се чинило да му се другови намерно обраћају са питањима која се односе на библиотеку, књиге и њихове повезе. На свако такво питање он би одговарао ћутањем, обарајући очи и чекајући кад ће му неко отворено казати да зна да он у свом ковчегу држи разваљену књигу.
            Сви су дани били тешки, али нарочито мучан био је уторник. Тога дана он није могао да мисли ни на шта друго до на своју књигу. Уторником после подне другови су враћали прочитане књиге и узимали нове. Он није смео ни помислити на то. Не би се бојао да изиђе, ако треба, пред директора и пред сваки суд овог света, али ето, нема снаге ни храбрости да изиђе пред тога крупног риђег човека који суво, крто тражи од свакога да брзо, јасно и одређено каже шта хоће. И то још да изиђе са оштећеном књигом! Не, за то нема храбрости. Њега се боји више од свега на свету.
-           
 		   `,
     author: 'Иво Андрић',
     year: false,
@@ -2607,7 +2586,6 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
            Ali Marko nije dolazio.
            I najednom se te prekrasne i prežalosne oči koje su se već stale zaklapati od napora, naglo i silno otvoriše. Zjenice se raširile u užasu jednom, divlje, preneraženo, kao da su ugledale nešto neviđeno strašno.
            Žene su osjetile da je u sobu došla Smrt.
-           
 			`,
     author: `Slavko Kolar`,
     year: false,
@@ -2727,12 +2705,11 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
            Било је то једне блиставе недјеље. У граду се славила нека свечаност. Уз звукове глазбе наилазила је поворка свечано одјевене дјеце. Поглед ми запе на дјевојчици која је ступала у поворци окружена напирлитаним “луткицама”. Сама, без свога пара. Пожалих је! Сиротица, мора да јој је тешко што нема своје дружице! Те мале умишљене паунице вјеројатно јој нису хтјеле пружити руке што није била тако лијепо одјевена као оне. Али, кад јој позорно погледах у лице, изненадих се: на њеном лицу није се одражавала ни туга ни разочарање због старе хаљинице.
            Сјетила сам се тада оне дјевојчице која је прије много година горко плакала што није смјела одјенути нови капутић једне кишне недјеље.
            Порумењела сам у том тренутку... и постидјела се својих суза.
-            
 			`,
     author: `Злата Коларић-Кишур`,
     year: false,
     video: false,
-    audio: false,
+    audio: require('../assets/sounds/pronunciation/23.aac'),
     questions: [
       {
         title: 'This is title for 1st question',
@@ -2959,7 +2936,6 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
            To je bilo još davno. Sada je Nađenjka već udata; dali su je ili je sama pošla – svejedno – za sekretara plemićkog tutorstva, i sad već ima troje djece. To, kako smo nekad zajedno odlazili na sankanje i kako joj je vjetar donosio riječi “volim vas, Nađenjka” nije zaboravljeno; za nju je to sada najsrećnija, najdirljivija i najljepša uspomena u životu...
            A meni sada, kada sam zašao u godine, više nije jasno zašto sam joj govorio te riječi, zašto sam se šalio...
            (1886)
-            
 			`,
     author: `Anton Pavlovič Čehov`,
     year: false,
@@ -3318,7 +3294,6 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
             SULTANIJA
              Zar majku nam je potjerao babo?
              Аl’ zašto, zašto?
-            
 			`,
     author: `Milan Ogrizović`,
     year: false,

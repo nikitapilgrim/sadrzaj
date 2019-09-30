@@ -161,17 +161,6 @@ const PageNumber = styled.div`
   font-size: 30px;
 `;
 
-const Columns = styled.div`
-  display: flex;
-`;
-
-const Column = styled.div`
-
-`;
-const Span = styled.span`
-  display: inline-block;
-  flex-wrap: wrap;
-`;
 
 export const ArticleLayout = React.memo(({data, id, getOffset, text}) => {
   const {dispatch, articles} = useStoreon('articles');

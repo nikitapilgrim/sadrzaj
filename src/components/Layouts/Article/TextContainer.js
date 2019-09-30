@@ -27,6 +27,16 @@ const Separator = styled.div`
   width: 100%;
 `;
 
+
+const Author = styled.div`
+  font-weight: bold;
+`;
+
+const Year = styled.div`
+  margin-top: 20px;
+  font-weight: bold;
+`;
+
 const parseTemplate = (template) => {
   if (template.indexOf('{{') !== -1) {
     const wordLeft = template.indexOf('{') + 2;
@@ -155,9 +165,9 @@ export const TextContainer = React.memo(({id, data, author, year, onReady, type}
       }
 
 
-      <i>{year}</i>
+      <Year>{year}</Year>
       <br/>
-      <i>{author}</i>
+      <Author>{author}</Author>
     </Wrapper>
   );
 });
