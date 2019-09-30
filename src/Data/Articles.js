@@ -857,35 +857,20 @@ Bio jednom jedan dječak, u očevoj kući, nad rijekom, koji je sanjao zlatne sn
     subtitle: 'Legenda o Ali-paši',
     type: essay,
     text: `Taj hamalin sa svojim užetom zabačenim preko pokrpljenog fermena, taj Alija zvan “leptir”, zato što je dnevno i po desetak puta obilazio cijelu čaršiju, bio je tada u tihom i lijepom šeheru svuda poznata i rado viđena osoba. Uvijek veseo, spreman na šalu, uvijek brz za ma kakav posao. Mnogi bi čaršinlija kuckajući oznojen u svoju bakrenu posudu, ili šijući s mukom debeli kožni {{ćurak(39)}}, govorio: “Baš je Leptir sretan! – On voli sunce.”
-
 A i volio ga je Alija više nego časti ili dobro jelo, volio skoro koliko i Mehaginu Almasu, djevojku za kojom je čeznutljivo gledao kao gladnik u izlog najfinijih poslastica...
-
 Voljeti sunce... Voljeti ga ljubavlju, kako je to samo u ona vremena bilo moguće! Kad ono veselo zasja na svodu, Alija bi, makar i ne zaradio toga dana ništa, odlazio više šume nad Kovačima (gdje su danas velike i lijepe kuće), na čistinu, legao na ledinu, a svoje lijepo lice okrenuo suncu, zaklopio oči pa {{snatrio(41)}}. Vilinske bajke izlazile mu pred oči. Bajke iz sunčanih zraka koje su i preko spuštenih kapaka tim očima godile svojom toplinom i čistoćom... Ležeći tako hamal bi Alija doživljavao – ne, proživljavao – krasne trenutke, sate, dane, godine, vjekove... negdje daleko, u carstvu priča, u carstvu svoje bujne mašte koju je tako bila razbuktala čvrsta vjera i vječiti optimizam njegove vesele duše. A sunce bi svog prijatelja grijalo, grijalo blaže i bolje nego druge i razgovaralo s njime. Jest, baš s tim Alijom hamalom, koga su zbog njegova lutanja nazivali srednjovjekovni čaršinlije “sretnim leptirom”.
-
 Pričalo bi sunce Aliji priču o postanku svijeta, o nabiranju brda, o dubini {{denjiza(42)}}, o kulama koje se gordo uzdižu negdje iznad oblaka, o hazreti Hidru, vječito živome {{evliji(44)}}, dobrome mudracu, koji svima pomaže. Pričalo bi mu sunce preko svojih toplih zraka o nježnosti hurija u {{dženetu(46)}}, o slastima bogatstva i raskoši u Stambolu, o pješačenju brdima i vjetru samumu u pustinji, o blagoj sjenci palminih listova, o karavanama kamila koje vode zakukuljeni Arapi, ili o životu oblaka, ljubavi zvijezda, raskoši duge... Slušao bi Alija te priče, slušao i uživao, a osmijeh sreće igrao bi na njegovim poluotvorenim usnicama, ispod svileno plavih brkova. Osmijeh kakav nikad neće zatitrati oko usta najbogatijih Sarajlija: Mehage kazaza, Omerage kazandžije, Jefte {{abadžije(48)}}, Joze kujundžije ili gazde Ješue {{sarafa(50)}}...
-
 I iz takve jedne priče sunca isplela bi Alijina mašta čudne bajke, svijet patuljaka i divova, svijet djevojaka najljepših glasova, svijet pjesme i ljubavi, ili pak svijet junaka, među kojima je on, razumije se, najjači...
-
 Zar nije bio Alija sretan? Sretan sa svojim užetom, sirotinjom i bezbrižnošću, s čvrstom vjerom i svojim suncem?...
-
 Znali šeherljani za ta njegova maštanja, koja su nazivali hava-muhabetom, razgovorom sa zrakom, ali su baš zbog toga i voljeli svog Leptira. Možda je baš radi toga i bio mekan i blag u postupanju s ljudima. Možda ga je baš ta ljubav prema suncu odgojila u čovjeka koji nikom ne bi rekao ni “po tamo se”, iako je bio snažniji i razvijeniji od svih šeherskih {{ukoljica(51)}}. Ta ga je ljubav nekako uzdizala, odvajala od ostalih hamala, mada je on bio izvrstan drug i uvijek spreman pomoći nekom starijem nosaču. Znao je on po čitav sat gurati kolica uza svog druga Muradifa bez ikakve nagrade osim onog: “Bog ti dao”. Ta ga je ljubav znala odvući od posla, istrgnuti iz svagdašnjice i pozvati na ledinu.
-
 I toga proljetnog dana, baš kad je stigao do Miljacke, u {{Donje(52)}} {{Tabake(52)}} da se među kožarima raspita za posao, Alija je pogledao u nebo. Njegov ga je prijatelj zvao odozgor nasmijan, pozvao ga je u travu, u prirodu, da mu priča... Oh, kako je lijep i veseo taj njegov prijatelj danas. Kako se iz njegova sjaja širi blaga toplina i daje miris jorgovanu, žubor Miljacki, djevojačkoj pjesmi ljepotu, a ljudskom radu volju i veselje... Zato Alija pohita iz Tabaka na svoju ledinu, premda ništa nije bio zaradio...
-
 Uzalud je za njim skakutao hrapav glas kožarskog majstora hadži-Edhema:
-
 – Leptire, da mi izneseš s vode one razapete kože!
-
 – Ode on na ledinu – kroz smijeh je hadžiji doviknuo susjedov šegrt Abdulah.
-
 – Ah, da Bogdo mogu i ja... Nejse... doći će koji drugi hamal, koji je samo hamal, a ne i sretni Leptir.
-
 Kada je Alija stigao u slobodu, tamo izvan gradskih bedema, tamo daleko od ljudi i graje, legao je na ledinu, ruke skupio pod glavu, ispružio noge, a udisao svježi šumski zrak mirisav od rascvalih breza... A sunce ga peklo, milovalo...
-
 Ovaj put je Aliji došla čudna misao, bajka tako smjela da se uplašio i trgnuo se sav naježen.
-
 Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji mu je pao u travu više glave, dok su mu licem skakutale i igrale sjenke šiblja, Alija je ležao i snatrio... Nije osjetio kako mu kroz poderanu staru firalu na desnoj nozi viri prst. Nije osjetio kako mu na okrpljenim čakširama mile bube, niti je čuo sviruckanje i zujanje muha oko sebe... On je bio u polusnu, sretan, sretan... A smjela misao vezla je nit po nit nov život po njegovu mozgu...
-
 – Eh, da sam paša...
 `,
     author: 'Enver Čolaković',
