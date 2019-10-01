@@ -1,5 +1,6 @@
 import React, {useRef, useState} from 'react';
 import styled from 'styled-components';
+import reactStringReplace from 'react-string-replace';
 import {useClickAway, useMount} from 'react-use';
 import {breakpoints} from '../../mixins/breakpoints';
 import {Hamburger} from './Hamburger';
@@ -111,6 +112,11 @@ const SubmenuWrapper = styled.ol`
   padding: 0;
   list-style: none; 
   padding-top: 0px;
+  display: inline-block;
+  li {
+      margin-left: 25px;
+      background-color: #846218;
+  }
   @media ${breakpoints.desktop} {
     padding-top: 0px;
   }
@@ -129,7 +135,12 @@ const MenuItem = ({title, submenu, scrollToArticle, open, handler}) => {
       <SubmenuWrapper hiddenSubmenu={!open}>{submenu.map((item) => {
           return (
               <Li key={item.id}>
-                <Subtitle onClick={handlerScroll(item.id)}>{item.title}</Subtitle>
+                <Subtitle onClick={handlerScroll(item.id)}>{reactStringReplace(item.title, /{{([^}]+)}}/g, (match, i) => {
+                  const left = match.indexOf('(');
+                  return (
+                    <span>{match.slice(0, left)}</span>
+                  )
+                })}</Subtitle>
               </Li>
           );
         },

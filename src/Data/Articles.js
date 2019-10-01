@@ -516,7 +516,8 @@ ko rastavi i milo i drago.
   {
     id: 4,
     title: 'Narodna književnost',
-    subtitle: 'Tuturuza i šeh Meco (odlomak)',
+    subtitle: 'Tuturuza i šeh Meco',
+    subtitleDescr: '(odlomak)',
     type: essay,
     text: `Tuturuza je ispričao najnoviju hridsku dogodovštinu. Slinić koji je kad je, ozgodnio i postao čaršijski prvak, promijenio prezime, oćutio je neku večer nekakvo orgecanje u magazi pod kućom. Pomislio je na hrsuza pa je uzdigao svu kućnu čeljad na noge da ga hvataju. I komšije su opkolile kuću i poredale se pred magazna vrata. Slinić je nagovarao hrsuza da izađe, da se ne boji, neće mu ništa biti. “Izađi slobodno! Neću te prijaviti policiji!” Štropot bakrenog suda nije prestajao, ali hrsuz nije htio napolje. Da ga ohrabri, Slinić ga je nagovarao da se ne stidi. “Slobodno ti izađi! I ja sam pod mladost bio takav!” Odškrinuo je magazna vrata. Najednom se nešto u magazi skrha, a na vrata jurne pas, krupan kao tele, i pobjegne između svijeta. Sve bi dobro bilo da nije bilo tuđeg svijeta, iz komšiluka. I tako se proču priča i sađe odmah ujutro do Baščaršije, pa Slinić ne može s mirom među svijet.
 Mahmutaga, dobričak i mehak čovjek, zacenuo se od smijeha. Sve ga suze oblile. Jedva je progovorio:
@@ -1426,7 +1427,7 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
   {
     id: 12,
     title: 'Umjetnička književnost – Putopis',
-    subtitle: 'Некролог једној чаршији',
+    subtitle: '{{Некролог(114)}} једној чаршији',
     type: essay,
     text: `Годину, мјесец и дан више и не памтим.
            Била је зима...
@@ -2268,10 +2269,6 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
           {
             title: 'U 1. i 3. licu',
             right: true
-          },
-          {
-            title: '',
-            right: false
           }
         ]
       },
@@ -2881,7 +2878,8 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
   {
     id: 25,
     title: 'Umjetnička književnost - Pripovijetka',
-    subtitle: 'Šala (odlomak)',
+    subtitle: 'Šala',
+    subtitleDescr: '(odlomak)',
     type: essay,
     text: `Vedro zimsko podne... Mraz je jak, puca, i Nađenjki, koja me drži ispod ruke, srebrnastim injem prekriva kovrdže na sljepoočnicama i malje iznad gornje usne. Stojimo na visokom klizalištu. Od naših nogu do same zemlje prostire se strma površina, u kojoj se sunce ogleda kao u ogledalu. Pored nas su male sanke, tapacirane svijetlocrvenom {{čojom(201)}}.
            – Da se spustimo, Nadežda Petrovna! – nagovaram je. – Samo jednom! Siguran sam, ostaćemo živi i zdravi.
@@ -3016,7 +3014,8 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
   {
     id: 26,
     title: 'Umjetnička književnost - Drama',
-    subtitle: 'Hasanaginica (odlomak)',
+    subtitle: 'Hasanaginica ',
+    subtitleDescr: '(odlomak)',
     type: lyrics,
     text: `AGA HASANAGA
              HASANAGINICA
@@ -3374,7 +3373,8 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
   {
     id: 27,
     title: 'Umjetnička književnost - Drama',
-    subtitle: 'Јазавац пред судом (Одломак)',
+    subtitle: 'Јазавац пред судом ',
+    subtitleDescr: '(Одломак)',
     type: essay,
     text: `СУДАЦ: Па ти, Давиде, ниси, како видим, будала?
             ДАВИД: Ко каже да сам будала?

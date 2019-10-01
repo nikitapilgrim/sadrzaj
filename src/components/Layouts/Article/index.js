@@ -2,6 +2,9 @@ import React, {useEffect, useRef, useState} from 'react';
 import styled from 'styled-components';
 import useStoreon from 'storeon/react';
 import useComponentSize from '@rehooks/component-size';
+const reactStringReplace = require('react-string-replace');
+import dictionary from '../../../Data/dictionairy/dictionairy';
+
 
 import {breakpoints} from '../../../mixins/breakpoints';
 import {TestButton} from '../../Buttons/TestButton.js';
@@ -14,6 +17,7 @@ import bg from '../../../assets/img/backgrounds/halka07.jpg';
 import MedalOne from '../../../assets/svg/medal_1.svg';
 import MedalTwo from '../../../assets/svg/medal_2.svg';
 import MedalThree from '../../../assets/svg/medal_3.svg';
+import {Highlight} from './Highlight';
 
 
 const Wrapper = styled.div`
@@ -47,7 +51,7 @@ const Title = styled.h1`
   text-shadow: 2px 2px 0 #000000;
   color: #ffffff;
   font-size: 22px;
-  font-weight: 500;
+  font-weight: bold;
   @media ${breakpoints.laptop} {
     font-size: 31px;
     font-weight: 700;
@@ -61,12 +65,30 @@ const Subtitle = styled.h2`
   color: #ffffff;
   font-size: 33px;
   line-height: 1;
+  margin-top: 10px;
   @media ${breakpoints.laptop} {
       font-size: 52px;  
       line-height: 48px;
   }
   font-weight: 900;
+  div {
+    display: inline;
+  }
 `;
+
+const SubtitleDescr = styled.h3`
+  display: block;
+  max-width: 620px;
+  text-shadow: 2px 2px 0 #000000;
+  color: #ffffff;
+  font-size: 33px;
+  line-height: 1;
+  margin: 0;
+  margin-top: -20px;
+  margin-bottom: 25px;
+  font-weight: 900;
+`;
+
 
 const MainContainer = styled.div`
   display: flex;
@@ -110,6 +132,7 @@ const Buttons = styled.div`
 
 const Row = styled.div`
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: ${props => props.between ? 'space-between' : 'flex-start'};
   width: 100%;
@@ -117,12 +140,13 @@ const Row = styled.div`
 
 const MedalContainer = styled.div`
     position: absolute;
-    right: -57px;
-    top: 0;
+    right: -49px;
+    top: -58px;
     @media ${breakpoints.laptop} {
-          right: -109px;
-
+          right: -73px;
+          top: -60px;
     }
+    
 `;
 
 const MedalWrapper = styled.div`
@@ -131,7 +155,7 @@ const MedalWrapper = styled.div`
 
 const Medal = styled.div`
   position: relative;
-  transform: rotate(-10deg) scale(0.6);
+  transform: rotate(-10deg) scale(0.8);
   svg {
     filter:drop-shadow(2px 3px 5px black)
   }
@@ -156,9 +180,9 @@ const MedalPercent = styled.div`
 const PageNumber = styled.div`
   color: #fff;
   position: absolute;
-  bottom: -50px;
+  bottom: -30px;
   right: 0;
-  font-size: 30px;
+  font-size: 24px;
 `;
 
 
@@ -203,7 +227,15 @@ export const ArticleLayout = React.memo(({data, id, getOffset, text}) => {
           <Content>
             <Title>{data.title}</Title>
             <Row>
-              <Subtitle>{data.subtitle}</Subtitle>
+              <Subtitle>{reactStringReplace(data.subtitle, /{{([^}]+)}}/g, (match, i) => {
+                const numberPattern = /\d+/g;
+                const modalData = dictionary.find((d => d.id === +match.match(numberPattern)[0]));
+                const left = match.indexOf('(');
+                return (
+                  <Highlight word={match.slice(0, left)} data={modalData}/>
+                )
+              })}</Subtitle>
+              {data.hasOwnProperty('subtitleDescr') && <SubtitleDescr>{data.subtitleDescr}</SubtitleDescr>}
               <MedalContainer desctop={true}>
                 {articles[data.id] &&
                 <MedalWrapper>
@@ -221,8 +253,8 @@ export const ArticleLayout = React.memo(({data, id, getOffset, text}) => {
             </Row>
             <MainContainer className='main'>
               <Buttons>
-                <TestButton onFinishTest={handlerFinishTest}
-                            questions={data.questions}/>
+                {data.questions && <TestButton onFinishTest={handlerFinishTest}
+                            questions={data.questions}/>}
                 {data.audio && <AudioButton data={data.audio}/>}
                 {data.video && <VideoButton src={data.video}/>}
               </Buttons>

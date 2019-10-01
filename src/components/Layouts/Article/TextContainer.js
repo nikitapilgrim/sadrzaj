@@ -13,9 +13,10 @@ const Wrapper = styled.p`
   color: #ffffff;
   font-size: 20px;
   font-weight: 500;
+  margin-top: 24px;
   @media ${breakpoints.laptop} { 
     margin: 0;
-    
+    margin-top: 24px;
   }
   div {
     display: inline-block;
@@ -34,7 +35,7 @@ const Author = styled.div`
 
 const Year = styled.div`
   margin-top: 20px;
-  font-weight: bold;
+  font-weight: normal;
 `;
 
 const parseTemplate = (template) => {

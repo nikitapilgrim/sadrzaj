@@ -6,7 +6,7 @@ import {Highlight} from './Highlight';
 const Wrapper = styled.p`
   width: 100%;
   margin: 0;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
   max-height: ${props => `${props.maxHeight}px`};
   @media ${breakpoints.laptop} { 
     columns: ${props => props.columns && '2'};

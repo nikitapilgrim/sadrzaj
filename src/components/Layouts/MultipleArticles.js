@@ -16,7 +16,7 @@ const Headline = styled.div`
 `;
 
 const headlines = ['Narodna književnost', 'Roman', 'Putopis', 'Lirske pjesme', 'Pripovijetka', 'Drama', 'Medijska kultura'];
-export const MultipleArticles = ({data, getOffset}) => {
+export const MultipleArticles = React.memo(({data, getOffset}) => {
   const [withHeadLine, setWithHeadLine] = useState(null);
 
   useMount(() => {{
@@ -57,4 +57,4 @@ export const MultipleArticles = ({data, getOffset}) => {
       buffer={1}
     />*/
   );
-};
+});

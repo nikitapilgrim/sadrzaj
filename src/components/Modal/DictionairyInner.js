@@ -45,9 +45,9 @@ export const DictionaryInner = ({data}) => {
     <Wrapper>
       <Inner>
         <Title>{data.title}</Title>
-        <ImgWrapper>
+        {data.img && <ImgWrapper>
           <img src={data.img} alt=""/>
-        </ImgWrapper>
+        </ImgWrapper>}
         <Text>{data.text}</Text>
       </Inner>
     </Wrapper>

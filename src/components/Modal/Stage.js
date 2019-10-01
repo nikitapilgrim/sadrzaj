@@ -1,10 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import UIfx from 'uifx';
 import {breakpoints} from '../../mixins/breakpoints';
-
-const correct = new UIfx(require('../../assets/sounds/fx/correct-answer.aac'));
-const worng = new UIfx(require('../../assets/sounds/fx/wrong-answer.aac'));
+import {FX} from '../../assets/sounds/fx/index'
 
 const Title = styled.div`
   text-shadow: 0 1px 0 #000000;
@@ -39,14 +36,17 @@ const AnswerButton = styled.button`
   font-size: 22px;
 `;
 
-// HERE STYLING INPUT
 const Input = styled.input`
+  padding-left: 10px;
   height: 50px;
   width: 100%;
-  color: red;
-  background-color: cadetblue;
-  border: 1px solid black;
-`
+  color: #e0dedf;
+  background-color: #675740;
+  border: 2px solid #ec3225;
+  font-family: Raleway, sans-serif;
+  font-size: 22px;
+  outline: none;
+`;
 
 const AnswerInput = ({onInput}) => {
 
@@ -64,18 +64,18 @@ export const Stage = React.memo(({data, onRight, nextStage}) => {
   const stageHandler = (right) => () => {
     if (right) {
       onRight();
-      correct.play();
+      FX.correctAnswer.play();
       nextStage();
     }
     if (!right) {
-      worng.play();
+      FX.wrongAnswer.play();
       nextStage();
     }
   };
 
   const inputHandler = (right) => (value) => {
     if (right === value) {
-      correct.play();
+      FX.correctAnswer.play();
       nextStage();
     }
   };

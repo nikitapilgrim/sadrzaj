@@ -1,5 +1,6 @@
 import React, {useEffect, useRef, useState} from 'react';
 import styled from 'styled-components';
+import useLifecycles from 'react-use/lib/useLifecycles';
 import ReactModal from 'react-responsive-modal';
 import CloseIcon from '../../assets/img/icons/close_icon.png';
 import {useClickAway} from 'react-use';
@@ -57,8 +58,8 @@ const Bg = styled.div`
   bottom: 0;
   height: 100%;
   width: 100%;
-  background-color: #6c5738;
-  opacity: 0.5;
+  background-color: #46361d;
+  opacity: 0.7;
 `;
 
 export const Modal = React.memo(({children, inner, close, finish}) => {
@@ -77,6 +78,8 @@ export const Modal = React.memo(({children, inner, close, finish}) => {
       setOpen(false);
     }
   }, [finish]);
+
+  //useLifecycles(() => console.log('MOUNTED'), () => console.log('UNMOUNTED'));
 
 
   useEffect(() => {

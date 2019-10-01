@@ -139,14 +139,13 @@ const MenuWrapper = styled.div`
   right: 3vw;
 `;
 
-export const Start = () => {
+export const Start = React.memo(() => {
   const {width, height} = useWindowSize();
   const [offsetArticles, setOffsetArticles] = useState({});
   const getOffset = (id, offset) => {
     setOffsetArticles(prev => ({...prev, [id]: offset}));
   };
   const scrollToArticle = (id) => {
-    console.log(id, scroll, offsetArticles[id])
     scroll.scrollTo(offsetArticles[id]);
     /*window.scrollTo({
       top: offsetArticles[id],
@@ -178,7 +177,7 @@ export const Start = () => {
         preload.style.display = 'none';
       }, 2000)
     });
-    }, 2000);
+  }, 2000);
 
 
   return (
@@ -200,4 +199,4 @@ export const Start = () => {
       </Main>
     </Wrapper>
   );
-};
+});
