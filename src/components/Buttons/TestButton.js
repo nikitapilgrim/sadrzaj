@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import TestIcon from '../../assets/svg/test_icon.svg';
 import {Modal} from '../Modal/Modal';
 import {InnerTest} from '../Modal/InnerTest.js';
+import {SystemInnerTest} from '../Modal/InnerTest.js';
 import {breakpoints} from '../../mixins/breakpoints';
 
 const Wrapper = styled.button`
@@ -38,7 +39,7 @@ const Wrapper = styled.button`
   }
 `;
 
-export const TestButton = ({questions, onFinishTest}) => {
+export const TestButton = ({questions, onFinishTest, layout}) => {
   const [stage, setStage] = useState(0);
   const [modalOpen, setModalOpen] = useState(false);
   const [questionsCount, setQuestionsCount] = useState(null);
@@ -76,7 +77,15 @@ export const TestButton = ({questions, onFinishTest}) => {
       close={() => setModalOpen(false)}
       isOpen={modalOpen}
       finish={finish}
-      inner={<InnerTest nextStage={handlerNextStage}
+      inner={layout === 'system'? <SystemInnerTest nextStage={handlerNextStage}
+                                                   stage={[stage, questionsCount]}
+                                                   close={() => setModalOpen(false)}
+                                                   data={questions[stage]}
+                                                   onRight={() => {
+                                                     handlerRightAnswer();
+                                                   }}/>
+                                                   :
+        <InnerTest nextStage={handlerNextStage}
                         stage={[stage, questionsCount]}
                         close={() => setModalOpen(false)}
                         data={questions[stage]}

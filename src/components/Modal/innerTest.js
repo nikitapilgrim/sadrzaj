@@ -38,3 +38,13 @@ export const InnerTest = React.memo(({onRight, stage, data, close, nextStage}) =
     </Wrapper>
   );
 });
+
+export const SystemInnerTest = React.memo(({onRight, data, nextStage}) => {
+    return (
+      <Wrapper>
+        <StageContainer>
+          <Stage layout='system' onRight={onRight} data={data} nextStage={nextStage}/>
+        </StageContainer>
+      </Wrapper>
+    )
+});

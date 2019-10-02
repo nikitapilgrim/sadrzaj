@@ -40,7 +40,7 @@ export default [
         title: 'This is title for 9th question',
         question: 'Promjena ličnosti na pozornici, odnosno promjena mjesta radnje i scenografije u okviru jednog čina je {{pojava}}.',
       },
-    ]
+    ],
   },
   {
     title: `Medijska kultura`,
@@ -55,8 +55,8 @@ export default [
         answers: [
           'govora',
           'štampe',
-          'elektronskih sredstava'
-        ]
+          'elektronskih sredstava',
+        ],
       },
       {
         title: 'This is title for 3rd question',
@@ -72,8 +72,8 @@ export default [
         answers: [
           'BBC',
           'Discovery Chanel',
-          'National Geographic'
-        ]
+          'National Geographic',
+        ],
       },
       {
         title: 'This is title for 6th question',
@@ -83,11 +83,10 @@ export default [
         title: 'This is title for 7th question',
         question: 'Za pojavu društvene mreže Fejsbuk (Facebook) može se zahvaliti programeru',
         answers: [
-          ['Marku Cukerbergu', 'Marc Zuckerberg']
-        ]
+          ['Marku Cukerbergu', 'Marc Zuckerberg'],
+        ],
       },
-
-    ]
+    ],
   },
   {
     title: `Filmska umjetnost`,
@@ -116,6 +115,6 @@ export default [
         title: 'This is title for 6th question',
         question: '. Peta, i posljednja faza, poslije snimanja filma je {{montaža}}',
       },
-    ]
-  }
-]
+    ],
+  },
+];

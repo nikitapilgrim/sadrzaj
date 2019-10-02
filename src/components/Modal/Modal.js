@@ -1,6 +1,6 @@
 import React, {useEffect, useRef, useState} from 'react';
 import styled from 'styled-components';
-import useLifecycles from 'react-use/lib/useLifecycles';
+import useStoreon from 'storeon/react';
 import ReactModal from 'react-responsive-modal';
 import CloseIcon from '../../assets/img/icons/close_icon.png';
 import {useClickAway} from 'react-use';
@@ -64,18 +64,19 @@ const Bg = styled.div`
 
 export const Modal = React.memo(({children, inner, close, finish}) => {
   const [open, setOpen] = useState(false);
+  const {dispatch, modal} = useStoreon('modal');
   const ref = useRef(null);
   useClickAway(ref, () => {
-    setOpen(false);
+    dispatch('modal/close');
   });
 
   const handlerClose = () => {
-    setOpen(false);
+    dispatch('modal/close');
   };
 
   useEffect(() => {
     if (finish) {
-      setOpen(false);
+      dispatch('modal/close');
     }
   }, [finish]);
 
@@ -84,14 +85,14 @@ export const Modal = React.memo(({children, inner, close, finish}) => {
 
   useEffect(() => {
     const root = document.querySelector('#root');
-    if (open) {
-      root.style.filter = 'blur(5px)';
+    if (modal.open) {
+      root.style.filter = 'blur(10px)';
       //root.style.transform = 'scale(1.05)'
     } else {
       root.style.filter = 'none';
       root.style.transform = 'none';
     }
-  }, [open]);
+  }, [modal]);
 
   useEffect(() => {
     window.addEventListener('keydown', function(e) {
@@ -113,8 +114,8 @@ export const Modal = React.memo(({children, inner, close, finish}) => {
       background: 'none',
       boxShadow: 'none',
       padding: '0px !important',
-    }
-  }
+    },
+  };
 
   return (
     <>
@@ -125,6 +126,7 @@ export const Modal = React.memo(({children, inner, close, finish}) => {
             {inner}
             <CloseModal onClick={() => {
               setOpen(false);
+              dispatch('modal/close');
               FX.mouseClick.play()
             }}/>
           </Inner>
@@ -132,6 +134,7 @@ export const Modal = React.memo(({children, inner, close, finish}) => {
       </ReactModal>
       <div onClick={() => {
         setOpen(true);
+        dispatch('modal/open');
         FX.mouseClick.play()
       }}>
         {children}

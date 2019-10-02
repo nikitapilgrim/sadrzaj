@@ -40,6 +40,7 @@ const Inner = styled.div`
   padding: 40px;
   padding-bottom: 70px;
   position: relative;
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.5)
 `;
 
 const Content = styled.div`

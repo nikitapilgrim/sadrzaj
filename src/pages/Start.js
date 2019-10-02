@@ -2,14 +2,17 @@ import React, {useState} from 'react';
 import styled, {css} from 'styled-components';
 import {useMount, useWindowSize} from 'react-use';
 import * as Scroll from 'react-scroll';
+import Fade from 'react-reveal/Fade';
 
 import {Menu} from '../components/Menu/Menu';
 import {breakpoints} from '../mixins/breakpoints';
 
 import ArticlesData from '../Data/Articles';
 import {MultipleArticles} from '../components/Layouts/MultipleArticles';
+import {Systematization} from '../components/Systematization';
 
 import bgHeader from '../assets/img/backgrounds/header.jpg';
+import firstscreen from '../assets/img/backgrounds/start-screen.jpg'
 
 let scroll = Scroll.animateScroll;
 
@@ -36,15 +39,13 @@ const Main = styled.main`
 `
 
 const Header = styled.div`
-  position: relative;
+  position: absolute;
   height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url(${bgHeader});
-  background-size: cover;
 `;
 
 const Inner = styled.div`
@@ -110,7 +111,7 @@ const Button = styled.button`
   border-radius: 6px;
   border: none;
   outline: none;
-  color: black;
+  color: #8f7d69;
   font-weight: 900;
   @media ${breakpoints.laptop} {
     width: 334px;
@@ -118,28 +119,33 @@ const Button = styled.button`
     font-size: 60px; 
   }
   span {
-    color: black;
-    background: url(${bgHeader}) no-repeat;
-    background-position: 50% 50%;
+    //color: black;
+    //background: url(${bgHeader}) no-repeat;
+    //background-position: 50% 50%;
     @media ${breakpoints.tablet} {
-      background: url(${bgHeader}) no-repeat;
-      background-position: 50% 25%;
-      -webkit-background-clip: text;
+      //background: url(${bgHeader}) no-repeat;
+      //background-position: 50% 25%;
+      //-webkit-background-clip: text;
     }
-    background-size: ${props => `${props.size[0]}px ${props.size[1]}px`};
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    //background-size: ${props => `${props.size[0]}px ${props.size[1]}px`};
+    //-webkit-background-clip: text;
+    //-webkit-text-fill-color: transparent;
   }
 `;
 
-const MenuWrapper = styled.div`
+const FirstScreen = styled.div`
   position: fixed;
-  z-index: 1;
-  top: 2vh;
-  right: 3vw;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: url(${firstscreen});
+  background-size: cover;
 `;
 
 export const Start = React.memo(() => {
+  const [firstScreenShow, setFirstScreenShow] = useState(true);
   const {width, height} = useWindowSize();
   const [offsetArticles, setOffsetArticles] = useState({});
   const getOffset = (id, offset) => {
@@ -151,6 +157,11 @@ export const Start = React.memo(() => {
       top: offsetArticles[id],
       behavior: 'smooth',
     });*/
+  };
+
+  const handlerStart = (cb) => {
+    setFirstScreenShow(false);
+    //cb()
   };
 
   useMount(() => {
@@ -177,26 +188,36 @@ export const Start = React.memo(() => {
         preload.style.display = 'none';
       }, 2000)
     });
-  }, 2000);
+  });
 
 
   return (
     <Wrapper>
       <Header>
         <Menu scrollToArticle={scrollToArticle}/>
-        <Inner>
+        {/*<Inner>
           <Title>Citanka 8-9</Title>
           <Subtitle>Ljiljana Mitic-Roric</Subtitle>
           <Subtitle>Alija H. Dubocanin</Subtitle>
           <Button onClick={() => scrollToArticle(1)} size={[width, height]}><span>Start</span></Button>
         </Inner>
-        <BgContainer>
+        */}
+        <Fade when={firstScreenShow}>
+          <FirstScreen>
+            <Button onClick={e => handlerStart(scrollToArticle(1))} size={[width, height]}><span>Start</span></Button>
+          </FirstScreen>
+        </Fade>
+        {/*<BgContainer>
           <Bg/>
         </BgContainer>
+        */}
       </Header>
-      <Main>
-        <MultipleArticles getOffset={getOffset} data={ArticlesData}/>
-      </Main>
+      <Fade when={!firstScreenShow}>
+        <Main>
+          {/*<MultipleArticles getOffset={getOffset} data={ArticlesData}/>*/}
+          <Systematization/>
+        </Main>
+      </Fade>
     </Wrapper>
   );
 });

@@ -60,4 +60,24 @@ const articles = store => {
   });
 };
 
-export const store = createStore([stage, progress, audio, articles, persistState(['articles'])]);
+const modal = store => {
+  store.on('@init', () => ({modal: {
+      open: false
+    }}));
+  store.on('modal/close', ({modal}) => {
+    return {
+      modal: {
+        open: false
+      }
+    }
+  });
+  store.on('modal/open', ({modal}) => {
+    return {
+      modal: {
+        open: true
+      }
+    }
+  })
+};
+
+export const store = createStore([stage,modal, progress, audio, articles, persistState(['articles'])]);

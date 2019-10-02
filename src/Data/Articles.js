@@ -2269,6 +2269,10 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
           {
             title: 'U 1. i 3. licu',
             right: true
+          },
+          {
+            title: 'u množini',
+            right: false
           }
         ]
       },
@@ -3414,7 +3418,7 @@ Dok mu je visokim čelom plesala mekana kosa, oslobođena {{turbana(53)}}, koji 
     author: `Петар Кочић`,
     year: false,
     video: false,
-    audio: false,
+    audio: require('../assets/sounds/pronunciation/27.aac'),
     questions: [
       {
         title: 'This is title for 1st question',
