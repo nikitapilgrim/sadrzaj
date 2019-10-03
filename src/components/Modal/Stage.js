@@ -19,6 +19,16 @@ const Title = styled.div`
   }
 `;
 
+const Text = styled.div`
+  text-shadow: 0 1px 0 #000000;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: normal;
+   @media ${breakpoints.tablet} {
+     font-size: 32px;
+  }
+`;
+
 const AnswersContainer = styled.div`
   margin-top: 40px;
   display: flex;
@@ -117,7 +127,6 @@ const SystemLayout = ({question, answers, inputHandler, nextStage}) => {
   const [manyValues, setManyValues] = useState([]);
 
   const handler = (right, id) => e => {
-    console.log(id, right)
     const obj = {
       [id]: {
         right: right,
@@ -150,10 +159,8 @@ const SystemLayout = ({question, answers, inputHandler, nextStage}) => {
           const [key, value] = pair;
           return answers.includes(value);
         });
-        console.log(checkAllAnswers, 'caw')
         checkAllAnswers && !hasDuplicates(Object.values(manyValues)) && nextStage(true)(true);
       } else {
-        console.log('chek')
         answers[0].some(answer => answer === manyValues[0]) && nextStage(true)(true);
       }
     }
@@ -174,7 +181,7 @@ const SystemLayout = ({question, answers, inputHandler, nextStage}) => {
 
   return (
     <>
-      {!answers && <Title>
+      {!answers && <Text>
         {reactStringReplace(question, /{{([^}]+)}}/g, (match, i) => {
           return (
             <Span key={i}>
@@ -183,10 +190,10 @@ const SystemLayout = ({question, answers, inputHandler, nextStage}) => {
           );
         })
         }
-      </Title>
+      </Text>
       }
       {answers && (
-        <Title>
+        <Text>
           {question}{answers.map((answer, i) => {
           return (
             <>
@@ -196,7 +203,7 @@ const SystemLayout = ({question, answers, inputHandler, nextStage}) => {
             </>
           );
         })}
-        </Title>
+        </Text>
       )}
     </>
   );
@@ -208,7 +215,6 @@ export const Stage = React.memo(({data, onRight, nextStage, layout}) => {
   const {title, answers, question} = data;
 
   const stageHandler = (right) => () => {
-    console.log(right);
     if (right) {
       onRight();
       FX.correctAnswer.play();

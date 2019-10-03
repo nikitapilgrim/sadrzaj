@@ -1,4 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react';
+import Tour from 'reactour'
 import styled from 'styled-components';
 import useStoreon from 'storeon/react';
 import useComponentSize from '@rehooks/component-size';
@@ -168,6 +169,14 @@ export const ArticleLayout = React.memo(({data, id, getOffset, text}) => {
   const [textReady, setTextReady] = useState(false);
   let size = useComponentSize(ref);
   let {width, height} = size;
+
+  const steps = [
+    {
+      selector: '.first-step',
+      content: 'This is my first Step',
+    },
+    // ...
+  ];
 
   const getMedal = (result) => {
     let medal = null;
