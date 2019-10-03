@@ -99,14 +99,25 @@ const Span = styled.span`
   position: relative;
 `;
 
+const HiddenWord = ({state, match, index, handler}) => {
+  const ref = useRef(null);
+  let size = useComponentSize(ref);
+  let {width} = size;
+  console.log(state);
+  return (
+    <React.Fragment key={index}>
+      <InlineInput width={width} value={state.hasOwnProperty(index) ? state[index].value : ''} onKeyUp={handler}/>
+      <AnswerHidden ref={ref}>{match}</AnswerHidden>
+    </React.Fragment>
+  )
+};
+
 const SystemLayout = ({question, answers, inputHandler, nextStage}) => {
   const [value, setValue] = useState([]);
   const [manyValues, setManyValues] = useState([]);
-  let ref = useRef(null);
-  let size = useComponentSize(ref);
-  let {width} = size;
 
   const handler = (right, id) => e => {
+    console.log(id, right)
     const obj = {
       [id]: {
         right: right,
@@ -122,7 +133,7 @@ const SystemLayout = ({question, answers, inputHandler, nextStage}) => {
   };
 
   useEffect(() => {
-    if (value) {
+    if (value.length !== 0) {
       const checkAllAnswers = Object.entries(value).every(pair => {
         const [key, value] = pair;
         return value.right === value.value
@@ -133,13 +144,16 @@ const SystemLayout = ({question, answers, inputHandler, nextStage}) => {
 
   useEffect(() => {
     if (answers) {
+      console.log(manyValues, 'many')
       if (!Array.isArray(answers[0])) {
         const checkAllAnswers = Object.entries(manyValues).every(pair => {
           const [key, value] = pair;
           return answers.includes(value);
         });
+        console.log(checkAllAnswers, 'caw')
         checkAllAnswers && !hasDuplicates(Object.values(manyValues)) && nextStage(true)(true);
       } else {
+        console.log('chek')
         answers[0].some(answer => answer === manyValues[0]) && nextStage(true)(true);
       }
     }
@@ -164,8 +178,7 @@ const SystemLayout = ({question, answers, inputHandler, nextStage}) => {
         {reactStringReplace(question, /{{([^}]+)}}/g, (match, i) => {
           return (
             <Span key={i}>
-              <InlineInput value={value.hasOwnProperty(i) ? value[i].value : ''} onKeyUp={handler(match, i)} width={width}/>
-              <AnswerHidden ref={ref}>{match}</AnswerHidden>
+              <HiddenWord state={value} index={i} match={match} handler={handler(match, i)}/>
             </Span>
           );
         })
@@ -178,8 +191,7 @@ const SystemLayout = ({question, answers, inputHandler, nextStage}) => {
           return (
             <>
               <Span key={i}>
-                <InlineInput value={manyValues[i]} onKeyUp={nonLinearHandler(i)} width={width}/>
-                <AnswerHidden ref={ref}>{answer}</AnswerHidden>
+                <HiddenWord state={manyValues} index={i} match={answer} handler={nonLinearHandler(i)}/>
               </Span>
             </>
           );

@@ -11,6 +11,7 @@ import {TestButton} from '../../Buttons/TestButton.js';
 import {AudioButton} from '../../Buttons/AudioButton.js';
 import {VideoButton} from '../../Buttons/VideoButton';
 import {TextContainer} from './TextContainer';
+import {Medal} from '../../Medal';
 
 import bg from '../../../assets/img/backgrounds/halka07.jpg';
 
@@ -150,34 +151,6 @@ const MedalContainer = styled.div`
     
 `;
 
-const MedalWrapper = styled.div`
-  position: relative;
-`;
-
-const Medal = styled.div`
-  position: relative;
-  transform: rotate(-10deg) scale(0.8);
-  svg {
-    filter:drop-shadow(2px 3px 5px black)
-  }
-   @media ${breakpoints.laptop} {
-        transform: rotate(-10deg);
-       svg {
-          filter:drop-shadow(2px 3px 5px black)
-        }
-    }
-`;
-
-const MedalPercent = styled.div`
-  position: absolute;
-  bottom: 55%;
-  left: 20%;
-  text-shadow: 1px 1px 1px #000;
-  color: #ffffff;
-  font-size: 43px;
-  font-weight: 900;
-`;
-
 const PageNumber = styled.div`
   color: #fff;
   position: absolute;
@@ -239,16 +212,7 @@ export const ArticleLayout = React.memo(({data, id, getOffset, text}) => {
               {data.hasOwnProperty('subtitleDescr') && <SubtitleDescr>{data.subtitleDescr}</SubtitleDescr>}
               <MedalContainer desctop={true}>
                 {articles[data.id] &&
-                <MedalWrapper>
-                  <Medal>
-                    {articles[data.id].medal === 'bronze' && <MedalOne/>}
-                    {articles[data.id].medal === 'iron' && <MedalTwo/>}
-                    {articles[data.id].medal === 'gold' && <MedalThree/>}
-                    <MedalPercent>
-                      {articles[data.id].percent}%
-                    </MedalPercent>
-                  </Medal>
-                </MedalWrapper>
+                  <Medal type={articles[data.id].medal} percent={articles[data.id].percent}/>
                 }
               </MedalContainer>
             </Row>

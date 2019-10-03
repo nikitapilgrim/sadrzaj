@@ -1,9 +1,10 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 import data from '../Data/systematization'
 import {breakpoints} from '../mixins/breakpoints';
 import {TestButton} from './Buttons/TestButton';
 import {AudioButton} from './Buttons/AudioButton';
+import {Medal} from './Medal';
 
 const Wrapper = styled.div`
    padding: 50px 0px;
@@ -42,12 +43,17 @@ const ItemTitle = styled.h2`
 
 `;
 
+const MedalContainer = styled.div`
+  position: relative;
+`;
+
 const ItemSubtitle = styled.h3`
 
 `
 
 
 export const Systematization = () => {
+  const [medal, setMedal] = useState(null);
 
   const getMedal = (result) => {
     let medal = null;
@@ -60,6 +66,7 @@ export const Systematization = () => {
     if (!medal) {
       medal = 'bronze';
     }
+    setMedal({type: medal, percent: result});
   };
 
   const handlerFinishTest = (result) => {
@@ -80,10 +87,17 @@ export const Systematization = () => {
               <ItemTitle>
                 {item.title}
               </ItemTitle>
+              <ItemSubtitle>
+                {item.subtitle}
+              </ItemSubtitle>
               {item.questions && <TestButton onFinishTest={handlerFinishTest}
                                              layout={'system'}
                                              questions={item.questions}/>}
               {item.audio && <AudioButton data={item.audio}/>}
+              <MedalContainer>
+                {medal && <Medal type={medal.type} percent={medal.percent}/>}
+              </MedalContainer>
+
             </Item>
           )
         })}
