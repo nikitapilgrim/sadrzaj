@@ -72,6 +72,7 @@ const modal = store => {
     }
   });
   store.on('modal/open', ({modal}) => {
+    console.log(modal,  'modal');
     return {
       modal: {
         open: true

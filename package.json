@@ -61,6 +61,7 @@
     "react-reveal": "^1.2.2",
     "react-scroll": "^1.7.14",
     "react-string-replace": "^0.4.4",
+    "react-ui-tour": "^0.9.9",
     "react-use": "^12.2.0",
     "reactour": "^1.15.2",
     "storeon": "^0.9.5",

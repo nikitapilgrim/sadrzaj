@@ -9,7 +9,9 @@ const Wrapper = styled.div`
 `;
 
 const StageContainer = styled.div`
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const OrderStage = styled.div`

@@ -44,6 +44,8 @@ const Inner = styled.span`
   justify-content: center;
   align-items: center;
   width: 100%;
+  min-width: 50vw;
+  min-height: 50vh;
   @media ${breakpoints.laptop} { 
       width: 80%;
   }
@@ -67,18 +69,23 @@ export const Modal = React.memo(({children, inner, close, finish}) => {
   const {dispatch, modal} = useStoreon('modal');
   const ref = useRef(null);
   useClickAway(ref, () => {
-    dispatch('modal/close');
-    setOpen(false);
+    //console.log(ref.current)
+    //dispatch('modal/close');
+    //console.log('awai')
+    ///setOpen(false);
   });
 
   const handlerClose = () => {
     dispatch('modal/close');
+    //console.log('handlerclose')
+
     setOpen(false)
   };
 
   useEffect(() => {
     if (finish) {
       dispatch('modal/close');
+      //console.log('finish')
       setOpen(false)
     }
   }, [finish]);
@@ -100,7 +107,6 @@ export const Modal = React.memo(({children, inner, close, finish}) => {
       if ((e.key === 'Escape' || e.key === 'Esc' || e.code === 'Escape')) {
         e.preventDefault();
         handlerClose();
-        dispatch('modal/close');
         return false;
       }
     }, true);
@@ -129,6 +135,7 @@ export const Modal = React.memo(({children, inner, close, finish}) => {
             <CloseModal onClick={() => {
               setOpen(false);
               dispatch('modal/close');
+              //console.log('closebutti')
               FX.mouseClick.play()
             }}/>
           </Inner>
@@ -137,6 +144,7 @@ export const Modal = React.memo(({children, inner, close, finish}) => {
       <div onClick={() => {
         setOpen(true);
         dispatch('modal/open');
+        //console.log('open')
         FX.mouseClick.play()
       }}>
         {children}

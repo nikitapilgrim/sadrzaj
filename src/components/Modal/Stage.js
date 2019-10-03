@@ -197,10 +197,10 @@ export const Stage = React.memo(({data, onRight, nextStage, layout}) => {
   };
 
   return (
-    <React.Fragment>
+    <div>
       {layout === 'system' && <SystemLayout nextStage={stageHandler} answers={answers} question={question} inputHandler={inputHandler}/>}
       {layout !== 'system' &&
       <MainLayout question={question} answers={answers} inputHandler={inputHandler} stageHandler={stageHandler}/>}
-    </React.Fragment>
+    </div>
   );
 });
