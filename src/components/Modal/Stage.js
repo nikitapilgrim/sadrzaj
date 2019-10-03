@@ -5,6 +5,10 @@ import {breakpoints} from '../../mixins/breakpoints';
 import {FX} from '../../assets/sounds/fx/index';
 import reactStringReplace from 'react-string-replace';
 
+function hasDuplicates(array) {
+  return (new Set(array)).size !== array.length;
+}
+
 const Title = styled.div`
   text-shadow: 0 1px 0 #000000;
   color: #ffffff;
@@ -115,14 +119,14 @@ const SystemLayout = ({question, answers, inputHandler, nextStage}) => {
 
   useEffect(() => {
     if (answers ) {
-      if (!Array.isArray(answers)) {
+      if (!Array.isArray(answers[0])) {
         const checkAllAnswers = Object.entries(manyValues).every(pair => {
           const [key, value] = pair;
           return answers.includes(value);
         });
-        checkAllAnswers && nextStage();
+        checkAllAnswers && !hasDuplicates(Object.values(manyValues)) && nextStage(true)(true);
       } else {
-        answers[0].some(answer => answer === manyValues[0]) && nextStage();
+        answers[0].some(answer => answer === manyValues[0]) && nextStage(true)(true);
       }
     }
   }, [manyValues]);
@@ -132,7 +136,7 @@ const SystemLayout = ({question, answers, inputHandler, nextStage}) => {
   }, [question]);
 
   useEffect(() => {
-    if (answers && !Array.isArray(answers)) {
+    if (answers && !Array.isArray(answers[0])) {
       setManyValues(answers.reduce((acc, elem, i) => {
         const obj = {[i]: ''};
         return {...acc, ...obj};
@@ -144,7 +148,7 @@ const SystemLayout = ({question, answers, inputHandler, nextStage}) => {
     <>
       {!answers && reactStringReplace(question, /{{([^}]+)}}/g, (match, i) => {
         return (
-          <Span>
+          <Span key={i}>
             <InlineInput value={value} onKeyUp={handler(match)} width={width}/>
             <AnswerHidden ref={ref}>{match}</AnswerHidden>
           </Span>
@@ -154,7 +158,7 @@ const SystemLayout = ({question, answers, inputHandler, nextStage}) => {
         <>
           {question}{answers.map((answer, i) => {
           return (
-            <Span>
+            <Span key={i}>
               <InlineInput value={manyValues[i]} onKeyUp={nonLinearHandler(i)} width={width}/>
               <AnswerHidden ref={ref}>{answer}</AnswerHidden>
             </Span>
@@ -172,6 +176,7 @@ export const Stage = React.memo(({data, onRight, nextStage, layout}) => {
   const {title, answers, question} = data;
 
   const stageHandler = (right) => () => {
+    console.log(right)
     if (right) {
       onRight();
       FX.correctAnswer.play();
@@ -186,13 +191,14 @@ export const Stage = React.memo(({data, onRight, nextStage, layout}) => {
   const inputHandler = (right) => (value) => {
     if (right === value) {
       FX.correctAnswer.play();
+      onRight();
       nextStage();
     }
   };
 
   return (
     <React.Fragment>
-      {layout === 'system' && <SystemLayout nextStage={nextStage} answers={answers} question={question} inputHandler={inputHandler}/>}
+      {layout === 'system' && <SystemLayout nextStage={stageHandler} answers={answers} question={question} inputHandler={inputHandler}/>}
       {layout !== 'system' &&
       <MainLayout question={question} answers={answers} inputHandler={inputHandler} stageHandler={stageHandler}/>}
     </React.Fragment>

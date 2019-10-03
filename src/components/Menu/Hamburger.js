@@ -19,7 +19,7 @@ const Plank = styled.div`
 
 export const Hamburger = ({onClick}) => {
   return (
-    <Wrapper>
+    <Wrapper onClick={onClick}>
       <Plank/>
       <Plank/>
       <Plank/>

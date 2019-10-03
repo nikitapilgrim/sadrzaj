@@ -214,7 +214,7 @@ export const Start = React.memo(() => {
       </Header>
       <Fade when={!firstScreenShow}>
         <Main>
-          {/*<MultipleArticles getOffset={getOffset} data={ArticlesData}/>*/}
+          <MultipleArticles getOffset={getOffset} data={ArticlesData}/>
           <Systematization/>
         </Main>
       </Fade>

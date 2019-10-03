@@ -60,6 +60,7 @@ export const TestButton = ({questions, onFinishTest, layout}) => {
   };
 
   const handlerNextStage = () => {
+    console.log(rightAnswersCount)
     if (questions.length - 1 === stage) {
       setModalOpen(false);
       onFinishTest([rightAnswersCount, questions.length - 1]);

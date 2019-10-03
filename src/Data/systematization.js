@@ -3,6 +3,7 @@ export default [
     title: `Umjetnička književnost
     Drama
     `,
+    subtitle: `Provjeri znanje o Umjetnika `,
     questions: [
       {
         title: 'This is title for 1st question',
@@ -44,6 +45,8 @@ export default [
   },
   {
     title: `Medijska kultura`,
+    subtitle: `Provjeri znanje o Umjetnika medijima`,
+
     questions: [
       {
         title: 'This is title for 1st question',
@@ -90,6 +93,7 @@ export default [
   },
   {
     title: `Filmska umjetnost`,
+    subtitle: `Provjeri znanje o  ...`,
     questions: [
       {
         title: 'This is title for 1st question',

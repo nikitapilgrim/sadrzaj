@@ -68,19 +68,20 @@ export const Modal = React.memo(({children, inner, close, finish}) => {
   const ref = useRef(null);
   useClickAway(ref, () => {
     dispatch('modal/close');
+    setOpen(false);
   });
 
   const handlerClose = () => {
     dispatch('modal/close');
+    setOpen(false)
   };
 
   useEffect(() => {
     if (finish) {
       dispatch('modal/close');
+      setOpen(false)
     }
   }, [finish]);
-
-  //useLifecycles(() => console.log('MOUNTED'), () => console.log('UNMOUNTED'));
 
 
   useEffect(() => {
@@ -99,6 +100,7 @@ export const Modal = React.memo(({children, inner, close, finish}) => {
       if ((e.key === 'Escape' || e.key === 'Esc' || e.code === 'Escape')) {
         e.preventDefault();
         handlerClose();
+        dispatch('modal/close');
         return false;
       }
     }, true);

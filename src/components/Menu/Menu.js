@@ -222,10 +222,10 @@ export const Menu = ({scrollToArticle}) => {
 
 
   return (
-    <Wrapper ref={ref} hidden={menuHidden} onClick={handlerClickMenu}>
+    <Wrapper ref={ref} hidden={menuHidden}>
       <HamburgerWrapper>
-        <Logo>SADRŽAJ</Logo>
-        <Hamburger/>
+        <Logo onClick={handlerClickMenu}>SADRŽAJ</Logo>
+        <Hamburger onClick={handlerClickMenu}/>
         <Sound/>
       </HamburgerWrapper>
       <MenuHidden hidden={menuHidden}>
