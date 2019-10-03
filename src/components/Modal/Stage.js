@@ -100,15 +100,20 @@ const Span = styled.span`
 `;
 
 const SystemLayout = ({question, answers, inputHandler, nextStage}) => {
-  const [value, setValue] = useState(null);
+  const [value, setValue] = useState([]);
   const [manyValues, setManyValues] = useState([]);
   let ref = useRef(null);
   let size = useComponentSize(ref);
   let {width} = size;
 
-  const handler = right => e => {
-    setValue(e.target.value);
-    inputHandler(right)(e.target.value);
+  const handler = (right, id) => e => {
+    const obj = {
+      [id]: {
+        right: right,
+        value: e.target.value
+      }
+    };
+    setValue({...value, ...obj});
   };
 
   const nonLinearHandler = i => e => {
@@ -116,9 +121,18 @@ const SystemLayout = ({question, answers, inputHandler, nextStage}) => {
     setManyValues({...manyValues, ...obj});
   };
 
+  useEffect(() => {
+    if (value) {
+      const checkAllAnswers = Object.entries(value).every(pair => {
+        const [key, value] = pair;
+        return value.right === value.value
+      });
+      checkAllAnswers && nextStage(true)(true);
+    }
+  }, [value]);
 
   useEffect(() => {
-    if (answers ) {
+    if (answers) {
       if (!Array.isArray(answers[0])) {
         const checkAllAnswers = Object.entries(manyValues).every(pair => {
           const [key, value] = pair;
@@ -146,25 +160,31 @@ const SystemLayout = ({question, answers, inputHandler, nextStage}) => {
 
   return (
     <>
-      {!answers && reactStringReplace(question, /{{([^}]+)}}/g, (match, i) => {
-        return (
-          <Span key={i}>
-            <InlineInput value={value} onKeyUp={handler(match)} width={width}/>
-            <AnswerHidden ref={ref}>{match}</AnswerHidden>
-          </Span>
-        );
-      })}
-      {answers && (
-        <>
-          {question}{answers.map((answer, i) => {
+      {!answers && <Title>
+        {reactStringReplace(question, /{{([^}]+)}}/g, (match, i) => {
           return (
             <Span key={i}>
-              <InlineInput value={manyValues[i]} onKeyUp={nonLinearHandler(i)} width={width}/>
-              <AnswerHidden ref={ref}>{answer}</AnswerHidden>
+              <InlineInput value={value.hasOwnProperty(i) ? value[i].value : ''} onKeyUp={handler(match, i)} width={width}/>
+              <AnswerHidden ref={ref}>{match}</AnswerHidden>
             </Span>
           );
+        })
+        }
+      </Title>
+      }
+      {answers && (
+        <Title>
+          {question}{answers.map((answer, i) => {
+          return (
+            <>
+              <Span key={i}>
+                <InlineInput value={manyValues[i]} onKeyUp={nonLinearHandler(i)} width={width}/>
+                <AnswerHidden ref={ref}>{answer}</AnswerHidden>
+              </Span>
+            </>
+          );
         })}
-        </>
+        </Title>
       )}
     </>
   );
@@ -176,7 +196,7 @@ export const Stage = React.memo(({data, onRight, nextStage, layout}) => {
   const {title, answers, question} = data;
 
   const stageHandler = (right) => () => {
-    console.log(right)
+    console.log(right);
     if (right) {
       onRight();
       FX.correctAnswer.play();
@@ -198,7 +218,8 @@ export const Stage = React.memo(({data, onRight, nextStage, layout}) => {
 
   return (
     <div>
-      {layout === 'system' && <SystemLayout nextStage={stageHandler} answers={answers} question={question} inputHandler={inputHandler}/>}
+      {layout === 'system' &&
+      <SystemLayout nextStage={stageHandler} answers={answers} question={question} inputHandler={inputHandler}/>}
       {layout !== 'system' &&
       <MainLayout question={question} answers={answers} inputHandler={inputHandler} stageHandler={stageHandler}/>}
     </div>
