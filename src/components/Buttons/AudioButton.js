@@ -5,6 +5,7 @@ import {InnerAudio} from '../Modal/InnerAudio';
 import {Modal} from '../Modal/Modal';
 import {breakpoints} from '../../mixins/breakpoints';
 import {useAction} from '../../libs/tutorial';
+import {Poslusaj} from '../Modal/TutotialModal';
 
 
 const Wrapper = styled.button`
@@ -44,7 +45,7 @@ const Wrapper = styled.button`
 export const AudioButton = ({data}) => {
   const [modalOpen, setModalOpen] = useState(false);
   const ref = useRef(null);
-  const [store] = useAction(ref, () => 'hi', 2, 'audio');
+  const [store] = useAction(ref, () => 'hi', 5, 'audio', <Poslusaj/>);
 
   return (
     <Modal

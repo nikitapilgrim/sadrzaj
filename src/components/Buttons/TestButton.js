@@ -6,6 +6,7 @@ import {InnerTest} from '../Modal/InnerTest.js';
 import {SystemInnerTest} from '../Modal/InnerTest.js';
 import {breakpoints} from '../../mixins/breakpoints';
 import {useAction} from '../../libs/tutorial';
+import {Znanje} from '../Modal/TutotialModal';
 
 const Wrapper = styled.button`
   cursor: pointer;
@@ -46,9 +47,8 @@ export const TestButton = ({questions, onFinishTest, layout}) => {
   const [questionsCount, setQuestionsCount] = useState(null);
   const [rightAnswersCount, setRightAnswersCount] = useState(0);
   const [finish, setFinish] = useState(false);
-  const ref = useRef(null)
-  const [store] = useAction(ref, () => 'hi', 3, 'test', {title: 'some', text: 'text'});
-
+  const ref = useRef(null);
+  const [store, methods] = useAction(ref, () => console.log('hi'), 3, 'test', <Znanje/>);
 
   useEffect(() => {
     setQuestionsCount(questions.length);

@@ -170,8 +170,6 @@ export const ArticleLayout = React.memo(({data, id, getOffset, text}) => {
   const [textReady, setTextReady] = useState(false);
   let size = useComponentSize(ref);
   let {width, height} = size;
-  const [store] = useAction(ref, () => 'hi', 4, 'article', {title: 'some', text: 'text'});
-
 
   const steps = [
     {

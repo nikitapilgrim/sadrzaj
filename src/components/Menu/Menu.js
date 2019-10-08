@@ -8,6 +8,8 @@ import {Sound} from './Sound';
 import {FX} from '../../assets/sounds/fx/index';
 
 import ArticleData from '../../Data/Articles';
+import {useAction} from '../../libs/tutorial';
+import {Sadrzaj} from '../Modal/TutotialModal';
 
 const Wrapper = styled.div`
   cursor: pointer;
@@ -167,6 +169,7 @@ export const Menu = ({scrollToArticle}) => {
   const ref = useRef(null);
   const [menuHidden, setMenuHidden] = useState(true);
   const [menuItems, setMenuItems] = useState(null);
+  const [store, methods] = useAction(ref, () => console.log('hi'), 2, 'menu', <Sadrzaj/>);
 
   useClickAway(ref, (e) => {
     setMenuHidden(true)

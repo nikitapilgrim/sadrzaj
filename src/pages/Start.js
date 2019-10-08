@@ -16,6 +16,7 @@ import firstscreen from '../assets/img/backgrounds/start-screen.jpg';
 import {useAction} from '../libs/tutorial';
 import ReactModal from 'react-responsive-modal';
 import {Wrapper as ModalWrapper, Inner as ModalInner} from '../components/Modal/Modal';
+import {Zdravo} from '../components/Modal/TutotialModal';
 
 let scroll = Scroll.animateScroll;
 
@@ -142,6 +143,9 @@ const ModalNextButton = styled.button`
   border-radius: 3px;
   background-color: #FFF;
   color: red;
+  padding: 10px 30px;
+  cursor:pointer;
+  font-weight: bold;
 `;
 
 const FirstScreen = styled.div`
@@ -155,19 +159,17 @@ const FirstScreen = styled.div`
   background-size: cover;
 `;
 let tr = false;
+
+let clonesNode = [];
+
 export const Start = () => {
   const [firstScreenShow, setFirstScreenShow] = useState(true);
   const {width, height} = useWindowSize();
   const [offsetArticles, setOffsetArticles] = useState({});
-  const [store, methods] = useAction();
+  const [store, methods] = useAction(null, () => console.log('hi'), 1, 'start', <Zdravo/>);
+
   const [modalOpen, setModalOpen] = useState(false);
   const [tutorId, setTutorId] = useState(1);
-
-  useMount(() => {
-    methods.setStyleToRef({
-      backgroundColor: '0px 10px -14px 14px #FFF',
-    });
-  });
 
   useEffect(() => {
     const root = document.querySelector('#root');
@@ -179,24 +181,71 @@ export const Start = () => {
       root.style.transform = 'none';
     }
   }, [modalOpen]);
+  console.log(store)
+
+
+  const handlerNextTutorial = () => {
+    if (!store.hasOwnProperty(tutorId + 1)) {
+      setTutorId(null);
+      setModalOpen(false);
+      return false
+    }
+    if (store.hasOwnProperty(tutorId + 1)) {
+      setTutorId(tutorId + 1);
+    }
+    //methods.goTo(tutorId);
+  };
 
   useEffect(() => {
-    if (store && !tr) {
-      setTimeout(() => {
+    function getCoords(elem) {
+      if (elem) {
+        let box = elem.getBoundingClientRect();
 
-        setModalOpen(true);
-        tr = true;
-      }, 3000);
-      /*setTimeout(() => {
-        Object.entries((store)).forEach((pair, i) => {
-          const [key, action] = pair;
-          methods.goTo(key)
-        });*/
-
+        return {
+          top: box.top, //+ window.pageYOffset,
+          left: box.left //+ window.pageXOffset,
+        };
+      }
     }
-  }, [store]);
-  console.log(store);
 
+    function addStyles(element, styles) {
+      for (let id in styles) {
+        element.style[id] = styles[id];
+      }
+    }
+
+    if (clonesNode) {
+      clonesNode.forEach(node => {
+        node.clone.remove();
+      });
+      clonesNode = [];
+    }
+
+    if (tutorId !== 1 && store[tutorId]) {
+      store[tutorId].refs.forEach(ref => {
+        const node = ref.current;
+        if (node) {
+          const clone = ref.current.cloneNode(true);
+          clone.classList.add('highlight-elem');
+          clonesNode.push({clone, cord: {
+              top: `${getCoords(node).top}px`,
+              left: `${getCoords(node).left}px`}});
+        }
+      });
+      clonesNode.forEach((node) => {
+        if (node.clone) {
+          addStyles(node.clone, {
+            position: 'fixed',
+            top: node.cord.top,
+            left: node.cord.left
+          });
+          document.body.appendChild(node.clone);
+        }
+      });
+    }
+
+
+  }, [tutorId]);
 
   const getOffset = (id, offset) => {
     setOffsetArticles(prev => ({...prev, [id]: offset}));
@@ -211,6 +260,7 @@ export const Start = () => {
 
   const handlerStart = (cb) => {
     setFirstScreenShow(false);
+    setModalOpen(true);
     //cb()
   };
 
@@ -268,7 +318,9 @@ export const Start = () => {
         */}
         <Fade when={firstScreenShow}>
           <FirstScreen>
-            <Button onClick={e => handlerStart(scrollToArticle(1))} size={[width, height]}><span>Start</span></Button>
+            <Button onClick={e => {
+              handlerStart(scrollToArticle(1));
+            }} size={[width, height]}><span>Start</span></Button>
           </FirstScreen>
         </Fade>
         {/*<BgContainer>
@@ -287,9 +339,8 @@ export const Start = () => {
                     styles={style}>
           <ModalWrapper>
             <ModalInner>
-              {store.hasOwnProperty(tutorId) && store[tutorId].hasOwnProperty('content') && store[tutorId].content.title}
-              {store.hasOwnProperty(tutorId) && store[tutorId].hasOwnProperty('content') && store[tutorId].content.text}
-              <ModalWrapper>Dalje</ModalWrapper>
+              {store[tutorId] && <>{store[tutorId].content()}</>}
+              <ModalNextButton onClick={handlerNextTutorial}>Dalje</ModalNextButton>
             </ModalInner>
           </ModalWrapper>
         </ReactModal>

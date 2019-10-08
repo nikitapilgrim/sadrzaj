@@ -39,9 +39,10 @@ const CloseModal = styled.button`
 `;
 
 export const Inner = styled.span`
+  display: flex;
+  flex-direction: column;
   position: relative;
   z-index: 2;
-  display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;

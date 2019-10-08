@@ -1,9 +1,11 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import MedalOne from '../assets/svg/medal_1.svg';
 import MedalTwo from '../assets/svg/medal_2.svg';
 import MedalThree from '../assets/svg/medal_3.svg';
 import styled from 'styled-components';
 import {breakpoints} from '../mixins/breakpoints';
+import {useAction} from '../libs/tutorial';
+import {ZnanjeNext} from './Modal/TutotialModal';
 
 
 const MedalWrapper = styled.div`
@@ -36,12 +38,15 @@ const MedalPercent = styled.div`
 
 
 export const Medal = ({type, percent}) => {
+  const ref = useRef(null)
+  const [store, methods] = useAction(ref, () => console.log('hi'), 4, ['test', 'medals'], <ZnanjeNext/>);
+
   return (
     <MedalWrapper>
-      <Medals>
-        {type === 'bronze' && <MedalOne/>}
-        {type === 'iron' && <MedalTwo/>}
-        {type === 'gold' && <MedalThree/>}
+      <Medals ref={ref}>
+        {type === 'bronze' && <MedalOne />}
+        {type === 'iron' && <MedalTwo />}
+        {type === 'gold' && <MedalThree />}
         <MedalPercent>
           {percent}%
         </MedalPercent>

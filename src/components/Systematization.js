@@ -56,7 +56,6 @@ const ItemSubtitle = styled.h3`
 export const Systematization = () => {
   const [medal, setMedal] = useState(null);
   const ref = useRef(null);
-  const [action] = useAction(ref, () => console.log('hi'), 1, 'first', {title: 'some', text: 'text'});
 
   const getMedal = (result) => {
     let medal = null;

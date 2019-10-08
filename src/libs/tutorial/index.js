@@ -6,12 +6,28 @@ const ActionContext = createContext();
 export const ActionProvider = ({children}) => {
   const [actionStore, setActionStore] = useState({});
   const [style, setStyle] = useState({});
+  const [currentAction, setCurrentAction] = useState(1);
 
   const createAction = (action) => {
     const {ref, cb, id, groupName, content} = action;
 
     const setRefs = (groupName) => {
       if (ref && ref.current) {
+        if  (Array.isArray(groupName)) {
+          return groupName.reduce((acc, name, i, array) => {
+            if (array.length - 1 === i) {
+              if (refs.hasOwnProperty(name)) {
+                if (!refs[name].some(r => r === ref)) {
+                  refs[name] = [...refs[name], ref]
+                }
+              } else {
+                refs[name] = [ref]
+              }
+            }
+            return [...acc, ...refs[name]]
+          }, [])
+        }
+
         if (refs.hasOwnProperty(groupName)) {
           if (!refs[groupName].some(r => r === ref)) {
             refs[groupName] = [...refs[groupName], ref]
@@ -28,7 +44,7 @@ export const ActionProvider = ({children}) => {
         return {
           ...prev, [id]: {
             cb, groupName, refs: setRefs(groupName) || refs,
-            content,
+            content: () => content,
             complete: false
           },
         }
@@ -44,7 +60,8 @@ export const ActionProvider = ({children}) => {
       prepare.complete = true;
       setActionStore(prev => {
         return {...prev, [id]: prepare}
-      })
+      });
+      setCurrentAction(currentAction + 1)
     }
   };
   const setStyleToRef = (style) => {
@@ -64,5 +81,5 @@ export const useAction = (ref, cb, id, groupName, content) => {
   useEffect(() => {
     methods.createAction({ref, cb, id, groupName, content})
   }, [ref]);
-  return [store, methods];
+  return [store, methods, store.hasOwnProperty(id) && store[id].hasOwnProperty('content') && store[id].content];
 };
