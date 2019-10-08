@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import styled, {css} from 'styled-components';
 import {useMount, useWindowSize} from 'react-use';
 import * as Scroll from 'react-scroll';
@@ -12,7 +12,10 @@ import {MultipleArticles} from '../components/Layouts/MultipleArticles';
 import {Systematization} from '../components/Systematization';
 
 import bgHeader from '../assets/img/backgrounds/header.jpg';
-import firstscreen from '../assets/img/backgrounds/start-screen.jpg'
+import firstscreen from '../assets/img/backgrounds/start-screen.jpg';
+import {useAction} from '../libs/tutorial';
+import ReactModal from 'react-responsive-modal';
+import {Wrapper as ModalWrapper, Inner as ModalInner} from '../components/Modal/Modal';
 
 let scroll = Scroll.animateScroll;
 
@@ -36,7 +39,7 @@ const Main = styled.main`
   @media ${breakpoints.laptop} {
     padding-top: 100px;
    }
-`
+`;
 
 const Header = styled.div`
   position: absolute;
@@ -133,6 +136,14 @@ const Button = styled.button`
   }
 `;
 
+const ModalNextButton = styled.button`
+  border: none;
+  background: none;
+  border-radius: 3px;
+  background-color: #FFF;
+  color: red;
+`;
+
 const FirstScreen = styled.div`
   position: fixed;
   z-index: 99999;
@@ -143,11 +154,50 @@ const FirstScreen = styled.div`
   background: url(${firstscreen});
   background-size: cover;
 `;
-
-export const Start = React.memo(() => {
+let tr = false;
+export const Start = () => {
   const [firstScreenShow, setFirstScreenShow] = useState(true);
   const {width, height} = useWindowSize();
   const [offsetArticles, setOffsetArticles] = useState({});
+  const [store, methods] = useAction();
+  const [modalOpen, setModalOpen] = useState(false);
+  const [tutorId, setTutorId] = useState(1);
+
+  useMount(() => {
+    methods.setStyleToRef({
+      backgroundColor: '0px 10px -14px 14px #FFF',
+    });
+  });
+
+  useEffect(() => {
+    const root = document.querySelector('#root');
+    if (modalOpen) {
+      root.style.filter = 'blur(10px)';
+      //root.style.transform = 'scale(1.05)'
+    } else {
+      root.style.filter = 'none';
+      root.style.transform = 'none';
+    }
+  }, [modalOpen]);
+
+  useEffect(() => {
+    if (store && !tr) {
+      setTimeout(() => {
+
+        setModalOpen(true);
+        tr = true;
+      }, 3000);
+      /*setTimeout(() => {
+        Object.entries((store)).forEach((pair, i) => {
+          const [key, action] = pair;
+          methods.goTo(key)
+        });*/
+
+    }
+  }, [store]);
+  console.log(store);
+
+
   const getOffset = (id, offset) => {
     setOffsetArticles(prev => ({...prev, [id]: offset}));
   };
@@ -186,9 +236,23 @@ export const Start = React.memo(() => {
       setTimeout(setChecked(onehundred, 100), 1500);
       setTimeout(() => {
         preload.style.display = 'none';
-      }, 2000)
+      }, 2000);
     });
   });
+
+  const style = {
+    overlay: {
+      background: 'none',
+      padding: '0px !important',
+
+    },
+    modal: {
+      background: 'red',
+      boxShadow: 'none',
+      borderRadius: '5px',
+      padding: '0px !important',
+    },
+  };
 
 
   return (
@@ -218,6 +282,18 @@ export const Start = React.memo(() => {
           <Systematization/>
         </Main>
       </Fade>
+      <>
+        <ReactModal onClose={() => setModalOpen(false)} open={modalOpen} center={true}
+                    styles={style}>
+          <ModalWrapper>
+            <ModalInner>
+              {store.hasOwnProperty(tutorId) && store[tutorId].hasOwnProperty('content') && store[tutorId].content.title}
+              {store.hasOwnProperty(tutorId) && store[tutorId].hasOwnProperty('content') && store[tutorId].content.text}
+              <ModalWrapper>Dalje</ModalWrapper>
+            </ModalInner>
+          </ModalWrapper>
+        </ReactModal>
+      </>
     </Wrapper>
   );
-});
+};

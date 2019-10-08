@@ -1,10 +1,11 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import styled from 'styled-components';
 import data from '../Data/systematization'
 import {breakpoints} from '../mixins/breakpoints';
 import {TestButton} from './Buttons/TestButton';
 import {AudioButton} from './Buttons/AudioButton';
 import {Medal} from './Medal';
+import {useAction} from '../libs/tutorial/index'
 
 const Wrapper = styled.div`
    padding: 50px 0px;
@@ -54,6 +55,8 @@ const ItemSubtitle = styled.h3`
 
 export const Systematization = () => {
   const [medal, setMedal] = useState(null);
+  const ref = useRef(null);
+  const [action] = useAction(ref, () => console.log('hi'), 1, 'first', {title: 'some', text: 'text'});
 
   const getMedal = (result) => {
     let medal = null;
@@ -75,7 +78,7 @@ export const Systematization = () => {
   };
 
   return (
-    <Wrapper>
+    <Wrapper ref={ref}>
       <Title>
         Systematization
       </Title>

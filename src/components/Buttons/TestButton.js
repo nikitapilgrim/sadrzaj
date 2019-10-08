@@ -1,10 +1,11 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import styled from 'styled-components';
 import TestIcon from '../../assets/svg/test_icon.svg';
 import {Modal} from '../Modal/Modal';
 import {InnerTest} from '../Modal/InnerTest.js';
 import {SystemInnerTest} from '../Modal/InnerTest.js';
 import {breakpoints} from '../../mixins/breakpoints';
+import {useAction} from '../../libs/tutorial';
 
 const Wrapper = styled.button`
   cursor: pointer;
@@ -45,6 +46,9 @@ export const TestButton = ({questions, onFinishTest, layout}) => {
   const [questionsCount, setQuestionsCount] = useState(null);
   const [rightAnswersCount, setRightAnswersCount] = useState(0);
   const [finish, setFinish] = useState(false);
+  const ref = useRef(null)
+  const [store] = useAction(ref, () => 'hi', 3, 'test', {title: 'some', text: 'text'});
+
 
   useEffect(() => {
     setQuestionsCount(questions.length);
@@ -93,7 +97,7 @@ export const TestButton = ({questions, onFinishTest, layout}) => {
                         onRight={() => {
                           handlerRightAnswer();
                         }}/>}>
-      <Wrapper onClick={() => {
+      <Wrapper ref={ref} onClick={() => {
         setFinish(false);
         setModalOpen(true);
       }}>

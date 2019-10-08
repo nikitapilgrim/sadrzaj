@@ -20,6 +20,7 @@ import MedalOne from '../../../assets/svg/medal_1.svg';
 import MedalTwo from '../../../assets/svg/medal_2.svg';
 import MedalThree from '../../../assets/svg/medal_3.svg';
 import {Highlight} from './Highlight';
+import {useAction} from '../../../libs/tutorial';
 
 
 const Wrapper = styled.div`
@@ -169,6 +170,8 @@ export const ArticleLayout = React.memo(({data, id, getOffset, text}) => {
   const [textReady, setTextReady] = useState(false);
   let size = useComponentSize(ref);
   let {width, height} = size;
+  const [store] = useAction(ref, () => 'hi', 4, 'article', {title: 'some', text: 'text'});
+
 
   const steps = [
     {

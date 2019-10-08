@@ -6,9 +6,10 @@ import CloseIcon from '../../assets/img/icons/close_icon.png';
 import {useClickAway} from 'react-use';
 import {breakpoints} from '../../mixins/breakpoints';
 import {FX} from '../../assets/sounds/fx/index';
+import {useAction} from '../../libs/tutorial';
 
 
-const Wrapper = styled.span`
+export const Wrapper = styled.span`
   display: flex;
   z-index: 999;
   justify-content: center;
@@ -37,7 +38,7 @@ const CloseModal = styled.button`
   outline: none;
 `;
 
-const Inner = styled.span`
+export const Inner = styled.span`
   position: relative;
   z-index: 2;
   display: flex;
