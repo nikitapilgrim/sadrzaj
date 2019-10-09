@@ -15,7 +15,7 @@ import bgHeader from '../assets/img/backgrounds/header.jpg';
 import firstscreen from '../assets/img/backgrounds/start-screen.jpg';
 import {useAction} from '../libs/tutorial';
 import ReactModal from 'react-responsive-modal';
-import {Wrapper as ModalWrapper, Inner as ModalInner} from '../components/Modal/Modal';
+import {Wrapper as ModalWrapper, TuttorialInner as ModalInner} from '../components/Modal/Modal';
 import {Zdravo} from '../components/Modal/TutotialModal';
 
 let scroll = Scroll.animateScroll;
@@ -67,21 +67,16 @@ const BgContainer = styled.div`
 `;
 
 const Bg = styled.div`
-  background: url(${bgHeader});
-   @media ${breakpoints.tablet} {
-    background: url(${bgHeader}) 50% 0%;
-  }
+  position: absolute;
+  z-index: 0;
+  top: -20%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100%;
+  background: url(${firstscreen}) 50% 50%;
   background-size: cover;
-  ${AllSpace};
-  z-index: 1;
-  &:before {
-    content: '';
-    ${AllSpace};
-    z-index: 2;
-    background-color: #422400;
-    opacity: 0.59;
-    }
- 
 `;
 
 const Title = styled.div`
@@ -117,6 +112,7 @@ const Button = styled.button`
   outline: none;
   color: #8f7d69;
   font-weight: 900;
+  margin-bottom: 10%;
   @media ${breakpoints.laptop} {
     width: 334px;
     height: 153px;
@@ -138,6 +134,7 @@ const Button = styled.button`
 `;
 
 const ModalNextButton = styled.button`
+  margin-top: auto;
   border: none;
   background: none;
   border-radius: 3px;
@@ -149,14 +146,16 @@ const ModalNextButton = styled.button`
 `;
 
 const FirstScreen = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   position: fixed;
   z-index: 99999;
   top: 0;
   left: 0;
   height: 100vh;
   width: 100%;
-  background: url(${firstscreen});
-  background-size: cover;
+  background-color: #8f7d69;
 `;
 let tr = false;
 
@@ -260,7 +259,9 @@ export const Start = () => {
 
   const handlerStart = (cb) => {
     setFirstScreenShow(false);
-    setModalOpen(true);
+    setTimeout(() => {
+      setModalOpen(true);
+    }, 500);
     //cb()
   };
 
@@ -298,7 +299,7 @@ export const Start = () => {
     },
     modal: {
       background: 'red',
-      boxShadow: 'none',
+      boxShadow: '0 0 5px #000000',
       borderRadius: '5px',
       padding: '0px !important',
     },
@@ -318,9 +319,8 @@ export const Start = () => {
         */}
         <Fade when={firstScreenShow}>
           <FirstScreen>
-            <Button onClick={e => {
-              handlerStart(scrollToArticle(1));
-            }} size={[width, height]}><span>Start</span></Button>
+            <Bg/>
+            <Button onClick={handlerStart} size={[width, height]}><span>Start</span></Button>
           </FirstScreen>
         </Fade>
         {/*<BgContainer>
@@ -335,7 +335,7 @@ export const Start = () => {
         </Main>
       </Fade>
       <>
-        <ReactModal onClose={() => setModalOpen(false)} open={modalOpen} center={true}
+        <ReactModal onClose={() => setModalOpen(false)} open={modalOpen} center={true} showCloseIcon={false}
                     styles={style}>
           <ModalWrapper>
             <ModalInner>

@@ -10,7 +10,8 @@ const Title = styled.h2`
   color: #FFF;
   font-weight: bold;
   text-align: center;
-`
+  margin: 0;
+`;
 
 const Text = styled.p`
   color: #FFF;

@@ -2,8 +2,9 @@ import React, {useRef, useEffect, useState} from 'react';
 import useComponentSize from '@rehooks/component-size';
 import styled from 'styled-components';
 import {breakpoints} from '../../mixins/breakpoints';
-import {FX} from '../../assets/sounds/fx/index';
+import {UIFX} from '../../assets/sounds/fx/index';
 import reactStringReplace from 'react-string-replace';
+import useStoreon from 'storeon/react';
 
 function hasDuplicates(array) {
   return (new Set(array)).size !== array.length;
@@ -39,7 +40,7 @@ const AnswersContainer = styled.div`
 `;
 
 const AnswerButton = styled.button`
-  color: ${props => props.right ? '#ffffff' : 'black'};
+  color: #ffffff;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -51,6 +52,7 @@ const AnswerButton = styled.button`
   background-color: #c79e1f;
   font-size: 22px;
   outline: none;
+  filter: ${props => props.help ? 'drop-shadow(2px 3px 20px #fff);' : ''}
 `;
 
 const Input = styled.input`
@@ -75,13 +77,15 @@ const AnswerInput = ({onInput}) => {
 };
 
 const MainLayout = ({question, answers, inputHandler, stageHandler}) => {
+  const {dispatch, help} = useStoreon('help');
+
   return (
     <>
       <Title>{question}</Title>
       <AnswersContainer>
         {answers.length > 1 ? answers.map((answer, index) => {
             return (
-              <AnswerButton key={index} right={answer.right} onClick={stageHandler(answer.right)}>
+              <AnswerButton help={answer.right && help} key={index} right={answer.right} onClick={stageHandler(answer.right)}>
                 {answer.title}
               </AnswerButton>
             );
@@ -113,7 +117,6 @@ const HiddenWord = ({state, match, index, handler}) => {
   const ref = useRef(null);
   let size = useComponentSize(ref);
   let {width} = size;
-  console.log(state);
   return (
     <React.Fragment key={index}>
       <InlineInput width={width} value={state.hasOwnProperty(index) ? state[index].value : ''} onKeyUp={handler}/>
@@ -213,22 +216,24 @@ const SystemLayout = ({question, answers, inputHandler, nextStage}) => {
 
 export const Stage = React.memo(({data, onRight, nextStage, layout}) => {
   const {title, answers, question} = data;
+  const {dispatch, help} = useStoreon('help');
 
   const stageHandler = (right) => () => {
     if (right) {
       onRight();
-      FX.correctAnswer.play();
+      dispatch('help/close')
+      UIFX.correctAnswer();
       nextStage();
     }
     if (!right) {
-      FX.wrongAnswer.play();
+      UIFX.wrongAnswer();
       nextStage();
     }
   };
 
   const inputHandler = (right) => (value) => {
     if (right === value) {
-      FX.correctAnswer.play();
+      UIFX.correctAnswer();
       onRight();
       nextStage();
     }

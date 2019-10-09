@@ -3,6 +3,7 @@
 @import "./progress.pcss";
 html {
     overflow: auto !important;
+    touch-action: manipulation;
 }
 
 html, body {
@@ -29,7 +30,7 @@ body {
 #root {
     position: relative;
     background-color: #6c5738;
-
+    transition: filter 1s;
 }
 
 .highlight-elem {

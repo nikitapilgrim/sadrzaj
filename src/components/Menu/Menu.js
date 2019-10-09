@@ -5,7 +5,7 @@ import {useClickAway, useMount} from 'react-use';
 import {breakpoints} from '../../mixins/breakpoints';
 import {Hamburger} from './Hamburger';
 import {Sound} from './Sound';
-import {FX} from '../../assets/sounds/fx/index';
+import {UIFX} from '../../assets/sounds/fx/index';
 
 import ArticleData from '../../Data/Articles';
 import {useAction} from '../../libs/tutorial';
@@ -181,7 +181,7 @@ export const Menu = ({scrollToArticle}) => {
         setMenuHidden(!menuHidden);
       }
     }, 100)
-    FX.mouseClick.play();
+    UIFX.mouseClick();
   };
 
   const handlerOpenSubmenu = (elem) => () => {

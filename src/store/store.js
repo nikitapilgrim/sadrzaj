@@ -53,7 +53,7 @@ const articles = store => {
       articles: {
         ...articles, [id]: {
           medal: medal,
-          percent: percent
+          percent: percent,
         },
       },
     };
@@ -61,23 +61,40 @@ const articles = store => {
 };
 
 const modal = store => {
-  store.on('@init', () => ({modal: {
-      open: false
-    }}));
+  store.on('@init', () => ({
+    modal: {
+      open: false,
+    },
+  }));
   store.on('modal/close', ({modal}) => {
     return {
       modal: {
-        open: false
-      }
-    }
+        open: false,
+      },
+    };
   });
   store.on('modal/open', ({modal}) => {
     return {
       modal: {
-        open: true
-      }
-    }
-  })
+        open: true,
+      },
+    };
+  });
 };
 
-export const store = createStore([stage,modal, progress, audio, articles, persistState(['articles'])]);
+const help = store => {
+  store.on('@init', () => ({help: false}));
+  store.on('help/close', ({modal}) => {
+    return {
+      help: false,
+    };
+  });
+  store.on('help/open', ({modal}) => {
+    return {
+      help: true,
+    };
+  });
+};
+
+
+export const store = createStore([stage, modal, progress, audio, articles, help, persistState(['articles'])]);

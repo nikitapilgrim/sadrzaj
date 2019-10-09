@@ -13,12 +13,12 @@ import {Articles} from './pages/Articles.js';
 
 const WithProviders = () => {
   return (
-    <StoreContext.Provider value={store}>
-      <ActionProvider>
-        <Route path="/" component={Start}/>
-        <Route path="/articles" component={Articles}/>
-      </ActionProvider>
-    </StoreContext.Provider>
+      <StoreContext.Provider value={store}>
+        <ActionProvider>
+          <Route path="/" component={Start}/>
+          <Route path="/articles" component={Articles}/>
+        </ActionProvider>
+      </StoreContext.Provider>
   );
 };
 

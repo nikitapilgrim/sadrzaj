@@ -5,8 +5,9 @@ import ReactModal from 'react-responsive-modal';
 import CloseIcon from '../../assets/img/icons/close_icon.png';
 import {useClickAway} from 'react-use';
 import {breakpoints} from '../../mixins/breakpoints';
-import {FX} from '../../assets/sounds/fx/index';
+import {UIFX} from '../../assets/sounds/fx/index';
 import {useAction} from '../../libs/tutorial';
+import {Help} from '../Help';
 
 
 export const Wrapper = styled.span`
@@ -36,6 +37,23 @@ const CloseModal = styled.button`
   border: none;
   cursor: pointer;
   outline: none;
+`;
+
+export const TuttorialInner = styled.span`
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  min-width: 200px;
+  max-width: 30vw;
+  max-height: 30vh;
+  @media ${breakpoints.laptop} { 
+      width: 80%;
+  }
 `;
 
 export const Inner = styled.span`
@@ -81,14 +99,14 @@ export const Modal = React.memo(({children, inner, close, finish}) => {
     dispatch('modal/close');
     //console.log('handlerclose')
 
-    setOpen(false)
+    setOpen(false);
   };
 
   useEffect(() => {
     if (finish) {
       dispatch('modal/close');
       //console.log('finish')
-      setOpen(false)
+      setOpen(false);
     }
   }, [finish]);
 
@@ -131,6 +149,7 @@ export const Modal = React.memo(({children, inner, close, finish}) => {
     <>
       <ReactModal onClose={handlerClose} open={open} showCloseIcon={false} center={true} styles={style}>
         <Wrapper>
+          <Help/>
           <Bg/>
           <Inner ref={ref}>
             {inner}
@@ -138,7 +157,7 @@ export const Modal = React.memo(({children, inner, close, finish}) => {
               setOpen(false);
               dispatch('modal/close');
               //console.log('closebutti')
-              FX.mouseClick.play()
+              UIFX.mouseClick();
             }}/>
           </Inner>
         </Wrapper>
@@ -147,7 +166,7 @@ export const Modal = React.memo(({children, inner, close, finish}) => {
         setOpen(true);
         dispatch('modal/open');
         //console.log('open')
-        FX.mouseClick.play()
+        UIFX.mouseClick();
       }}>
         {children}
       </div>

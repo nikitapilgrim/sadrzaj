@@ -6,7 +6,7 @@ import PauseSVG from '../../assets/svg/pause.svg';
 import PlaySVG from '../../assets/svg/play.svg';
 import FastBack from '../../assets/svg/fast_back.svg';
 import FastForward from '../../assets/svg/fast_forward.svg';
-import {FX} from '../../assets/sounds/fx/index';
+import {UIFX} from '../../assets/sounds/fx/index';
 
 const Wrapper = styled.div`
   
@@ -84,7 +84,7 @@ export const VideoInner = ({src}) => {
   const  [play, setPlay] = useState(true);
 
   const handlerPlayVideo = () => {
-    mouseClick.play();
+    UIFX.mouseClick();
     if (play) {
       controls.play();
       setPlay(!play);
@@ -104,7 +104,7 @@ export const VideoInner = ({src}) => {
       </VideoWrapper>
       <ControlPanel>
         <RewindBack onClick={() => {
-          FX.mouseClick.play();
+          UIFX.mouseClick();
           controls.seek(state.time - 5)
         }}>
           <FastBack/>
@@ -113,7 +113,7 @@ export const VideoInner = ({src}) => {
           {play ? <PlaySVG/> : <PauseSVG/>}
         </PlayButton>
         <Rewind onClick={() => {
-          FX.mouseClick.play();
+          UIFX.mouseClick();
           controls.seek(state.time + 5);
         }}>
           <FastForward/>
