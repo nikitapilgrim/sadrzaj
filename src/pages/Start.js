@@ -17,6 +17,7 @@ import {useAction} from '../libs/tutorial';
 import ReactModal from 'react-responsive-modal';
 import {Wrapper as ModalWrapper, TuttorialInner as ModalInner} from '../components/Modal/Modal';
 import {Zdravo} from '../components/Modal/TutotialModal';
+import useStoreon from 'storeon/react';
 
 let scroll = Scroll.animateScroll;
 
@@ -157,7 +158,6 @@ const FirstScreen = styled.div`
   width: 100%;
   background-color: #8f7d69;
 `;
-let tr = false;
 
 let clonesNode = [];
 
@@ -166,9 +166,16 @@ export const Start = () => {
   const {width, height} = useWindowSize();
   const [offsetArticles, setOffsetArticles] = useState({});
   const [store, methods] = useAction(null, () => console.log('hi'), 1, 'start', <Zdravo/>);
+  const {dispatch, tutorial} = useStoreon('tutorial');
 
   const [modalOpen, setModalOpen] = useState(false);
   const [tutorId, setTutorId] = useState(1);
+
+  useEffect(() => {
+    if (!tutorial) {
+      dispatch('articles/addMedal', [1, 'gold', 100]);
+    }
+  }, [tutorial]);
 
   useEffect(() => {
     const root = document.querySelector('#root');
@@ -187,6 +194,8 @@ export const Start = () => {
     if (!store.hasOwnProperty(tutorId + 1)) {
       setTutorId(null);
       setModalOpen(false);
+      dispatch('articles/addMedal', [1, null, null]);
+      dispatch('tutorial/finish');
       return false
     }
     if (store.hasOwnProperty(tutorId + 1)) {
@@ -259,9 +268,11 @@ export const Start = () => {
 
   const handlerStart = (cb) => {
     setFirstScreenShow(false);
-    setTimeout(() => {
-      setModalOpen(true);
-    }, 500);
+    if (!tutorial) {
+      setTimeout(() => {
+        setModalOpen(true);
+      }, 500);
+    }
     //cb()
   };
 

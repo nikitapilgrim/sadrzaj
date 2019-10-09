@@ -96,5 +96,23 @@ const help = store => {
   });
 };
 
+const tutorial = store => {
+  store.on('@init', () => ({tutorial: false}));
+  store.on('tutorial/finish', ({modal}) => {
+    return {
+      tutorial: true,
+    };
+  });
+};
 
-export const store = createStore([stage, modal, progress, audio, articles, help, persistState(['articles'])]);
+
+export const store = createStore([
+    stage,
+    modal,
+    progress,
+    audio,
+    tutorial,
+    articles,
+    help,
+    persistState(['articles', 'tutorial'])
+]);

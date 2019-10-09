@@ -221,7 +221,10 @@ export const ArticleLayout = React.memo(({data, id, getOffset, text}) => {
               })}</Subtitle>
               {data.hasOwnProperty('subtitleDescr') && <SubtitleDescr>{data.subtitleDescr}</SubtitleDescr>}
               <MedalContainer desctop={true}>
-                {articles[data.id] &&
+                {
+                  articles.hasOwnProperty([data.id]) &&
+                  articles[data.id].hasOwnProperty('medal') &&
+                  articles[data.id].medal &&
                   <Medal type={articles[data.id].medal} percent={articles[data.id].percent}/>
                 }
               </MedalContainer>
