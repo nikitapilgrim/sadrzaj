@@ -268,6 +268,7 @@ export const Start = () => {
 
   const handlerStart = (cb) => {
     setFirstScreenShow(false);
+    console.log(firstScreenShow)
     if (!tutorial) {
       setTimeout(() => {
         setModalOpen(true);
