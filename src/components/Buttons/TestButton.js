@@ -18,6 +18,7 @@ const Wrapper = styled.button`
   border-radius: 4px;
   border: 1px solid #fcfbc4;
   background-color: #c79e1f;
+  outline: none;
   svg {
     width: 22px;
     height: 22px;

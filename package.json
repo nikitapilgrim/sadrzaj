@@ -69,9 +69,13 @@
     "reactour": "^1.15.2",
     "soundjs": "^1.0.1",
     "soundmanager2": "^2.97.20170602",
+    "standardized-audio-context": "^22.0.2",
     "storeon": "^0.9.5",
     "styled-components": "^5.0.0-beta.8-groupsizefix",
+    "typedarray": "0.0.6",
     "uifx": "^2.0.3",
+    "use-mobile-detect-hook": "^1.0.2",
+    "vconsole": "^3.3.4",
     "wavesurfer.js": "^3.0.0",
     "wouter": "^2.2.1"
   }

@@ -44,7 +44,7 @@ export const ActionProvider = ({children}) => {
         return {
           ...prev, [id]: {
             cb, groupName, refs: setRefs(groupName) || refs,
-            content: () => content,
+            content,
             complete: false
           },
         }

@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import styled, {css} from 'styled-components';
 import {useMount, useWindowSize} from 'react-use';
 import * as Scroll from 'react-scroll';
@@ -68,16 +68,30 @@ const BgContainer = styled.div`
 `;
 
 const Bg = styled.div`
-  position: absolute;
-  z-index: 0;
-  top: -20%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 100vh;
-  width: 100%;
-  background: url(${firstscreen}) 50% 50%;
-  background-size: cover;
+    position: absolute;
+    z-index: 0;
+    top: -30%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100vw;
+    background: url(${firstscreen}) 50% 50%;
+    background-size: 190%;
+    background-repeat: no-repeat;
+  
+  @media ${breakpoints.laptop} {
+      position: absolute;
+      z-index: 0;
+      top: -20%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 100vh;
+      width: 100%;
+      background: url(${firstscreen}) 50% 50%;
+      background-size: cover;
+   }
 `;
 
 const Title = styled.div`
@@ -103,7 +117,7 @@ const Subtitle = styled.div`
 const Button = styled.button`
   cursor: pointer;
   position: relative;
-  margin-top: 60px;
+  top: -80px;
   background: #FFF;
   width: 200px;
   height: 100px;
@@ -113,11 +127,13 @@ const Button = styled.button`
   outline: none;
   color: #8f7d69;
   font-weight: 900;
-  margin-bottom: 10%;
   @media ${breakpoints.laptop} {
+    top: 0;
     width: 334px;
     height: 153px;
     font-size: 60px; 
+    margin-top: 60px;
+    margin-bottom: 10%;
   }
   span {
     //color: black;
@@ -154,9 +170,14 @@ const FirstScreen = styled.div`
   z-index: 99999;
   top: 0;
   left: 0;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-color: #8f7d69;
+  overflow: hidden;
+`;
+
+const TutorialView = styled.div`
+
 `;
 
 let clonesNode = [];
@@ -167,6 +188,7 @@ export const Start = () => {
   const [offsetArticles, setOffsetArticles] = useState({});
   const [store, methods] = useAction(null, () => console.log('hi'), 1, 'start', <Zdravo/>);
   const {dispatch, tutorial} = useStoreon('tutorial');
+  const modalRef = useRef(null);
 
   const [modalOpen, setModalOpen] = useState(false);
   const [tutorId, setTutorId] = useState(1);
@@ -187,7 +209,7 @@ export const Start = () => {
       root.style.transform = 'none';
     }
   }, [modalOpen]);
-  console.log(store)
+  console.log(store);
 
 
   const handlerNextTutorial = () => {
@@ -196,7 +218,7 @@ export const Start = () => {
       setModalOpen(false);
       dispatch('articles/addMedal', [1, null, null]);
       dispatch('tutorial/finish');
-      return false
+      return false;
     }
     if (store.hasOwnProperty(tutorId + 1)) {
       setTutorId(tutorId + 1);
@@ -211,7 +233,7 @@ export const Start = () => {
 
         return {
           top: box.top, //+ window.pageYOffset,
-          left: box.left //+ window.pageXOffset,
+          left: box.left, //+ window.pageXOffset,
         };
       }
     }
@@ -235,20 +257,34 @@ export const Start = () => {
         if (node) {
           const clone = ref.current.cloneNode(true);
           clone.classList.add('highlight-elem');
-          clonesNode.push({clone, cord: {
+          clonesNode.push({
+            clone, cord: {
               top: `${getCoords(node).top}px`,
-              left: `${getCoords(node).left}px`}});
+              left: `${getCoords(node).left}px`,
+            },
+          });
         }
       });
-      clonesNode.forEach((node) => {
+      clonesNode.forEach((node, i) => {
         if (node.clone) {
-          addStyles(node.clone, {
-            position: 'fixed',
-            top: node.cord.top,
-            left: node.cord.left
-          });
-          document.body.appendChild(node.clone);
+          if (width > 1280) {
+            addStyles(node.clone, {
+              position: 'fixed',
+              top: node.cord.top,
+              left: node.cord.left,
+            });
+            document.body.appendChild(node.clone);
+          }
+          if (width <= 1280 && i === 0) {
+            addStyles(node.clone, {
+              position: 'static',
+              top: 0,
+              left: 0,
+            });
+            modalRef.current.appendChild(node.clone);
+          }
         }
+
       });
     }
 
@@ -266,9 +302,17 @@ export const Start = () => {
     });*/
   };
 
+  useEffect(() => {
+    if (setFirstScreenShow) {
+      document.querySelector('body').style.overflow = 'hidden';
+    } else {
+      document.querySelector('body').style.overflow = 'auto';
+    }
+  }, [setFirstScreenShow]);
   const handlerStart = (cb) => {
     setFirstScreenShow(false);
-    console.log(firstScreenShow)
+    setModalOpen(true);
+
     if (!tutorial) {
       setTimeout(() => {
         setModalOpen(true);
@@ -307,13 +351,15 @@ export const Start = () => {
     overlay: {
       background: 'none',
       padding: '0px !important',
-
+      backgroundColor: 'rgba(90,43,25, 0.8)',
     },
     modal: {
       background: 'red',
       boxShadow: '0 0 5px #000000',
       borderRadius: '5px',
       padding: '0px !important',
+      maxWidth: '600px',
+      minHeight: '200px',
     },
   };
 
@@ -346,17 +392,17 @@ export const Start = () => {
           <Systematization/>
         </Main>
       </Fade>
-      <>
-        <ReactModal onClose={() => setModalOpen(false)} open={modalOpen} center={true} showCloseIcon={false}
-                    styles={style}>
-          <ModalWrapper>
-            <ModalInner>
-              {store[tutorId] && <>{store[tutorId].content()}</>}
-              <ModalNextButton onClick={handlerNextTutorial}>Dalje</ModalNextButton>
-            </ModalInner>
-          </ModalWrapper>
-        </ReactModal>
-      </>
+      <ReactModal classNames={{modal: 'modal-tutor'}} onClose={() => setModalOpen(false)} open={modalOpen} center={true}
+                  showCloseIcon={false}
+                  styles={style}>
+        <ModalWrapper>
+          <ModalInner>
+            <TutorialView ref={modalRef}/>
+            {store[tutorId] && <>{store[tutorId].content}</>}
+            <ModalNextButton onClick={handlerNextTutorial}>Dalje</ModalNextButton>
+          </ModalInner>
+        </ModalWrapper>
+      </ReactModal>
     </Wrapper>
   );
 };

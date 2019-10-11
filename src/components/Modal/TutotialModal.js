@@ -1,9 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
+
+
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-`
+`;
 
 const Title = styled.h2`
   font-size: 32px;
@@ -15,13 +17,14 @@ const Title = styled.h2`
 
 const Text = styled.p`
   color: #FFF;
+  margin-top: 30px;
+`;
 
-`
-
-export const Zdravo = () => {
+export const Zdravo = ({children}) => {
   return (
     <Wrapper>
       <Title>Zdravo!</Title>
+      {children}
       <Text>
         Ovo je tvoja digitalna čitanka za 8. razred osnovne škole.
         Riješi sve zadatke i zaradi diplomu!
@@ -30,7 +33,7 @@ export const Zdravo = () => {
     </Wrapper>
   )
 };
-export const Sadrzaj = () => {
+export const Sadrzaj = ({children}) => {
   return (
     <Wrapper>
       <Title>Sadržaj</Title>
@@ -41,7 +44,7 @@ export const Sadrzaj = () => {
   )
 };
 
-export const Znanje = () => {
+export const Znanje = ({children}) => {
   return (
     <Wrapper>
       <Title>Provjeri znanje</Title>
@@ -52,7 +55,7 @@ export const Znanje = () => {
   )
 };
 
-export const ZnanjeNext = () => {
+export const ZnanjeNext = ({children}) => {
   return (
     <Wrapper>
       <Title>Provjeri znanje</Title>
@@ -64,7 +67,7 @@ export const ZnanjeNext = () => {
   )
 };
 
-export const Poslusaj = () => {
+export const Poslusaj = ({children}) => {
   return (
     <Wrapper>
       <Title>Poslušaj / Pregledaj</Title>

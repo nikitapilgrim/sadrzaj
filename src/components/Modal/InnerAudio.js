@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import styled from 'styled-components';
 import useAudio from 'react-use/lib/useAudio';
+import useMobileDetect from 'use-mobile-detect-hook';
 import {breakpoints} from '../../mixins/breakpoints';
 import {AudioSpectrum} from '../Spectrum';
 import FastBack from '../../assets/svg/fast_back.svg';
@@ -8,6 +9,7 @@ import PlaySVG from '../../assets/svg/play.svg';
 import PauseSVG from '../../assets/svg/pause.svg';
 import FastForward from '../../assets/svg/fast_forward.svg';
 import {UIFX} from '../../assets/sounds/fx/index';
+import {init as WebkitSpectrum} from '../Spectrum';
 
 const Wrapper = styled.div`
   position: relative;
@@ -75,9 +77,12 @@ export const InnerAudio = ({data, close}) => {
   const [audio, state, controls, ref] = useAudio({
     src: data,
     autoPlay: true,
-    controls: true,
+    controls: false,
     id: 'audio-modal',
+    preload: 'auto'
   });
+  const detectMobile = useMobileDetect();
+
 
   const [options, setOptions] = useState(null);
 
@@ -129,7 +134,7 @@ export const InnerAudio = ({data, close}) => {
         </Audio>
       </AudioContainer>
       <CanvasWrapper>
-        {ref.current && <AudioSpectrum {...options}/>}
+        {ref.current && !detectMobile.isIos() && <AudioSpectrum {...options}/>}
       </CanvasWrapper>
       <ControlPanel>
         <RewindBack onClick={() => {

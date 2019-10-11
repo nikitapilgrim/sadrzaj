@@ -10,7 +10,8 @@ import {useAction} from '../../libs/tutorial';
 import {Help} from '../Help';
 
 
-export const Wrapper = styled.span`
+export const Wrapper = styled.div`
+  min-height: inherit;
   display: flex;
   z-index: 999;
   justify-content: center;
@@ -39,7 +40,8 @@ const CloseModal = styled.button`
   outline: none;
 `;
 
-export const TuttorialInner = styled.span`
+export const TuttorialInner = styled.div`
+  min-height: inherit;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -48,15 +50,12 @@ export const TuttorialInner = styled.span`
   align-items: center;
   width: 100%;
   height: 100%;
-  min-width: 200px;
-  max-width: 30vw;
-  max-height: 30vh;
   @media ${breakpoints.laptop} { 
       width: 80%;
   }
 `;
 
-export const Inner = styled.span`
+export const Inner = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
