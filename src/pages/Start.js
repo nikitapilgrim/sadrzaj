@@ -18,6 +18,7 @@ import ReactModal from 'react-responsive-modal';
 import {Wrapper as ModalWrapper, TuttorialInner as ModalInner} from '../components/Modal/Modal';
 import {Zdravo} from '../components/Modal/TutotialModal';
 import useStoreon from 'storeon/react';
+import {UIFX} from '../assets/sounds/fx';
 
 let scroll = Scroll.animateScroll;
 
@@ -213,6 +214,7 @@ export const Start = () => {
 
 
   const handlerNextTutorial = () => {
+    UIFX.mouseClick();
     if (!store.hasOwnProperty(tutorId + 1)) {
       setTutorId(null);
       setModalOpen(false);

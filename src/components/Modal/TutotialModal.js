@@ -61,6 +61,7 @@ export const ZnanjeNext = ({children}) => {
       <Title>Provjeri znanje</Title>
       <Text>
         Kada pročitaš tekst, možeš provjeriti znanje. Trebaš savladati svaki test da bi na kraju dobio/la diplomu.
+        <br/>
         Kada savladaš test, dobićeš medalju. Kada savladaš svaki zadatak u testu, dobićeš 100%. Da bi zaradio/la diplomu, moraš imati svuda 100%.
       </Text>
     </Wrapper>

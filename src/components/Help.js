@@ -12,6 +12,7 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 `;
 
 const SvgWrapper = styled.div`
@@ -32,16 +33,13 @@ export const Help = () => {
   return (
     <Wrapper onClick={() => {
       UIFX.hintbell();
-      if (help) {
-        dispatch('help/close')
-      } else {
-        dispatch('help/open')
-      }
+      dispatch('help/open');
+      setTimeout(() => dispatch('help/close'), 300)
     }}>
       <SvgWrapper>
         <Lifebelt/>
       </SvgWrapper>
-      <Text>Pomoc</Text>
+      <Text>Pomoć</Text>
     </Wrapper>
   )
 };

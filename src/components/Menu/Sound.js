@@ -8,6 +8,9 @@ import music from '../../assets/sounds/background_music.aac'
 const Wrapper = styled.div`
   height: 50px;
   width: 50px;
+  svg {
+    filter:drop-shadow(2px 3px 5px black)
+  }
   .musicOn_svg__color {
      fill: white;
   }
@@ -16,7 +19,7 @@ const Wrapper = styled.div`
   }
 `;
 
-export const Sound = () => {
+export const Sound = React.memo(() => {
   const [init, setInit] = useState(false);
   const [audio, stateAudio, controls, ref] = useAudio({
     src: music,
@@ -51,4 +54,4 @@ export const Sound = () => {
       {audio}
     </Wrapper>
   );
-};
+});

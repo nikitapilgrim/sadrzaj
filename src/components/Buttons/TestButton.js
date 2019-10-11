@@ -83,6 +83,7 @@ export const TestButton = ({questions, onFinishTest, layout}) => {
       close={() => setModalOpen(false)}
       isOpen={modalOpen}
       finish={finish}
+      type='test'
       inner={layout === 'system'? <SystemInnerTest nextStage={handlerNextStage}
                                                    stage={[stage, questionsCount]}
                                                    close={() => setModalOpen(false)}

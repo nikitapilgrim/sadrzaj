@@ -83,7 +83,7 @@ const Bg = styled.div`
   opacity: 0.7;
 `;
 
-export const Modal = React.memo(({children, inner, close, finish}) => {
+export const Modal = React.memo(({children, inner, type, finish}) => {
   const [open, setOpen] = useState(false);
   const {dispatch, modal} = useStoreon('modal');
   const ref = useRef(null);
@@ -121,15 +121,6 @@ export const Modal = React.memo(({children, inner, close, finish}) => {
     }
   }, [modal]);
 
-  useEffect(() => {
-    window.addEventListener('keydown', function(e) {
-      if ((e.key === 'Escape' || e.key === 'Esc' || e.code === 'Escape')) {
-        e.preventDefault();
-        handlerClose();
-        return false;
-      }
-    }, true);
-  });
 
   const style = {
     overlay: {
@@ -146,9 +137,9 @@ export const Modal = React.memo(({children, inner, close, finish}) => {
 
   return (
     <>
-      <ReactModal onClose={handlerClose} open={open} showCloseIcon={false} center={true} styles={style}>
+      <ReactModal onEscKeyDown={handlerClose} onClose={handlerClose} open={open} showCloseIcon={false} center={true} styles={style}>
         <Wrapper>
-          <Help/>
+          {type === 'test' && <Help/>}
           <Bg/>
           <Inner ref={ref}>
             {inner}

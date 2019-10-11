@@ -39,6 +39,7 @@ const AnswersContainer = styled.div`
   }
 `;
 
+
 const AnswerButton = styled.button`
   color: #ffffff;
   cursor: pointer;
@@ -52,7 +53,23 @@ const AnswerButton = styled.button`
   background-color: #c79e1f;
   font-size: 22px;
   outline: none;
-  filter: ${props => props.help ? 'drop-shadow(2px 3px 20px #fff);' : ''}
+  transition: ${props => {
+  if (props.help) {
+    return props.help && 'filter 0.5s;'
+  }
+  if (props.right !== null) {
+    return 'filter 0.2s;'
+  }
+  return 'filter 0.5s;'
+  }};
+  filter: ${props => {
+  if (props.help) {
+    return props.help ? 'drop-shadow(2px 3px 20px #fff);' : 'drop-shadow(0px 0px 0px #fff);';
+  }
+  if (props.right !== null) {
+    return props.right ? 'drop-shadow(2px 3px 20px #00ff00);' : 'drop-shadow(2px 3px 20px #f00);';
+  }
+}}
 `;
 
 const Input = styled.input`
@@ -76,6 +93,29 @@ const AnswerInput = ({onInput}) => {
   );
 };
 
+const AnswerButtonWithState = ({help, rightAnswer, title, handler}) => {
+  const [right, setRight] = useState(null);
+
+  const answerHandler = (answer) => () => {
+    if (answer) {
+      setRight(true);
+    } else {
+      setRight(false);
+    }
+    setTimeout(() => {
+      setRight(null);
+      setTimeout(() => {
+        handler(answer);
+      }, 100);
+    }, 200);
+  };
+  return (
+    <AnswerButton help={rightAnswer && help} right={right} onClick={answerHandler(rightAnswer)}>
+      {title}
+    </AnswerButton>
+  );
+};
+
 const MainLayout = ({question, answers, inputHandler, stageHandler}) => {
   const {dispatch, help} = useStoreon('help');
 
@@ -85,9 +125,11 @@ const MainLayout = ({question, answers, inputHandler, stageHandler}) => {
       <AnswersContainer>
         {answers.length > 1 ? answers.map((answer, index) => {
             return (
-              <AnswerButton help={answer.right && help} key={index} right={answer.right} onClick={stageHandler(answer.right)}>
-                {answer.title}
-              </AnswerButton>
+              <AnswerButtonWithState title={answer.title}
+                                     help={answer.right && help}
+                                     key={index}
+                                     rightAnswer={answer.right}
+                                     handler={stageHandler(answer.right)}/>
             );
           }) :
           <AnswerInput onInput={inputHandler(answers[0].title)}/>
@@ -122,7 +164,7 @@ const HiddenWord = ({state, match, index, handler}) => {
       <InlineInput width={width} value={state.hasOwnProperty(index) ? state[index].value : ''} onKeyUp={handler}/>
       <AnswerHidden ref={ref}>{match}</AnswerHidden>
     </React.Fragment>
-  )
+  );
 };
 
 const SystemLayout = ({question, answers, inputHandler, nextStage}) => {
@@ -133,8 +175,8 @@ const SystemLayout = ({question, answers, inputHandler, nextStage}) => {
     const obj = {
       [id]: {
         right: right,
-        value: e.target.value
-      }
+        value: e.target.value,
+      },
     };
     setValue({...value, ...obj});
   };
@@ -148,7 +190,7 @@ const SystemLayout = ({question, answers, inputHandler, nextStage}) => {
     if (value.length !== 0) {
       const checkAllAnswers = Object.entries(value).every(pair => {
         const [key, value] = pair;
-        return value.right === value.value
+        return value.right === value.value;
       });
       checkAllAnswers && nextStage(true)(true);
     }
@@ -156,7 +198,7 @@ const SystemLayout = ({question, answers, inputHandler, nextStage}) => {
 
   useEffect(() => {
     if (answers) {
-      console.log(manyValues, 'many')
+      console.log(manyValues, 'many');
       if (!Array.isArray(answers[0])) {
         const checkAllAnswers = Object.entries(manyValues).every(pair => {
           const [key, value] = pair;
@@ -221,7 +263,7 @@ export const Stage = React.memo(({data, onRight, nextStage, layout}) => {
   const stageHandler = (right) => () => {
     if (right) {
       onRight();
-      dispatch('help/close')
+      dispatch('help/close');
       UIFX.correctAnswer();
       nextStage();
     }

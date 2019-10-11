@@ -12,6 +12,7 @@ const Plank = styled.div`
   height: 8px;
   text-shadow: 0 3px 0 #000000;
   background-color: #FFF;
+  box-shadow: 0 1px 1px 1px #000000;
   &:nth-child(2) {
     margin: 6px 0px;
   }
