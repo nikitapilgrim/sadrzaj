@@ -5,6 +5,7 @@ import useComponentSize from '@rehooks/component-size';
 import {createMemo, useWindowSize} from 'react-use';
 import dictionary from '../../../Data/dictionairy/dictionairy';
 import {breakpoints} from '../../../mixins/breakpoints';
+import useMobileDetect from 'use-mobile-detect-hook';
 
 const Wrapper = styled.p`
   width: 100%;
@@ -102,6 +103,7 @@ const Lyrics = ({text, height, type}) => {
   const [paragraphSize, setParagraphSize] = useState();
   const {width: wWidth, height: wheight} = useWindowSize();
   const [columns, setColumns] = useState(false);
+  const detectMobile = useMobileDetect();
 
   useEffect(() => {
     const paragraphSize = Math.round(wheight * 0.7);
@@ -124,14 +126,22 @@ const Lyrics = ({text, height, type}) => {
 
   return (
     <>
-      {paragraphsCount ? paragraphsCount.map((item, i, array) => {
-        return (
-          <>
-            <Paragraph columns={columns} type={type} key={item.id} text={item}/>
-            {i !== array.length - 1 && <Separator/>}
-          </>
-        );
-      }) : <Paragraph columns={columns} type={type} text={[text[0]]}/>}
+      {!detectMobile.isMobile() ? <>
+        {paragraphsCount ? paragraphsCount.map((item, i, array) => {
+          return (
+            <>
+              <Paragraph columns={columns} type={type} key={item.id} text={item}/>
+              {i !== array.length - 1 && <Separator/>}
+            </>
+          );
+        }) : <Paragraph columns={columns} type={type} text={[text[0]]}/>}
+      </> : <>
+        {text && text.map((p) => {
+          return (
+            <Paragraph mobile={true} columns={columns} type={type} text={[p]}/>
+          );
+        })}
+      </>}
     </>
   );
 
@@ -164,8 +174,6 @@ export const TextContainer = React.memo(({id, data, author, year, onReady, type}
         <Lyrics type={type} height={height} text={text}/> :
         <NormalText text={text}/>
       }
-
-
       <Year>{year}</Year>
       <br/>
       <Author>{author}</Author>

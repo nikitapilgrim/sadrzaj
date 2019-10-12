@@ -210,7 +210,6 @@ export const Start = () => {
       root.style.transform = 'none';
     }
   }, [modalOpen]);
-  console.log(store);
 
 
   const handlerNextTutorial = () => {
@@ -313,7 +312,7 @@ export const Start = () => {
   }, [setFirstScreenShow]);
   const handlerStart = (cb) => {
     setFirstScreenShow(false);
-    setModalOpen(true);
+    //setModalOpen(true);
 
     if (!tutorial) {
       setTimeout(() => {
