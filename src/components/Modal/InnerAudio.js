@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import styled from 'styled-components';
 import useAudio from 'react-use/lib/useAudio';
 import useMobileDetect from 'use-mobile-detect-hook';
@@ -9,7 +9,9 @@ import PlaySVG from '../../assets/svg/play.svg';
 import PauseSVG from '../../assets/svg/pause.svg';
 import FastForward from '../../assets/svg/fast_forward.svg';
 import {UIFX} from '../../assets/sounds/fx/index';
-import {init as WebkitSpectrum} from '../Spectrum';
+import ReactHowler from 'react-howler'
+import {Howl, Howler} from 'howler';
+import useMount from 'react-use/lib/useMount';
 
 const Wrapper = styled.div`
   position: relative;
@@ -74,20 +76,20 @@ const RewindBack = styled.button`
 `;
 
 export const InnerAudio = ({data, close}) => {
+  const detectMobile = useMobileDetect();
   const [audio, state, controls, ref] = useAudio({
     src: data,
-    autoPlay: true,
+    autoPlay: !detectMobile.isIos(),
     controls: false,
     id: 'audio-modal',
     preload: 'auto'
   });
-  const detectMobile = useMobileDetect();
 
 
   const [options, setOptions] = useState(null);
 
 
-  const  [play, setPlay] = useState(false);
+  const  [play, setPlay] = useState(detectMobile.isIos());
 
   const handlerPlayVideo = () => {
     UIFX.mouseClick();

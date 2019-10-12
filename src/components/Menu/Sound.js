@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
-import useAudio from 'react-use/lib/useAudio';
-import SoundOn from '../../assets/svg/musicOn.svg'
-import SoundOff from '../../assets/svg/musicOff.svg'
-import music from '../../assets/sounds/background_music.aac'
+import SoundOn from '../../assets/svg/musicOn.svg';
+import SoundOff from '../../assets/svg/musicOff.svg';
+import music from '../../assets/sounds/background_music.aac';
+import ReactHowler from 'react-howler';
 
 const Wrapper = styled.div`
   height: 50px;
@@ -20,19 +20,10 @@ const Wrapper = styled.div`
 `;
 
 export const Sound = React.memo(() => {
-  const [init, setInit] = useState(false);
-  const [audio, stateAudio, controls, ref] = useAudio({
-    src: music,
-    autoPlay: true,
-    preload: 'auto',
-    loop: true
-  });
+  const [play, setPlay] = useState(false);
 
   const handlerClickPage = () => {
-    if (stateAudio.paused && init) {
-      controls.play();
-      setInit(true);
-    }
+
   };
 
   useEffect(() => {
@@ -44,14 +35,18 @@ export const Sound = React.memo(() => {
 
   return (
     <Wrapper onClick={() => {
-      if (stateAudio.paused) {
-        controls.play();
+      if (play) {
+        setPlay(false);
       } else {
-        controls.pause();
+        setPlay(true);
       }
     }}>
-      {stateAudio.paused ? <SoundOff/> : <SoundOn/>}
-      {audio}
+      {!play ? <SoundOff/> : <SoundOn/>}
+      {<ReactHowler
+        src={music}
+        playing={play}
+        loop={true}
+      />}
     </Wrapper>
   );
 });
