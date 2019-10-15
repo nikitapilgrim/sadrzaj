@@ -1,5 +1,4 @@
 import React, {useEffect, useRef, useState} from 'react';
-import Tour from 'reactour'
 import styled from 'styled-components';
 import useStoreon from 'storeon/react';
 import useComponentSize from '@rehooks/component-size';

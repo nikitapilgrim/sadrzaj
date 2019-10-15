@@ -8,6 +8,7 @@ import ReactHowler from 'react-howler';
 const Wrapper = styled.div`
   height: 50px;
   width: 50px;
+  margin-left: 10px;
   svg {
     filter:drop-shadow(2px 3px 5px black)
   }
@@ -46,6 +47,9 @@ export const Sound = React.memo(() => {
         src={music}
         playing={play}
         loop={true}
+        onLoad={() => {
+          setPlay(true)
+        }}
       />}
     </Wrapper>
   );

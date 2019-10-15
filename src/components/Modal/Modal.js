@@ -40,6 +40,15 @@ const CloseModal = styled.button`
   outline: none;
 `;
 
+const CloseModalEcs = styled.p`
+  position: relative;
+  left: -85px;
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+`;
+
 export const TuttorialInner = styled.div`
   min-height: inherit;
   display: flex;
@@ -82,6 +91,7 @@ const Bg = styled.div`
   background-color: #46361d;
   opacity: 0.7;
 `;
+
 
 export const Modal = React.memo(({children, inner, type, finish}) => {
   const [open, setOpen] = useState(false);
@@ -126,7 +136,7 @@ export const Modal = React.memo(({children, inner, type, finish}) => {
     overlay: {
       background: 'none',
       padding: '0px !important',
-
+      backgroundColor: 'rgba(70,54,29, 0.7)',
     },
     modal: {
       background: 'none',
@@ -137,10 +147,11 @@ export const Modal = React.memo(({children, inner, type, finish}) => {
 
   return (
     <>
-      <ReactModal onEscKeyDown={handlerClose} onClose={handlerClose} open={open} showCloseIcon={false} center={true} styles={style}>
+      <ReactModal onEscKeyDown={handlerClose} onClose={handlerClose} open={open} onOverlayClick={handlerClose}
+                  showCloseIcon={false} center={true} styles={style}>
         <Wrapper>
           {type === 'test' && <Help/>}
-          <Bg/>
+
           <Inner ref={ref}>
             {inner}
             <CloseModal onClick={() => {
@@ -148,7 +159,7 @@ export const Modal = React.memo(({children, inner, type, finish}) => {
               dispatch('modal/close');
               //console.log('closebutti')
               UIFX.mouseClick();
-            }}/>
+            }}><CloseModalEcs>ESC</CloseModalEcs></CloseModal>
           </Inner>
         </Wrapper>
       </ReactModal>

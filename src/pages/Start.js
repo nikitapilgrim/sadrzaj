@@ -77,7 +77,7 @@ const Bg = styled.div`
     bottom: 0;
     height: 100vh;
     width: 100vw;
-    background: url(${firstscreen}) 50% 50%;
+    //background: url(${firstscreen}) 50% 50%;
     background-size: 190%;
     background-repeat: no-repeat;
   
@@ -195,6 +195,7 @@ export const Start = () => {
   const [tutorId, setTutorId] = useState(1);
 
   useEffect(() => {
+    dispatch('articles/addMedal', [1, 'gold', 100]);
     if (!tutorial) {
       dispatch('articles/addMedal', [1, 'gold', 100]);
     }
@@ -313,6 +314,7 @@ export const Start = () => {
   const handlerStart = (cb) => {
     setFirstScreenShow(false);
     //setModalOpen(true);
+    setModalOpen(true);
 
     if (!tutorial) {
       setTimeout(() => {

@@ -68,7 +68,13 @@ const ItemSubtitle = styled.h3`
 
 const Buttons = styled.div`
   margin-top:  auto;
-  
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  & > div {
+    display: inline-block;
+  }
 `
 
 
@@ -99,7 +105,7 @@ export const Systematization = () => {
     <Wrapper ref={ref}>
       <Inner>
         <Title>
-          Systematization
+          Systematizacija
         </Title>
 
         <Items>

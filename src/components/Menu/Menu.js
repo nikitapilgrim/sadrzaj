@@ -118,7 +118,7 @@ const SubmenuWrapper = styled.ol`
   display: inline-block;
   li {
       margin-left: 25px;
-      background-color: #846218;
+      //background-color: #846218;
   }
   @media ${breakpoints.desktop} {
     padding-top: 0px;

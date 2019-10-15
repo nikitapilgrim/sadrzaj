@@ -84,7 +84,8 @@ const Input = styled.input`
   outline: none;
 `;
 
-const AnswerInput = ({onInput}) => {
+const AnswerInput = ({onInput, help}) => {
+console.log(help)
 
   return (
     <Input onKeyUp={(e) => {
@@ -132,7 +133,7 @@ const MainLayout = ({question, answers, inputHandler, stageHandler}) => {
                                      handler={stageHandler(answer.right)}/>
             );
           }) :
-          <AnswerInput onInput={inputHandler(answers[0].title)}/>
+          <AnswerInput help={help} onInput={inputHandler(answers[0].title)}/>
         }
       </AnswersContainer>
     </>
@@ -145,6 +146,12 @@ const InlineInput = styled.input`
   left: 0;
   top: 0;
   width: ${props => `${props.width}px`};
+  &::placeholder {
+    color: black;
+    transition: opacity 0.2s linear;
+    opacity: ${(props) => props.help && '1' || '0'};
+  }
+  
 `;
 const AnswerHidden = styled.span`
   opacity: 0;
@@ -155,13 +162,14 @@ const Span = styled.span`
   position: relative;
 `;
 
-const HiddenWord = ({state, match, index, handler}) => {
+const HiddenWord = ({state, match, index, handler, help}) => {
   const ref = useRef(null);
   let size = useComponentSize(ref);
   let {width} = size;
+
   return (
     <React.Fragment key={index}>
-      <InlineInput width={width} value={state.hasOwnProperty(index) ? state[index].value : ''} onKeyUp={handler}/>
+      <InlineInput help={help} placeholder={match} width={width} value={state.hasOwnProperty(index) ? state[index].value : ''} onKeyUp={handler}/>
       <AnswerHidden ref={ref}>{match}</AnswerHidden>
     </React.Fragment>
   );
@@ -170,6 +178,7 @@ const HiddenWord = ({state, match, index, handler}) => {
 const SystemLayout = ({question, answers, inputHandler, nextStage}) => {
   const [value, setValue] = useState([]);
   const [manyValues, setManyValues] = useState([]);
+  const {dispatch, help} = useStoreon('help');
 
   const handler = (right, id) => e => {
     const obj = {
@@ -198,7 +207,6 @@ const SystemLayout = ({question, answers, inputHandler, nextStage}) => {
 
   useEffect(() => {
     if (answers) {
-      console.log(manyValues, 'many');
       if (!Array.isArray(answers[0])) {
         const checkAllAnswers = Object.entries(manyValues).every(pair => {
           const [key, value] = pair;
@@ -230,7 +238,7 @@ const SystemLayout = ({question, answers, inputHandler, nextStage}) => {
         {reactStringReplace(question, /{{([^}]+)}}/g, (match, i) => {
           return (
             <Span key={i}>
-              <HiddenWord state={value} index={i} match={match} handler={handler(match, i)}/>
+              <HiddenWord help={help} state={value} index={i} match={match} handler={handler(match, i)}/>
             </Span>
           );
         })
@@ -243,7 +251,7 @@ const SystemLayout = ({question, answers, inputHandler, nextStage}) => {
           return (
             <>
               <Span key={i}>
-                <HiddenWord state={manyValues} index={i} match={answer} handler={nonLinearHandler(i)}/>
+                <HiddenWord help={help} state={manyValues} index={i} match={answer} handler={nonLinearHandler(i)}/>
               </Span>
             </>
           );
