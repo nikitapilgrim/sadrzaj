@@ -85,7 +85,6 @@ const Input = styled.input`
 `;
 
 const AnswerInput = ({onInput, help}) => {
-console.log(help)
 
   return (
     <Input onKeyUp={(e) => {
@@ -145,9 +144,17 @@ const InlineInput = styled.input`
   position: relative;
   left: 0;
   top: 0;
-  width: ${props => `${props.width}px`};
+  width: ${props => `${props.width + 10}px`};
+  border-radius: 10px;
+  background-color: #dbd0ba;
+  box-shadow: inset 0px 1px 5px 0px rgba(0, 0, 0, 0.35);
+  z-index: 5;
+  outline: none;
+  border: none;
+  padding: 5px;
+
   &::placeholder {
-    color: black;
+    color: #473b26;
     transition: opacity 0.2s linear;
     opacity: ${(props) => props.help && '1' || '0'};
   }
