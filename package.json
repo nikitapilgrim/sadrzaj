@@ -28,7 +28,7 @@
     "@svgr/parcel-plugin-svgr": "^4.3.2",
     "autoprefixer": "^9.6.1",
     "babel-cli": "^6.26.0",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.27.10",
     "gzip-size": "^5.1.1",
     "lost": "^8.3.1",
     "parcel-bundler": "^1.12.3",
